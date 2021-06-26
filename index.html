@@ -9,17 +9,25 @@
 <title>Stocks</title>
 </head>
 <body>
+    <h6 id="timestamp" style="text-align:center;"></h6>
     <div class="div container">
         <table id="table" class="table table-compact table-striped table-bordered">
             <thead>
                 <tr>
-                <th rowspan=2>Rank</th>
-                <th rowspan=2>Name</th>
+                <th rowspan=3>Rank</th>
+                <th rowspan=3>Name</th>
                 <th colspan=2>Profitability</th>
                 <th colspan=2>YoY Quarterly Growth %</th>
                 <th colspan=2>Valuation</th>
-                <th rowspan=2>Price</th>
-                <th rowspan=2>Market Cap</th>
+                <th rowspan=3>Price</th>
+                <th rowspan=3>Market Cap</th>
+                </tr><tr>
+                <th id="roce"></th>
+                <th id="roe"></th>
+                <th id="profit"></th>
+                <th id="sales"></th>
+                <th id="yield"></th>
+                <th id="pe"></th>
                 </tr><tr>
                 <th>ROCE</th>
                 <th>ROE</th>
@@ -38,7 +46,17 @@ $('#table').dataTable({
     'ajax': {
         'url': 'https://magicray.github.io/magicrank.json',
         'dataSrc': function(data) {
-            return data.map(d => [
+            $('#timestamp').text(
+                'Stocks ranked on Profitability, Growth and Valuation. ' +
+                'Updated on ' + data['date'])
+            $('#roce').text(Math.floor(data['stats']['roce'][1]))
+            $('#roe').text(Math.floor(data['stats']['roe'][1]))
+            $('#profit').text(Math.floor(data['stats']['qtr_profit_var'][1]))
+            $('#sales').text(Math.floor(data['stats']['qtr_sales_var'][1]))
+            $('#yield').text(Math.floor(data['stats']['earnings_yield'][1]))
+            $('#pe').text(Math.floor(data['stats']['p_e'][1]))
+
+            return data['data'].map(d => [
                 d['rank'],
                 d['name'],
                 Math.floor(d['roce']),
@@ -48,7 +66,7 @@ $('#table').dataTable({
                 Math.floor(d['earnings_yield']),
                 Math.floor(d['p_e']),
                 Math.floor(d['cmp_rs']),
-                Math.floor(d['mar_cap_rs_cr']),
+                Math.floor(d['mar_cap_rs_cr'])
             ])
         }},
 })
