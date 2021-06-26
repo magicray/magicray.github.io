@@ -9,9 +9,13 @@
 <title>Stocks</title>
 </head>
 <body>
-    <h6 id="timestamp" style="text-align:center;"></h6>
     <div class="div container">
-        <table id="table" class="table table-compact table-striped table-bordered">
+        <div class="row align-items-end">
+            <div class="col-8" id="timestamp"></div>
+            <div class="col"><input id="filter" type="text"></div>
+        </div>
+        <div class="row">
+        <table id="table" class="table table-striped table-bordered">
             <thead>
                 <tr>
                 <th rowspan=3>Rank</th>
@@ -21,6 +25,7 @@
                 <th colspan=2>Valuation</th>
                 <th rowspan=3>Price</th>
                 <th rowspan=3>Market Cap</th>
+                <th rowspan=3>Quantity</th>
                 </tr><tr>
                 <th id="roce"></th>
                 <th id="roe"></th>
@@ -38,16 +43,20 @@
                 </tr>
             </thead>
         </table>
+        </div>
     </div>
 </body>
 <script>
-$('#table').dataTable({
+$('#filter').keyup(function(e) {
+    table.fnFilter(this.value)
+})
+const table = $('#table').dataTable({
     'bPaginate': false,
     'ajax': {
         'url': 'https://magicray.github.io/magicrank.json',
         'dataSrc': function(data) {
-            $('#timestamp').text(
-                'Stocks ranked on Profitability, Growth and Valuation. ' +
+            $('#timestamp').html(
+                'Stocks ranked on Profitability, Growth and Valuation.<br>' +
                 'Updated on ' + data['date'])
             $('#roce').text(Math.floor(data['stats']['roce'][1]))
             $('#roe').text(Math.floor(data['stats']['roe'][1]))
@@ -56,6 +65,7 @@ $('#table').dataTable({
             $('#yield').text(Math.floor(data['stats']['earnings_yield'][1]))
             $('#pe').text(Math.floor(data['stats']['p_e'][1]))
 
+            const amount = parseInt(window.location.hash.substr(1))
             return data['data'].map(d => [
                 d['rank'],
                 d['name'],
@@ -66,9 +76,11 @@ $('#table').dataTable({
                 Math.floor(d['earnings_yield']),
                 Math.floor(d['p_e']),
                 Math.floor(d['cmp_rs']),
-                Math.floor(d['mar_cap_rs_cr'])
+                Math.floor(d['mar_cap_rs_cr']),
+                amount && d['rank'] < 51? Math.floor(amount/(50*d['cmp_rs'])):''
             ])
         }},
 })
+$('.dataTables_filter').hide()
 </script>
 </html>
