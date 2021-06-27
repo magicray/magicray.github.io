@@ -55,9 +55,9 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
         G.count = q.get('count')? q.get('count'): data['data'].length
         G.amount = q.get('amount')? q.get('amount'): 0
 
-        $('#timestamp').html(
-        'Stocks ranked on Profitability, Growth and Valuation. ' +
-            'Updated on ' + data['date'])
+        $('#timestamp').html('Stocks ranked on ' +
+            '<a href="https://www.screener.in/screens/415344/magicrank" target="_blank">' +
+            'Profitability, Growth and Valuation</a>. Updated on ' + data['date'])
         $('#roce').text(Math.floor(data['stats']['roce'][1]))
         $('#roe').text(Math.floor(data['stats']['roe'][1]))
         $('#profit').text(Math.floor(data['stats']['qtr_profit_var'][1]))
