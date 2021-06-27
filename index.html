@@ -119,6 +119,7 @@ function renderTable(tableId, data) {
     $('#' + tableId).dataTable().fnDestroy()
     G.table = $('#' + tableId).dataTable({bPaginate: false, data: data})
     $('.dataTables_filter').hide()
+    G.table.fnFilter($('#filter').val())
 }
 </script>
 </html>
