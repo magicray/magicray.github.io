@@ -10,17 +10,17 @@
 </head>
 <body>
     <div class="div container">
-	<p id="timestamp" class="text-center"></p>
+        <p id="timestamp" class="text-center"></p>
         <div class="row">
         <div class="col"></div>
-	<input id="count" type="text" class="col" placeholder="Stocks count">
-	<input id="filter" type="text" class="col" placeholder="Search">
-	<input id="amount" type="text" class="col" placeholder="Investment Amount">
+        <input id="count" type="text" class="col" placeholder="Stock Count">
+        <input id="filter" type="text" class="col" placeholder="Search">
+        <input id="amount" type="text" class="col" placeholder="Investment Amount">
         <div class="col"></div>
         </div>
         <table id="table" class="table compact table-striped table-bordered">
-	    <thead>
-		<tr>
+            <thead>
+                <tr>
                 <th rowspan=3>Rank</th>
                 <th rowspan=3>Name</th>
                 <th colspan=2>Profitability</th>
@@ -43,7 +43,7 @@
                 <th>PE</th>
                 </tr>
             </thead>
-	</table>
+        </table>
     </div>
 </body>
 <script>
@@ -54,6 +54,8 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
         const q = new URLSearchParams(window.location.search)
         G.count = q.get('count')? q.get('count'): data['data'].length
         G.amount = q.get('amount')? q.get('amount'): 0
+        G.count_default = G.count
+        G.amount_default = G.amount
 
         $('#timestamp').html('Stocks ranked on ' +
             '<a href="https://www.screener.in/screens/415344/magicrank" target="_blank">' +
@@ -65,15 +67,13 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
         $('#yield').text(Math.floor(data['stats']['earnings_yield'][1]))
         $('#pe').text(Math.floor(data['stats']['p_e'][1]))
 
-        $('#count').val(G.count)
-        $('#amount').val(G.amount)
         renderTable('table', format_data(G.data['data'], G.count, G.amount))
     })
 }).catch(function(err) {
     $('body').text('Could not fetch data')
 })
 
-function format_data(data, count, amount){
+function format_data(data, count, amount) {
     const result = []
 
     for(let i=0; i<count; i++) {
@@ -83,7 +83,7 @@ function format_data(data, count, amount){
 
         const name = '<div class="text-nowrap">' + d['name'] +
                      '<small> - ' + cmp + '</small></div>' +
-	             (amount > 0? '<small>Buy - ' + qty + '</small>': '')
+                     (amount > 0? '<small>Buy - ' + qty + '</small>': '')
 
         result.push([
             d['rank'],
@@ -104,17 +104,16 @@ $('#filter').keyup(function(e) {
     G.table.fnFilter(this.value)
 })
 
-$('#amount').keyup(function(e) {
-    const count = $('#count').val()
-    const amount = $('#amount').val()
-    renderTable('table', format_data(G.data['data'], count, amount))
-})
+$('#count').keyup(function(e) {render()})
+$('#amount').keyup(function(e) {render()})
 
-$('#count').keyup(function(e) {
-    const count = $('#count').val()
-    const amount = $('#amount').val()
+function render() {
+    let count = $('#count').val()
+    let amount = $('#amount').val()
+    count = count? count: G.count_default
+    amount = amount? amount: G.amount_default
     renderTable('table', format_data(G.data['data'], count, amount))
-})
+}
 
 function renderTable(tableId, data) {
     $('#' + tableId).dataTable().fnDestroy()
