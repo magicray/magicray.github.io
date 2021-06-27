@@ -101,7 +101,7 @@ function format_data(data, count, amount){
 }
 
 $('#filter').keyup(function(e) {
-    table.fnFilter(this.value)
+    G.table.fnFilter(this.value)
 })
 
 $('#amount').keyup(function(e) {
@@ -118,7 +118,7 @@ $('#count').keyup(function(e) {
 
 function renderTable(tableId, data) {
     $('#' + tableId).dataTable().fnDestroy()
-    $('#' + tableId).dataTable({bPaginate: false, data: data})
+    G.table = $('#' + tableId).dataTable({bPaginate: false, data: data})
     $('.dataTables_filter').hide()
 }
 </script>
