@@ -13,7 +13,9 @@
 	<p id="timestamp" class="text-center"></p>
         <div class="row">
         <div class="col"></div>
-	<input id="filter" type="text" placeholder="Type here to filter" class="col">
+	<input id="count" type="text" class="col" placeholder="Stocks count">
+	<input id="filter" type="text" class="col" placeholder="Search">
+	<input id="amount" type="text" class="col" placeholder="Investment Amount">
         <div class="col"></div>
         </div>
         <table id="table" class="table table-striped table-bordered">
@@ -45,52 +47,79 @@
     </div>
 </body>
 <script>
+const G = {}
+fetch('https://magicray.github.io/magicrank.json').then(function(response) {
+    response.json().then(function(data) {
+        G.data = data
+        const q = new URLSearchParams(window.location.search)
+        G.count = q.get('count')? q.get('count'): data['data'].length
+        G.amount = q.get('amount')? q.get('amount'): 0
+
+        $('#timestamp').html(
+        'Stocks ranked on Profitability, Growth and Valuation. ' +
+            'Updated on ' + data['date'])
+        $('#roce').text(Math.floor(data['stats']['roce'][1]))
+        $('#roe').text(Math.floor(data['stats']['roe'][1]))
+        $('#profit').text(Math.floor(data['stats']['qtr_profit_var'][1]))
+        $('#sales').text(Math.floor(data['stats']['qtr_sales_var'][1]))
+        $('#yield').text(Math.floor(data['stats']['earnings_yield'][1]))
+        $('#pe').text(Math.floor(data['stats']['p_e'][1]))
+
+        $('#count').val(G.count)
+        $('#amount').val(G.amount)
+        renderTable('table', format_data(G.data['data'], G.count, G.amount))
+    })
+}).catch(function(err) {
+    $('body').text('Could not fetch data')
+})
+
+function format_data(data, count, amount){
+    const result = []
+
+    for(let i=0; i<count; i++) {
+        const d = data[i]
+        const cmp = d['cmp_rs']
+        const qty = amount? Math.floor(amount/(count*cmp)): ''
+
+        const name = '<div class="text-nowrap">' + d['name'] +
+                     '<small> - ' + cmp + '</small></div>' +
+	             (amount > 0? '<small>Buy - ' + qty + '</small>': '')
+
+        result.push([
+            d['rank'],
+            name,
+            Math.floor(d['roce']),
+            Math.floor(d['roe']),
+            Math.floor(d['qtr_profit_var']),
+            Math.floor(d['qtr_sales_var']),
+            Math.floor(d['earnings_yield']),
+            Math.floor(d['p_e']),
+            Math.floor(d['mar_cap_rs_cr'])])
+    }
+
+    return result
+}
+
 $('#filter').keyup(function(e) {
     table.fnFilter(this.value)
 })
-const table = $('#table').dataTable({
-    'bPaginate': false,
-    'ajax': {
-        'url': 'https://magicray.github.io/magicrank.json',
-        'dataSrc': function(data) {
-            const q = new URLSearchParams(window.location.search)
-            const count = q.get('count')? q.get('count'): data['data'].length
-            const amount = q.get('amount')? q.get('amount'): 0
 
-            $('#timestamp').html(
-                'Stocks ranked on Profitability, Growth and Valuation. ' +
-                'Updated on ' + data['date'])
-            $('#roce').text(Math.floor(data['stats']['roce'][1]))
-            $('#roe').text(Math.floor(data['stats']['roe'][1]))
-            $('#profit').text(Math.floor(data['stats']['qtr_profit_var'][1]))
-            $('#sales').text(Math.floor(data['stats']['qtr_sales_var'][1]))
-            $('#yield').text(Math.floor(data['stats']['earnings_yield'][1]))
-            $('#pe').text(Math.floor(data['stats']['p_e'][1]))
-
-            const result = []
-            for(let i=0; i<count; i++) {
-                const d = data['data'][i]
-                const cmp = d['cmp_rs']
-                const qty = amount? Math.floor(amount/(count*cmp)): ''
-
-		const name = '<div class="text-nowrap">' + d['name'] +
-			     '<small> - ' + cmp + '</small></div>' +
-			     (amount? '<small>Buy - ' + qty + '</small>': '')
-
-	        result.push([
-                    d['rank'],
-                    name,
-                    Math.floor(d['roce']),
-                    Math.floor(d['roe']),
-                    Math.floor(d['qtr_profit_var']),
-                    Math.floor(d['qtr_sales_var']),
-		    Math.floor(d['earnings_yield']),
-                    Math.floor(d['p_e']),
-                    Math.floor(d['mar_cap_rs_cr'])])
-            }
-            return result
-	}},
+$('#amount').keyup(function(e) {
+    const count = $('#count').val()
+    const amount = $('#amount').val()
+    renderTable('table', format_data(G.data['data'], count, amount))
 })
-$('.dataTables_filter').hide()
+
+$('#count').keyup(function(e) {
+    const count = $('#count').val()
+    const amount = $('#amount').val()
+    renderTable('table', format_data(G.data['data'], count, amount))
+})
+
+function renderTable(tableId, data) {
+    $('#' + tableId).dataTable().fnDestroy()
+    $('#' + tableId).dataTable({bPaginate: false, data: data})
+    $('.dataTables_filter').hide()
+}
 </script>
 </html>
