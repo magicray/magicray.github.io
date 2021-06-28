@@ -258,7 +258,7 @@
         },
         {
             "cmp_rs": 802.4,
-            "div_yld": 0.75,
+            "div_yld": 1.25,
             "earnings_yield": 10.25,
             "growth": 60.07,
             "mar_cap_rs_cr": 1100.89,
@@ -1858,7 +1858,7 @@
         },
         {
             "cmp_rs": 209.8,
-            "div_yld": 0.48,
+            "div_yld": 0.95,
             "earnings_yield": 7.01,
             "growth": 59.83,
             "mar_cap_rs_cr": 2195.98,
@@ -2994,7 +2994,7 @@
         },
         {
             "cmp_rs": 249.1,
-            "div_yld": 1.2,
+            "div_yld": 1.41,
             "earnings_yield": 7.5,
             "growth": 27.37,
             "mar_cap_rs_cr": 1087.18,
@@ -8561,7 +8561,7 @@
             "sales_qtr_rs_cr": 3004.5
         }
     ],
-    "date": "Sun Jun 27 00:44:09 2021",
+    "date": "Mon Jun 28 00:40:06 2021",
     "stats": {
         "cmp_rs": [
             29455.45,
