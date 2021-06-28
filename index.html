@@ -22,7 +22,7 @@
             <thead>
                 <tr>
                 <th rowspan=3>Rank</th>
-                <th rowspan=3>Name</th>
+                <th rowspan=3>Stock</th>
                 <th colspan=2>Profitability</th>
                 <th colspan=2>YoY Quarterly Growth %</th>
                 <th colspan=2>Valuation</th>
@@ -82,8 +82,8 @@ function format_data(data, count, amount) {
         const qty = amount? Math.floor(amount/(count*cmp)): ''
 
         const name = '<div class="text-nowrap">' + d['name'] +
-                     '<small> - ' + cmp + '</small></div>' +
-                     (amount > 0? '<small>Buy - ' + qty + '</small>': '')
+                     '<small> - ' + cmp + (amount > 0? ' * ' + qty: '') +
+                     '</small></div>'
 
         result.push([
             d['rank'],
