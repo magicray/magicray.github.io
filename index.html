@@ -60,7 +60,7 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
         const date = new Date(data['date'] * 1000)
         $('#timestamp').html('Stocks ranked on ' +
             '<a href="https://www.screener.in/screens/415344/magicrank" target="_blank">' +
-            'Profitability, Growth and Valuation</a>. Updated on ' + date)
+            'Profitability, Growth and Valuation</a> - ' + date.toString().substr(4, 17))
 
         renderTable('table', format_data(G.data['data'], G.count, G.amount))
     })
