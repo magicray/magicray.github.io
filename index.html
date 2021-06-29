@@ -60,12 +60,6 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
         $('#timestamp').html('Stocks ranked on ' +
             '<a href="https://www.screener.in/screens/415344/magicrank" target="_blank">' +
             'Profitability, Growth and Valuation</a>. Updated on ' + data['date'])
-        $('#roce').text(Math.floor(data['stats']['roce'][1]))
-        $('#roe').text(Math.floor(data['stats']['roe'][1]))
-        $('#profit').text(Math.floor(data['stats']['qtr_profit_var'][1]))
-        $('#sales').text(Math.floor(data['stats']['qtr_sales_var'][1]))
-        $('#yield').text(Math.floor(data['stats']['earnings_yield'][1]))
-        $('#pe').text(Math.floor(data['stats']['p_e'][1]))
 
         renderTable('table', format_data(G.data['data'], G.count, G.amount))
     })
@@ -82,7 +76,7 @@ function format_data(data, count, amount) {
         const qty = amount? Math.floor(amount/(count*cmp)): ''
 
         const name = '<div class="text-nowrap">' + d['name'] +
-                     '<small> - ' + cmp + (amount > 0? ' * ' + qty: '') +
+                     '<small> - ' + cmp + (amount > 0? ' * ' + qty: '') + 
                      '</small></div>'
 
         result.push([
@@ -113,13 +107,18 @@ function render() {
     count = count? count: G.count_default
     amount = amount? amount: G.amount_default
     renderTable('table', format_data(G.data['data'], count, amount))
+    G.table.fnFilter($('#filter').val())
 }
 
 function renderTable(tableId, data) {
+    ['roce', 'roe', 'profit', 'sales', 'yield', 'pe'].map((name, index) => {
+	let arr = data.map(d => d[index+2]).sort(function(a, b){ return a - b})
+        $('#' + name).text(arr[Math.floor(arr.length/2)])
+    })
+
     $('#' + tableId).dataTable().fnDestroy()
     G.table = $('#' + tableId).dataTable({bPaginate: false, data: data})
     $('.dataTables_filter').hide()
-    G.table.fnFilter($('#filter').val())
 }
 </script>
 </html>
