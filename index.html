@@ -26,7 +26,7 @@
                 <th colspan=2>Profitability</th>
                 <th colspan=2>YoY Quarterly Growth %</th>
                 <th colspan=2>Valuation</th>
-                <th rowspan=3>Market Cap</th>
+                <th>Size</th>
                 </tr><tr>
                 <th id="roce"></th>
                 <th id="roe"></th>
@@ -34,6 +34,7 @@
                 <th id="sales"></th>
                 <th id="yield"></th>
                 <th id="pe"></th>
+                <th id="mcap"></th>
                 </tr><tr>
                 <th>ROCE</th>
                 <th>ROE</th>
@@ -41,6 +42,7 @@
                 <th>Sales</th>
                 <th>Yield</th>
                 <th>PE</th>
+                <th>Market Cap</th>
                 </tr>
             </thead>
         </table>
@@ -112,7 +114,7 @@ function render() {
 }
 
 function renderTable(tableId, data) {
-    ['roce', 'roe', 'profit', 'sales', 'yield', 'pe'].map((name, index) => {
+    ['roce', 'roe', 'profit', 'sales', 'yield', 'pe', 'mcap'].map((name, index) => {
 	let arr = data.map(d => d[index+2]).sort(function(a, b){ return a - b})
         $('#' + name).text(arr[Math.floor(arr.length/2)])
     })
