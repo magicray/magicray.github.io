@@ -105,7 +105,7 @@ $('#amount').keyup(function(e) {render()})
 function render() {
     let count = $('#count').val()
     let amount = $('#amount').val()
-    count = count? count: G.count_default
+    count = Math.min(G.count_default, count? count: G.count_default)
     amount = amount? amount: G.amount_default
     renderTable('table', format_data(G.data['data'], count, amount))
     G.table.fnFilter($('#filter').val())
