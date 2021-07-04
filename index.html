@@ -51,6 +51,7 @@
 </body>
 <script>
 const G = {}
+
 fetch('https://magicray.github.io/magicrank.json').then(function(response) {
     response.json().then(function(data) {
         G.data = data
@@ -67,8 +68,6 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
 
         renderTable('table', format_data(G.data['data'], G.count, G.amount))
     })
-}).catch(function(err) {
-    $('body').text('Could not fetch data')
 })
 
 function format_data(data, count, amount) {
@@ -98,12 +97,9 @@ function format_data(data, count, amount) {
     return result
 }
 
-$('#filter').keyup(function(e) {
-    G.table.fnFilter(this.value)
-})
-
 $('#count').keyup(function(e) {render()})
 $('#amount').keyup(function(e) {render()})
+$('#filter').keyup(function(e) {G.table.fnFilter(this.value)})
 
 function render() {
     let count = $('#count').val()
@@ -121,7 +117,10 @@ function renderTable(tableId, data) {
     })
 
     $('#' + tableId).dataTable().fnDestroy()
-    G.table = $('#' + tableId).dataTable({bPaginate: false, data: data})
+    G.table = $('#' + tableId).dataTable({bPaginate: false, data: data,
+        rowCallback: function(row, d, i) {
+	    $(row).css('color', d[0]>100? 'Red': d[0]<=50? 'Green': 'Black')
+	}})
     $('.dataTables_filter').hide()
 }
 </script>
