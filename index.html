@@ -61,10 +61,10 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
         G.count_default = G.count
         G.amount_default = G.amount
 
-        const date = new Date(data['date'] * 1000)
+        const age = Math.floor((Date.now() / 1000 - data['date'])/3600)
         $('#timestamp').html('Stocks ranked on ' +
             '<a href="https://www.screener.in/screens/415344/magicrank" target="_blank">' +
-            'Profitability, Growth and Valuation</a> - ' + date.toString().substr(4, 17))
+            'Profitability, Growth and Valuation</a> - updated ' + age + ' hours ago')
 
         renderTable('table', format_data(G.data['data'], G.count, G.amount))
     })
