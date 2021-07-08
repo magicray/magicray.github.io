@@ -119,7 +119,7 @@ function renderTable(tableId, data) {
     $('#' + tableId).dataTable().fnDestroy()
     G.table = $('#' + tableId).dataTable({bPaginate: false, data: data,
         rowCallback: function(row, d, i) {
-	    $(row).css('color', d[0]>100? 'Red': d[0]<=50? 'Green': 'Black')
+	    $(row).css('color', d[0]>G.data['data'].length*0.2? 'Red': 'Green')
 	}})
     $('.dataTables_filter').hide()
 }
