@@ -60,7 +60,7 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
         const age = Math.floor((Date.now() / 1000 - data['date'])/3600)
         const total = G.data['data'].length
         const buy = Math.floor(total*0.1)
-        const hold = Math.floor(total*0.2)
+        const hold = Math.floor(total*0.25)
         $('#timestamp').html('Stocks ranked on ' +
             '<a href="https://www.screener.in/screens/415344/magicrank" target="_blank">' +
             'Profitability, Growth and Valuation</a> - updated ' + age + ' hours ago<br>' +
@@ -121,7 +121,7 @@ function renderTable(tableId, data) {
     $('#' + tableId).dataTable().fnDestroy()
     G.table = $('#' + tableId).dataTable({bPaginate: false, data: data,
         rowCallback: function(row, d, i) {
-	    $(row).css('color', d[0]>G.data['data'].length*0.2? 'Red': 'Green')
+	    $(row).css('color', d[0]>G.data['data'].length*0.25? 'Red': 'Green')
 	}})
     $('.dataTables_filter').hide()
 }
