@@ -11,14 +11,17 @@
 <body>
     <div class="div container">
         <p id="timestamp" class="text-center"></p>
-        <div class="row">
+        <div id="head" class="row">
         <div class="col"></div>
         <input id="count" type="text" class="col" placeholder="Stock Count">
         <input id="filter" type="text" class="col" placeholder="Search">
         <input id="amount" type="text" class="col" placeholder="Investment Amount">
         <div class="col"></div>
         </div>
-        <table id="table" class="table compact table-striped table-bordered">
+        <table id="sold" class="table compact table-striped table-bordered">
+            <thead><tr><th>Date</th><th>Stock</th></tr></thead>
+        </table>
+        <table id="rank" class="table compact table-striped table-bordered">
             <thead>
                 <tr>
                 <th rowspan=2 colspan=2></th>
@@ -62,13 +65,19 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
         const buy = Math.floor(total*0.1)
         const hold = Math.floor(total*0.25)
         $('#timestamp').html('Stocks ranked on ' +
-            '<a href="https://www.screener.in/screens/415344/magicrank" target="_blank">' +
+            '<a href="' + data['url'] + '" target="_blank">' +
             'Profitability, Growth and Valuation</a> - updated ' + age + ' hours ago<br>' +
             'Buy(<a href="#' + buy + '">' + buy + '</a>) ' +
             'Hold(<a href="#' + hold + '">' + hold + '</a>) ' +
-	    'Total(<a href="#'+ total + '">' + total + '</a>)')
+            'Total(<a href="#'+ total + '">' + total + '</a>)<br>' +
+            '<a href="#sold">Recently sold</a>')
 
-        renderTable('table', format_data(G.data['data'], count, 0))
+        $('#sold').dataTable({bPaginate: false, info: false,
+            data: Object.keys(data['sold']).map(k => [data['sold'][k], k])})
+
+        renderTable('rank', format_data(G.data['data'], count, 0))
+        $('#sold').hide()
+        $('.dataTables_filter').hide()
     })
 })
 
@@ -101,15 +110,27 @@ function format_data(data, count, amount) {
 
 $('#count').keyup(function(e) {render()})
 $('#amount').keyup(function(e) {render()})
-$(window).on('hashchange', function(e) {render()})
-$('#filter').keyup(function(e) {G.table.fnFilter(this.value)})
+$(window).on('hashchange', function(e) {
+    if('sold' == location.hash.substr(1)) {
+        $('#rank').hide()
+        $('#head').hide()
+        $('#sold').show()
+    } else {
+        $('#sold').hide()
+        $('#rank').show()
+        $('#head').show()
+        render()
+    }
+    $('.dataTables_filter').hide()
+})
+$('#filter').keyup(function(e) {G.rank.fnFilter(this.value)})
 
 function render() {
     let count = $('#count').val()
     const hash_count = location.hash? location.hash.substr(1): G.data['data'].length
     count = Math.min(hash_count, count? count: hash_count)
-    renderTable('table', format_data(G.data['data'], count, $('#amount').val()))
-    G.table.fnFilter($('#filter').val())
+    renderTable('rank', format_data(G.data['data'], count, $('#amount').val()))
+    G.rank.fnFilter($('#filter').val())
 }
 
 function renderTable(tableId, data) {
@@ -119,11 +140,10 @@ function renderTable(tableId, data) {
     })
 
     $('#' + tableId).dataTable().fnDestroy()
-    G.table = $('#' + tableId).dataTable({bPaginate: false, data: data,
+    G.rank = $('#' + tableId).dataTable({bPaginate: false, data: data, info: false,
         rowCallback: function(row, d, i) {
 	    $(row).css('color', d[0]>G.data['data'].length*0.25? 'Red': 'Green')
 	}})
-    $('.dataTables_filter').hide()
 }
 </script>
 </html>
