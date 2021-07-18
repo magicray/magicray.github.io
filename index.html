@@ -9,7 +9,7 @@
 <title>Stocks</title>
 </head>
 <body>
-    <div class="div container pl-0">
+    <div class="div container">
         <p id="timestamp" class="text-center"></p>
         <div id="head" class="row">
         <div class="col"></div>
@@ -73,11 +73,11 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
             '<a href="#sold">Recently sold</a>')
 
         $('#sold').dataTable({bPaginate: false, info: false,
-            data: Object.keys(data['sold']).map(k => [data['sold'][k], k])})
+            order: [[0, 'desc']],
+            data: Object.keys(data['sold']).map(
+                k => [new Date(data['sold'][k]*1000).toJSON().substr(0, 10), k])})
 
-        renderTable('rank', format_data(G.data['data'], count, 0))
-        $('#sold').hide()
-        $('.dataTables_filter').hide()
+        hashchange()
     })
 })
 
@@ -110,7 +110,10 @@ function format_data(data, count, amount) {
 
 $('#count').keyup(function(e) {render()})
 $('#amount').keyup(function(e) {render()})
-$(window).on('hashchange', function(e) {
+$('#filter').keyup(function(e) {G.rank.fnFilter(this.value)})
+$(window).on('hashchange', hashchange)
+
+function hashchange(e) {
     if('sold' == location.hash.substr(1)) {
         $('#rank').hide()
         $('#head').hide()
@@ -122,8 +125,7 @@ $(window).on('hashchange', function(e) {
         render()
     }
     $('.dataTables_filter').hide()
-})
-$('#filter').keyup(function(e) {G.rank.fnFilter(this.value)})
+}
 
 function render() {
     let count = $('#count').val()
