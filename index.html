@@ -133,6 +133,7 @@ function render() {
     count = Math.min(hash_count, count? count: hash_count)
     renderTable('rank', format_data(G.data['data'], count, $('#amount').val()))
     G.rank.fnFilter($('#filter').val())
+    $('.dataTables_filter').hide()
 }
 
 function renderTable(tableId, data) {
@@ -141,8 +142,10 @@ function renderTable(tableId, data) {
         $('#' + name).text(arr[Math.floor(arr.length/2)])
     })
 
+    const sort_order = G.rank? G.rank.fnSettings().aaSorting[0]: [0, 'asc']
     $('#' + tableId).dataTable().fnDestroy()
     G.rank = $('#' + tableId).dataTable({bPaginate: false, data: data, info: false,
+        order: [[sort_order[0], sort_order[1]]],
         rowCallback: function(row, d, i) {
 	    $(row).css('color', d[0]>G.data['data'].length*0.25? 'Red': 'Green')
 	}})
