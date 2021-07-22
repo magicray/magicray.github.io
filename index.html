@@ -62,7 +62,7 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
 
         const age = Math.floor((Date.now() / 1000 - data['date'])/3600)
         const total = G.data['data'].length
-        const buy = 50
+        const buy = 40
         const hold = 100
         $('#timestamp').html('Stocks ranked on ' +
             '<a href="' + data['url'] + '" target="_blank">' +
