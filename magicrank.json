@@ -5257,8 +5257,8 @@
             "value": 7.2
         },
         {
-            "cmp_rs": 14891.25,
-            "div_yld": 0.67,
+            "cmp_rs": 2978.25,
+            "div_yld": 3.36,
             "earnings_yield": 3.74,
             "growth": 19.55,
             "mar_cap_rs_cr": 5189.3,
@@ -9001,7 +9001,7 @@
             "value": 1.1
         }
     ],
-    "date": 1627226190,
+    "date": 1627260446,
     "sold": {
         "ACC": 1627053411,
         "Action Const.Eq.": 1627180278,
