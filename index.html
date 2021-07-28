@@ -69,8 +69,8 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
             'Profitability, Growth and Valuation</a> - updated ' + age + ' hours ago<br>' +
             'Buy(<a href="#' + buy + '">' + buy + '</a>) ' +
             'Hold(<a href="#' + hold + '">' + hold + '</a>) ' +
-            'Biggest(<a href="#'+ total + '">' + total + '</a>)<br>' +
-            '<a href="#sold">Recently sold</a>')
+            'Biggest(<a href="#'+ total + '">' + total + '</a>) ' +
+            'Sold(<a href="#sold">' + Object.keys(data['sold']).length + '</a>)')
 
         $('#sold').dataTable({bPaginate: false, info: false,
             order: [[0, 'desc']],
