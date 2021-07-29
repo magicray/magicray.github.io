@@ -64,13 +64,14 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
         const total = G.data['data'].length
         const buy = 50
         const hold = Math.floor(0.25*data['data'].length)
+	const sell_date = new Date(Math.max(...Object.values(data['sold']))*1000).toJSON()
         $('#timestamp').html('Stocks ranked on ' +
             '<a href="' + data['url'] + '" target="_blank">' +
             'Profitability, Growth and Valuation</a> - updated ' + age + ' hours ago<br>' +
             'Buy(<a href="#' + buy + '">' + buy + '</a>) ' +
             'Hold(<a href="#' + hold + '">' + hold + '</a>) ' +
             'All(<a href="#'+ total + '">' + total + '</a>) ' +
-            'Sell(<a href="#sold">' + Object.keys(data['sold']).length + '</a>)')
+            'Sell(<a href="#sold">' + sell_date.substr(0, 10) + '</a>)')
 
         $('#sold').dataTable({bPaginate: false, info: false,
             order: [[0, 'desc']],
