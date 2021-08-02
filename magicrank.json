@@ -6500,7 +6500,7 @@
         },
         {
             "cmp_rs": 1236.45,
-            "div_yld": 0.0,
+            "div_yld": 0.04,
             "earnings_yield": 1.71,
             "growth": 30.37,
             "mar_cap_rs_cr": 6807.22,
@@ -10063,7 +10063,7 @@
             "value": 1.13
         }
     ],
-    "date": 1627830968,
+    "date": 1627865271,
     "sold": {
         "Aditya Vision": 1627360561,
         "Affle India": 1627571820,
