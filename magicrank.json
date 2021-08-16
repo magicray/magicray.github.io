@@ -182,7 +182,7 @@
         },
         {
             "cmp_rs": 112.65,
-            "div_yld": 0.13,
+            "div_yld": 0.18,
             "earnings_yield": 12.12,
             "growth": 111.38,
             "mar_cap_rs_cr": 1982.64,
@@ -7418,7 +7418,7 @@
         },
         {
             "cmp_rs": 292.75,
-            "div_yld": 0.0,
+            "div_yld": 0.85,
             "earnings_yield": 7.93,
             "growth": 3.85,
             "mar_cap_rs_cr": 1725.74,
@@ -9001,7 +9001,7 @@
             "value": 1.49
         }
     ],
-    "date": 1629040548,
+    "date": 1629074815,
     "sold": {
         "Andhra Petrochem": 1628815703,
         "B P C L": 1628781409,
