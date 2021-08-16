@@ -73,10 +73,20 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
             'All(<a href="#'+ total + '">' + total + '</a>) ' +
             'Sell(<a href="#sold">' + (sell_date? sell_date.substr(0, 10): '') + '</a>)')
 
+        const sold = {}
+        Object.keys(data['sold']).map(function(k) {
+            const v = new Date(data['sold'][k]*1000).toJSON().substr(0, 10)
+            if(sold[v] == undefined)
+                sold[v] = []
+            sold[v].push(k)
+            sold[v].sort()
+        })
+
         $('#sold').dataTable({bPaginate: false, info: false,
             order: [[0, 'desc']],
-            data: Object.keys(data['sold']).map(
-                k => [new Date(data['sold'][k]*1000).toJSON().substr(0, 10), k])})
+            data: Object.keys(sold).map(
+                k => [k, sold[k].join('<br>')])
+        })
 
         hashchange()
     })
