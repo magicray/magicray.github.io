@@ -3213,12 +3213,12 @@
             "name": "Prince Pipes",
             "np_qtr_rs_cr": 17.75,
             "p_e": 30.78,
-            "profit": 28.67,
+            "profit": 28.84,
             "qtr_profit_var": 57.78,
             "qtr_sales_var": 9.3,
             "rank": 179,
-            "roce": 28.67,
-            "roe": 23.61,
+            "roce": 28.84,
+            "roe": 23.76,
             "sales_qtr_rs_cr": 330.6,
             "value": 4.71
         },
@@ -5401,7 +5401,7 @@
             "value": 1.52
         }
     ],
-    "date": 1629558954,
+    "date": 1629593161,
     "sold": {
         "AGC Networks": 1629285340,
         "Acrysil": 1629261562,
