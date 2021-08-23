@@ -63,7 +63,7 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
         const age = Math.floor((Date.now() / 1000 - data['date'])/3600)
         const total = G.data['data'].length
         const buy = 50
-        const hold = 150
+        const hold = 100
 	const sell_date = new Date(Math.max(...Object.values(data['sold']))*1000).toJSON()
         $('#timestamp').html(
             'Biggest(<a href="#'+ total + '">' + total + '</a>) Companies, ' +
@@ -158,7 +158,7 @@ function renderTable(tableId, data) {
     G.rank = $('#' + tableId).dataTable({bPaginate: false, data: data, info: false,
         order: [[sort_order[0], sort_order[1]]],
         rowCallback: function(row, d, i) {
-	    $(row).css('color', d[0]>150? 'Red': 'Green')
+	    $(row).css('color', d[0]>100? 'Red': 'Green')
 	}})
 }
 </script>
