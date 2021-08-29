@@ -974,7 +974,7 @@
         },
         {
             "cmp_rs": 116.65,
-            "div_yld": 1.5,
+            "div_yld": 3.09,
             "earnings_yield": 16.04,
             "growth": 73.03,
             "mar_cap_rs_cr": 146748.96,
@@ -2072,7 +2072,7 @@
         },
         {
             "cmp_rs": 174.35,
-            "div_yld": 3.87,
+            "div_yld": 5.59,
             "earnings_yield": 10.16,
             "growth": 8.03,
             "mar_cap_rs_cr": 121617.02,
@@ -3601,7 +3601,7 @@
             "value": 2.32
         }
     ],
-    "date": 1630163705,
+    "date": 1630198200,
     "sold": {
         "Amara Raja Batt.": 1629990957,
         "Gillette India": 1629852432,
