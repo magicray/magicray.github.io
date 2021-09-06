@@ -65,13 +65,13 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
         const buy = 50
         const hold = 100
 	const sell_date = new Date(Math.max(...Object.values(data['sold']))*1000).toJSON()
-        $('#timestamp').html(
-            'Biggest(<a href="#'+ total + '">' + total + '</a>) Companies, ' +
+         $('#timestamp').html(
             '<a href="' + data['url'] + '" target="_blank">' +
             'Profitable and Growing</a> - updated ' + age + ' hours ago<br>' +
             'Buy(<a href="#' + buy + '">' + buy + '</a>) ' +
             'Hold(<a href="#' + hold + '">' + hold + '</a>) ' +
-            'Sell(<a href="#sold">' + (sell_date? sell_date.substr(0, 10): '') + '</a>)')
+            'All(<a href="#' + total + '">' + total + '</a>)<br>' +
+            '<a href="#sold">Recently Sold</a>')
 
         const sold = {}
         Object.keys(data['sold']).map(function(k) {
