@@ -58,19 +58,13 @@ const G = {}
 fetch('https://magicray.github.io/magicrank.json').then(function(response) {
     response.json().then(function(data) {
         G.data = data
-        const count = location.hash? location.hash.substr(1): data['data'].length
 
         const age = Math.floor((Date.now() / 1000 - data['date'])/3600)
         const total = G.data['data'].length
-        const buy = 50
-        const hold = 100
 	const sell_date = new Date(Math.max(...Object.values(data['sold']))*1000).toJSON()
          $('#timestamp').html(
-            '<a href="' + data['url'] + '" target="_blank">' +
-            'Profitable and Growing</a> - updated ' + age + ' hours ago<br>' +
-            'Buy(<a href="#' + buy + '">' + buy + '</a>) ' +
-            'Hold(<a href="#' + hold + '">' + hold + '</a>) ' +
-            'All(<a href="#' + total + '">' + total + '</a>)<br>' +
+            '<a href="' + data['url'] + '" target="_blank">Profitable and Growing</a> - ' +
+            'Refreshed <a href="">' + age + ' hours</a> ago - ' +
             '<a href="#sold">Recently Sold</a>')
 
         const sold = {}
@@ -140,8 +134,7 @@ function hashchange(e) {
 
 function render() {
     let count = $('#count').val()
-    const hash_count = location.hash? location.hash.substr(1): G.data['data'].length
-    count = Math.min(hash_count, count? count: hash_count)
+    count = Math.min(G.data['data'].length, count? count: G.data['data'].length)
     renderTable('rank', format_data(G.data['data'], count, $('#amount').val()))
     G.rank.fnFilter($('#filter').val())
     $('.dataTables_filter').hide()
