@@ -3171,20 +3171,20 @@
         {
             "cmp_rs": 2332.7,
             "div_yld": 0.06,
-            "earnings_yield": 3.74,
+            "earnings_yield": 3.67,
             "growth": 19.47,
             "mar_cap_rs_cr": 43648.9,
             "name": "Dalmia BharatLtd",
             "np_qtr_rs_cr": 227.0,
             "p_e": 34.42,
-            "profit": 10.62,
+            "profit": 10.44,
             "qtr_profit_var": 19.47,
             "qtr_sales_var": 36.19,
             "rank": 177,
-            "roce": 10.59,
-            "roe": 10.62,
+            "roce": 10.16,
+            "roe": 10.44,
             "sales_qtr_rs_cr": 2589.0,
-            "value": 3.74
+            "value": 3.67
         },
         {
             "cmp_rs": 2305.1,
@@ -3601,7 +3601,7 @@
             "value": 2.25
         }
     ],
-    "date": 1631320253,
+    "date": 1631406825,
     "sold": {
         "Astral": 1630682159,
         "C D S L": 1631234057,
