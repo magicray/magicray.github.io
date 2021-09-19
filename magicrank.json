@@ -2936,7 +2936,7 @@
         },
         {
             "cmp_rs": 4398.85,
-            "div_yld": 0.91,
+            "div_yld": 2.05,
             "earnings_yield": 7.88,
             "growth": 8.2,
             "mar_cap_rs_cr": 48954.8,
@@ -3601,7 +3601,7 @@
             "value": 2.23
         }
     ],
-    "date": 1631925058,
+    "date": 1632011565,
     "sold": {
         "Galaxy Surfact.": 1631752351,
         "Gillette India": 1629852432,
