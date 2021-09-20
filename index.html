@@ -63,7 +63,7 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
         const total = G.data['data'].length
 	const sell_date = new Date(Math.max(...Object.values(data['sold']))*1000).toJSON()
          $('#timestamp').html(
-            '<a href="' + data['url'] + '" target="_blank">Profitable and Growing</a> - ' +
+            '<a href="' + data['url'] + '" target="_blank">Profitable, Growing, Low Debt</a> - ' +
             'Refreshed <a href="">' + age + ' hours</a> ago - ' +
             '<a href="#sold">Recently Sold</a>')
 
