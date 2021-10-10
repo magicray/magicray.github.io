@@ -2529,11 +2529,11 @@
             "name": "Siemens",
             "np_qtr_rs_cr": 138.9,
             "p_e": 72.05,
-            "profit": 11.37,
+            "profit": 11.49,
             "qtr_profit_var": 999,
             "qtr_sales_var": 140.02,
             "rank": 141,
-            "roce": 11.37,
+            "roce": 11.49,
             "roe": 8.29,
             "sales_qtr_rs_cr": 2934.2,
             "value": 2.02
@@ -3601,7 +3601,7 @@
             "value": 2.26
         }
     ],
-    "date": 1633739502,
+    "date": 1633826086,
     "sold": {
         "Adani Ports": 1632112757,
         "Astral": 1632112757,
