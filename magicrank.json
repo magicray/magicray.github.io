@@ -2234,7 +2234,7 @@
         },
         {
             "cmp_rs": 1251.15,
-            "div_yld": 0.96,
+            "div_yld": 1.76,
             "earnings_yield": 4.9,
             "growth": 3.69,
             "mar_cap_rs_cr": 339520.21,
@@ -3601,7 +3601,7 @@
             "value": 2.31
         }
     ],
-    "date": 1634344576,
+    "date": 1634430803,
     "sold": {
         "Adani Ports": 1632112757,
         "Astral": 1632112757,
