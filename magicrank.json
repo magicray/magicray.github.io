@@ -1983,7 +1983,7 @@
         {
             "cmp_rs": 468.1,
             "div_yld": 1.17,
-            "earnings_yield": 2.78,
+            "earnings_yield": 2.75,
             "growth": 15.56,
             "mar_cap_rs_cr": 29398.52,
             "name": "Crompton Gr. Con",
@@ -1996,7 +1996,7 @@
             "roce": 35.61,
             "roe": 35.71,
             "sales_qtr_rs_cr": 1384.81,
-            "value": 2.78
+            "value": 2.75
         },
         {
             "cmp_rs": 2029.85,
@@ -3601,7 +3601,7 @@
             "value": 1.86
         }
     ],
-    "date": 1634949350,
+    "date": 1635035632,
     "sold": {
         "ACC": 1634690065,
         "Adani Ports": 1632112757,
