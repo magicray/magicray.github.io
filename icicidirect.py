@@ -9,6 +9,7 @@ class ICICIDirect():
     def __init__(self):
         url = 'https://secure.icicidirect.com'
         self.cashbuy_url = url + '/trading/equity/cashbuy'
+        self.orderbook_url = url + '/trading/equity/orderbook'
 
         self.driver = webdriver.Chrome()
         self.driver.get(url + '/customer/login')
@@ -24,11 +25,11 @@ class ICICIDirect():
     def byxpath(self, selector):
         return self.driver.find_element_by_xpath(selector)
 
-    def wait_for_cashbuy_page(self):
-        self.wait.until(lambda d: d.current_url == self.cashbuy_url)
+    def wait_for_page(self, url):
+        self.wait.until(lambda d: d.current_url == url)
 
     def buy(self, stock_code, quantity):
-        self.driver.get(self.cashbuy_url)
+        #self.driver.get(self.cashbuy_url)
         self.byxpath("//label[@for='rdonse']").click()
         self.byxpath("//label[@for='rdomarket']").click()
         self.byid('stcode').send_keys(stock_code)
@@ -43,12 +44,12 @@ if __name__ == '__main__':
     buy_list = [(s['rank'],s) for s in r.json()['data'] if s['rank'] < 101]
     buy_list = [s for _, s in buy_list]
     icici = ICICIDirect()
-    icici.wait_for_cashbuy_page()
 
-    amount = 0
-    for s in buy_list:
+    amount = 6000000
+    for s in buy_list[19:]:
         qty = int((amount/100)/s['cmp_rs'])
         code = stock_codes.get(s['name'], 'Not Found')
-        print((s['rank'], s['name'], code, s['cmp_rs'], qty, 'Press enter..'))
-        input('')        
+        print((s['rank'], s['name'], code, s['cmp_rs'], qty))
+        icici.wait_for_page(icici.cashbuy_url)
         icici.buy(code, qty)
+        icici.wait_for_page(icici.orderbook_url)
