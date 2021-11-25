@@ -24,7 +24,7 @@
         <table id="rank" class="table compact table-striped table-bordered">
             <thead>
                 <tr>
-                <th rowspan=2 colspan=2></th>
+                <th rowspan=2 colspan=3></th>
                 <th colspan=2>Profitability</th>
                 <th colspan=2>Growth</th>
                 <th colspan=2>Valuation</th>
@@ -40,6 +40,7 @@
                 </tr><tr style="position: sticky; top: 0; z-index: 1; background-color: white">
                 <th>Rank</th>
                 <th>Stock</th>
+                <th>Code</th>
                 <th>ROCE</th>
                 <th>ROE</th>
                 <th>Profit</th>
@@ -54,6 +55,12 @@
 </body>
 <script>
 const G = {}
+
+fetch('https://magicray.github.io/map.json').then(function(response) {
+    response.json().then(function(data) {
+        G.map = data
+    })
+})
 
 fetch('https://magicray.github.io/magicrank.json').then(function(response) {
     response.json().then(function(data) {
@@ -94,13 +101,15 @@ function format_data(data, count, amount) {
         const cmp = d['cmp_rs']
         const qty = amount? Math.floor(amount/(count*cmp)): ''
 
-        const name = '<div class="text-nowrap">' + d['name'].replace('.', '') +
-                     '<small> - ' + cmp + (amount > 0? ' * ' + qty: '') + 
-                     '</small></div>'
+        const name = d['name'].replace('.', '')
+        const name_html = '<div class="text-nowrap">' + name +
+                          '<small> - ' + cmp + (amount > 0? ' * ' + qty: '') + 
+                          '</small></div>'
 
         result.push([
             d['rank'],
-            name,
+            name_html,
+            G.map[name],
             Math.floor(d['roce']),
             Math.floor(d['roe']),
             Math.floor(d['qtr_profit_var']),
@@ -151,7 +160,7 @@ function renderTable(tableId, data) {
     G.rank = $('#' + tableId).dataTable({bPaginate: false, data: data, info: false,
         order: [[sort_order[0], sort_order[1]]],
         rowCallback: function(row, d, i) {
-            $(row).css('color', d[0]>100? 'Red': (d[0]>50? 'Green': 'DarkGreen'))
+            $(row).css('color', d[0]>100? 'Red': 'Green')
 	}})
 }
 </script>
