@@ -109,7 +109,7 @@ function format_data(data, count, amount) {
         result.push([
             d['rank'],
             name_html,
-            G.map[name],
+            G.map[name]? G.map[name]: '',
             Math.floor(d['roce']),
             Math.floor(d['roe']),
             Math.floor(d['qtr_profit_var']),
