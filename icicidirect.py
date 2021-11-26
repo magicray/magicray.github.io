@@ -1,6 +1,7 @@
 import time
 import json
 import requests
+import argparse
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 
@@ -29,14 +30,14 @@ class ICICIDirect():
         self.wait.until(lambda d: d.current_url == url)
 
     def buy(self, stock_code, quantity):
-        #self.driver.get(self.cashbuy_url)
+        self.driver.get(self.cashbuy_url)
         self.byxpath("//label[@for='rdonse']").click()
         self.byxpath("//label[@for='rdomarket']").click()
         self.byid('stcode').send_keys(stock_code)
         self.byid('FML_QTY').send_keys(quantity)
 
 
-if __name__ == '__main__':
+def main():
     with open('map.json') as fd:
         stock_codes = json.load(fd)
 
@@ -45,11 +46,21 @@ if __name__ == '__main__':
     buy_list = [s for _, s in buy_list]
     icici = ICICIDirect()
 
-    amount = 6000000
-    for s in buy_list[19:]:
-        qty = int((amount/100)/s['cmp_rs'])
+    for s in buy_list:
+        qty = int((ARGS.amount/100)/s['cmp_rs'])
+
+        if qty < 1:
+            continue
+
         code = stock_codes.get(s['name'], 'Not Found')
         print((s['rank'], s['name'], code, s['cmp_rs'], qty))
-        icici.wait_for_page(icici.cashbuy_url)
-        icici.buy(code, qty)
         icici.wait_for_page(icici.orderbook_url)
+        icici.buy(code, qty)
+
+
+if __name__ == '__main__':
+    ARGS = argparse.ArgumentParser()
+
+    ARGS.add_argument('--amount', dest='amount', type=int, default=0)
+    ARGS = ARGS.parse_args()
+    main()
