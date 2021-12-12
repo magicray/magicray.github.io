@@ -24,7 +24,7 @@
         <table id="rank" class="table compact table-striped table-bordered">
             <thead>
                 <tr>
-                <th rowspan=2 colspan=3></th>
+                <th colspan=3 rowspan=2></th>
                 <th colspan=2>Profitability</th>
                 <th colspan=2>Growth</th>
                 <th colspan=2>Valuation</th>
@@ -151,7 +151,7 @@ function render() {
 
 function renderTable(tableId, data) {
     ['roce', 'roe', 'profit', 'sales', 'yield', 'pe', 'mcap'].map((name, index) => {
-	let arr = data.map(d => d[index+2]).sort(function(a, b){ return a - b})
+	let arr = data.map(d => d[index+3]).sort(function(a, b){ return a - b})
         $('#' + name).text(arr[Math.floor(arr.length/2)])
     })
 
