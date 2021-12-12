@@ -38,8 +38,8 @@ class ICICIDirect():
 
 
 def main():
-    with open('map.json') as fd:
-        stock_codes = json.load(fd)
+    r = requests.get('https://magicray.github.io/map.json', verify=False)
+    stock_codes = r.json()
 
     r = requests.get('https://magicray.github.io/magicrank.json', verify=False)
     buy_list = [(s['rank'],s) for s in r.json()['data'] if s['rank'] < 101]
