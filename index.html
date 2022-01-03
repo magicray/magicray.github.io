@@ -101,7 +101,7 @@ function format_data(data, count, amount) {
         const cmp = d['cmp_rs']
         const qty = amount? Math.floor(amount/(count*cmp)): ''
 
-        const name = d['name'].replace('.', '')
+        const name = d['name'].replaceAll('.', '')
         const name_html = '<div class="text-nowrap">' + name +
                           '<small> - ' + cmp + (amount > 0? ' * ' + qty: '') + 
                           '</small></div>'
