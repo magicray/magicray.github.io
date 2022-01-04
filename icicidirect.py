@@ -44,18 +44,21 @@ def main():
     r = requests.get('https://magicray.github.io/magicrank.json', verify=False)
     buy_list = [(s['rank'],s) for s in r.json()['data'] if s['rank'] < 101]
     buy_list = [s for _, s in buy_list]
-    icici = ICICIDirect()
+
+    if ARGS.amount > 0:
+        icici = ICICIDirect()
 
     for s in buy_list:
         qty = int((ARGS.amount/100)/s['cmp_rs'])
-
-        if qty < 1:
-            continue
-
-        code = stock_codes.get(s['name'], 'Not Found')
+        code = stock_codes.get(s['name'].replace('.', ''), 'CODE NOT FOUND')
         print((s['rank'], s['name'], code, s['cmp_rs'], qty))
+
+        if qty > 0:
+            icici.wait_for_page(icici.orderbook_url)
+            icici.buy(code, qty)
+
+    if ARGS.amount > 0:
         icici.wait_for_page(icici.orderbook_url)
-        icici.buy(code, qty)
 
 
 if __name__ == '__main__':
