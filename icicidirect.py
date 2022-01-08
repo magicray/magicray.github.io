@@ -1,5 +1,3 @@
-import time
-import json
 import requests
 import argparse
 from selenium import webdriver
@@ -42,7 +40,7 @@ def main():
     stock_codes = r.json()
 
     r = requests.get('https://magicray.github.io/magicrank.json', verify=False)
-    buy_list = [(s['rank'],s) for s in r.json()['data'] if s['rank'] < 101]
+    buy_list = [(s['rank'], s) for s in r.json()['data'] if s['rank'] < 101]
     buy_list = [s for _, s in buy_list]
 
     if ARGS.amount > 0:
@@ -50,7 +48,7 @@ def main():
 
     for s in buy_list:
         qty = int((ARGS.amount/100)/s['cmp_rs'])
-        code = stock_codes.get(s['name'].replace('.', ''), 'CODE NOT FOUND')
+        code = stock_codes[s['name'].replace('.', '')]
         print((s['rank'], s['name'], code, s['cmp_rs'], qty))
 
         if qty > 0:
