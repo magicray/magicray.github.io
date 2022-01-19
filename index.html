@@ -72,15 +72,10 @@
 <script>
 const G = {}
 
-fetch('https://magicray.github.io/map.json').then(function(response) {
-    response.json().then(function(data) {
-        G.map = data
-    })
-})
-
 fetch('https://magicray.github.io/magicrank.json').then(function(response) {
     response.json().then(function(data) {
         G.data = data
+        G.map = data['symbols']
 
         const age = Math.floor((Date.now() / 1000 - data['date'])/3600)
         const total = G.data['data'].length
