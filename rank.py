@@ -235,7 +235,7 @@ def portfolio(args):
         json.dump(dict(
                 data=stock_list,
                 date=int(time.time()),
-                symbol=prev['symbols'],
+                symbol=prev['symbol'],
                 sold={k: v for k, v in sold.items() if v+86400*90 > ts},
                 url='https://www.screener.in/screens/' + args.screen),
             fd, sort_keys=True, indent=4)
