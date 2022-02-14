@@ -740,7 +740,7 @@
         },
         {
             "cmp_rs": 1379.95,
-            "div_yld": 2.17,
+            "div_yld": 2.9,
             "earnings_yield": 14.91,
             "growth": 8.6,
             "mar_cap_rs_cr": 46143.8,
@@ -812,7 +812,7 @@
         },
         {
             "cmp_rs": 517.85,
-            "div_yld": 1.21,
+            "div_yld": 1.69,
             "earnings_yield": 11.57,
             "growth": 5.71,
             "mar_cap_rs_cr": 20407.67,
@@ -1946,7 +1946,7 @@
         },
         {
             "cmp_rs": 39803.3,
-            "div_yld": 0.63,
+            "div_yld": 0.75,
             "earnings_yield": 1.47,
             "growth": 13.58,
             "mar_cap_rs_cr": 44380.68,
@@ -3601,7 +3601,7 @@
             "value": 2.23
         }
     ],
-    "date": 1644712812,
+    "date": 1644798962,
     "sold": {
         "APL Apollo Tubes": 1643157555,
         "Adani Green": 1643848490,
@@ -3629,7 +3629,6 @@
         "G R Infraproject": 1644626388,
         "Glaxosmi. Pharma": 1644280602,
         "Glenmark Life": 1639874293,
-        "Godawari Power": 1637022799,
         "Greenpanel Inds.": 1638664612,
         "H.G. Infra Engg.": 1638328949,
         "Happiest Minds": 1643416359,
