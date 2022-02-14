@@ -27,12 +27,21 @@ class ICICIDirect():
     def wait_for_page(self, url):
         self.wait.until(lambda d: d.current_url == url)
 
+    def wait_for_buy_button(self):
+        self.wait.until(lambda d: d.find_element_by_xpath(
+            "//input[@type='button' and @value='Buy']"))
+
+    def wait_for_place_another_order_button(self):
+        self.wait.until(lambda d: d.find_element_by_xpath(
+            "//input[@type='button' and @value='Place another order']"))
+
     def buy(self, stock_code, quantity):
         self.driver.get(self.cashbuy_url)
         self.byxpath("//label[@for='rdonse']").click()
         self.byxpath("//label[@for='rdomarket']").click()
         self.byid('stcode').send_keys(stock_code)
         self.byid('FML_QTY').send_keys(quantity)
+        self.byxpath("//input[@type='button' and @value='Buy']").click()
 
 
 def main():
@@ -53,11 +62,13 @@ def main():
         print((s['rank'], s['name'], code, s['cmp_rs'], qty))
 
         if qty > 0:
-            icici.wait_for_page(icici.orderbook_url)
+            # icici.wait_for_page(icici.orderbook_url)
+            icici.wait_for_buy_button()
             icici.buy(code, qty)
+            icici.wait_for_place_another_order_button()
 
-    if ARGS.amount > 0:
-        icici.wait_for_page(icici.orderbook_url)
+    # if ARGS.amount > 0:
+    #     icici.wait_for_page(icici.orderbook_url)
 
 
 if __name__ == '__main__':
