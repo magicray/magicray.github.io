@@ -81,12 +81,16 @@ def portfolio(args):
     # Return on equity > 0 AND
     # Return on capital employed > 0 AND
     # YOY Quarterly sales growth > 0 AND
-    # YOY Quarterly profit growth  > 0 AND
-
+    #
+    # Return on assets > 0 AND
     # NPM latest quarter > 0 AND
     # OPM latest quarter > 0 AND
     # GPM latest quarter > 0 AND
-    # Market Capitalization > 1000
+    #
+    # Net worth > 0 AND
+    # Debt to equity < 1 AND
+    # Interest Coverage Ratio > 1 AND
+    # Market Capitalization > 5000
 
     filename = 'investible.json'
     try:
@@ -106,9 +110,9 @@ def portfolio(args):
         if all('' != y for y in v.values()):
             tmp[k] = v
 
-        v['value'] = max(v['earnings_yield'], 100/v['p_e'])
-        v['profit'] = max(v['roce'], v['roe'])
-        v['growth'] = min(v['qtr_profit_var'], v['qtr_sales_var'])
+        # v['value'] = max(v['earnings_yield'], 100/v['p_e'])
+        # v['profit'] = max(v['roce'], v['roe'])
+        # v['growth'] = min(v['qtr_profit_var'], v['qtr_sales_var'])
 
     mcaps = sorted([v['mar_cap_rs_cr'] for v in tmp.values()], reverse=True)
     threshold = mcaps[min(args.top, len(mcaps)-1)]
@@ -124,22 +128,23 @@ def portfolio(args):
                'earnings_yield', 'p_e',
                'mar_cap_rs_cr', 'cmp_rs')
 
-    # roe = rank('roe', data)
-    # roce = rank('roce', data)
-    # pe = rank('p_e', data, False)
-    # e_yield = rank('earnings_yield', data)
-    profit = rank('profit', data)
-    growth = rank('growth', data)
-    value = rank('value', data)
+    roe = rank('roe', data)
+    roce = rank('roce', data)
+    sales = rank('qtr_sales_var', data)
+    pe = rank('p_e', data, False)
+    e_yield = rank('earnings_yield', data)
+    # profit = rank('profit', data)
+    # growth = rank('growth', data)
+    # value = rank('value', data)
 
     stats = {f: median(f, data) for f in columns}
 
     final_rank = [(
-        # roce[name] + roe[name] +   # Quality
-        # 2*growth[name] +           # Growth
-        # pe[name] + e_yield[name],  # Value
-        profit[name] + growth[name] + value[name],
-        name) for name in profit]
+        roce[name] + roe[name] +   # Quality
+        2*sales[name] +            # Growth
+        pe[name] + e_yield[name],  # Value
+        # profit[name] + growth[name] + value[name],
+        name) for name in roe]
 
     def print_header():
         headers = '{:16s}' + '{:>8s}' * 9
