@@ -1,0 +1,495 @@
+Quant Small Cap Fund – 91.73% – AUM Rs. 1271 Cr.
+Quant Infrastructure Fund – 84.2% – AUM Rs. 239 Cr.
+L&T Emerging Businesses Fund – 79.3% – AUM Rs. 7686 Cr.
+ICICI Prudential Technology Fund – 77.76% – AUM Rs. 7387 Cr.
+Principal Small Cap Fund – 77.31% – AUM Rs. 513 Cr.
+Tata Digital India Fund – 77.28% – AUM Rs. 4195 Cr.
+Nippon India Small Cap Fund – 75.87% – AUM Rs. 17555 Cr.
+Canara Robeco Small Cap Fund – 73.82% – AUM Rs. 1755 Cr.
+BOI AXA Small Cap Fund – 73.72% – AUM Rs. 197 Cr.
+Tata Small Cap Fund – 73.59% – AUM Rs. 1765 Cr.
+Kotak Small Cap Fund – 73.47% – AUM Rs. 6509 Cr.
+ICICI Prudential Commodities Fund – 72.75% – AUM Rs. 656 Cr.
+Aditya Birla Sun Life Digital India Fund – 72.53% – AUM Rs. 2842 Cr.
+Edelweiss Small Cap Fund – 70.22% – AUM Rs. 1085 Cr.
+HSBC Small Cap Equity Fund – 68.88% – AUM Rs. 341 Cr.
+SBI Technology Opportunities Fund – 68.47% – AUM Rs. 2057 Cr.
+PGIM India Midcap Opportunities Fund – 66.92% – AUM Rs. 3585 Cr.
+IDFC Infrastructure Fund – 66.89% – AUM Rs. 651 Cr.
+HDFC Small Cap Fund – 66.49% – AUM Rs. 12990 Cr.
+Quant ESG Equity Fund – 66.38% – AUM Rs. 28 Cr.
+IDBI Small Cap Fund – 66.32% – AUM Rs. 133 Cr.
+IDFC Sterling Value Fund – 66.24% – AUM Rs. 4114 Cr.
+Invesco India Smallcap Fund – 64.99% – AUM Rs. 1231 Cr.
+Union Small Cap Fund – 63.37% – AUM Rs. 564 Cr.
+ICICI Prudential Smallcap Fund – 63.29% – AUM Rs. 3357 Cr.
+Quant Tax Plan – 63.27% – AUM Rs. 555 Cr.
+SBI ETF IT – 62.03% – AUM Rs. 971 Cr.
+Sundaram Small Cap Fund – 61.97% – AUM Rs. 1529 Cr.
+Nippon India ETF Nifty IT – 61.89% – AUM Rs. 845 Cr.
+ICICI Prudential IT ETF – 61.66% – AUM Rs. 2456 Cr.
+Nippon India Nifty Smallcap 250 Index Fund – 61.37% – AUM Rs. 237 Cr.
+Motilal Oswal Nifty Smallcap 250 Index Fund – 61.24% – AUM Rs. 223 Cr.
+Axis Small Cap Fund – 60.71% – AUM Rs. 7695 Cr.
+DSP Small Cap Fund – 60.3% – AUM Rs. 8353 Cr.
+HSBC Infrastructure Equity Fund – 59.65% – AUM Rs. 110 Cr.
+Kotak Infrastructure and Economic Reform Fund – Standard Plan – 59.43% – AUM Rs. 470 Cr.
+Baroda Midcap Fund – 59.4% – AUM Rs. 87 Cr.
+Quant Active Fund – 58.68% – AUM Rs. 1459 Cr.
+UTI Small Cap Fund – 58.5% – AUM Rs. 1912 Cr.
+Quant Consumption Fund – 58.27% – AUM Rs. 39 Cr.
+Edelweiss Recently Listed IPO Fund – 58.01% – AUM Rs. 1030 Cr.
+L&T Infrastructure Fund – 57.94% – AUM Rs. 1329 Cr.
+Motilal Oswal Midcap 30 Fund – 57.78% – AUM Rs. 2506 Cr.
+Canara Robeco Infrastructure Fund – 57.68% – AUM Rs. 175 Cr.
+Franklin India Smaller Companies Fund – 57.68% – AUM Rs. 7230 Cr.
+Invesco India Infrastructure Fund – 57.25% – AUM Rs. 370 Cr.
+IDFC Emerging Businesses Fund – 55.38% – AUM Rs. 1367 Cr.
+Tata Infrastructure Fund – 54.78% – AUM Rs. 766 Cr.
+BOI AXA Manufacturing & Infrastructure Fund – 54.41% – AUM Rs. 67 Cr.
+Union Midcap Fund – 53.98% – AUM Rs. 349 Cr.
+Quant Mid Cap Fund – 53.85% – AUM Rs. 222 Cr.
+SBI Magnum Midcap Fund – 53.63% – AUM Rs. 6588 Cr.
+Mahindra Manulife Multi Cap Badhat Yojana – 53.51% – AUM Rs. 864 Cr.
+SBI Magnum COMMA Fund – 52.94% – AUM Rs. 447 Cr.
+Aditya Birla Sun Life Small Cap Fund – 52.88% – AUM Rs. 2879 Cr.
+DSP T.I.G.E.R. Fund – 52.62% – AUM Rs. 1328 Cr.
+Edelweiss Mid Cap Fund – 52.45% – AUM Rs. 1742 Cr.
+Mahindra Manulife Mid Cap Unnati Yojana – 52.3% – AUM Rs. 821 Cr.
+Aditya Birla Sun Life Mid Cap Fund – 51.71% – AUM Rs. 3332 Cr.
+ICICI Prudential India Opportunities Fund – 51.33% – AUM Rs. 4098 Cr.
+SBI Contra Fund – 50.98% – AUM Rs. 3339 Cr.
+IDFC Tax Advantage (ELSS) Fund – 50.88% – AUM Rs. 3355 Cr.
+ICICI Prudential Infrastructure Fund – 50.82% – AUM Rs. 1395 Cr.
+Mirae Asset Midcap Fund – 50.6% – AUM Rs. 6748 Cr.
+Sundaram Infrastructure Advantage Fund – 50.24% – AUM Rs. 624 Cr.
+Nippon India Multi Cap Fund – 49.87% – AUM Rs. 10818 Cr.
+Nippon India Power & Infra Fund – 49.69% – AUM Rs. 1664 Cr.
+ICICI Prudential Retirement Fund – Pure Equity Plan – 49.34% – AUM Rs. 140 Cr.
+SBI Infrastructure Fund – 49.26% – AUM Rs. 746 Cr.
+Kotak Emerging Equity Fund – 49.17% – AUM Rs. 16705 Cr.
+Baroda Multi Cap Fund – 49.14% – AUM Rs. 1129 Cr.
+SBI Small Cap Fund – 49.11% – AUM Rs. 10878 Cr.
+Tata Resources & Energy Fund – 49.05% – AUM Rs. 152 Cr.
+ICICI Prudential Dividend Yield Equity Fund – 48.66% – AUM Rs. 543 Cr.
+BOI AXA Flexi Cap Fund – 48.53% – AUM Rs. 161 Cr.
+LIC MF Infrastructure Fund – 48.51% – AUM Rs. 79 Cr.
+Mahindra Manulife Top 250 Nivesh Yojana – 48.04% – AUM Rs. 484 Cr.
+Principal Midcap Fund – 47.78% – AUM Rs. 450 Cr.
+ICICI Prudential Midcap 150 ETF – 47.73% – AUM Rs. 101 Cr.
+Nippon India ETF Nifty Midcap 150 – 47.6% – AUM Rs. 447 Cr.
+Nippon India Growth Fund – 47.56% – AUM Rs. 11573 Cr.
+Franklin Build India Fund – 47.37% – AUM Rs. 1111 Cr.
+Principal Multi Cap Growth Fund – 47.35% – AUM Rs. 857 Cr.
+Navi Large & Midcap Fund – 47.12% – AUM Rs. 135 Cr.
+Parag Parikh Flexi Cap Fund – 46.97% – AUM Rs. 18299 Cr.
+Motilal Oswal Nifty Midcap 150 Index Fund – 46.89% – AUM Rs. 393 Cr.
+Motilal Oswal Midcap 100 Exchange Traded Fund – 46.83% – AUM Rs. 83 Cr.
+Sundaram Services Fund – 46.78% – AUM Rs. 1948 Cr.
+Axis Growth Opportunities Fund – 46.68% – AUM Rs. 5214 Cr.
+Tata Ethical Fund – 46.56% – AUM Rs. 1126 Cr.
+ICICI Prudential Manufacturing Fund – 46.5% – AUM Rs. 583 Cr.
+PGIM India Flexi Cap Fund – 46.45% – AUM Rs. 2888 Cr.
+ICICI Prudential Thematic Advantage Fund (FOF) – 46.25% – AUM Rs. 130 Cr.
+ICICI Prudential Midcap Fund – 46.16% – AUM Rs. 3138 Cr.
+ICICI Prudential Quant Fund – 46.12% – AUM Rs. 75 Cr.
+CPSE Exchange Traded Fund – 46% – AUM Rs. 15820 Cr.
+Aditya Birla Sun Life Infrastructure Fund – 45.88% – AUM Rs. 535 Cr.
+Templeton India Value Fund – 45.8% – AUM Rs. 602 Cr.
+Baroda Large & Mid Cap Fund – 45.29% – AUM Rs. 621 Cr.
+Invesco India Mid Cap Fund – 45.24% – AUM Rs. 2059 Cr.
+SBI Focused Equity Fund – 44.53% – AUM Rs. 23093 Cr.
+UTI Mid Cap Fund – 44.44% – AUM Rs. 6664 Cr.
+HDFC Retirement Savings Fund Equity Plan – 44.27% – AUM Rs. 1958 Cr.
+HDFC Dividend Yield Fund – 44.24% – AUM Rs. 2757 Cr.
+HDFC Infrastructure Fund – 44.15% – AUM Rs. 583 Cr.
+Templeton India Equity Income Fund – 44.12% – AUM Rs. 1198 Cr.
+ICICI Prudential India Equity FOF – 44.11% – AUM Rs. 44 Cr.
+HDFC Large and Mid Cap Fund – 43.96% – AUM Rs. 3519 Cr.
+Sundaram Large and Mid Cap Fund – 43.83% – AUM Rs. 1823 Cr.
+BNP Paribas Midcap Fund – 43.67% – AUM Rs. 1053 Cr.
+Nippon India ETF PSU Bank BeES – 43.64% – AUM Rs. 383 Cr.
+Kotak PSU Bank ETF – 43.44% – AUM Rs. 182 Cr.
+Motilal Oswal Large and Midcap Fund – 43.22% – AUM Rs. 1027 Cr.
+Invesco India Focused 20 Equity Fund – 43.16% – AUM Rs. 1455 Cr.
+DSP Natural Resources and New Energy Fund – 42.97% – AUM Rs. 740 Cr.
+BOI AXA Tax Advantage Fund – 42.9% – AUM Rs. 517 Cr.
+ICICI Prudential MNC Fund – 42.89% – AUM Rs. 973 Cr.
+ICICI Prudential Large & Mid Cap Fund – 42.87% – AUM Rs. 3575 Cr.
+Invesco India Multicap Fund – 42.54% – AUM Rs. 1713 Cr.
+Mahindra Manulife Focused Equity Yojana – 42.27% – AUM Rs. 443 Cr.
+Axis Midcap Fund – 41.78% – AUM Rs. 16101 Cr.
+HDFC Focused 30 Fund – 41.78% – AUM Rs. 912 Cr.
+Mahindra Manulife ELSS Kar Bachat Yojana – 41.75% – AUM Rs. 411 Cr.
+Tata Midcap Growth Fund – 41.73% – AUM Rs. 1456 Cr.
+L&T India Value Fund – 41.68% – AUM Rs. 7604 Cr.
+Mirae Asset Focused Fund – 41.62% – AUM Rs. 7967 Cr.
+UTI Core Equity Fund – 41.52% – AUM Rs. 1179 Cr.
+Franklin India Flexi Cap Fund – 41.32% – AUM Rs. 10021 Cr.
+HDFC Mid-Cap Opportunities Fund – 40.88% – AUM Rs. 30782 Cr.
+SBI Magnum Global Fund – 40.71% – AUM Rs. 5429 Cr.
+Baroda ELSS 96 Fund – 40.65% – AUM Rs. 209 Cr.
+Mirae Asset Emerging Bluechip Fund – 40.57% – AUM Rs. 21231 Cr.
+Franklin India Focused Equity Fund – 40.53% – AUM Rs. 7657 Cr.
+Principal Emerging Bluechip Fund – 40.44% – AUM Rs. 3124 Cr.
+SBI Large & Midcap Fund – 40.4% – AUM Rs. 5362 Cr.
+BNP Paribas Multi Cap Fund – 40.35% – AUM Rs. 580 Cr.
+Nippon India Value Fund – 40.31% – AUM Rs. 4179 Cr.
+Franklin India Technology Fund – 40.12% – AUM Rs. 745 Cr.
+Franklin India Equity Advantage Fund – 40.07% – AUM Rs. 2856 Cr.
+Union Large & Midcap Fund – 40.05% – AUM Rs. 282 Cr.
+BHARAT 22 ETF – 40% – AUM Rs. 7803 Cr.
+Aditya Birla Sun Life ESG Fund – 39.9% – AUM Rs. 1117 Cr.
+Aditya Birla Sun Life PSU Equity Fund – 39.9% – AUM Rs. 812 Cr.
+ICICI Prudential BHARAT 22 FOF – 39.76% – AUM Rs. 47 Cr.
+UTI Infrastructure Fund – 39.76% – AUM Rs. 1466 Cr.
+UTI Dividend Yield Fund – 39.66% – AUM Rs. 3021 Cr.
+Sundaram Equity Fund – 39.64% – AUM Rs. 828 Cr.
+Aditya Birla Sun Life Equity Advantage Fund – 39.46% – AUM Rs. 6009 Cr.
+Quant Large and Mid Cap Fund – 39.29% – AUM Rs. 39 Cr.
+ICICI Prudential Value Discovery Fund – 39.27% – AUM Rs. 21801 Cr.
+Edelweiss Large & Mid Cap Fund – 39.11% – AUM Rs. 1057 Cr.
+PGIM India Long Term Equity Fund – 39.07% – AUM Rs. 330 Cr.
+Taurus Infrastructure Fund – 38.78% – AUM Rs. 5 Cr.
+Canara Robeco Emerging Equities Fund – 38.66% – AUM Rs. 11734 Cr.
+Quant Focused Fund – 38.6% – AUM Rs. 53 Cr.
+Sundaram Mid Cap Fund – 38.6% – AUM Rs. 6755 Cr.
+Nippon India Tax Saver (ELSS) Fund – 38.58% – AUM Rs. 11885 Cr.
+Kotak Pioneer Fund – 38.48% – AUM Rs. 1537 Cr.
+IDBI Flexi Cap Fund – 38.44% – AUM Rs. 375 Cr.
+Union Flexi Cap Fund – 38.27% – AUM Rs. 852 Cr.
+Parag Parikh Tax Saver Fund – 37.97% – AUM Rs. 337 Cr.
+IIFL Focused Equity Fund – 37.91% – AUM Rs. 2469 Cr.
+Franklin India Taxshield Fund – 37.85% – AUM Rs. 4921 Cr.
+ICICI Prudential Focused Equity Fund – 37.81% – AUM Rs. 2426 Cr.
+IDBI Midcap Fund – 37.8% – AUM Rs. 204 Cr.
+ICICI Prudential Multicap Fund – 37.62% – AUM Rs. 6373 Cr.
+Nippon India Focused Equity Fund – 37.47% – AUM Rs. 5638 Cr.
+HSBC Large and Mid Cap Equity Fund – 37.39% – AUM Rs. 507 Cr.
+JM Value Fund – 37.17% – AUM Rs. 155 Cr.
+Mirae Asset Tax Saver Fund – 37.15% – AUM Rs. 10087 Cr.
+Aditya Birla Sun Life Dividend Yield Fund – 37.11% – AUM Rs. 832 Cr.
+Edelweiss Flexi Cap Fund – 37.07% – AUM Rs. 862 Cr.
+SBI Consumption Opportunities Fund – 37.03% – AUM Rs. 877 Cr.
+HDFC Flexi Cap Fund – 37% – AUM Rs. 26106 Cr.
+ICICI Prudential NV20 ETF – 36.99% – AUM Rs. 26 Cr.
+Kotak NV 20 ETF – 36.88% – AUM Rs. 28 Cr.
+HDFC Capital Builder Value Fund – 36.87% – AUM Rs. 5235 Cr.
+Canara Robeco Equity Tax Saver Fund – 36.81% – AUM Rs. 2876 Cr.
+Union Long Term Equity Fund – 36.65% – AUM Rs. 443 Cr.
+Nippon India ETF NV20 – 36.52% – AUM Rs. 41 Cr.
+Kotak Focused Equity Fund – 36.51% – AUM Rs. 2171 Cr.
+DSP Tax Saver Fund – 36.41% – AUM Rs. 9420 Cr.
+HDFC Taxsaver Fund – 36.05% – AUM Rs. 9257 Cr.
+ICICI Prudential Exports and Services Fund – 36% – AUM Rs. 906 Cr.
+L&T Business Cycles Fund – 35.97% – AUM Rs. 560 Cr.
+Nippon India ETF Infra BeES – 35.78% – AUM Rs. 30 Cr.
+IDFC Core Equity Fund – 35.7% – AUM Rs. 2417 Cr.
+Aditya Birla Sun Life Pure Value Fund – 35.68% – AUM Rs. 4018 Cr.
+Axis Special Situations Fund – 35.52% – AUM Rs. 2601 Cr.
+HSBC Flexi Cap Fund – 35.51% – AUM Rs. 394 Cr.
+LIC MF Large & Mid Cap Fund – 35.49% – AUM Rs. 1501 Cr.
+Union Focused Fund – 35.44% – AUM Rs. 277 Cr.
+Navi Flexi Cap Fund – 35.42% – AUM Rs. 203 Cr.
+Tata Focused Equity Fund – 35.41% – AUM Rs. 1179 Cr.
+IDBI Long Term Value Fund – 35.28% – AUM Rs. 104 Cr.
+Mirae Asset Great Consumer Fund – 35.18% – AUM Rs. 1597 Cr.
+Aditya Birla Sun Life Special Opportunities Fund – 35.16% – AUM Rs. 650 Cr.
+BOI AXA Large & Mid Cap Equity Fund – 35.11% – AUM Rs. 205 Cr.
+Kotak Tax Saver – 35.05% – AUM Rs. 2335 Cr.
+Principal Focused Multicap Fund – 35% – AUM Rs. 677 Cr.
+UTI Flexi Cap Fund – 35% – AUM Rs. 24521 Cr.
+ITI Small Cap Fund – 34.93% – AUM Rs. 405 Cr.
+ICICI Prudential Long Term Equity Fund (Tax Saving) – 34.65% – AUM Rs. 9744 Cr.
+Nippon India Vision Fund – 34.43% – AUM Rs. 3162 Cr.
+Invesco India Largecap Fund – 34.42% – AUM Rs. 428 Cr.
+Canara Robeco Flexi Cap Fund – 34.4% – AUM Rs. 6168 Cr.
+UTI Long Term Equity Fund – 34.37% – AUM Rs. 2977 Cr.
+Tata Young Citizens Fund – 34.32% – AUM Rs. 269 Cr.
+Invesco India Tax Plan – 34.21% – AUM Rs. 1859 Cr.
+DSP Equal Nifty 50 Fund – 34.16% – AUM Rs. 247 Cr.
+UTI Children’s Career Fund-Investment Plan – 34.1% – AUM Rs. 588 Cr.
+JM Flexicap Fund – 33.98% – AUM Rs. 186 Cr.
+DSP Flexi Cap Fund – 33.87% – AUM Rs. 7350 Cr.
+HSBC Tax Saver Equity Fund – 33.83% – AUM Rs. 194 Cr.
+Motilal Oswal Long Term Equity Fund – 33.77% – AUM Rs. 2310 Cr.
+SBI PSU Fund – 33.77% – AUM Rs. 426 Cr.
+Franklin India Bluechip Fund – 33.72% – AUM Rs. 6620 Cr.
+Tata Large Cap Fund – 33.7% – AUM Rs. 1074 Cr.
+Franklin India Prima Fund – 33.67% – AUM Rs. 7761 Cr.
+Nippon India ETF Dividend Opportunities – 33.45% – AUM Rs. 4 Cr.
+Nippon India Retirement Fund – Wealth Creation Scheme – 33.45% – AUM Rs. 2317 Cr.
+Nippon India Large Cap Fund – 33.42% – AUM Rs. 10800 Cr.
+Union Value Discovery Fund – 33.2% – AUM Rs. 132 Cr.
+Nippon India Consumption Fund – 33.19% – AUM Rs. 180 Cr.
+Taurus Discovery (Midcap) Fund – 33.19% – AUM Rs. 74 Cr.
+Sundaram Smart NIFTY 100 Equal Weight Fund – 33.17% – AUM Rs. 38 Cr.
+Aditya Birla Sun Life Commodity Equities Fund – Global Agri Plan – 33.16% – AUM Rs. 16 Cr.
+IDFC Flexi Cap Fund – 33.15% – AUM Rs. 5858 Cr.
+JM Tax Gain Fund – 33.15% – AUM Rs. 64 Cr.
+Principal Dividend Yield Fund – 33.12% – AUM Rs. 231 Cr.
+Invesco India PSU Equity Fund – 32.94% – AUM Rs. 355 Cr.
+IDBI India Top 100 Equity Fund – 32.86% – AUM Rs. 540 Cr.
+Principal Tax Savings Fund – 32.76% – AUM Rs. 588 Cr.
+Principal Nifty 100 Equal Weight Fund – 32.59% – AUM Rs. 17 Cr.
+Edelweiss Long Term Equity Fund (Tax Savings) – 32.57% – AUM Rs. 195 Cr.
+ICICI Prudential Midcap Select ETF – 32.52% – AUM Rs. 28 Cr.
+DSP Equity Opportunities Fund – 32.44% – AUM Rs. 6647 Cr.
+Nippon India Quant Fund – 32.37% – AUM Rs. 31 Cr.
+Tata India Tax Savings Fund – 32.06% – AUM Rs. 2889 Cr.
+SBI Flexicap Fund – 32.05% – AUM Rs. 15172 Cr.
+Kotak Equity Opportunities Fund – 32.03% – AUM Rs. 8163 Cr.
+Mahindra Manulife Large Cap Pragati Yojana – 31.99% – AUM Rs. 134 Cr.
+DSP Value Fund – 31.97% – AUM Rs. 557 Cr.
+HSBC Focused Equity Fund – 31.94% – AUM Rs. 565 Cr.
+Kotak India EQ Contra Fund – 31.94% – AUM Rs. 1153 Cr.
+Canara Robeco Consumer Trends Fund – 31.9% – AUM Rs. 741 Cr.
+L&T Midcap Fund – 31.89% – AUM Rs. 6667 Cr.
+SBI Long Term Equity Fund – 31.86% – AUM Rs. 10731 Cr.
+Navi Long Term Advantage Fund – 31.85% – AUM Rs. 63 Cr.
+IDBI Dividend Yield Fund – 31.77% – AUM Rs. 97 Cr.
+Quantum India ESG Equity Fund – 31.48% – AUM Rs. 55 Cr.
+L&T Large and Midcap Fund – 31.46% – AUM Rs. 1467 Cr.
+Invesco India Growth Opportunities Fund – 31.44% – AUM Rs. 4032 Cr.
+Aditya Birla Sun Life Flexi Cap Fund – 31.38% – AUM Rs. 15514 Cr.
+SBI Magnum Equity ESG Fund – 31.35% – AUM Rs. 4492 Cr.
+UTI Value Opportunities Fund – 31.35% – AUM Rs. 6469 Cr.
+Aditya Birla Sun Life Global Excellence Equity FoF – 31.32% – AUM Rs. 153 Cr.
+ICICI Prudential S&P BSE 500 ETF – 31.29% – AUM Rs. 65 Cr.
+Invesco India Contra Fund – 31.26% – AUM Rs. 8270 Cr.
+HDFC Housing Opportunities Fund – 31.24% – AUM Rs. 1435 Cr.
+Aditya Birla Sun Life India GenNext Fund – 31.22% – AUM Rs. 2523 Cr.
+L&T Tax Advantage Fund – 31.22% – AUM Rs. 3457 Cr.
+SBI ETF Sensex Next 50 – 30.85% – AUM Rs. 6 Cr.
+UTI Mastershare Fund – 30.76% – AUM Rs. 9356 Cr.
+ICICI Prudential Passive Strategy Fund (FOF) – 30.71% – AUM Rs. 88 Cr.
+Mirae Asset Nifty Next 50 ETF – 30.7% – AUM Rs. 82 Cr.
+Nippon India ETF Shariah BeES – 30.7% – AUM Rs. 13 Cr.
+Quantum Equity FoF Fund – 30.7% – AUM Rs. 75 Cr.
+UTI Nifty Next 50 Exchange Traded Fund – 30.68% – AUM Rs. 603 Cr.
+Nippon India Banking & Financial Services Fund – 30.66% – AUM Rs. 3078 Cr.
+DSP World Energy Fund – 30.65% – AUM Rs. 178 Cr.
+ICICI Prudential Nifty Next 50 ETF – 30.65% – AUM Rs. 217 Cr.
+UTI S&P BSE Sensex Next 50 ETF – 30.65% – AUM Rs. 5 Cr.
+Motilal Oswal Nifty 500 Fund – 30.63% – AUM Rs. 236 Cr.
+Aditya Birla Sun Life Nifty Next 50 ETF – 30.57% – AUM Rs. 108 Cr.
+SBI ETF Nifty Next 50 Fund – 30.56% – AUM Rs. 948 Cr.
+Franklin India Opportunities Fund – 30.55% – AUM Rs. 687 Cr.
+Nippon India ETF Sensex Next 50 – 30.53% – AUM Rs. 19 Cr.
+Nippon India ETF Junior BeES – 30.46% – AUM Rs. 2155 Cr.
+IDBI Nifty Junior Index Fund – 30.37% – AUM Rs. 56 Cr.
+UTI Nifty Next 50 Index Fund – 30.27% – AUM Rs. 1424 Cr.
+Nippon India Junior BeES FoF – 30.23% – AUM Rs. 91 Cr.
+ICICI Prudential Alpha Low Vol 30 ETF – 30.22% – AUM Rs. 139 Cr.
+DSP Nifty Next 50 Index Fund – 30.21% – AUM Rs. 164 Cr.
+L&T Nifty Next 50 Index Fund – 30.21% – AUM Rs. 40 Cr.
+Motilal Oswal S&P 500 Index Fund – 30.16% – AUM Rs. 2566 Cr.
+ICICI Prudential Nifty Next 50 Index Fund – 30.1% – AUM Rs. 1732 Cr.
+Taurus Ethical Fund – 30.06% – AUM Rs. 73 Cr.
+Sundaram Large Cap Fund – 30.02% – AUM Rs. 1211 Cr.
+Motilal Oswal Nifty Next 50 Index Fund – 29.98% – AUM Rs. 95 Cr.
+ICICI Prudential Bluechip Fund – 29.96% – AUM Rs. 30122 Cr.
+Motilal Oswal NASDAQ 100 Exchange Traded Fund – 29.96% – AUM Rs. 6100 Cr.
+Axis Flexi Cap Fund – 29.93% – AUM Rs. 10823 Cr.
+Tata Large & Mid Cap Fund – 29.91% – AUM Rs. 2680 Cr.
+Navi Large Cap Equity Fund – 29.86% – AUM Rs. 105 Cr.
+DSP Midcap Fund – 29.58% – AUM Rs. 13785 Cr.
+Tata Equity PE Fund – 29.39% – AUM Rs. 5001 Cr.
+Union Largecap Fund – 29.33% – AUM Rs. 212 Cr.
+Kotak Bluechip Fund – 29.3% – AUM Rs. 3445 Cr.
+HDFC Top 100 Fund – 29.28% – AUM Rs. 20607 Cr.
+Edelweiss US Value Equity Off-shore Fund – 29.25% – AUM Rs. 75 Cr.
+Tata India Consumer Fund – 29.19% – AUM Rs. 1335 Cr.
+Mirae Asset Large Cap Fund – 29.13% – AUM Rs. 29961 Cr.
+Motilal Oswal Nasdaq 100 FOF – 28.99% – AUM Rs. 4282 Cr.
+Indiabulls Value Fund – 28.95% – AUM Rs. 12 Cr.
+BNP Paribas India Consumption Fund – 28.8% – AUM Rs. 867 Cr.
+Aditya Birla Sun Life Frontline Equity Fund – 28.76% – AUM Rs. 21542 Cr.
+Mirae Asset Equity Allocator FoF – 28.69% – AUM Rs. 201 Cr.
+Mirae Asset Healthcare Fund – 28.58% – AUM Rs. 1845 Cr.
+Tata Flexi Cap Fund – 28.33% – AUM Rs. 2130 Cr.
+Principal Large Cap Fund – 28.32% – AUM Rs. 534 Cr.
+IDBI Focused 30 Equity Fund – 28.31% – AUM Rs. 139 Cr.
+IDFC Large Cap Fund – 28.3% – AUM Rs. 950 Cr.
+Aditya Birla Sun Life Focused Equity Fund – 27.85% – AUM Rs. 5163 Cr.
+LIC MF Tax Plan – 27.84% – AUM Rs. 398 Cr.
+DSP Quant Fund – 27.64% – AUM Rs. 1237 Cr.
+L&T Flexicap Fund – 27.25% – AUM Rs. 2917 Cr.
+UTI India Consumer Fund – 27.08% – AUM Rs. 371 Cr.
+IDBI Equity Advantage Fund – 27.07% – AUM Rs. 513 Cr.
+SBI Bluechip Fund – 27.04% – AUM Rs. 31106 Cr.
+Axis ESG Equity Fund – 26.62% – AUM Rs. 2125 Cr.
+Kotak Flexicap Fund – 26.59% – AUM Rs. 36661 Cr.
+Canara Robeco Bluechip Equity Fund – 26.51% – AUM Rs. 5208 Cr.
+DSP US Flexible Equity Fund – 26.44% – AUM Rs. 682 Cr.
+Principal Global Opportunities Fund – 26.44% – AUM Rs. 38 Cr.
+SBI ETF BSE 100 Fund – 26.33% – AUM Rs. 6 Cr.
+IDFC Focused Equity Fund – 26.28% – AUM Rs. 1371 Cr.
+LIC MF Exchange Traded Fund – Nifty 100 – 25.98% – AUM Rs. 485 Cr.
+Axis Nifty 100 Index Fund – 25.9% – AUM Rs. 615 Cr.
+ICICI Prudential Nifty 100 ETF – 25.85% – AUM Rs. 33 Cr.
+UTI Transportation and Logistics Fund – 25.85% – AUM Rs. 1470 Cr.
+Nippon India ETF Nifty 100 – 25.74% – AUM Rs. 169 Cr.
+LIC MF Large Cap Fund – 25.67% – AUM Rs. 628 Cr.
+L&T India Large Cap Fund – 25.66% – AUM Rs. 712 Cr.
+Axis Long Term Equity Fund – 25.6% – AUM Rs. 33529 Cr.
+Quantum Long Term Equity Value Fund – 25.53% – AUM Rs. 876 Cr.
+ICICI Prudential Nifty ETF – 25.52% – AUM Rs. 3088 Cr.
+Aditya Birla Sun Life Nifty ETF Fund – 25.51% – AUM Rs. 443 Cr.
+Nippon India ETF Nifty BeES – 25.51% – AUM Rs. 5113 Cr.
+HDFC Nifty 50 ETF – 25.5% – AUM Rs. 1123 Cr.
+UTI Nifty Exchange Traded Fund – 25.49% – AUM Rs. 31396 Cr.
+Axis Nifty ETF – 25.48% – AUM Rs. 64 Cr.
+Mirae Asset Nifty 50 ETF – 25.48% – AUM Rs. 649 Cr.
+SBI ETF Nifty 50 – 25.48% – AUM Rs. 118703 Cr.
+SBI ETF Quality – 25.46% – AUM Rs. 29 Cr.
+Tata Nifty Exchange Traded Fund – 25.44% – AUM Rs. 371 Cr.
+Invesco India Nifty Exchange Traded Fund – 25.43% – AUM Rs. 60 Cr.
+Quantum Nifty ETF – 25.41% – AUM Rs. 12 Cr.
+Kotak Nifty ETF Fund – 25.4% – AUM Rs. 1581 Cr.
+Aditya Birla Sun Life Global Emerging Opportunities Fund – 25.36% – AUM Rs. 285 Cr.
+LIC MF Exchange Traded Fund – Nifty 50 – 25.36% – AUM Rs. 625 Cr.
+Axis Focused 25 Fund – 25.35% – AUM Rs. 20069 Cr.
+Motilal Oswal M50 ETF Fund – 25.33% – AUM Rs. 27 Cr.
+Indiabulls Nifty 50 Exchange Traded Fund – 25.32% – AUM Rs. 16 Cr.
+UTI Nifty Index Fund – 25.3% – AUM Rs. 5455 Cr.
+UTI MNC Fund – 25.29% – AUM Rs. 2505 Cr.
+L&T Nifty 50 Index Fund – 25.26% – AUM Rs. 80 Cr.
+ICICI Prudential Bharat Consumption Fund – 25.25% – AUM Rs. 1329 Cr.
+HDFC Index Fund Nifty 50 Plan – 25.24% – AUM Rs. 4164 Cr.
+ICICI Prudential Nifty Index Fund – 25.24% – AUM Rs. 2287 Cr.
+BNP Paribas Long Term Equity Fund – 25.22% – AUM Rs. 537 Cr.
+Nippon India Index Fund – Nifty Plan – 25.21% – AUM Rs. 405 Cr.
+Tata Retirement Savings Fund – Progressive Plan – 25.2% – AUM Rs. 1211 Cr.
+L&T Focused Equity Fund – 25.18% – AUM Rs. 989 Cr.
+Edelweiss Large Cap Fund – 25.17% – AUM Rs. 298 Cr.
+DSP Nifty 50 Index Fund – 25.15% – AUM Rs. 133 Cr.
+Quantum Tax Saving Fund – 25.14% – AUM Rs. 98 Cr.
+Nippon India Pharma Fund – 25.12% – AUM Rs. 5224 Cr.
+DSP Healthcare Fund – 25.11% – AUM Rs. 1386 Cr.
+SBI Nifty Index Fund – 25.1% – AUM Rs. 1643 Cr.
+Tata Index Nifty Fund – 25.09% – AUM Rs. 208 Cr.
+IDFC Nifty ETF – 25.08% – AUM Rs. 16 Cr.
+Taurus Nifty Index Fund – 25.08% – AUM Rs. 2 Cr.
+IDFC Nifty Fund – 25% – AUM Rs. 335 Cr.
+Aditya Birla Sun Life Index Fund – 24.97% – AUM Rs. 296 Cr.
+Motilal Oswal Nifty 50 Index Fund – 24.93% – AUM Rs. 115 Cr.
+Franklin India Index Fund – NSE Nifty Plan – 24.79% – AUM Rs. 447 Cr.
+LIC MF Index-Nifty Plan – 24.65% – AUM Rs. 50 Cr.
+JM Large Cap Fund – 24.56% – AUM Rs. 50 Cr.
+Mahindra Manulife Rural Bharat And Consumption Yojana – 24.56% – AUM Rs. 47 Cr.
+ICICI Prudential US Bluechip Equity Fund – 24.5% – AUM Rs. 2008 Cr.
+ICICI Prudential Banking and Financial Services Fund – 24.45% – AUM Rs. 4905 Cr.
+ICICI Prudential ESG Fund – 24.45% – AUM Rs. 1774 Cr.
+IDBI Nifty Index Fund – 24.36% – AUM Rs. 213 Cr.
+SBI Equity Minimum Variance Fund – 24.35% – AUM Rs. 125 Cr.
+ITI Large Cap Fund – 24.23% – AUM Rs. 200 Cr.
+Baroda Large Cap Fund – 24.17% – AUM Rs. 49 Cr.
+Kotak ESG Opportunities Fund – 24.04% – AUM Rs. 1751 Cr.
+HSBC Large Cap Equity Fund – 23.86% – AUM Rs. 753 Cr.
+Axis Global Equity Alpha FoF – 23.85% – AUM Rs. 1472 Cr.
+Nippon India US Equity Opportunities Fund – 23.81% – AUM Rs. 562 Cr.
+BNP Paribas Focused 25 Equity Fund – 23.74% – AUM Rs. 207 Cr.
+Mirae Asset ESG Sector Leaders ETF – 23.69% – AUM Rs. 174 Cr.
+Indiabulls Tax Savings Fund – 23.63% – AUM Rs. 48 Cr.
+BNP Paribas Large Cap Fund – 23.61% – AUM Rs. 1214 Cr.
+ICICI Prudential Nifty Low Vol 30 ETF – 23.61% – AUM Rs. 730 Cr.
+DSP Focus Fund – 23.57% – AUM Rs. 2081 Cr.
+HDFC Sensex ETF – 23.11% – AUM Rs. 122 Cr.
+ICICI Prudential Sensex ETF – 23.11% – AUM Rs. 232 Cr.
+SBI ETF Sensex – 23.1% – AUM Rs. 59492 Cr.
+Aditya Birla Sun Life Manufacturing Equity Fund – 23.07% – AUM Rs. 633 Cr.
+Aditya Birla Sun Life Sensex ETF – 23.07% – AUM Rs. 12 Cr.
+Nippon India ETF Sensex – 23.06% – AUM Rs. 71 Cr.
+LIC MF Exchange Traded Fund – Sensex – 22.96% – AUM Rs. 523 Cr.
+HDFC Index Fund – Sensex Plan – 22.88% – AUM Rs. 2749 Cr.
+Kotak Sensex ETF Fund – 22.86% – AUM Rs. 20 Cr.
+Nippon India Index Fund – Sensex Plan – 22.85% – AUM Rs. 219 Cr.
+PGIM India Large Cap Fund – 22.81% – AUM Rs. 351 Cr.
+Aditya Birla Sun Life International Equity Fund – Plan B – 22.79% – AUM Rs. 101 Cr.
+Mirae Asset ESG Sector Leaders FoF – 22.79% – AUM Rs. 143 Cr.
+ICICI Prudential Sensex Index Fund – 22.66% – AUM Rs. 395 Cr.
+Shriram Flexi Cap Fund – 22.64% – AUM Rs. 65 Cr.
+LIC MF Index-Sensex Plan – 22.62% – AUM Rs. 42 Cr.
+IDFC Sensex ETF – 22.49% – AUM Rs. 1 Cr.
+Taurus Flexi Cap Fund – 22.13% – AUM Rs. 246 Cr.
+Axis Bluechip Fund – 22.11% – AUM Rs. 33519 Cr.
+Tata Index Sensex Fund – 22.05% – AUM Rs. 105 Cr.
+Invesco India Feeder- Invesco Global Equity Income Fund – 21.88% – AUM Rs. 11 Cr.
+ITI Multi Cap Fund – 21.85% – AUM Rs. 319 Cr.
+ITI Long Term Equity Fund – 21.63% – AUM Rs. 105 Cr.
+SBI Healthcare Opportunities Fund – 21.48% – AUM Rs. 1850 Cr.
+UTI Sensex Exchange Traded Fund – 21.44% – AUM Rs. 18531 Cr.
+ICICI Prudential Global Stable Equity Fund (FOF) – 21.37% – AUM Rs. 99 Cr.
+Aditya Birla Sun Life Pharma & Healthcare Fund – 21.36% – AUM Rs. 545 Cr.
+LIC MF Flexi Cap Fund – 21.34% – AUM Rs. 420 Cr.
+Shriram Long Term Equity Fund – 20.99% – AUM Rs. 45 Cr.
+Taurus Tax Shield Fund – 20.95% – AUM Rs. 64 Cr.
+Tata India Pharma & HealthCare Fund – 20.88% – AUM Rs. 568 Cr.
+Sundaram Global Brand Fund – 20.52% – AUM Rs. 96 Cr.
+DSP Top 100 Equity Fund – 20.45% – AUM Rs. 2750 Cr.
+ICICI Prudential FMCG Fund – 20.45% – AUM Rs. 900 Cr.
+Sundaram Rural and Consumption Fund – 20.37% – AUM Rs. 1225 Cr.
+UTI Healthcare Fund – 20.35% – AUM Rs. 823 Cr.
+Nippon India ETF Consumption – 20.2% – AUM Rs. 27 Cr.
+Franklin India Feeder Franklin US Opportunities Fund – 19.91% – AUM Rs. 4215 Cr.
+DSP World Mining Fund – 19.58% – AUM Rs. 163 Cr.
+ICICI Prudential Pharma Healthcare And Diagnostics (P.H.D) Fund – 19.3% – AUM Rs. 2991 Cr.
+Mirae Asset Banking and Financial Services Fund – 19.26% – AUM Rs. 838 Cr.
+Indiabulls Bluechip Fund – 19.07% – AUM Rs. 101 Cr.
+Edelweiss MSCI India Domestic & World Healthcare 45 Index Fund – 18.78% – AUM Rs. 188 Cr.
+Taurus Largecap Equity Fund – 18.06% – AUM Rs. 32 Cr.
+Edelweiss Europe Dynamic Equity Offshore Fund – 17.98% – AUM Rs. 165 Cr.
+Aditya Birla Sun Life Banking & Financial Services Fund – 17.97% – AUM Rs. 2101 Cr.
+JM Core 11 Fund – 17.62% – AUM Rs. 44 Cr.
+Invesco India Feeder- Invesco Pan European Equity Fund – 17.07% – AUM Rs. 35 Cr.
+Sundaram Financial Services Opportunities Fund – 17.01% – AUM Rs. 465 Cr.
+Motilal Oswal Flexi Cap Fund – 16.33% – AUM Rs. 10814 Cr.
+Motilal Oswal Focused 25 Fund – 15.98% – AUM Rs. 1755 Cr.
+IDBI Healthcare Fund – 15.94% – AUM Rs. 74 Cr.
+Invesco India Financial Services Fund – 15.62% – AUM Rs. 373 Cr.
+UTI Banking and Financial Services Fund – 15.53% – AUM Rs. 719 Cr.
+Tata Quant Fund – 15.47% – AUM Rs. 52 Cr.
+Edelweiss US Technology Equity FoF – 15.12% – AUM Rs. 2308 Cr.
+Aditya Birla Sun Life International Equity Fund – Plan A – 14.47% – AUM Rs. 125 Cr.
+Aditya Birla Sun Life Retirement Fund – The 30s Plan – 14.37% – AUM Rs. 232 Cr.
+Aditya Birla Sun Life Bal Bhavishya Yojna – 14.24% – AUM Rs. 520 Cr.
+Edelweiss Exchange Traded Fund-Nifty Bank – 14.1% – AUM Rs. 1 Cr.
+Axis Banking ETF – 14.09% – AUM Rs. 48 Cr.
+ICICI Prudential Bank ETF – 13.76% – AUM Rs. 2954 Cr.
+Aditya Birla Sun Life Banking ETF – 13.71% – AUM Rs. 72 Cr.
+UTI Bank Exchange Traded Fund – 13.71% – AUM Rs. 26 Cr.
+SBI ETF Nifty Bank Fund – 13.68% – AUM Rs. 5531 Cr.
+Nippon India ETF Bank BeES – 13.65% – AUM Rs. 9720 Cr.
+Aditya Birla Sun Life Tax Relief 96 – 13.64% – AUM Rs. 14344 Cr.
+Tata Banking and Financial Services Fund – 13.63% – AUM Rs. 830 Cr.
+Kotak Banking ETF Fund – 13.6% – AUM Rs. 7624 Cr.
+HDFC Banking ETF – 13.58% – AUM Rs. 178 Cr.
+SBI Banking & Financial Services Fund – 13.46% – AUM Rs. 2879 Cr.
+Motilal Oswal Nifty Bank Index Fund – 13.01% – AUM Rs. 148 Cr.
+Aditya Birla Sun Life MNC Fund – 12.83% – AUM Rs. 3875 Cr.
+IDBI Banking & Financial Services Fund – 12.51% – AUM Rs. 91 Cr.
+Taurus Banking & Financial Services Fund – 12.24% – AUM Rs. 9 Cr.
+LIC MF Banking & Financial Services Fund – 11.28% – AUM Rs. 56 Cr.
+Baroda Banking and Financial Services Fund – 8.97% – AUM Rs. 50 Cr.
+DSP Global Allocation Fund – 8.69% – AUM Rs. 109 Cr.
+PGIM India Global Equity Opportunities Fund – 8.22% – AUM Rs. 1762 Cr.
+Edelweiss ASEAN Equity Off-shore Fund – 7.13% – AUM Rs. 60 Cr.
+Nippon India Japan Equity Fund – 7.04% – AUM Rs. 246 Cr.
+DSP World Agriculture Fund – 6.4% – AUM Rs. 67 Cr.
+HSBC Asia Pacific (Ex Japan) Dividend Yield Fund – 5.63% – AUM Rs. 10 Cr.
+Tata Nifty Private Bank Exchange Traded Fund – 5.42% – AUM Rs. 14 Cr.
+Franklin India Feeder – Templeton European Opportunities Fund – 5% – AUM Rs. 22 Cr.
+ICICI Prudential Private Banks ETF – 4.77% – AUM Rs. 2433 Cr.
+SBI ETF Private Bank – 4.72% – AUM Rs. 4 Cr.
+ICICI Prudential Global Advantage Fund (FOF) – 0.88% – AUM Rs. 241 Cr.
+Kotak Global Emerging Market – 0.07% – AUM Rs. 145 Cr.
+PGIM India Emerging Markets Equity Fund – (-)0.68% – AUM Rs. 237 Cr.
+HSBC Global Emerging Markets Fund – (-)3.24% – AUM Rs. 16 Cr.
+Edelweiss Emerging Markets Opportunities Equity Offshore Fund – (-)5% – AUM Rs. 137 Cr.
+Franklin Asian Equity Fund – (-)5.16% – AUM Rs. 343 Cr.
+Invesco India – Invesco Global Consumer Trends FoF – (-)5.98% – AUM Rs. 719 Cr.
+Edelweiss Greater China Equity Off-shore Fund – (-)7.67% – AUM Rs. 1974 Cr.
+DSP World Gold Fund – (-)9.02% – AUM Rs. 984 Cr.
+Nippon India ETF Hang Seng BeES – (-)11.57% – AUM Rs. 94 Cr.
+HSBC Brazil Fund – (-)26.39% – AUM Rs. 24 Cr.
