@@ -1606,6 +1606,21 @@
             "sales_qtr_rs_cr": 848.1
         },
         {
+            "cmp_rs": 18284.2,
+            "div_yld": 1.09,
+            "earnings_yield": 1.89,
+            "mar_cap_rs_cr": 176288.42,
+            "name": "Nestle India",
+            "np_qtr_rs_cr": 386.66,
+            "p_e": 75.98,
+            "qtr_profit_var": -68.93,
+            "qtr_sales_var": 12.24,
+            "rank": 108,
+            "roce": 147.06,
+            "roe": 113.08,
+            "sales_qtr_rs_cr": 3852.62
+        },
+        {
             "cmp_rs": 3136.6,
             "div_yld": 0.57,
             "earnings_yield": 1.41,
@@ -1615,7 +1630,7 @@
             "p_e": 99.22,
             "qtr_profit_var": -17.98,
             "qtr_sales_var": 25.61,
-            "rank": 108,
+            "rank": 109,
             "roce": 34.81,
             "roe": 27.26,
             "sales_qtr_rs_cr": 8527.24
@@ -1630,7 +1645,7 @@
             "p_e": 28.68,
             "qtr_profit_var": -26.04,
             "qtr_sales_var": 1.46,
-            "rank": 109,
+            "rank": 110,
             "roce": 30.52,
             "roe": 27.27,
             "sales_qtr_rs_cr": 1430.47
@@ -1645,7 +1660,7 @@
             "p_e": 49.57,
             "qtr_profit_var": 12.45,
             "qtr_sales_var": 11.78,
-            "rank": 110,
+            "rank": 111,
             "roce": 35.23,
             "roe": 27.45,
             "sales_qtr_rs_cr": 1224.36
@@ -1660,7 +1675,7 @@
             "p_e": 18.25,
             "qtr_profit_var": -58.99,
             "qtr_sales_var": 15.68,
-            "rank": 111,
+            "rank": 112,
             "roce": 14.71,
             "roe": 14.43,
             "sales_qtr_rs_cr": 1549.07
@@ -1675,7 +1690,7 @@
             "p_e": 19.3,
             "qtr_profit_var": -6.23,
             "qtr_sales_var": 15.15,
-            "rank": 112,
+            "rank": 113,
             "roce": 14.94,
             "roe": 11.5,
             "sales_qtr_rs_cr": 1567.08
@@ -1690,7 +1705,7 @@
             "p_e": 18.28,
             "qtr_profit_var": -16.7,
             "qtr_sales_var": 1.25,
-            "rank": 113,
+            "rank": 114,
             "roce": 25.39,
             "roe": 19.84,
             "sales_qtr_rs_cr": 9021.65
@@ -1705,7 +1720,7 @@
             "p_e": 39.11,
             "qtr_profit_var": 15.86,
             "qtr_sales_var": 22.58,
-            "rank": 114,
+            "rank": 115,
             "roce": 19.86,
             "roe": 14.62,
             "sales_qtr_rs_cr": 899.24
@@ -1720,7 +1735,7 @@
             "p_e": 34.18,
             "qtr_profit_var": 1.89,
             "qtr_sales_var": 13.89,
-            "rank": 115,
+            "rank": 116,
             "roce": 23.61,
             "roe": 17.19,
             "sales_qtr_rs_cr": 675.9
@@ -1735,7 +1750,7 @@
             "p_e": 48.17,
             "qtr_profit_var": 42.89,
             "qtr_sales_var": 29.49,
-            "rank": 116,
+            "rank": 117,
             "roce": 20.01,
             "roe": 16.24,
             "sales_qtr_rs_cr": 854.79
@@ -1750,7 +1765,7 @@
             "p_e": 43.81,
             "qtr_profit_var": 34.61,
             "qtr_sales_var": 19.58,
-            "rank": 117,
+            "rank": 118,
             "roce": 24.71,
             "roe": 18.52,
             "sales_qtr_rs_cr": 1523.22
@@ -1765,7 +1780,7 @@
             "p_e": 55.57,
             "qtr_profit_var": -13.92,
             "qtr_sales_var": 8.27,
-            "rank": 118,
+            "rank": 119,
             "roce": 51.04,
             "roe": 36.44,
             "sales_qtr_rs_cr": 563.44
@@ -1780,25 +1795,10 @@
             "p_e": 56.15,
             "qtr_profit_var": 33.69,
             "qtr_sales_var": 20.48,
-            "rank": 119,
+            "rank": 120,
             "roce": 29.35,
             "roe": 20.73,
             "sales_qtr_rs_cr": 1687.5
-        },
-        {
-            "cmp_rs": 18284.2,
-            "div_yld": 1.09,
-            "earnings_yield": 1.62,
-            "mar_cap_rs_cr": 176288.42,
-            "name": "Nestle India",
-            "np_qtr_rs_cr": 386.66,
-            "p_e": 92.38,
-            "qtr_profit_var": -68.93,
-            "qtr_sales_var": 12.24,
-            "rank": 120,
-            "roce": 126.12,
-            "roe": 93.0,
-            "sales_qtr_rs_cr": 3852.62
         },
         {
             "cmp_rs": 1996.35,
@@ -2656,21 +2656,6 @@
             "sales_qtr_rs_cr": 384.75
         },
         {
-            "cmp_rs": 2380.95,
-            "div_yld": 0.34,
-            "earnings_yield": 1.8,
-            "mar_cap_rs_cr": 84790.45,
-            "name": "Siemens",
-            "np_qtr_rs_cr": 250.7,
-            "p_e": 81.09,
-            "qtr_profit_var": -15.16,
-            "qtr_sales_var": 21.37,
-            "rank": 178,
-            "roce": 14.94,
-            "roe": 10.97,
-            "sales_qtr_rs_cr": 3550.4
-        },
-        {
             "cmp_rs": 14585.75,
             "div_yld": 0.79,
             "earnings_yield": 4.23,
@@ -2680,10 +2665,25 @@
             "p_e": 31.9,
             "qtr_profit_var": -18.34,
             "qtr_sales_var": 2.62,
-            "rank": 179,
+            "rank": 178,
             "roce": 13.79,
             "roe": 10.2,
             "sales_qtr_rs_cr": 3109.08
+        },
+        {
+            "cmp_rs": 2380.95,
+            "div_yld": 0.34,
+            "earnings_yield": 1.8,
+            "mar_cap_rs_cr": 84790.45,
+            "name": "Siemens",
+            "np_qtr_rs_cr": 250.7,
+            "p_e": 81.09,
+            "qtr_profit_var": -15.16,
+            "qtr_sales_var": 21.37,
+            "rank": 179,
+            "roce": 14.94,
+            "roe": 10.97,
+            "sales_qtr_rs_cr": 3550.4
         },
         {
             "cmp_rs": 331.45,
@@ -2885,7 +2885,7 @@
             "div_yld": 0.15,
             "earnings_yield": 1.41,
             "mar_cap_rs_cr": 13828.86,
-            "name": "WABCO India",
+            "name": "ZF Commercial",
             "np_qtr_rs_cr": 31.84,
             "p_e": 103.9,
             "qtr_profit_var": -39.27,
@@ -3001,7 +3001,7 @@
             "sales_qtr_rs_cr": 1549.7
         }
     ],
-    "date": 1647650521,
+    "date": 1647737030,
     "sold": {
         "AIA Engineering": 1646700085,
         "Abbott India": 1645835939,
