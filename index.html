@@ -207,7 +207,7 @@ function renderTable(tableId, data) {
     G.rank = $('#' + tableId).dataTable({bPaginate: false, data: tmp, info: false,
         order: [[sort_order[0], sort_order[1]]],
         rowCallback: function(row, d, i) {
-            $(row).css('color', d[0]>100? 'Red': 'Green')
+            $(row).css('color', d[0]>tmp.length/2? 'Red': 'Green')
 	}})
 }
 </script>
