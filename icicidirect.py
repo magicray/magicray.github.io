@@ -1,5 +1,6 @@
 import requests
 import argparse
+from logging import critical as log
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 
@@ -50,16 +51,16 @@ def main():
     data = r['data']
     stock_codes = r['symbol']
 
-    buy_list = [(s['rank'], s) for s in data if s['rank'] < 101]
+    buy_list = [(s['rank'], s) for s in data if s['rank'] <= ARGS.count]
     buy_list = [s for _, s in buy_list]
 
     if ARGS.amount > 0:
         icici = ICICIDirect()
 
     for s in buy_list:
-        qty = int((ARGS.amount/100)/s['cmp_rs'])
+        qty = int((ARGS.amount/ARGS.count)/s['cmp_rs'])
         code = stock_codes[s['name'].replace('.', '')]
-        print((s['rank'], s['name'], code, s['cmp_rs'], qty))
+        log((s['rank'], s['name'], code, s['cmp_rs'], qty))
 
         if qty > 0:
             # icici.wait_for_page(icici.orderbook_url)
@@ -74,6 +75,7 @@ def main():
 if __name__ == '__main__':
     ARGS = argparse.ArgumentParser()
 
+    ARGS.add_argument('--count', dest='count', type=int, default=50)
     ARGS.add_argument('--amount', dest='amount', type=int, default=0)
     ARGS = ARGS.parse_args()
     main()
