@@ -228,8 +228,8 @@ def portfolio(args):
     with open('magicrank.json') as fd:
         prev = json.load(fd)
 
-    prev_names = set([s['name'] for s in prev['data'] if s['rank'] <= args.hold])
-    stock_names = set([s['name'] for s in stock_list if s['rank'] <= args.hold])
+    prev_names = set([s['name'] for s in prev['data'] if s['rank'] <= args.top/2])
+    stock_names = set([s['name'] for s in stock_list if s['rank'] <= args.top/2])
     with open('magicrank.json', 'w') as fd:
         ts = int(time.time())
         sold = prev.get('sold', {})
@@ -267,7 +267,6 @@ def main():
     parser.add_argument('--screen', dest='screen', default='290555/Investable')
     parser.add_argument('--amount', dest='amount', type=int, default=0)
     parser.add_argument('--count', dest='count', type=float, default=200)
-    parser.add_argument('--hold', dest='hold', type=int, default=100)
     parser.add_argument('--top', dest='top', type=int, default=200)
     portfolio(parser.parse_args())
 
