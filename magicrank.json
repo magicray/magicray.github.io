@@ -62,7 +62,7 @@
         },
         {
             "cmp_rs": 1542.85,
-            "div_yld": 1.16,
+            "div_yld": 1.61,
             "earnings_yield": 8.15,
             "mar_cap_rs_cr": 12783.86,
             "name": "Angel One",
@@ -3301,7 +3301,7 @@
             "sales_qtr_rs_cr": 1549.7
         }
     ],
-    "date": 1648860389,
+    "date": 1648947090,
     "sold": {
         "Abbott India": 1648362475,
         "Adani Green": 1643848490,
