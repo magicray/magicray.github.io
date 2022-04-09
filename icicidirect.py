@@ -36,12 +36,13 @@ class ICICIDirect():
         self.wait.until(lambda d: d.find_element_by_xpath(
             "//input[@type='button' and @value='Place another order']"))
 
-    def buy(self, stock_code, quantity):
+    def buy(self, stock_code, price, quantity):
         self.driver.get(self.cashbuy_url)
         self.byxpath("//label[@for='rdonse']").click()
-        self.byxpath("//label[@for='rdomarket']").click()
+        # self.byxpath("//label[@for='rdomarket']").click()
         self.byid('stcode').send_keys(stock_code)
         self.byid('FML_QTY').send_keys(quantity)
+        self.byid('FML_ORD_LMT_RT').send_keys(str(price))
         self.byxpath("//input[@type='button' and @value='Buy']").click()
 
 
@@ -65,7 +66,7 @@ def main():
         if qty > 0:
             # icici.wait_for_page(icici.orderbook_url)
             icici.wait_for_buy_button()
-            icici.buy(code, qty)
+            icici.buy(code, s['cmp_rs'], qty)
             icici.wait_for_place_another_order_button()
 
     # if ARGS.amount > 0:
@@ -75,7 +76,7 @@ def main():
 if __name__ == '__main__':
     ARGS = argparse.ArgumentParser()
 
-    ARGS.add_argument('--count', dest='count', type=int, default=50)
+    ARGS.add_argument('--count', dest='count', type=int, default=25)
     ARGS.add_argument('--amount', dest='amount', type=int, default=0)
     ARGS = ARGS.parse_args()
     main()
