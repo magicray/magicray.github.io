@@ -483,16 +483,16 @@
         {
             "cmp_rs": 1748.55,
             "div_yld": 1.54,
-            "earnings_yield": 4.19,
+            "earnings_yield": 4.16,
             "mar_cap_rs_cr": 735569.29,
             "name": "Infosys",
             "np_qtr_rs_cr": 5686.0,
-            "p_e": 33.27,
+            "p_e": 33.47,
             "qtr_profit_var": 12.02,
             "qtr_sales_var": 22.67,
             "rank": 33,
-            "roce": 37.3,
-            "roe": 29.15,
+            "roce": 37.09,
+            "roe": 28.98,
             "sales_qtr_rs_cr": 32276.0
         },
         {
@@ -3001,7 +3001,7 @@
             "sales_qtr_rs_cr": 1549.7
         }
     ],
-    "date": 1650070219,
+    "date": 1650156818,
     "sold": {
         "AIA Engineering": 1649292622,
         "Abbott India": 1648362475,
