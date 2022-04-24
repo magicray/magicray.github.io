@@ -110,6 +110,8 @@ def portfolio(args):
         if all('' != y for y in v.values()):
             tmp[k] = v
 
+        v['p_s'] = v['mar_cap_rs_cr'] / v['sales_qtr_rs_cr']  # Price to Sales
+
         # v['value'] = max(v['earnings_yield'], 100/v['p_e'])
         # v['profit'] = max(v['roce'], v['roe'])
         # v['growth'] = min(v['qtr_profit_var'], v['qtr_sales_var'])
@@ -132,6 +134,7 @@ def portfolio(args):
     roce = rank('roce', data)
     sales = rank('qtr_sales_var', data)
     pe = rank('p_e', data, False)
+    ps = rank('p_s', data, False)
     e_yield = rank('earnings_yield', data)
     # profit = rank('profit', data)
     # growth = rank('growth', data)
@@ -140,9 +143,9 @@ def portfolio(args):
     stats = {f: median(f, data) for f in columns}
 
     final_rank = [(
-        roce[name] + roe[name] +   # Quality
-        2*sales[name] +            # Growth
-        pe[name] + e_yield[name],  # Value
+        (roce[name] + roe[name]) * 3/2 +      # Quality
+        3*sales[name] +                       # Growth
+        ps[name] + pe[name] + e_yield[name],  # Value
         # profit[name] + growth[name] + value[name],
         name) for name in roe]
 
