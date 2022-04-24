@@ -721,21 +721,6 @@
             "sales_qtr_rs_cr": 2603.18
         },
         {
-            "cmp_rs": 1193.35,
-            "div_yld": 0.21,
-            "earnings_yield": 4.61,
-            "mar_cap_rs_cr": 10752.73,
-            "name": "KEI Industries",
-            "np_qtr_rs_cr": 101.25,
-            "p_e": 31.04,
-            "qtr_profit_var": 32.96,
-            "qtr_sales_var": 35.64,
-            "rank": 49,
-            "roce": 21.37,
-            "roe": 16.65,
-            "sales_qtr_rs_cr": 1563.85
-        },
-        {
             "cmp_rs": 4129.25,
             "div_yld": 0.94,
             "earnings_yield": 3.27,
@@ -745,10 +730,25 @@
             "p_e": 42.84,
             "qtr_profit_var": 50.57,
             "qtr_sales_var": 39.27,
-            "rank": 50,
+            "rank": 49,
             "roce": 25.72,
             "roe": 19.31,
             "sales_qtr_rs_cr": 1658.1
+        },
+        {
+            "cmp_rs": 1193.35,
+            "div_yld": 0.21,
+            "earnings_yield": 4.61,
+            "mar_cap_rs_cr": 10752.73,
+            "name": "KEI Industries",
+            "np_qtr_rs_cr": 101.25,
+            "p_e": 31.04,
+            "qtr_profit_var": 32.96,
+            "qtr_sales_var": 35.64,
+            "rank": 50,
+            "roce": 21.37,
+            "roe": 16.65,
+            "sales_qtr_rs_cr": 1563.85
         },
         {
             "cmp_rs": 494.9,
@@ -1081,21 +1081,6 @@
             "sales_qtr_rs_cr": 3410.1
         },
         {
-            "cmp_rs": 637.35,
-            "div_yld": 0.39,
-            "earnings_yield": 2.83,
-            "mar_cap_rs_cr": 10261.1,
-            "name": "RHI Magnesita",
-            "np_qtr_rs_cr": 75.95,
-            "p_e": 48.63,
-            "qtr_profit_var": 73.8,
-            "qtr_sales_var": 41.79,
-            "rank": 73,
-            "roce": 23.35,
-            "roe": 18.11,
-            "sales_qtr_rs_cr": 542.46
-        },
-        {
             "cmp_rs": 2203.4,
             "div_yld": 0.27,
             "earnings_yield": 1.78,
@@ -1105,10 +1090,25 @@
             "p_e": 71.57,
             "qtr_profit_var": 29.83,
             "qtr_sales_var": 65.1,
-            "rank": 74,
+            "rank": 73,
             "roce": 23.8,
             "roe": 19.08,
             "sales_qtr_rs_cr": 368.95
+        },
+        {
+            "cmp_rs": 637.35,
+            "div_yld": 0.39,
+            "earnings_yield": 2.83,
+            "mar_cap_rs_cr": 10261.1,
+            "name": "RHI Magnesita",
+            "np_qtr_rs_cr": 75.95,
+            "p_e": 48.63,
+            "qtr_profit_var": 73.8,
+            "qtr_sales_var": 41.79,
+            "rank": 74,
+            "roce": 23.35,
+            "roe": 18.11,
+            "sales_qtr_rs_cr": 542.46
         },
         {
             "cmp_rs": 427.0,
@@ -1366,21 +1366,6 @@
             "sales_qtr_rs_cr": 6280.46
         },
         {
-            "cmp_rs": 1370.2,
-            "div_yld": 0.0,
-            "earnings_yield": 4.23,
-            "mar_cap_rs_cr": 10965.41,
-            "name": "Krishna Institu.",
-            "np_qtr_rs_cr": 81.18,
-            "p_e": 35.39,
-            "qtr_profit_var": 66.39,
-            "qtr_sales_var": 9.12,
-            "rank": 92,
-            "roce": 29.57,
-            "roe": 27.64,
-            "sales_qtr_rs_cr": 393.57
-        },
-        {
             "cmp_rs": 2969.6,
             "div_yld": 0.2,
             "earnings_yield": 2.05,
@@ -1390,10 +1375,25 @@
             "p_e": 73.74,
             "qtr_profit_var": 30.82,
             "qtr_sales_var": 57.6,
-            "rank": 93,
+            "rank": 92,
             "roce": 19.84,
             "roe": 18.65,
             "sales_qtr_rs_cr": 1017.87
+        },
+        {
+            "cmp_rs": 1370.2,
+            "div_yld": 0.0,
+            "earnings_yield": 4.23,
+            "mar_cap_rs_cr": 10965.41,
+            "name": "Krishna Institu.",
+            "np_qtr_rs_cr": 81.18,
+            "p_e": 35.39,
+            "qtr_profit_var": 66.39,
+            "qtr_sales_var": 9.12,
+            "rank": 93,
+            "roce": 29.57,
+            "roe": 27.64,
+            "sales_qtr_rs_cr": 393.57
         },
         {
             "cmp_rs": 695.55,
@@ -1411,21 +1411,6 @@
             "sales_qtr_rs_cr": 332.15
         },
         {
-            "cmp_rs": 2758.8,
-            "div_yld": 0.25,
-            "earnings_yield": 4.24,
-            "mar_cap_rs_cr": 1866308.34,
-            "name": "Reliance Industr",
-            "np_qtr_rs_cr": 18549.0,
-            "p_e": 33.93,
-            "qtr_profit_var": 24.67,
-            "qtr_sales_var": 56.99,
-            "rank": 95,
-            "roce": 8.19,
-            "roe": 7.97,
-            "sales_qtr_rs_cr": 185027.0
-        },
-        {
             "cmp_rs": 4027.4,
             "div_yld": 0.5,
             "earnings_yield": 2.86,
@@ -1435,10 +1420,25 @@
             "p_e": 49.08,
             "qtr_profit_var": 45.88,
             "qtr_sales_var": 38.71,
-            "rank": 96,
+            "rank": 95,
             "roce": 21.2,
             "roe": 16.08,
             "sales_qtr_rs_cr": 1491.72
+        },
+        {
+            "cmp_rs": 2758.8,
+            "div_yld": 0.25,
+            "earnings_yield": 4.24,
+            "mar_cap_rs_cr": 1866308.34,
+            "name": "Reliance Industr",
+            "np_qtr_rs_cr": 18549.0,
+            "p_e": 33.93,
+            "qtr_profit_var": 24.67,
+            "qtr_sales_var": 56.99,
+            "rank": 96,
+            "roce": 8.19,
+            "roe": 7.97,
+            "sales_qtr_rs_cr": 185027.0
         },
         {
             "cmp_rs": 54.25,
@@ -2326,21 +2326,6 @@
             "sales_qtr_rs_cr": 5478.86
         },
         {
-            "cmp_rs": 833.6,
-            "div_yld": 0.77,
-            "earnings_yield": 3.57,
-            "mar_cap_rs_cr": 17516.3,
-            "name": "Sundram Fasten.",
-            "np_qtr_rs_cr": 106.53,
-            "p_e": 38.35,
-            "qtr_profit_var": -24.33,
-            "qtr_sales_var": 5.24,
-            "rank": 156,
-            "roce": 21.26,
-            "roe": 19.46,
-            "sales_qtr_rs_cr": 1339.84
-        },
-        {
             "cmp_rs": 2115.05,
             "div_yld": 0.07,
             "earnings_yield": 2.24,
@@ -2350,7 +2335,7 @@
             "p_e": 61.51,
             "qtr_profit_var": 87.63,
             "qtr_sales_var": 33.16,
-            "rank": 157,
+            "rank": 156,
             "roce": 13.2,
             "roe": 9.81,
             "sales_qtr_rs_cr": 510.0
@@ -2365,7 +2350,7 @@
             "p_e": 68.74,
             "qtr_profit_var": 29.43,
             "qtr_sales_var": 34.02,
-            "rank": 158,
+            "rank": 157,
             "roce": 12.74,
             "roe": 8.96,
             "sales_qtr_rs_cr": 1506.22
@@ -2380,7 +2365,7 @@
             "p_e": 37.33,
             "qtr_profit_var": -21.44,
             "qtr_sales_var": 7.32,
-            "rank": 159,
+            "rank": 158,
             "roce": 19.47,
             "roe": 16.32,
             "sales_qtr_rs_cr": 3551.76
@@ -2395,10 +2380,25 @@
             "p_e": 44.57,
             "qtr_profit_var": 3.89,
             "qtr_sales_var": 8.09,
-            "rank": 160,
+            "rank": 159,
             "roce": 19.74,
             "roe": 20.13,
             "sales_qtr_rs_cr": 3302.58
+        },
+        {
+            "cmp_rs": 833.6,
+            "div_yld": 0.77,
+            "earnings_yield": 3.57,
+            "mar_cap_rs_cr": 17516.3,
+            "name": "Sundram Fasten.",
+            "np_qtr_rs_cr": 106.53,
+            "p_e": 38.35,
+            "qtr_profit_var": -24.33,
+            "qtr_sales_var": 5.24,
+            "rank": 160,
+            "roce": 20.15,
+            "roe": 18.39,
+            "sales_qtr_rs_cr": 1339.84
         },
         {
             "cmp_rs": 1823.25,
@@ -3001,7 +3001,7 @@
             "sales_qtr_rs_cr": 1549.7
         }
     ],
-    "date": 1650675148,
+    "date": 1650761488,
     "sold": {
         "AIA Engineering": 1649292622,
         "Abbott India": 1648362475,
