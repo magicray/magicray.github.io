@@ -116,9 +116,13 @@ def portfolio(args):
         # v['profit'] = max(v['roce'], v['roe'])
         # v['growth'] = min(v['qtr_profit_var'], v['qtr_sales_var'])
 
-    mcaps = sorted([v['mar_cap_rs_cr'] for v in tmp.values()], reverse=True)
-    threshold = mcaps[min(args.top, len(mcaps)-1)]
-    data = {k: v for k, v in tmp.items() if v['mar_cap_rs_cr'] > threshold}
+    # A successfule business is able to sell more products/service compared to others,
+    # and is more liekly to be more reliable and stable than those selling less.
+    #
+    # Pick biggest args.top stocks by quarterly sales
+    qtrsales = sorted([v['sales_qtr_rs_cr'] for v in tmp.values()], reverse=True)
+    threshold = qtrsales[min(args.top, len(qtrsales)-1)]
+    data = {k: v for k, v in tmp.items() if v['sales_qtr_rs_cr'] > threshold}
     assert(len(data) == args.top)
 
     t = time.time()
@@ -185,8 +189,6 @@ def portfolio(args):
         args.count *= -1
         start = len(final_rank) - args.count
 
-    mcap_count = {k: 0 for k in [mcaps[min(i, len(mcaps)-1)]
-                                 for i in range(99, len(mcaps)+100, 100)]}
     per_stock = args.amount / args.count
     count = 0
     stock_list = list()
@@ -217,9 +219,6 @@ def portfolio(args):
             qty))
 
         count += 1
-        for k in mcap_count:
-            if v['mar_cap_rs_cr'] >= k:
-                mcap_count[k] += 1
 
         for k in columns:
             avg[k] += v[k]
@@ -255,14 +254,6 @@ def portfolio(args):
         avg['qtr_sales_var'], avg['qtr_profit_var'],
         avg['earnings_yield'], avg['p_e'],
         avg['mar_cap_rs_cr'], avg['cmp_rs']))
-
-    prev = 0
-    for i, k in enumerate(sorted(mcap_count, reverse=True)):
-        if mcap_count[k] - prev:
-            log('top(%d) mcap(%d) count(%d) total(%d)',
-                min((i+1)*100, len(mcaps)-1, args.top), k,
-                mcap_count[k]-prev, mcap_count[k])
-        prev = mcap_count[k]
 
 
 def main():
