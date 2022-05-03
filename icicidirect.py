@@ -76,7 +76,7 @@ def main():
 if __name__ == '__main__':
     ARGS = argparse.ArgumentParser()
 
-    ARGS.add_argument('--count', dest='count', type=int, default=25)
+    ARGS.add_argument('--count', dest='count', type=int, default=50)
     ARGS.add_argument('--amount', dest='amount', type=int, default=0)
     ARGS = ARGS.parse_args()
     main()
