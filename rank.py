@@ -116,13 +116,13 @@ def portfolio(args):
         # v['profit'] = max(v['roce'], v['roe'])
         # v['growth'] = min(v['qtr_profit_var'], v['qtr_sales_var'])
 
-    # A successfule business is able to sell more products/service compared to others,
-    # and is more liekly to be more reliable and stable than those selling less.
-    #
-    # Pick biggest args.top stocks by quarterly sales
-    qtrsales = sorted([v['sales_qtr_rs_cr'] for v in tmp.values()], reverse=True)
-    threshold = qtrsales[min(args.top, len(qtrsales)-1)]
-    data = {k: v for k, v in tmp.items() if v['sales_qtr_rs_cr'] > threshold}
+    # Statistics is likely to work more reliable for bigger companies,
+    # pick biggest args.top stocks by market cap and quarterly sales
+    mcap = rank('mar_cap_rs_cr', tmp)
+    qtrsales = rank('sales_qtr_rs_cr', tmp)
+    final_rank = [(mcap[name] + qtrsales[name], name) for name in mcap]
+    biggest = set([name for rank, name in sorted(final_rank)[:args.top]])
+    data = {k: v for k, v in tmp.items() if k in biggest}
     assert(len(data) == args.top)
 
     t = time.time()
@@ -134,6 +134,7 @@ def portfolio(args):
                'earnings_yield', 'p_e',
                'mar_cap_rs_cr', 'cmp_rs')
 
+    # Lets rank on Profitability, Growth and Valuation
     roe = rank('roe', data)
     roce = rank('roce', data)
     sales = rank('qtr_sales_var', data)
