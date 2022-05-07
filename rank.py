@@ -95,7 +95,7 @@ def portfolio(args):
     # Book value > 0 AND
     # Debt to equity < 1 AND
     # Interest Coverage Ratio > 2 AND
-    # Market Capitalization > 5000
+    # Market Capitalization > 1000
 
     filename = 'investible.json'
     try:
