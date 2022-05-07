@@ -18,8 +18,7 @@ def download(screen):
     for i in range(1000):
         r = requests.get(url + str(i+1))
 
-        if 200 != r.status_code:
-            break
+        assert(200 == r.status_code)
 
         page = bs4.BeautifulSoup(r.content, 'lxml')
 
@@ -47,6 +46,9 @@ def download(screen):
 
         if flag is False and rows:
             break
+
+        # To avoid flooding the server with requests and getting thrown out
+        time.sleep(1)
 
     result = dict()
     for row in rows:
