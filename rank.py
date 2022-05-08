@@ -84,19 +84,26 @@ def portfolio(args):
     # Return on capital employed > 0 AND
     # YOY Quarterly sales growth > 0 AND
     #
+    # EPS > 0 AND
     # OPM > 0 AND
     # EBIT > 0 AND
     # Profit after tax > 0 AND
     # Operating profit > 0 AND
+    # Return on assets > 0 AND
+    # EPS latest quarter > 0 AND
     # NPM latest quarter > 0 AND
     # OPM latest quarter > 0 AND
     # GPM latest quarter > 0 AND
+    # Profit after tax latest quarter > 0 AND
     #
-    # Sales > 1000 AND
     # Net worth > 0 AND
     # Book value > 0 AND
+    # Total Assets > 0 AND
     # Debt to equity < 1 AND
     # Interest Coverage Ratio > 2 AND
+    # Sales > 10 * Other income AND
+    #
+    # Sales > 1000 AND
     # Market Capitalization > 1000
 
     filename = 'investible.json'
