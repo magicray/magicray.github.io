@@ -103,6 +103,9 @@ def portfolio(args):
     # Interest Coverage Ratio > 2 AND
     # Sales > 10 * Other income AND
     #
+    # Piotroski score > 3 AND
+    # Altman Z Score > 2 AND
+    #
     # Sales > 100 AND
     # Market Capitalization > 100 AND
     # Volume 1month average * Current price > 10000000
