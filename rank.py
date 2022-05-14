@@ -103,10 +103,11 @@ def portfolio(args):
     # Interest Coverage Ratio > 2 AND
     # Sales > 10 * Other income AND
     #
-    # Sales > 1000 AND
-    # Market Capitalization > 1000
+    # Sales > 100 AND
+    # Market Capitalization > 100 AND
+    # Volume 1month average * Current price > 10000000
 
-    filename = 'investible.json'
+    filename = 'universe.json'
     try:
         data = json.load(open(filename))
         assert(data['timestamp'] > time.time() - 86400)
@@ -273,7 +274,7 @@ def portfolio(args):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--screen', dest='screen', default='290555/Investable')
+    parser.add_argument('--screen', dest='screen', default='290555/Universe')
     parser.add_argument('--amount', dest='amount', type=int, default=0)
     parser.add_argument('--count', dest='count', type=float, default=200)
     parser.add_argument('--top', dest='top', type=int, default=200)
