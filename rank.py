@@ -106,8 +106,6 @@ def portfolio(args):
     # Piotroski score > 3 AND
     # Altman Z Score > 2 AND
     #
-    # Sales > 100 AND
-    # Market Capitalization > 100 AND
     # Volume 1month average * Current price > 10000000
 
     filename = 'universe.json'
