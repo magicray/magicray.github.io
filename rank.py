@@ -87,6 +87,8 @@ def portfolio(args):
     # EPS > 0 AND
     # OPM > 0 AND
     # EBIT > 0 AND
+    # Net profit > 0 AND
+    # Sales growth > 0 AND
     # Profit after tax > 0 AND
     # Operating profit > 0 AND
     # Return on assets > 0 AND
@@ -94,18 +96,25 @@ def portfolio(args):
     # NPM latest quarter > 0 AND
     # OPM latest quarter > 0 AND
     # GPM latest quarter > 0 AND
+    # EBIT latest quarter > 0 AND
+    # Net Profit latest quarter > 0 AND
+    # Return on invested capital > 0 AND
     # Profit after tax latest quarter > 0 AND
+    # Operating profit latest quarter > 0 AND
     #
     # Net worth > 0 AND
     # Book value > 0 AND
     # Total Assets > 0 AND
+    #
     # Debt to equity < 1 AND
     # Interest Coverage Ratio > 2 AND
-    # Sales > 10 * Other income AND
     #
+    # G Factor > 2 AND
     # Piotroski score > 3 AND
     # Altman Z Score > 2 AND
+    # Sales > 10 * Other income AND
     #
+    # Volume 1year average * Current price > 10000000 AND
     # Volume 1month average * Current price > 10000000
 
     filename = 'universe.json'
