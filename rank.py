@@ -108,10 +108,6 @@ def portfolio(args):
     #
     # Debt to equity < 1 AND
     # Interest Coverage Ratio > 2 AND
-    #
-    # G Factor > 2 AND
-    # Piotroski score > 3 AND
-    # Altman Z Score > 2 AND
     # Sales > 10 * Other income AND
     #
     # Volume 1year average * Current price > 10000000 AND
