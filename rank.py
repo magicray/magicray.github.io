@@ -89,6 +89,7 @@ def portfolio(args):
     # EBIT > 0 AND
     # Net profit > 0 AND
     # Sales growth > 0 AND
+    # Profit growth > 0 AND
     # Profit after tax > 0 AND
     # Operating profit > 0 AND
     # Return on assets > 0 AND
