@@ -106,13 +106,13 @@ def portfolio(args):
     # Net worth > 0 AND
     # Book value > 0 AND
     # Total Assets > 0 AND
-    #
+    # 
     # Debt to equity < 1 AND
     # Interest Coverage Ratio > 2 AND
     # Sales > 10 * Other income AND
     #
-    # Volume 1year average * Current price > 10000000 AND
-    # Volume 1month average * Current price > 10000000
+    # Volume 1year average * Current price > 50000000 AND
+    # Volume 1month average * Current price > 50000000
 
     filename = 'universe.json'
     try:
