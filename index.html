@@ -26,13 +26,12 @@
                 <tr>
                 <th colspan=3 rowspan=4></th>
                 <th colspan=2>Profitability</th>
-                <th colspan=2>Growth</th>
+                <th colspan=1>Growth</th>
                 <th colspan=3>Valuation</th>
                 <th colspan=2>Size</th>
                 </tr><tr>
                 <th id="roce_green"></th>
                 <th id="roe_green"></th>
-                <th id="profit_green"></th>
                 <th id="sales_green"></th>
                 <th id="yield_green"></th>
                 <th id="pe_green"></th>
@@ -42,7 +41,6 @@
                 </tr><tr>
                 <th id="roce_black"></th>
                 <th id="roe_black"></th>
-                <th id="profit_black"></th>
                 <th id="sales_black"></th>
                 <th id="yield_black"></th>
                 <th id="pe_black"></th>
@@ -52,7 +50,6 @@
                 </tr><tr>
                 <th id="roce_red"></th>
                 <th id="roe_red"></th>
-                <th id="profit_red"></th>
                 <th id="sales_red"></th>
                 <th id="yield_red"></th>
                 <th id="pe_red"></th>
@@ -65,7 +62,6 @@
                 <th>Code</th>
                 <th>ROCE</th>
                 <th>ROE</th>
-                <th>Profit</th>
                 <th>Sales</th>
                 <th>Yield</th>
                 <th>PE</th>
@@ -132,7 +128,6 @@ function format_data(data, count, amount) {
             G.map[name]? G.map[name]: '',
             d['roce'],
             d['roe'],
-            d['qtr_profit_var'],
             d['qtr_sales_var'],
             d['earnings_yield'],
             d['p_e'],
@@ -185,21 +180,21 @@ function renderTable(tableId, data) {
     let data_green = data.slice(0, median_index_black.first+1);
     let data_red = data.slice(median_index_black.second, data.length);
 
-    ['roce', 'roe', 'profit', 'sales', 'yield', 'pe', 'ps', 'mcap', 'qsales'].map((name, index) => {
+    ['roce', 'roe', 'sales', 'yield', 'pe', 'ps', 'mcap', 'qsales'].map((name, index) => {
 	let arr = data_green.map(d => d[index+3]).sort(function(a, b){ return a - b})
         let idx = median_index(0, data_green.length-1)
         $('#' + name + '_green').text(Math.round((arr[idx.first] + arr[idx.second])/2))
         $('#' + name + '_green').css('color', 'Green')
     });
 
-    ['roce', 'roe', 'profit', 'sales', 'yield', 'pe', 'ps', 'mcap', 'qsales'].map((name, index) => {
+    ['roce', 'roe', 'sales', 'yield', 'pe', 'ps', 'mcap', 'qsales'].map((name, index) => {
 	let arr = data_red.map(d => d[index+3]).sort(function(a, b){ return a - b})
         let idx = median_index(0, data_red.length-1)
         $('#' + name + '_red').text(Math.round((arr[idx.first] + arr[idx.second])/2))
         $('#' + name + '_red').css('color', 'Red')
     });
 
-    ['roce', 'roe', 'profit', 'sales', 'yield', 'pe', 'ps', 'mcap', 'qsales'].map((name, index) => {
+    ['roce', 'roe', 'sales', 'yield', 'pe', 'ps', 'mcap', 'qsales'].map((name, index) => {
 	let arr = data.map(d => d[index+3]).sort(function(a, b){ return a - b})
         let idx = median_index(0, arr.length-1)
         $('#' + name + '_black').text(Math.round((arr[idx.first] + arr[idx.second])/2))
