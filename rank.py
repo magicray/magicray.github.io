@@ -111,8 +111,8 @@ def portfolio(args):
     # Interest Coverage Ratio > 2 AND
     # Sales > 10 * Other income AND
     #
-    # Volume 1year average * Current price > 50000000 AND
-    # Volume 1month average * Current price > 50000000
+    # Volume 1year average * Current price > 60000000 AND
+    # Volume 1month average * Current price > 60000000
 
     filename = 'universe.json'
     try:
