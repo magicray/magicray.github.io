@@ -3201,7 +3201,7 @@
             "sales_qtr_rs_cr": 770.5
         }
     ],
-    "date": 1653795009,
+    "date": 1653872651,
     "sold": {
         "AIA Engineering": 1649292622,
         "Abbott India": 1648362475,
@@ -3317,10 +3317,12 @@
         "Angel Broking": "ANGBRO",
         "Angel One": "ANGBRO",
         "Anupam Rasayan": "ANURAS",
+        "Apar Inds": "APAIND",
         "Apollo Hospitals": "APOHOS",
         "Apollo Tricoat": "POTINV",
         "Apollo Tyres": "APOTYR",
         "Aptus Value Hou": "APTVAL",
+        "Arvind Ltd": "ARVLIM",
         "Asahi India Glas": "ASAIND",
         "Asian Paints": "ASIPAI",
         "Aster DM Health": "ASTDM",
@@ -3344,6 +3346,7 @@
         "Balrampur Chini": "BALCHI",
         "Bank of Baroda": "BANBAR",
         "Bank of Maha": "BANMAH",
+        "Bata India": "BATIND",
         "Bayer Crop Sci": "BAYIND",
         "Berger Paints": "BERPAI",
         "Bharat Dynamics": "BHADYN",
@@ -3414,6 +3417,7 @@
         "Finolex Cables": "FINCAB",
         "Finolex Inds": "FININD",
         "FirstsourSolu": "FIRSOU",
+        "Fortis Health": "FORHEA",
         "G M D C": "GUJMI",
         "G N F C": "GNFC",
         "G R Infraproject": "GRINFR",
@@ -3432,6 +3436,7 @@
         "Godrej Consumer": "GODCON",
         "Godrej Industrie": "GODIND",
         "Granules India": "GRANUL",
+        "Graphite India": "CAREVE",
         "Grasim Inds": "GRASIM",
         "Greenpanel Inds": "GREEI",
         "Grindwell Norton": "GRINOR",
@@ -3618,6 +3623,7 @@
         "Sundram Fasten": "SUNFAS",
         "Supreme Inds": "SUPIND",
         "Supreme Petroch": "SUPPET",
+        "Surya Roshni": "SURROS",
         "Suven Pharma": "SUVPH",
         "Syngene Intl": "SYNINT",
         "TCI Express": "TCIEXP",
@@ -3669,14 +3675,7 @@
         "Zensar Tech": "ZENTE",
         "Zydus Lifesci": "CADHEA",
         "Zydus Wellness": "ZYDWEL",
-        "eClerx Services": "ECLSER",
-        "O N G C": "ONGC",
-        "Surya Roshni": "SURROS",
-        "Graphite India": "CAREVE",
-        "Arvind Ltd": "ARVLIM",
-        "Fortis Health": "FORHEA",
-        "Bata India": "BATIND",
-	"Apar Inds": "APAIND"
+        "eClerx Services": "ECLSER"
     },
     "url": "https://www.screener.in/screens/703350/universe"
 }
