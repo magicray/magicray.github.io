@@ -3201,7 +3201,7 @@
             "sales_qtr_rs_cr": 770.5
         }
     ],
-    "date": 1654995574,
+    "date": 1655081980,
     "sold": {
         "AIA Engineering": 1649292622,
         "Abbott India": 1648362475,
@@ -3400,6 +3400,7 @@
         "Colgate-Palmoliv": "COLPAL",
         "Container Corpn": "CONCOR",
         "Coromandel Inter": "CORINT",
+        "Cosmo Films": "COSFIL",
         "Craftsman Auto": "CRAAUT",
         "CreditAcc Gram": "CREGRA",
         "Crompton Gr Con": "CROGR",
@@ -3548,6 +3549,7 @@
         "Mastek": "MASTEK",
         "Max Healthcare": "MAXHEA",
         "Medplus Health": "MEDHEA",
+        "Meghmani Fineche": "MEGF",
         "Meghmani Organi": "MEGORG",
         "Metro Brands": "METBRA",
         "Metropolis Healt": "METHEA",
@@ -3664,6 +3666,7 @@
         "The Ramco Cement": "RAMCEM",
         "Thermax": "THERMA",
         "Thyrocare Tech": "THYTEC",
+        "Time Technoplast": "TIMTEC",
         "Timken India": "TIMIND",
         "Tinplate Co": "TINCO",
         "Titan Company": "TITIND",
@@ -3698,10 +3701,7 @@
         "Zensar Tech": "ZENTE",
         "Zydus Lifesci": "CADHEA",
         "Zydus Wellness": "ZYDWEL",
-        "eClerx Services": "ECLSER",
-	"Meghmani Fineche": "MEGF",
-	"Cosmo Films": "COSFIL",
-	"Time Technoplast": "TIMTEC"
+        "eClerx Services": "ECLSER"
     },
     "url": "https://www.screener.in/screens/703350/universe"
 }
