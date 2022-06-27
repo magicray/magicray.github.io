@@ -3201,7 +3201,7 @@
             "sales_qtr_rs_cr": 770.5
         }
     ],
-    "date": 1656205340,
+    "date": 1656291790,
     "sold": {
         "AIA Engineering": 1649292622,
         "Adani Total Gas": 1656118742,
@@ -3624,6 +3624,7 @@
         "Relaxo Footwear": "RELFOO",
         "Reliance Industr": "RELIND",
         "Rites": "RITLIM",
+        "Rolex Rings": "ROLRIN",
         "Route Mobile": "ROUMOB",
         "Ruchi Soya Inds": "RUCSOY",
         "S A I L": "SAIL",
@@ -3714,8 +3715,7 @@
         "Zensar Tech": "ZENTE",
         "Zydus Lifesci": "CADHEA",
         "Zydus Wellness": "ZYDWEL",
-        "eClerx Services": "ECLSER",
-	"Rolex Rings": "ROLRIN"
+        "eClerx Services": "ECLSER"
     },
     "url": "https://www.screener.in/screens/703350/universe"
 }
