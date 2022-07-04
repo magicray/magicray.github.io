@@ -137,10 +137,11 @@ def portfolio(args):
         # v['growth'] = min(v['qtr_profit_var'], v['qtr_sales_var'])
 
     # Statistics is likely to work more reliable for bigger companies,
-    # pick biggest args.top stocks by market cap and quarterly sales
+    # pick biggest args.top stocks by market cap [and quarterly sales]
     mcap = rank('mar_cap_rs_cr', tmp)
-    qtrsales = rank('sales_qtr_rs_cr', tmp)
-    final_rank = [(mcap[name] + qtrsales[name], name) for name in mcap]
+    # qtrsales = rank('sales_qtr_rs_cr', tmp)
+    final_rank = [(mcap[name], name) for name in mcap]
+    # final_rank = [(mcap[name] + qtrsales[name], name) for name in mcap]
     biggest = set([name for rank, name in sorted(final_rank)[:args.top]])
     data = {k: v for k, v in tmp.items() if k in biggest}
     assert(len(data) == args.top)
