@@ -106,13 +106,11 @@ def portfolio(args):
     # Net worth > 0 AND
     # Book value > 0 AND
     # Total Assets > 0 AND
-    # 
+    #
     # Debt to equity < 1 AND
     # Interest Coverage Ratio > 2 AND
     # Sales > 10 * Other income AND
-    #
-    # Volume 1year average * Current price > 60000000 AND
-    # Volume 1month average * Current price > 60000000
+    # Volume > 0
 
     filename = 'universe.json'
     try:
@@ -253,7 +251,7 @@ def portfolio(args):
     with open('magicrank.json') as fd:
         prev = json.load(fd)
 
-    prev_names = set([s['name'] for s in prev['data'] if s['rank'] <= args.top/2])
+    prev_names = set([s['name'] for s in prev['data'] if s['rank'] <= len(prev['data'])/2])
     stock_names = set([s['name'] for s in stock_list if s['rank'] <= args.top/2])
     with open('magicrank.json', 'w') as fd:
         ts = int(time.time())
@@ -283,8 +281,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--screen', dest='screen', default='290555/Universe')
     parser.add_argument('--amount', dest='amount', type=int, default=0)
-    parser.add_argument('--count', dest='count', type=float, default=200)
-    parser.add_argument('--top', dest='top', type=int, default=200)
+    parser.add_argument('--count', dest='count', type=float, default=500)
+    parser.add_argument('--top', dest='top', type=int, default=500)
     portfolio(parser.parse_args())
 
 
