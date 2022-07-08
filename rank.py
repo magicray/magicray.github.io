@@ -136,6 +136,12 @@ def portfolio(args):
         # v['profit'] = max(v['roce'], v['roe'])
         # v['growth'] = min(v['qtr_profit_var'], v['qtr_sales_var'])
 
+    if not args.top:
+        args.top = int(len(tmp)/2)
+
+    if not args.count:
+        args.count = args.top
+
     # Statistics is likely to work more reliable for bigger companies,
     # pick biggest args.top stocks by market cap [and quarterly sales]
     mcap = rank('mar_cap_rs_cr', tmp)
@@ -282,8 +288,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--screen', dest='screen', default='290555/Universe')
     parser.add_argument('--amount', dest='amount', type=int, default=0)
-    parser.add_argument('--count', dest='count', type=float, default=400)
-    parser.add_argument('--top', dest='top', type=int, default=400)
+    parser.add_argument('--count', dest='count', type=float)
+    parser.add_argument('--top', dest='top', type=int)
     portfolio(parser.parse_args())
 
 
