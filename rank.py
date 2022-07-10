@@ -93,13 +93,16 @@ def portfolio(args):
     # Profit after tax > 0 AND
     # Operating profit > 0 AND
     # Return on assets > 0 AND
+    # Operating profit growth > 0 AND
+    # Return on invested capital > 0 AND
+    #
     # EPS latest quarter > 0 AND
     # NPM latest quarter > 0 AND
     # OPM latest quarter > 0 AND
     # GPM latest quarter > 0 AND
     # EBIT latest quarter > 0 AND
+    # EBIDT latest quarter > 0 AND
     # Net Profit latest quarter > 0 AND
-    # Return on invested capital > 0 AND
     # Profit after tax latest quarter > 0 AND
     # Operating profit latest quarter > 0 AND
     #
@@ -108,9 +111,7 @@ def portfolio(args):
     # Total Assets > 0 AND
     #
     # Debt to equity < 1 AND
-    # Interest Coverage Ratio > 2 AND
-    # Sales > 10 * Other income AND
-    # Volume > 0
+    # Interest Coverage Ratio > 2
 
     filename = 'universe.json'
     try:
