@@ -91,7 +91,15 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
 
         const sold = {}
         Object.keys(data['sold']).map(function(k) {
-            const v = new Date(data['sold'][k]*1000).toJSON().substr(0, 10)
+            today = new Date(data['sold'][k]*1000)
+            next_sunday = data['sold'][k] + (7 - today.getDay()) * 86400
+
+            if(today.getDay() > 0 && new Date(next_sunday*1000) <= new Date())
+                today = new Date(next_sunday*1000)
+            else
+                today = new Date(data['sold'][k]*1000)
+
+            const v = today.toJSON().substr(0, 10) + " " + today.toString().substr(0, 4)
             if(sold[v] == undefined)
                 sold[v] = []
             k = k.replaceAll('.', '')
