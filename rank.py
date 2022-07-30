@@ -111,7 +111,15 @@ def portfolio(args):
     # Total Assets > 0 AND
     #
     # Debt to equity < 1 AND
-    # Interest Coverage Ratio > 2
+    # Interest Coverage Ratio > 2 AND
+    #
+    # Sales 3quarters back > 0 AND
+    # Sales 2quarters back > 0 AND
+    # Sales preceding quarter > 0 AND
+    # Sales > 10 * Other income AND
+    #
+    # Operating cash flow 3years > 0 AND
+    # Operating cash flow 5years > 0
 
     filename = 'universe.json'
     try:
@@ -132,10 +140,6 @@ def portfolio(args):
             tmp[k] = v
 
         v['p_s'] = v['mar_cap_rs_cr'] / v['sales_qtr_rs_cr']  # Price to Sales
-
-        # v['value'] = max(v['earnings_yield'], 100/v['p_e'])
-        # v['profit'] = max(v['roce'], v['roe'])
-        # v['growth'] = min(v['qtr_profit_var'], v['qtr_sales_var'])
 
     if not args.top:
         args.top = int(len(tmp)/2)
@@ -169,9 +173,6 @@ def portfolio(args):
     pe = rank('p_e', data, False)
     ps = rank('p_s', data, False)
     e_yield = rank('earnings_yield', data)
-    # profit = rank('profit', data)
-    # growth = rank('growth', data)
-    # value = rank('value', data)
 
     stats = {f: median(f, data) for f in columns}
 
@@ -179,7 +180,6 @@ def portfolio(args):
         (roce[name] + roe[name]) * 3/2 +      # Quality
         3*sales[name] +                       # Growth
         ps[name] + pe[name] + e_yield[name],  # Value
-        # profit[name] + growth[name] + value[name],
         name) for name in roe]
 
     def print_header():
