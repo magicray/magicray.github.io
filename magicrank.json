@@ -5537,11 +5537,10 @@
             "sales_qtr_rs_cr": 3175.41
         }
     ],
-    "date": 1659229645,
+    "date": 1659316336,
     "sold": {
         "AGI Greenpac": 1659142758,
         "Adani Total Gas": 1659056699,
-        "Adani Wilmar": 1651539465,
         "Ajanta Pharma": 1654131776,
         "Alkem Lab": 1652490530,
         "Amara Raja Batt.": 1653094329,
@@ -5786,6 +5785,7 @@
         "Choice Intl": "CHOINT",
         "Chola Financial": "TUBINV",
         "CholamanInv&Fn": "CHOINV",
+        "Cigniti Tech": "CHAINF",
         "Cipla": "CIPLA",
         "Clean Science": "CLESCI",
         "Coal India": "COALIN",
@@ -5795,6 +5795,7 @@
         "Container Corpn": "CONCOR",
         "Coromandel Inter": "CORINT",
         "Cosmo Films": "COSFIL",
+        "Cosmo First": "COSFIL",
         "Craftsman Auto": "CRAAUT",
         "CreditAcc Gram": "CREGRA",
         "Crompton Gr Con": "CROGR",
@@ -5813,7 +5814,9 @@
         "Dixon Technolog": "DIXTEC",
         "Dr Lal Pathlabs": "DRLAL",
         "Dr Reddy's Labs": "DRREDD",
+        "Dwarikesh Sugar": "DWASUG",
         "EID Parry": "EIDPAR",
+        "EKI Energy": "EKIENE",
         "EPL Ltd": "ESSPRO",
         "ERIS Lifescience": "ERILIF",
         "Easy Trip Plann": "EASTRI",
@@ -5953,6 +5956,7 @@
         "Kotak Mah Bank": "KOTMAH",
         "Krishna Institu": "KRIINS",
         "L & T Infotech": "LTINFO",
+        "L G Balakrishnan": "LGBALA",
         "L T Foods": "LTOVER",
         "L&T Technology": "LTTEC",
         "LIC Housing Fin": "LICHF",
@@ -6174,12 +6178,7 @@
         "Zensar Tech": "ZENTE",
         "Zydus Lifesci": "CADHEA",
         "Zydus Wellness": "ZYDWEL",
-        "eClerx Services": "ECLSER",
-        "EKI Energy": "EKIENE",
-        "Dwarikesh Sugar": "DWASUG",
-        "Cosmo First": "COSFIL",
-        "Cigniti Tech": "CHAINF",
-        "L G Balakrishnan": "LGBALA"
+        "eClerx Services": "ECLSER"
     },
     "url": "https://www.screener.in/screens/290555/universe"
 }
