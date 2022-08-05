@@ -118,7 +118,20 @@ def portfolio(args):
     # Sales preceding quarter > 0 AND
     # Sales > 10 * Other income AND
     #
-    # Operating cash flow 3years > 0
+    # (Sales growth 3Years > 0 OR
+    #  Sales growth 5Years > 0 OR
+    #  Sales growth 7Years > 0 OR
+    #  Sales growth 10Years > 0) AND
+    #
+    # (Profit growth 3Years > 0 OR
+    #  Profit growth 5Years > 0 OR
+    #  Profit growth 7Years > 0 OR
+    #  Profit growth 10Years > 0) AND
+    #
+    # (Operating cash flow 3years > 0 OR
+    #  Operating cash flow 5years > 0 OR
+    #  Operating cash flow 7years > 0 OR
+    #  Operating cash flow 10years > 0)
 
     filename = 'universe.json'
     try:
