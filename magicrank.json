@@ -5393,7 +5393,7 @@
             "sales_qtr_rs_cr": 3326.83
         }
     ],
-    "date": 1660438957,
+    "date": 1660525480,
     "sold": {
         "AGI Greenpac": 1659142758,
         "APL Apollo Tubes": 1660352289,
@@ -5422,7 +5422,6 @@
         "Birlasoft Ltd": 1659142758,
         "Bodal Chemicals": 1659920319,
         "Bombay Burmah": 1653190245,
-        "Britannia Inds.": 1652749004,
         "C D S L": 1658624888,
         "CCL Products": 1659834396,
         "CG Power & Indu.": 1658970173,
@@ -5461,7 +5460,6 @@
         "Graphite India": 1659402557,
         "Gufic BioScience": 1660266012,
         "Guj.St.Petronet": 1657328100,
-        "Gujarat Fluoroch": 1652749004,
         "Gujarat Gas": 1657328100,
         "Gulshan Polyols": 1660093447,
         "H.G. Infra Engg.": 1658797548,
@@ -5516,7 +5514,6 @@
         "Power Mech Proj.": 1659142758,
         "Prudent Corp.": 1658624888,
         "Rainbow Child.": 1658192993,
-        "Reliance Industr": 1652749004,
         "Rolex Rings": 1660093447,
         "Route Mobile": 1659402557,
         "Ruchi Soya Inds.": 1653181024,
@@ -5696,6 +5693,7 @@
         "Disa India": "DISIND",
         "Divi's Lab": "DIVLAB",
         "Dixon Technolog": "DIXTEC",
+        "Dollar Industrie": "DOLIN",
         "Dr Lal Pathlabs": "DRLAL",
         "Dr Reddy's Labs": "DRREDD",
         "Dwarikesh Sugar": "DWASUG",
@@ -5983,6 +5981,7 @@
         "Sona BLW Precis": "SONBLW",
         "Sonata Software": "SONSOF",
         "Sportking India": "SPOIND",
+        "SrRayalaHypo": "SREERA",
         "St Bk of India": "STABAN",
         "Steel Str Wheel": "STESW",
         "Sterlite Tech": "STETEC",
@@ -6062,9 +6061,7 @@
         "Zensar Tech": "ZENTE",
         "Zydus Lifesci": "CADHEA",
         "Zydus Wellness": "ZYDWEL",
-        "eClerx Services": "ECLSER",
-        "SrRayalaHypo": "SREERA",
-        "Dollar Industrie": "DOLIN"
+        "eClerx Services": "ECLSER"
     },
     "url": "https://www.screener.in/screens/290555/universe"
 }
