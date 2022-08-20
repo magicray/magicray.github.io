@@ -113,9 +113,9 @@ def portfolio(args):
     # Debt to equity < 1 AND
     # Interest Coverage Ratio > 2 AND
     #
-    # Sales 3quarters back > 0 AND
-    # Sales 2quarters back > 0 AND
-    # Sales preceding quarter > 0 AND
+    # Operating profit 3quarters back > 0 AND
+    # Operating profit 2quarters back > 0 AND
+    # Operating profit preceding quarter  > 0 AND
     # Sales > 10 * Other income AND
     #
     # (Sales growth 3Years > 0 OR
@@ -127,6 +127,11 @@ def portfolio(args):
     #  Profit growth 5Years > 0 OR
     #  Profit growth 7Years > 0 OR
     #  Profit growth 10Years > 0) AND
+    #
+    # (EBIDT growth 3Years > 0 OR
+    #  EBIDT growth 5Years > 0 OR
+    #  EBIDT growth 7Years > 0 OR
+    #  EBIDT growth 10Years > 0) AND
     #
     # (Operating cash flow 3years > 0 OR
     #  Operating cash flow 5years > 0 OR
