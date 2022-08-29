@@ -1106,7 +1106,7 @@
         },
         {
             "cmp_rs": 346.35,
-            "div_yld": 6.89,
+            "div_yld": 1.38,
             "earnings_yield": 7.14,
             "mar_cap_rs_cr": 4519.3,
             "name": "PDS",
@@ -5265,7 +5265,7 @@
             "sales_qtr_rs_cr": 3326.83
         }
     ],
-    "date": 1661648793,
+    "date": 1661735496,
     "sold": {
         "AGI Greenpac": 1659142758,
         "Accelya Solution": 1661476064,
