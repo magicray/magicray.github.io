@@ -30,7 +30,7 @@
                 <th colspan=3>Valuation</th>
                 <th colspan=2>Size</th>
                 </tr><tr>
-                <th colspan=3 style="color: green;">Buy (top 50)</th>
+                <th colspan=3 id="group_buy" style="color: green;">Buy</th>
                 <th id="roce_darkgreen"></th>
                 <th id="roe_darkgreen"></th>
                 <th id="sales_darkgreen"></th>
@@ -198,10 +198,12 @@ function renderTable(tableId, data) {
     }
 
     let median_index_black = median_index(0, data.length-1)
-    let data_dark = data.slice(0, 50);
+    let max_dark_len = Math.max(50, Math.min(100, Math.floor(data.length/4)))
+    let data_dark = data.slice(0, max_dark_len);
     let data_green = data.slice(0, median_index_black.first+1);
     let data_red = data.slice(median_index_black.second, data.length);
 
+    $("#group_buy").html("Buy (top " + max_dark_len + ")");
     $("#group_hold").html("Hold (top " + data_green.length + ")");
     $("#group_all").html("All (" + data.length + ")");
     $("#group_avoid").html("Avoid (bottom " + data_red.length + ")");
@@ -256,7 +258,7 @@ function renderTable(tableId, data) {
         order: [[sort_order[0], sort_order[1]]],
         rowCallback: function(row, d, i) {
             $(row).css('color', d[0]>tmp.length/2? 'Red': 'Green')
-            $(row).css('font-weight', d[0]>50? '400': '500')
+            $(row).css('font-weight', d[0]>max_dark_len? '400': '500')
 	}})
 }
 </script>
