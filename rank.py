@@ -153,10 +153,6 @@ def portfolio(args):
         if v['qtr_profit_var'] == '' or v['qtr_sales_var'] == '':
             continue
 
-        if v['qtr_profit_var'] > 999 or v['qtr_sales_var'] > 999:
-            # Big outlier. Something wrong with accounting. Drop them
-            continue
-
         if all('' != y for y in v.values()):
             tmp[k] = v
 
@@ -191,7 +187,6 @@ def portfolio(args):
     roe = rank('roe', data)
     roce = rank('roce', data)
     sales = rank('qtr_sales_var', data)
-    profit = rank('qtr_profit_var', data)
     pe = rank('p_e', data, False)
     ps = rank('p_s', data, False)
     e_yield = rank('earnings_yield', data)
@@ -200,7 +195,7 @@ def portfolio(args):
 
     final_rank = [(
         (roce[name] + roe[name]) * 3/2 +      # Quality
-        (profit[name] + sales[name]) * 3/2 +  # Growth
+        sales[name] * 3 +                     # Growth
         ps[name] + pe[name] + e_yield[name],  # Value
         name) for name in roe]
 
