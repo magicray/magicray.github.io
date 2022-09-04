@@ -110,33 +110,12 @@ def portfolio(args):
     # Book value > 0 AND
     # Total Assets > 0 AND
     #
-    # Debt to equity < 1 AND
-    # Interest Coverage Ratio > 2 AND
-    #
     # Operating profit 3quarters back > 0 AND
     # Operating profit 2quarters back > 0 AND
     # Operating profit preceding quarter  > 0 AND
-    # Sales > 10 * Other income AND
     #
-    # (Sales growth 3Years > 0 OR
-    #  Sales growth 5Years > 0 OR
-    #  Sales growth 7Years > 0 OR
-    #  Sales growth 10Years > 0) AND
-    #
-    # (Profit growth 3Years > 0 OR
-    #  Profit growth 5Years > 0 OR
-    #  Profit growth 7Years > 0 OR
-    #  Profit growth 10Years > 0) AND
-    #
-    # (EBIDT growth 3Years > 0 OR
-    #  EBIDT growth 5Years > 0 OR
-    #  EBIDT growth 7Years > 0 OR
-    #  EBIDT growth 10Years > 0) AND
-    #
-    # (Operating cash flow 3years > 0 OR
-    #  Operating cash flow 5years > 0 OR
-    #  Operating cash flow 7years > 0 OR
-    #  Operating cash flow 10years > 0)
+    # DMA 50 > DMA 200 AND
+    # Return over 6months > 0
 
     filename = 'universe.json'
     try:
