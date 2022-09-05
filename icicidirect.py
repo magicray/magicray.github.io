@@ -38,7 +38,9 @@ class ICICIDirect():
 
     def buy(self, stock_code, price, quantity):
         self.driver.get(self.cashbuy_url)
-        self.byxpath("//label[@for='rdonse']").click()
+        # self.byxpath("//label[@for='rdonse']").click()
+        rdonse = self.byxpath("//input[@value='NSE']")
+        self.driver.execute_script('arguments[0].click();', rdonse)
         # self.byxpath("//label[@for='rdomarket']").click()
         self.byid('stcode').send_keys(stock_code)
         self.byid('FML_QTY').send_keys(quantity)
