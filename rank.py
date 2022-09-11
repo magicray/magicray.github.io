@@ -114,8 +114,7 @@ def portfolio(args):
     # Operating profit 2quarters back > 0 AND
     # Operating profit preceding quarter  > 0 AND
     #
-    # DMA 50 > DMA 200 AND
-    # Return over 6months > 0
+    # DMA 50 > DMA 200
 
     filename = 'universe.json'
     try:
