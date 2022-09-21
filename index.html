@@ -198,7 +198,8 @@ function renderTable(tableId, data) {
     }
 
     let median_index_black = median_index(0, data.length-1)
-    let max_dark_len = Math.max(50, Math.min(100, Math.floor(data.length/4)))
+    let max_dark_len = Math.floor(data.length/4)
+
     let data_dark = data.slice(0, max_dark_len);
     let data_green = data.slice(0, median_index_black.first+1);
     let data_red = data.slice(median_index_black.second, data.length);
