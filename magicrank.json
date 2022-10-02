@@ -146,7 +146,7 @@
         },
         {
             "cmp_rs": 322.9,
-            "div_yld": 0.05,
+            "div_yld": 0.0,
             "earnings_yield": 5.47,
             "mar_cap_rs_cr": 973.26,
             "name": "Lancer Containe.",
@@ -1105,6 +1105,22 @@
             "sales_qtr_rs_cr": 2032.58
         },
         {
+            "cmp_rs": 453.8,
+            "div_yld": 1.1,
+            "earnings_yield": 11.66,
+            "mar_cap_rs_cr": 982.93,
+            "name": "Pearl Global Ind",
+            "np_qtr_rs_cr": 36.37,
+            "p_e": 9.79,
+            "p_s": 1.1549479472657627,
+            "qtr_profit_var": 5031.17,
+            "qtr_sales_var": 95.1,
+            "rank": 70,
+            "roce": 12.75,
+            "roe": 11.23,
+            "sales_qtr_rs_cr": 851.06
+        },
+        {
             "cmp_rs": 1332.85,
             "div_yld": 0.19,
             "earnings_yield": 4.31,
@@ -1115,7 +1131,7 @@
             "p_s": 21.599087029870002,
             "qtr_profit_var": 1010.97,
             "qtr_sales_var": 250.26,
-            "rank": 70,
+            "rank": 71,
             "roce": 21.83,
             "roe": 26.79,
             "sales_qtr_rs_cr": 100.77
@@ -1131,7 +1147,7 @@
             "p_s": 25.352839931153184,
             "qtr_profit_var": 150.55,
             "qtr_sales_var": 136.62,
-            "rank": 71,
+            "rank": 72,
             "roce": 46.2,
             "roe": 34.53,
             "sales_qtr_rs_cr": 63.91
@@ -1147,7 +1163,7 @@
             "p_s": 0.6473790017818098,
             "qtr_profit_var": 33.43,
             "qtr_sales_var": 24.89,
-            "rank": 72,
+            "rank": 73,
             "roce": 29.26,
             "roe": 23.82,
             "sales_qtr_rs_cr": 16803.14
@@ -1163,7 +1179,7 @@
             "p_s": 1.5894658906987156,
             "qtr_profit_var": 55.67,
             "qtr_sales_var": 42.37,
-            "rank": 73,
+            "rank": 74,
             "roce": 22.21,
             "roe": 26.1,
             "sales_qtr_rs_cr": 580.78
@@ -1179,7 +1195,7 @@
             "p_s": 7.515429989820251,
             "qtr_profit_var": 917.38,
             "qtr_sales_var": 73.31,
-            "rank": 74,
+            "rank": 75,
             "roce": 22.66,
             "roe": 25.14,
             "sales_qtr_rs_cr": 717.11
@@ -1195,7 +1211,7 @@
             "p_s": 1.3065966254207064,
             "qtr_profit_var": 41.84,
             "qtr_sales_var": 46.26,
-            "rank": 75,
+            "rank": 76,
             "roce": 16.54,
             "roe": 18.43,
             "sales_qtr_rs_cr": 4031.91
@@ -1211,7 +1227,7 @@
             "p_s": 8.282659898847887,
             "qtr_profit_var": 92.05,
             "qtr_sales_var": 85.45,
-            "rank": 76,
+            "rank": 77,
             "roce": 24.68,
             "roe": 22.24,
             "sales_qtr_rs_cr": 547.69
@@ -1227,26 +1243,10 @@
             "p_s": 11.351057213930348,
             "qtr_profit_var": 21.16,
             "qtr_sales_var": 61.81,
-            "rank": 77,
+            "rank": 78,
             "roce": 37.72,
             "roe": 33.85,
             "sales_qtr_rs_cr": 225.12
-        },
-        {
-            "cmp_rs": 453.8,
-            "div_yld": 1.1,
-            "earnings_yield": 11.66,
-            "mar_cap_rs_cr": 982.93,
-            "name": "Pearl Global Ind",
-            "np_qtr_rs_cr": 36.37,
-            "p_e": 9.79,
-            "p_s": 1.1549479472657627,
-            "qtr_profit_var": 5031.17,
-            "qtr_sales_var": 95.1,
-            "rank": 78,
-            "roce": 11.42,
-            "roe": 11.26,
-            "sales_qtr_rs_cr": 851.06
         },
         {
             "cmp_rs": 3167.5,
@@ -1266,7 +1266,7 @@
         },
         {
             "cmp_rs": 428.25,
-            "div_yld": 0.53,
+            "div_yld": 0.0,
             "earnings_yield": 11.58,
             "mar_cap_rs_cr": 1100.29,
             "name": "S P Apparels",
@@ -1468,13 +1468,13 @@
             "qtr_profit_var": -40.42,
             "qtr_sales_var": 73.55,
             "rank": 92,
-            "roce": 20.81,
-            "roe": 24.11,
+            "roce": 20.8,
+            "roe": 24.09,
             "sales_qtr_rs_cr": 240.02
         },
         {
             "cmp_rs": 261.6,
-            "div_yld": 0.15,
+            "div_yld": 0.0,
             "earnings_yield": 4.64,
             "mar_cap_rs_cr": 1583.65,
             "name": "JTL Infra",
@@ -1537,22 +1537,6 @@
             "sales_qtr_rs_cr": 44.94
         },
         {
-            "cmp_rs": 273.65,
-            "div_yld": 0.91,
-            "earnings_yield": 14.02,
-            "mar_cap_rs_cr": 1725.86,
-            "name": "Seshasayee Paper",
-            "np_qtr_rs_cr": 59.66,
-            "p_e": 11.97,
-            "p_s": 4.005802618141305,
-            "qtr_profit_var": 221.44,
-            "qtr_sales_var": 97.64,
-            "rank": 97,
-            "roce": 12.07,
-            "roe": 8.85,
-            "sales_qtr_rs_cr": 430.84
-        },
-        {
             "cmp_rs": 1255.5,
             "div_yld": 0.16,
             "earnings_yield": 5.64,
@@ -1563,10 +1547,26 @@
             "p_s": 6.401984041406082,
             "qtr_profit_var": 54.7,
             "qtr_sales_var": 34.58,
-            "rank": 98,
+            "rank": 97,
             "roce": 40.73,
             "roe": 45.43,
             "sales_qtr_rs_cr": 463.7
+        },
+        {
+            "cmp_rs": 273.65,
+            "div_yld": 0.91,
+            "earnings_yield": 14.02,
+            "mar_cap_rs_cr": 1725.86,
+            "name": "Seshasayee Paper",
+            "np_qtr_rs_cr": 59.66,
+            "p_e": 11.97,
+            "p_s": 4.005802618141305,
+            "qtr_profit_var": 221.44,
+            "qtr_sales_var": 97.64,
+            "rank": 98,
+            "roce": 12.07,
+            "roe": 8.85,
+            "sales_qtr_rs_cr": 430.84
         },
         {
             "cmp_rs": 130.9,
@@ -3330,7 +3330,7 @@
         },
         {
             "cmp_rs": 689.55,
-            "div_yld": 0.15,
+            "div_yld": 0.1,
             "earnings_yield": 3.04,
             "mar_cap_rs_cr": 2648.07,
             "name": "Shivalik Bimetal",
@@ -3617,22 +3617,6 @@
             "sales_qtr_rs_cr": 61.35
         },
         {
-            "cmp_rs": 71.85,
-            "div_yld": 0.0,
-            "earnings_yield": 2.59,
-            "mar_cap_rs_cr": 2783.81,
-            "name": "Jupiter Wagons",
-            "np_qtr_rs_cr": 13.41,
-            "p_e": 72.65,
-            "p_s": 9.423865944482058,
-            "qtr_profit_var": 469.42,
-            "qtr_sales_var": 430.53,
-            "rank": 227,
-            "roce": 11.81,
-            "roe": 7.59,
-            "sales_qtr_rs_cr": 295.4
-        },
-        {
             "cmp_rs": 186.5,
             "div_yld": 0.0,
             "earnings_yield": 5.31,
@@ -3643,10 +3627,26 @@
             "p_s": 13.676959064327487,
             "qtr_profit_var": 247.38,
             "qtr_sales_var": 244.2,
-            "rank": 228,
+            "rank": 227,
             "roce": 6.36,
             "roe": 0.57,
             "sales_qtr_rs_cr": 85.5
+        },
+        {
+            "cmp_rs": 71.85,
+            "div_yld": 0.0,
+            "earnings_yield": 2.59,
+            "mar_cap_rs_cr": 2783.81,
+            "name": "Jupiter Wagons",
+            "np_qtr_rs_cr": 13.41,
+            "p_e": 72.65,
+            "p_s": 9.423865944482058,
+            "qtr_profit_var": 469.42,
+            "qtr_sales_var": 430.53,
+            "rank": 228,
+            "roce": 11.81,
+            "roe": 7.59,
+            "sales_qtr_rs_cr": 295.4
         },
         {
             "cmp_rs": 2560.75,
@@ -3681,22 +3681,6 @@
             "sales_qtr_rs_cr": 292.59
         },
         {
-            "cmp_rs": 1674.85,
-            "div_yld": 0.3,
-            "earnings_yield": 10.08,
-            "mar_cap_rs_cr": 110268.76,
-            "name": "Grasim Inds",
-            "np_qtr_rs_cr": 2758.75,
-            "p_e": 14.02,
-            "p_s": 3.9323360985167004,
-            "qtr_profit_var": 15.96,
-            "qtr_sales_var": 40.78,
-            "rank": 231,
-            "roce": 12.19,
-            "roe": 10.75,
-            "sales_qtr_rs_cr": 28041.54
-        },
-        {
             "cmp_rs": 287.95,
             "div_yld": 0.52,
             "earnings_yield": 4.66,
@@ -3707,7 +3691,7 @@
             "p_s": 15.438512105178772,
             "qtr_profit_var": 1495.08,
             "qtr_sales_var": 136.7,
-            "rank": 232,
+            "rank": 231,
             "roce": 5.46,
             "roe": 6.03,
             "sales_qtr_rs_cr": 62.37
@@ -3723,10 +3707,26 @@
             "p_s": 19.707223096543114,
             "qtr_profit_var": -12.17,
             "qtr_sales_var": 43.22,
-            "rank": 233,
+            "rank": 232,
             "roce": 22.21,
             "roe": 25.46,
             "sales_qtr_rs_cr": 184.27
+        },
+        {
+            "cmp_rs": 1674.85,
+            "div_yld": 0.3,
+            "earnings_yield": 10.08,
+            "mar_cap_rs_cr": 110268.76,
+            "name": "Grasim Inds",
+            "np_qtr_rs_cr": 2758.75,
+            "p_e": 14.02,
+            "p_s": 3.9323360985167004,
+            "qtr_profit_var": 15.96,
+            "qtr_sales_var": 40.78,
+            "rank": 233,
+            "roce": 12.19,
+            "roe": 10.75,
+            "sales_qtr_rs_cr": 28041.54
         },
         {
             "cmp_rs": 665.55,
@@ -4145,22 +4145,6 @@
             "sales_qtr_rs_cr": 273.23
         },
         {
-            "cmp_rs": 106.75,
-            "div_yld": 0.94,
-            "earnings_yield": 11.55,
-            "mar_cap_rs_cr": 2414.12,
-            "name": "Time Technoplast",
-            "np_qtr_rs_cr": 45.24,
-            "p_e": 11.84,
-            "p_s": 2.5560578949040202,
-            "qtr_profit_var": 55.65,
-            "qtr_sales_var": 25.2,
-            "rank": 260,
-            "roce": 12.22,
-            "roe": 9.44,
-            "sales_qtr_rs_cr": 944.47
-        },
-        {
             "cmp_rs": 99.45,
             "div_yld": 1.01,
             "earnings_yield": 7.39,
@@ -4171,10 +4155,26 @@
             "p_s": 10.187798479854711,
             "qtr_profit_var": 52.08,
             "qtr_sales_var": 1.01,
-            "rank": 261,
+            "rank": 260,
             "roce": 26.7,
             "roe": 21.43,
             "sales_qtr_rs_cr": 148.67
+        },
+        {
+            "cmp_rs": 106.75,
+            "div_yld": 0.94,
+            "earnings_yield": 11.55,
+            "mar_cap_rs_cr": 2414.12,
+            "name": "Time Technoplast",
+            "np_qtr_rs_cr": 45.24,
+            "p_e": 11.84,
+            "p_s": 2.5560578949040202,
+            "qtr_profit_var": 55.65,
+            "qtr_sales_var": 25.2,
+            "rank": 261,
+            "roce": 12.22,
+            "roe": 9.44,
+            "sales_qtr_rs_cr": 944.47
         },
         {
             "cmp_rs": 1975.65,
@@ -4274,7 +4274,7 @@
         },
         {
             "cmp_rs": 383.2,
-            "div_yld": 0.26,
+            "div_yld": 0.0,
             "earnings_yield": 3.18,
             "mar_cap_rs_cr": 4381.16,
             "name": "Borosil",
@@ -4337,22 +4337,6 @@
             "sales_qtr_rs_cr": 611.21
         },
         {
-            "cmp_rs": 1318.15,
-            "div_yld": 0.0,
-            "earnings_yield": 1.68,
-            "mar_cap_rs_cr": 7119.19,
-            "name": "Go Fashion (I)",
-            "np_qtr_rs_cr": 24.44,
-            "p_e": 90.07,
-            "p_s": 43.094370460048424,
-            "qtr_profit_var": 228.63,
-            "qtr_sales_var": 432.9,
-            "rank": 272,
-            "roce": 11.98,
-            "roe": 9.72,
-            "sales_qtr_rs_cr": 165.2
-        },
-        {
             "cmp_rs": 1706.9,
             "div_yld": 0.62,
             "earnings_yield": 1.54,
@@ -4363,10 +4347,26 @@
             "p_s": 18.505865806102406,
             "qtr_profit_var": 424.73,
             "qtr_sales_var": 117.85,
-            "rank": 273,
+            "rank": 272,
             "roce": 13.07,
             "roe": 9.72,
             "sales_qtr_rs_cr": 2438.71
+        },
+        {
+            "cmp_rs": 1318.15,
+            "div_yld": 0.0,
+            "earnings_yield": 1.68,
+            "mar_cap_rs_cr": 7119.19,
+            "name": "Go Fashion (I)",
+            "np_qtr_rs_cr": 24.44,
+            "p_e": 90.07,
+            "p_s": 43.094370460048424,
+            "qtr_profit_var": 228.63,
+            "qtr_sales_var": 432.9,
+            "rank": 273,
+            "roce": 11.98,
+            "roe": 9.72,
+            "sales_qtr_rs_cr": 165.2
         },
         {
             "cmp_rs": 68.05,
@@ -4385,6 +4385,22 @@
             "sales_qtr_rs_cr": 3862.91
         },
         {
+            "cmp_rs": 99.45,
+            "div_yld": 0.2,
+            "earnings_yield": 3.32,
+            "mar_cap_rs_cr": 4170.33,
+            "name": "Himadri Special",
+            "np_qtr_rs_cr": 38.56,
+            "p_e": 51.95,
+            "p_s": 3.9844932354964455,
+            "qtr_profit_var": 166.85,
+            "qtr_sales_var": 93.91,
+            "rank": 275,
+            "roce": 4.57,
+            "roe": 3.12,
+            "sales_qtr_rs_cr": 1046.64
+        },
+        {
             "cmp_rs": 467.2,
             "div_yld": 0.0,
             "earnings_yield": 3.11,
@@ -4395,26 +4411,10 @@
             "p_s": 23.686522462562394,
             "qtr_profit_var": 158.08,
             "qtr_sales_var": 371.74,
-            "rank": 275,
+            "rank": 276,
             "roce": 5.97,
             "roe": 4.14,
             "sales_qtr_rs_cr": 60.1
-        },
-        {
-            "cmp_rs": 99.45,
-            "div_yld": 0.2,
-            "earnings_yield": 3.31,
-            "mar_cap_rs_cr": 4170.33,
-            "name": "Himadri Special",
-            "np_qtr_rs_cr": 38.56,
-            "p_e": 51.95,
-            "p_s": 3.9844932354964455,
-            "qtr_profit_var": 166.85,
-            "qtr_sales_var": 93.91,
-            "rank": 276,
-            "roce": 4.57,
-            "roe": 3.12,
-            "sales_qtr_rs_cr": 1046.64
         },
         {
             "cmp_rs": 3945.3,
@@ -4546,7 +4546,7 @@
         },
         {
             "cmp_rs": 1088.3,
-            "div_yld": 0.09,
+            "div_yld": 0.0,
             "earnings_yield": 3.43,
             "mar_cap_rs_cr": 2767.0,
             "name": "SEAMEC Ltd",
@@ -5361,22 +5361,6 @@
             "sales_qtr_rs_cr": 327.72
         },
         {
-            "cmp_rs": 252.4,
-            "div_yld": 0.0,
-            "earnings_yield": 5.32,
-            "mar_cap_rs_cr": 12607.71,
-            "name": "Aster DM Health.",
-            "np_qtr_rs_cr": 79.77,
-            "p_e": 22.92,
-            "p_s": 4.735966072153021,
-            "qtr_profit_var": 54.13,
-            "qtr_sales_var": 12.25,
-            "rank": 336,
-            "roce": 11.58,
-            "roe": 15.97,
-            "sales_qtr_rs_cr": 2662.12
-        },
-        {
             "cmp_rs": 912.0,
             "div_yld": 0.33,
             "earnings_yield": 3.02,
@@ -5387,10 +5371,26 @@
             "p_s": 25.364933974505764,
             "qtr_profit_var": 8.23,
             "qtr_sales_var": 15.8,
-            "rank": 337,
+            "rank": 336,
             "roce": 23.67,
             "roe": 20.87,
             "sales_qtr_rs_cr": 131.01
+        },
+        {
+            "cmp_rs": 252.4,
+            "div_yld": 0.0,
+            "earnings_yield": 5.32,
+            "mar_cap_rs_cr": 12607.71,
+            "name": "Aster DM Health.",
+            "np_qtr_rs_cr": 79.77,
+            "p_e": 22.92,
+            "p_s": 4.735966072153021,
+            "qtr_profit_var": 54.13,
+            "qtr_sales_var": 12.25,
+            "rank": 337,
+            "roce": 11.58,
+            "roe": 15.97,
+            "sales_qtr_rs_cr": 2662.12
         },
         {
             "cmp_rs": 1929.6,
@@ -6481,7 +6481,7 @@
             "sales_qtr_rs_cr": 3326.83
         }
     ],
-    "date": 1664587643,
+    "date": 1664673736,
     "sold": {
         "AGI Greenpac": 1659142758,
         "Aarti Industries": 1662264143,
