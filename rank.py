@@ -83,36 +83,18 @@ def portfolio(args):
     # Return on equity > 0 AND
     # Return on capital employed > 0 AND
     # YOY Quarterly sales growth > 0 AND
+    # YOY Quarterly profit growth > 0 AND
     #
-    # EPS > 0 AND
-    # OPM > 0 AND
-    # EBIT > 0 AND
-    # Net profit > 0 AND
     # Sales growth > 0 AND
     # Profit growth > 0 AND
-    # Profit after tax > 0 AND
-    # Operating profit > 0 AND
-    # Return on assets > 0 AND
     # Operating profit growth > 0 AND
-    # Return on invested capital > 0 AND
     #
+    # EPS > 0 AND
+    # Net profit > 0 AND
+    # Operating profit > 0 AND
     # EPS latest quarter > 0 AND
-    # NPM latest quarter > 0 AND
-    # OPM latest quarter > 0 AND
-    # GPM latest quarter > 0 AND
-    # EBIT latest quarter > 0 AND
-    # EBIDT latest quarter > 0 AND
-    # Net Profit latest quarter > 0 AND
     # Profit after tax latest quarter > 0 AND
-    # Operating profit latest quarter > 0 AND
-    #
-    # Net worth > 0 AND
-    # Book value > 0 AND
-    # Total Assets > 0 AND
-    #
-    # Operating profit 3quarters back > 0 AND
-    # Operating profit 2quarters back > 0 AND
-    # Operating profit preceding quarter  > 0
+    # Operating profit latest quarter > 0
 
     filename = 'universe.json'
     try:
@@ -134,6 +116,8 @@ def portfolio(args):
 
         v['p_s'] = v['mar_cap_rs_cr'] / v['sales_qtr_rs_cr']  # Price to Sales
 
+        v['growth'] = min(v['qtr_profit_var'], v['qtr_sales_var'])
+
     if not args.top:
         args.top = int(len(tmp)/2)
 
@@ -143,9 +127,7 @@ def portfolio(args):
     # Statistics is likely to work more reliable for bigger companies,
     # pick biggest args.top stocks by market cap [and quarterly sales]
     mcap = rank('mar_cap_rs_cr', tmp)
-    # qtrsales = rank('sales_qtr_rs_cr', tmp)
     final_rank = [(mcap[name], name) for name in mcap]
-    # final_rank = [(mcap[name] + qtrsales[name], name) for name in mcap]
     biggest = set([name for rank, name in sorted(final_rank)[:args.top]])
     data = {k: v for k, v in tmp.items() if k in biggest}
     assert(len(data) == args.top)
@@ -162,7 +144,8 @@ def portfolio(args):
     # Lets rank on Profitability, Growth and Valuation
     roe = rank('roe', data)
     roce = rank('roce', data)
-    sales = rank('qtr_sales_var', data)
+    # sales = rank('qtr_sales_var', data)
+    growth = rank('growth', data)
     pe = rank('p_e', data, False)
     ps = rank('p_s', data, False)
     e_yield = rank('earnings_yield', data)
@@ -171,7 +154,8 @@ def portfolio(args):
 
     final_rank = [(
         (roce[name] + roe[name]) * 3/2 +      # Quality
-        sales[name] * 3 +                     # Growth
+        # sales[name] * 3 +                   # Growth
+        growth[name] * 3 +                    # Growth
         ps[name] + pe[name] + e_yield[name],  # Value
         name) for name in roe]
 
