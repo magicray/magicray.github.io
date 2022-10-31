@@ -5781,8 +5781,8 @@
             "sales_qtr_rs_cr": 58.49
         },
         {
-            "cmp_rs": 610.45,
-            "div_yld": 0.57,
+            "cmp_rs": 122.09,
+            "div_yld": 2.87,
             "earnings_yield": 5.69,
             "growth": 25.39,
             "mar_cap_rs_cr": 1905.12,
@@ -8433,7 +8433,7 @@
             "sales_qtr_rs_cr": 18.64
         }
     ],
-    "date": 1667092542,
+    "date": 1667178982,
     "sold": {
         "APL Apollo Tubes": 1666314736,
         "Aarti Industries": 1666327652,
@@ -8486,7 +8486,6 @@
         "Godawari Power": 1666314736,
         "Godfrey Phillips": 1662426830,
         "Goldiam Intl.": 1659747577,
-        "Graphite India": 1659402557,
         "Gufic BioScience": 1660266012,
         "Gulshan Polyols": 1660093447,
         "Hawkins Cookers": 1666062154,
@@ -8509,7 +8508,6 @@
         "Kalyani Steels": 1660007185,
         "Kewal Kir.Cloth.": 1666401560,
         "Kirl. Ferrous": 1659747577,
-        "Kirl.Pneumatic": 1659402557,
         "Lords Chloro": 1665883346,
         "Lux Industries": 1666314736,
         "M R P L": 1667005301,
