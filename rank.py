@@ -16,7 +16,9 @@ def download(screen):
     headers = list()
     s_no_max = 0
     for i in range(1000):
-        r = requests.get(url + str(i+1))
+        r = requests.get(url + str(i+1), headers={
+            'accept-encoding': 'gzip',
+            'cookie': 'sessionid=asfkovkqpo0ix2m2ujh17swqh5f7irxg;'})
 
         assert(200 == r.status_code)
 
@@ -90,9 +92,21 @@ def portfolio(args):
     # Operating profit growth > 0 AND
     #
     # EPS > 0 AND
+    # OPM > 0 AND
+    # EBIT > 0 AND
     # Net profit > 0 AND
+    # Profit after tax > 0 AND
     # Operating profit > 0 AND
+    # Return on assets > 0 AND
+    # Return on invested capital > 0 AND
+    #
     # EPS latest quarter > 0 AND
+    # GPM latest quarter > 0 AND
+    # OPM latest quarter > 0 AND
+    # NPM latest quarter > 0 AND
+    # EBIT latest quarter > 0 AND
+    # EBIDT latest quarter > 0 AND
+    # Net Profit latest quarter > 0 AND
     # Profit after tax latest quarter > 0 AND
     # Operating profit latest quarter > 0
 
