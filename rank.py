@@ -83,32 +83,23 @@ def portfolio(args):
     # Earnings yield > 0 AND
     # Price to Earning > 0 AND
     # Return on equity > 0 AND
+    # Return on assets > 0 AND
+    # Return on invested capital > 0 AND
     # Return on capital employed > 0 AND
-    # YOY Quarterly sales growth > 0 AND
-    # YOY Quarterly profit growth > 0 AND
     #
     # Sales growth > 0 AND
     # Profit growth > 0 AND
     # Operating profit growth > 0 AND
+    #
+    # Price to Sales > 0 AND
+    # Price to book value > 0 AND
     #
     # EPS > 0 AND
     # OPM > 0 AND
     # EBIT > 0 AND
     # Net profit > 0 AND
     # Profit after tax > 0 AND
-    # Operating profit > 0 AND
-    # Return on assets > 0 AND
-    # Return on invested capital > 0 AND
-    #
-    # EPS latest quarter > 0 AND
-    # GPM latest quarter > 0 AND
-    # OPM latest quarter > 0 AND
-    # NPM latest quarter > 0 AND
-    # EBIT latest quarter > 0 AND
-    # EBIDT latest quarter > 0 AND
-    # Net Profit latest quarter > 0 AND
-    # Profit after tax latest quarter > 0 AND
-    # Operating profit latest quarter > 0
+    # Operating profit > 0
 
     filename = 'universe.json'
     try:
@@ -122,24 +113,19 @@ def portfolio(args):
 
     tmp = dict()
     for k, v in data['data'].items():
-        if v['qtr_profit_var'] == '' or v['qtr_sales_var'] == '':
-            continue
-
         if all('' != y for y in v.values()):
             tmp[k] = v
 
-        v['p_s'] = v['mar_cap_rs_cr'] / v['sales_qtr_rs_cr']  # Price to Sales
-
-        v['growth'] = min(v['qtr_profit_var'], v['qtr_sales_var'])
+        v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']
 
     if not args.top:
-        args.top = int(len(tmp)/2)
+        args.top = min(int(len(tmp)/2), 400)
 
     if not args.count:
         args.count = args.top
 
     # Statistics is likely to work more reliable for bigger companies,
-    # pick biggest args.top stocks by market cap [and quarterly sales]
+    # pick biggest args.top stocks by market cap
     mcap = rank('mar_cap_rs_cr', tmp)
     final_rank = [(mcap[name], name) for name in mcap]
     biggest = set([name for rank, name in sorted(final_rank)[:args.top]])
@@ -151,26 +137,31 @@ def portfolio(args):
         len(data[list(data.keys())[0]]), len(data), (time.time()-t)*1000)
 
     columns = ('roce', 'roe',
-               'qtr_sales_var', 'qtr_profit_var',
+               # 'qtr_sales_var', 'qtr_profit_var',
                'earnings_yield', 'p_e',
                'mar_cap_rs_cr', 'cmp_rs')
 
     # Lets rank on Profitability, Growth and Valuation
     roe = rank('roe', data)
     roce = rank('roce', data)
-    # sales = rank('qtr_sales_var', data)
-    growth = rank('growth', data)
+    roic = rank('roic', data)
+    opm = rank('opm', data)
+    roa = rank('roa_12m', data)
+    sales_growth = rank('sales_growth', data)
+    profit_growth = rank('profit_growth', data)
+    op_profit_growth = rank('opert_prft_gwth', data)
     pe = rank('p_e', data, False)
-    ps = rank('p_s', data, False)
+    ps = rank('cmp_sales', data, False)
+    pb = rank('cmp_bv', data, False)
+    po = rank('p_o', data, False)
     e_yield = rank('earnings_yield', data)
 
     stats = {f: median(f, data) for f in columns}
 
     final_rank = [(
-        (roce[name] + roe[name]) * 3/2 +      # Quality
-        # sales[name] * 3 +                   # Growth
-        growth[name] * 3 +                    # Growth
-        ps[name] + pe[name] + e_yield[name],  # Value
+        (roce[name] + roe[name] + roic[name] + opm[name] + roa[name]) +              # Quality
+        (sales_growth[name] + profit_growth[name] + op_profit_growth[name]) * 5/3 +  # Growth
+        (pe[name] + pb[name] + ps[name] + po[name] + e_yield[name]),                 # Value
         name) for name in roe]
 
     def print_header():
@@ -183,12 +174,12 @@ def portfolio(args):
 
     print_header()
     for i, f in enumerate(('Max', 'Median')):
-        print(('%s\t\t' + '%8.2f' * 6 + '%8d%8d') % (
+        print(('%s\t\t' + '%8.2f' * 4 + '%8d%8d') % (
             f,
             stats['roce'][i],
             stats['roe'][i],
-            stats['qtr_sales_var'][i],
-            stats['qtr_profit_var'][i],
+            # stats['qtr_sales_var'][i],
+            # stats['qtr_profit_var'][i],
             stats['earnings_yield'][i],
             stats['p_e'][i],
             stats['mar_cap_rs_cr'][i],
@@ -230,9 +221,9 @@ def portfolio(args):
 
         args.amount -= qty*v['cmp_rs']
 
-        print(('%-16s' + '%8.2f' * 6 + '%8d%8d%8d') % (
+        print(('%-16s' + '%8.2f' * 4 + '%8d%8d%8d') % (
             name, v['roce'], v['roe'],
-            v['qtr_sales_var'], v['qtr_profit_var'],
+            # v['qtr_sales_var'], v['qtr_profit_var'],
             v['earnings_yield'], v['p_e'],
             v['mar_cap_rs_cr'], v['cmp_rs'],
             qty))
@@ -268,9 +259,9 @@ def portfolio(args):
 
     print('-' * 88)
     print_header()
-    print(('%-16s' + '%8.2f' * 6 + '%8d%8d') % (
+    print(('%-16s' + '%8.2f' * 4 + '%8d%8d') % (
         'Average', avg['roce'], avg['roe'],
-        avg['qtr_sales_var'], avg['qtr_profit_var'],
+        # avg['qtr_sales_var'], avg['qtr_profit_var'],
         avg['earnings_yield'], avg['p_e'],
         avg['mar_cap_rs_cr'], avg['cmp_rs']))
 
