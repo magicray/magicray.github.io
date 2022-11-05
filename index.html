@@ -25,67 +25,107 @@
             <thead>
                 <tr>
                 <th colspan=3>Group</th>
-                <th colspan=2>Profitability</th>
-                <th colspan=2>Growth</th>
-                <th colspan=3>Valuation</th>
-                <th colspan=2>Size</th>
+                <th colspan=5>Profitability</th>
+                <th colspan=3>Growth</th>
+                <th colspan=5>Valuation</th>
+                <th colspan=4>Size</th>
                 </tr><tr>
                 <th colspan=3 id="group_buy" style="color: green;">Buy</th>
                 <th id="roce_darkgreen"></th>
                 <th id="roe_darkgreen"></th>
-                <th id="profit_darkgreen"></th>
-                <th id="sales_darkgreen"></th>
+                <th id="roic_darkgreen"></th>
+                <th id="opm_darkgreen"></th>
+                <th id="roa_darkgreen"></th>
+                <th id="profit_growth_darkgreen"></th>
+                <th id="sales_growth_darkgreen"></th>
+                <th id="oprofit_growth_darkgreen"></th>
                 <th id="yield_darkgreen"></th>
                 <th id="pe_darkgreen"></th>
                 <th id="ps_darkgreen"></th>
+                <th id="pb_darkgreen"></th>
+                <th id="po_darkgreen"></th>
                 <th id="mcap_darkgreen"></th>
-                <th id="qsales_darkgreen"></th>
+                <th id="sales_darkgreen"></th>
+                <th id="profit_darkgreen"></th>
+                <th id="oprofit_darkgreen"></th>
                 </tr><tr>
                 <th colspan=3 id="group_hold">Hold</th>
                 <th id="roce_green"></th>
                 <th id="roe_green"></th>
-                <th id="profit_green"></th>
-                <th id="sales_green"></th>
+                <th id="roic_green"></th>
+                <th id="opm_green"></th>
+                <th id="roa_green"></th>
+                <th id="profit_growth_green"></th>
+                <th id="sales_growth_green"></th>
+                <th id="oprofit_growth_green"></th>
                 <th id="yield_green"></th>
                 <th id="pe_green"></th>
                 <th id="ps_green"></th>
+                <th id="pb_green"></th>
+                <th id="po_green"></th>
                 <th id="mcap_green"></th>
-                <th id="qsales_green"></th>
+                <th id="sales_green"></th>
+                <th id="profit_green"></th>
+                <th id="oprofit_green"></th>
                 </tr><tr>
                 <th colspan=3 id="group_all">All</th>
                 <th id="roce_black"></th>
                 <th id="roe_black"></th>
-                <th id="profit_black"></th>
-                <th id="sales_black"></th>
+                <th id="roic_black"></th>
+                <th id="opm_black"></th>
+                <th id="roa_black"></th>
+                <th id="profit_growth_black"></th>
+                <th id="sales_growth_black"></th>
+                <th id="oprofit_growth_black"></th>
                 <th id="yield_black"></th>
                 <th id="pe_black"></th>
                 <th id="ps_black"></th>
+                <th id="pb_black"></th>
+                <th id="po_black"></th>
                 <th id="mcap_black"></th>
-                <th id="qsales_black"></th>
+                <th id="sales_black"></th>
+                <th id="profit_black"></th>
+                <th id="oprofit_black"></th>
                 </tr><tr>
                 <th colspan=3 id="group_avoid">Avoid</th>
                 <th id="roce_red"></th>
                 <th id="roe_red"></th>
-                <th id="profit_red"></th>
-                <th id="sales_red"></th>
+                <th id="roic_red"></th>
+                <th id="opm_red"></th>
+                <th id="roa_red"></th>
+                <th id="profit_growth_red"></th>
+                <th id="sales_growth_red"></th>
+                <th id="oprofit_growth_red"></th>
                 <th id="yield_red"></th>
                 <th id="pe_red"></th>
                 <th id="ps_red"></th>
+                <th id="pb_red"></th>
+                <th id="po_red"></th>
                 <th id="mcap_red"></th>
-                <th id="qsales_red"></th>
+                <th id="sales_red"></th>
+                <th id="profit_red"></th>
+                <th id="oprofit_red"></th>
                 </tr><tr style="position: sticky; top: 0; z-index: 1; background-color: white">
                 <th>Rank</th>
                 <th>Stock</th>
                 <th>Code</th>
                 <th>ROCE</th>
                 <th>ROE</th>
+                <th>ROIC</th>
+                <th>OPM</th>
+                <th>ROA</th>
                 <th>Profit</th>
                 <th>Sales</th>
+                <th>OProfit</th>
                 <th>Yield</th>
                 <th>PE</th>
                 <th>PS</th>
+                <th>PB</th>
+                <th>PO</th>
                 <th>MCap</th>
-                <th>QSales</th>
+                <th>Sales</th>
+                <th>Profit</th>
+                <th>OProfit</th>
                 </tr>
             </thead>
         </table>
@@ -154,13 +194,21 @@ function format_data(data, count, amount) {
             G.map[name]? G.map[name]: '',
             d['roce'],
             d['roe'],
-            d['qtr_profit_var'],
-            d['qtr_sales_var'],
+            d['roic'],
+            d['opm'],
+            d['roa_12m'],
+            d['profit_growth'],
+            d['sales_growth'],
+            d['opert_prft_gwth'],
             d['earnings_yield'],
             d['p_e'],
-            d['p_s']/4,
+            d['cmp_sales'],
+            d['cmp_bv'],
+            d['p_o'],
             d['mar_cap_rs_cr'],
-	    d['sales_qtr_rs_cr']])
+	    d['sales_rs_cr'],
+	    d['np_12m_rs_cr'],
+	    d['op_12m_rs_cr']])
     }
 
     return result
@@ -221,7 +269,11 @@ function renderTable(tableId, data) {
     $("#group_avoid").css("color", "red");
     $("#group_avoid").css("font-weight", "normal");
 
-    ['roce', 'roe', 'profit', 'sales', 'yield', 'pe', 'ps', 'mcap', 'qsales'].map((name, index) => {
+    const col = ['roce', 'roe', 'roic', 'opm', 'roa',
+	         'profit_growth', 'sales_growth', 'oprofit_growth',
+	         'yield', 'pe', 'ps', 'pb', 'po',
+	         'mcap', 'sales', 'profit', 'oprofit']
+    col.map((name, index) => {
 	let arr = data_dark.map(d => d[index+3]).sort(function(a, b){ return a - b})
         let idx = median_index(0, data_dark.length-1)
         $('#' + name + '_darkgreen').text(Math.round((arr[idx.first] + arr[idx.second])/2))
@@ -229,7 +281,7 @@ function renderTable(tableId, data) {
         $('#' + name + '_darkgreen').css('font-weight', 'bold')
     });
 
-    ['roce', 'roe', 'profit', 'sales', 'yield', 'pe', 'ps', 'mcap', 'qsales'].map((name, index) => {
+    col.map((name, index) => {
 	let arr = data_green.map(d => d[index+3]).sort(function(a, b){ return a - b})
         let idx = median_index(0, data_green.length-1)
         $('#' + name + '_green').text(Math.round((arr[idx.first] + arr[idx.second])/2))
@@ -237,7 +289,7 @@ function renderTable(tableId, data) {
         $('#' + name + '_green').css('font-weight', 'normal')
     });
 
-    ['roce', 'roe', 'profit', 'sales', 'yield', 'pe', 'ps', 'mcap', 'qsales'].map((name, index) => {
+    col.map((name, index) => {
 	let arr = data_red.map(d => d[index+3]).sort(function(a, b){ return a - b})
         let idx = median_index(0, data_red.length-1)
         $('#' + name + '_red').text(Math.round((arr[idx.first] + arr[idx.second])/2))
@@ -245,7 +297,7 @@ function renderTable(tableId, data) {
         $('#' + name + '_red').css('font-weight', 'normal')
     });
 
-    ['roce', 'roe', 'profit', 'sales', 'yield', 'pe', 'ps', 'mcap', 'qsales'].map((name, index) => {
+    col.map((name, index) => {
 	let arr = data.map(d => d[index+3]).sort(function(a, b){ return a - b})
         let idx = median_index(0, arr.length-1)
         $('#' + name + '_black').text(Math.round((arr[idx.first] + arr[idx.second])/2))
@@ -257,7 +309,7 @@ function renderTable(tableId, data) {
 
     let tmp = [...data]
     tmp.map((row, index) => {
-        for(let i=3; i<12; i++)
+        for(let i=3; i<21; i++)
             row[i] = Math.round(row[i])
     })
 
