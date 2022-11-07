@@ -80,8 +80,7 @@ def median(field, data):
 
 
 def portfolio(args):
-    # Earnings yield > 0 AND
-    # Price to Earning > 0 AND
+    # OPM > 0 AND
     # Return on equity > 0 AND
     # Return on assets > 0 AND
     # Return on invested capital > 0 AND
@@ -91,11 +90,12 @@ def portfolio(args):
     # Profit growth > 0 AND
     # Operating profit growth > 0 AND
     #
+    # Earnings yield > 0 AND
     # Price to Sales > 0 AND
+    # Price to Earning > 0 AND
     # Price to book value > 0 AND
     #
     # EPS > 0 AND
-    # OPM > 0 AND
     # EBIT > 0 AND
     # Net profit > 0 AND
     # Profit after tax > 0 AND
@@ -119,7 +119,7 @@ def portfolio(args):
         v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']
 
     if not args.top:
-        args.top = min(int(len(tmp)/2), 400)
+        args.top = int(len(tmp)/2)
 
     if not args.count:
         args.count = args.top
@@ -155,13 +155,18 @@ def portfolio(args):
     pb = rank('cmp_bv', data, False)
     po = rank('p_o', data, False)
     e_yield = rank('earnings_yield', data)
+    mcap = rank('mar_cap_rs_cr', data)
+    sales = rank('sales_rs_cr', data)
+    np = rank('np_12m_rs_cr', data)
+    op = rank('op_12m_rs_cr', data)
 
     stats = {f: median(f, data) for f in columns}
 
     final_rank = [(
-        (roce[name] + roe[name] + roic[name] + opm[name] + roa[name]) +              # Quality
-        (sales_growth[name] + profit_growth[name] + op_profit_growth[name]) * 5/3 +  # Growth
-        (pe[name] + pb[name] + ps[name] + po[name] + e_yield[name]),                 # Value
+        (roce[name] + roe[name] + roic[name] + opm[name] + roa[name]) / 5 +        # Quality
+        (sales_growth[name] + profit_growth[name] + op_profit_growth[name]) / 3 +  # Growth
+        (pe[name] + pb[name] + ps[name] + po[name] + e_yield[name]) / 5 +          # Value
+        (mcap[name] + sales[name] + np[name] + op[name]) / 4,                      # Size
         name) for name in roe]
 
     def print_header():
