@@ -99,7 +99,11 @@ def portfolio(args):
     # EBIT > 0 AND
     # Net profit > 0 AND
     # Profit after tax > 0 AND
-    # Operating profit > 0
+    # Operating profit > 0 AND
+    #
+    # Net worth > 0 AND
+    # Book value > 0 AND
+    # Total Assets > 0
 
     filename = 'universe.json'
     try:
@@ -155,7 +159,7 @@ def portfolio(args):
     pb = rank('cmp_bv', data, False)
     po = rank('p_o', data, False)
     e_yield = rank('earnings_yield', data)
-    mcap = rank('mar_cap_rs_cr', data)
+    # mcap = rank('mar_cap_rs_cr', data)
     sales = rank('sales_rs_cr', data)
     np = rank('np_12m_rs_cr', data)
     op = rank('op_12m_rs_cr', data)
@@ -166,7 +170,7 @@ def portfolio(args):
         (roce[name] + roe[name] + roic[name] + opm[name] + roa[name]) / 5 +        # Quality
         (sales_growth[name] + profit_growth[name] + op_profit_growth[name]) / 3 +  # Growth
         (pe[name] + pb[name] + ps[name] + po[name] + e_yield[name]) / 5 +          # Value
-        (mcap[name] + sales[name] + np[name] + op[name]) / 4,                      # Size
+        (sales[name] + np[name] + op[name]) / 3,                                   # Size
         name) for name in roe]
 
     def print_header():
