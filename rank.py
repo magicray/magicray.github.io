@@ -276,7 +276,7 @@ def main():
     parser.add_argument('--screen', dest='screen', default='290555/Universe')
     parser.add_argument('--amount', dest='amount', type=int, default=0)
     parser.add_argument('--count', dest='count', type=float)
-    parser.add_argument('--top', dest='top', type=int)
+    parser.add_argument('--top', dest='top', type=int, default=500)
     portfolio(parser.parse_args())
 
 
