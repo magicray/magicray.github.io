@@ -1,3 +1,4 @@
+import time
 import requests
 import argparse
 from logging import critical as log
@@ -45,6 +46,7 @@ class ICICIDirect():
         self.byid('stcode').send_keys(stock_code)
         self.byid('FML_QTY').send_keys(quantity)
         self.byid('FML_ORD_LMT_RT').send_keys(str(price))
+        time.sleep(1)
         self.byxpath("//input[@type='button' and @value='Buy']").click()
 
 
@@ -78,7 +80,7 @@ def main():
 if __name__ == '__main__':
     ARGS = argparse.ArgumentParser()
 
-    ARGS.add_argument('--count', dest='count', type=int, default=100)
+    ARGS.add_argument('--count', dest='count', type=int, default=150)
     ARGS.add_argument('--amount', dest='amount', type=int, default=0)
     ARGS = ARGS.parse_args()
     main()
