@@ -63,15 +63,18 @@ def main():
         icici = ICICIDirect()
 
     for s in buy_list:
-        qty = int((ARGS.amount/ARGS.count)/s['cmp_rs'])
-        code = stock_codes[s['name'].replace('.', '')]
-        log((s['rank'], s['name'], code, s['cmp_rs'], qty))
+        try:
+            qty = int((ARGS.amount/ARGS.count)/s['cmp_rs'])
+            code = stock_codes[s['name'].replace('.', '')]
+            log((s['rank'], s['name'], code, s['cmp_rs'], qty))
 
-        if qty > 0:
-            # icici.wait_for_page(icici.orderbook_url)
-            icici.wait_for_buy_button()
-            icici.buy(code, s['cmp_rs'], qty)
-            icici.wait_for_place_another_order_button()
+            if qty > 0:
+                # icici.wait_for_page(icici.orderbook_url)
+                icici.wait_for_buy_button()
+                icici.buy(code, s['cmp_rs'], qty)
+                icici.wait_for_place_another_order_button()
+        except:
+            log((s['rank'], s['name'], code, s['cmp_rs'], qty, 'failed'))
 
     # if ARGS.amount > 0:
     #     icici.wait_for_page(icici.orderbook_url)
