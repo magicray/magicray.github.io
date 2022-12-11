@@ -117,6 +117,7 @@ def portfolio(args):
 
     tmp = dict()
     for k, v in data['data'].items():
+        del(v['5yrs_return'])
         if all('' != y for y in v.values()):
             tmp[k] = v
 
