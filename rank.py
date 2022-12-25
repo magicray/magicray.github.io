@@ -7,8 +7,11 @@ import argparse
 import requests
 from logging import critical as log
 
+growth = ('879125/growth', '52gqxv82zdhpr71bi0z5kjfpao4nueo8')
+quality = ('878969/quality', '9eztdjcv64p3m5bzsbilrfm0bsituso4')
 
-def download(screen):
+
+def download(screen, sessionid):
     url = 'https://www.screener.in/screens/{}/?include_old=yes&page='
     url = url.format(screen).lower()
 
@@ -18,9 +21,10 @@ def download(screen):
     for i in range(1000):
         r = requests.get(url + str(i+1), headers={
             'accept-encoding': 'gzip',
-            'cookie': 'sessionid=asfkovkqpo0ix2m2ujh17swqh5f7irxg;'})
+            'cookie': 'sessionid={};'.format(sessionid)})
 
         assert(200 == r.status_code)
+        log('downloaded {}'.format(url + str(i+1)))
 
         page = bs4.BeautifulSoup(r.content, 'lxml')
 
@@ -110,17 +114,24 @@ def portfolio(args):
         data = json.load(open(filename))
         assert(data['timestamp'] > time.time() - 86400)
     except Exception:
-        log('downloading data')
-        data = dict(timestamp=int(time.time()), data=download(args.screen))
+        data = dict()
+        for screen, sessionid in (growth, quality):
+            for key, value in download(screen, sessionid).items():
+                if key in data:
+                    data[key].update(value)
+                else:
+                    data[key] = value
+
+        data = dict(timestamp=int(time.time()), data=data)
         with open(filename, 'w') as fd:
             json.dump(data, fd)
 
     tmp = dict()
     for k, v in data['data'].items():
-        del(v['5yrs_return'])
-        if all('' != y for y in v.values()):
-            tmp[k] = v
+        # if all('' != y for y in v.values()):
+        #     tmp[k] = v
 
+        tmp[k] = v
         v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']
 
     if not args.top:
@@ -135,6 +146,7 @@ def portfolio(args):
     final_rank = [(mcap[name], name) for name in mcap]
     biggest = set([name for rank, name in sorted(final_rank)[:args.top]])
     data = {k: v for k, v in tmp.items() if k in biggest}
+    print((len(data), args.top))
     assert(len(data) == args.top)
 
     t = time.time()
@@ -264,7 +276,7 @@ def portfolio(args):
                 date=int(time.time()),
                 symbol=prev['symbol'],
                 sold={k: v for k, v in sold.items() if v+86400*90 > ts},
-                url='https://www.screener.in/screens/' + args.screen),
+                url='https://www.screener.in/screens/' + quality[0]),
             fd, sort_keys=True, indent=4)
 
     print('-' * 88)
@@ -278,7 +290,6 @@ def portfolio(args):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--screen', dest='screen', default='290555/Universe')
     parser.add_argument('--amount', dest='amount', type=int, default=0)
     parser.add_argument('--count', dest='count', type=float)
     parser.add_argument('--top', dest='top', type=int, default=500)
