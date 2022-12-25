@@ -9,7 +9,7 @@
 <title>Stocks</title>
 </head>
 <body>
-    <div class="div _container">
+    <div class="div">
         <p id="timestamp" class="text-center"></p>
         <div id="head" class="row">
         <div class="col"></div>
@@ -25,19 +25,28 @@
             <thead>
                 <tr>
                 <th colspan=3>Group</th>
-                <th colspan=5>Profitability</th>
-                <th colspan=3>Growth</th>
+                <th colspan=10>Quality</th>
+                <th colspan=7>Growth</th>
                 <th colspan=5>Valuation</th>
                 <th colspan=4>Size</th>
                 </tr><tr>
                 <th colspan=3 id="group_buy" style="color: green;">Buy</th>
                 <th id="roce_darkgreen"></th>
+                <th id="roce_5yr_darkgreen"></th>
                 <th id="roe_darkgreen"></th>
+                <th id="roe_5yr_darkgreen"></th>
                 <th id="roic_darkgreen"></th>
                 <th id="opm_darkgreen"></th>
+                <th id="opm_5yr_darkgreen"></th>
                 <th id="roa_darkgreen"></th>
+                <th id="roa_5yr_darkgreen"></th>
+                <th id="debt_eq_darkgreen"></th>
                 <th id="profit_growth_darkgreen"></th>
+                <th id="profit_growth_5yr_darkgreen"></th>
+                <th id="profit_growth_yoy_darkgreen"></th>
                 <th id="sales_growth_darkgreen"></th>
+                <th id="sales_growth_5yr_darkgreen"></th>
+                <th id="sales_growth_yoy_darkgreen"></th>
                 <th id="oprofit_growth_darkgreen"></th>
                 <th id="yield_darkgreen"></th>
                 <th id="pe_darkgreen"></th>
@@ -51,12 +60,21 @@
                 </tr><tr>
                 <th colspan=3 id="group_hold">Hold</th>
                 <th id="roce_green"></th>
+                <th id="roce_5yr_green"></th>
                 <th id="roe_green"></th>
+                <th id="roe_5yr_green"></th>
                 <th id="roic_green"></th>
                 <th id="opm_green"></th>
+                <th id="opm_5yr_green"></th>
                 <th id="roa_green"></th>
+                <th id="roa_5yr_green"></th>
+                <th id="debt_eq_green"></th>
                 <th id="profit_growth_green"></th>
+                <th id="profit_growth_5yr_green"></th>
+                <th id="profit_growth_yoy_green"></th>
                 <th id="sales_growth_green"></th>
+                <th id="sales_growth_5yr_green"></th>
+                <th id="sales_growth_yoy_green"></th>
                 <th id="oprofit_growth_green"></th>
                 <th id="yield_green"></th>
                 <th id="pe_green"></th>
@@ -70,12 +88,21 @@
                 </tr><tr>
                 <th colspan=3 id="group_all">All</th>
                 <th id="roce_black"></th>
+                <th id="roce_5yr_black"></th>
                 <th id="roe_black"></th>
+                <th id="roe_5yr_black"></th>
                 <th id="roic_black"></th>
                 <th id="opm_black"></th>
+                <th id="opm_5yr_black"></th>
                 <th id="roa_black"></th>
+                <th id="roa_5yr_black"></th>
+                <th id="debt_eq_black"></th>
                 <th id="profit_growth_black"></th>
+                <th id="profit_growth_5yr_black"></th>
+                <th id="profit_growth_yoy_black"></th>
                 <th id="sales_growth_black"></th>
+                <th id="sales_growth_5yr_black"></th>
+                <th id="sales_growth_yoy_black"></th>
                 <th id="oprofit_growth_black"></th>
                 <th id="yield_black"></th>
                 <th id="pe_black"></th>
@@ -89,12 +116,21 @@
                 </tr><tr>
                 <th colspan=3 id="group_avoid">Avoid</th>
                 <th id="roce_red"></th>
+                <th id="roce_5yr_red"></th>
                 <th id="roe_red"></th>
+                <th id="roe_5yr_red"></th>
                 <th id="roic_red"></th>
                 <th id="opm_red"></th>
+                <th id="opm_5yr_red"></th>
                 <th id="roa_red"></th>
+                <th id="roa_5yr_red"></th>
+                <th id="debt_eq_red"></th>
                 <th id="profit_growth_red"></th>
+                <th id="profit_growth_5yr_red"></th>
+                <th id="profit_growth_yoy_red"></th>
                 <th id="sales_growth_red"></th>
+                <th id="sales_growth_5yr_red"></th>
+                <th id="sales_growth_yoy_red"></th>
                 <th id="oprofit_growth_red"></th>
                 <th id="yield_red"></th>
                 <th id="pe_red"></th>
@@ -110,12 +146,21 @@
                 <th>Stock</th>
                 <th>Code</th>
                 <th>ROCE</th>
+                <th>ROCE 5Yr</th>
                 <th>ROE</th>
+                <th>ROE 5Yr</th>
                 <th>ROIC</th>
                 <th>OPM</th>
+                <th>OPM 5Yr</th>
                 <th>ROA</th>
+                <th>ROA 5Yr</th>
+                <th>Debt EQ</th>
                 <th>Profit</th>
+                <th>Profit 5Yr</th>
+                <th>Profit YoY</th>
                 <th>Sales</th>
+                <th>Sales 5Yr</th>
+                <th>Sales YoY</th>
                 <th>OProfit</th>
                 <th>Yield</th>
                 <th>PE</th>
@@ -143,7 +188,7 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
         const total = G.data['data'].length
 	const sell_date = new Date(Math.max(...Object.values(data['sold']))*1000).toJSON()
          $('#timestamp').html(
-            '<a href="' + data['url'] + '" target="_blank">Profitability-Growth-Value-Liquidity</a> - ' +
+            '<a href="' + data['url'] + '" target="_blank">Quality-Growth-Value-Liquidity</a> - ' +
             'Refreshed <a href="">' + age + ' hours</a> ago - ' +
             '<a href="#sold">Recently Sold</a>')
 
@@ -193,12 +238,21 @@ function format_data(data, count, amount) {
             name_html,
             G.map[name]? G.map[name]: '',
             d['roce'],
+            d['roce_5yr'],
             d['roe'],
+            d['roe_5yr'],
             d['roic'],
             d['opm'],
+            d['5yr_opm'],
             d['roa_12m'],
+            d['roa_5yr'],
+            d['debt_eq'],
             d['profit_growth'],
+            d['profit_var_5yrs'],
+            d['qtr_profit_var'],
             d['sales_growth'],
+            d['sales_var_5yrs'],
+            d['qtr_sales_var'],
             d['opert_prft_gwth'],
             d['earnings_yield'],
             d['p_e'],
@@ -269,10 +323,14 @@ function renderTable(tableId, data) {
     $("#group_avoid").css("color", "red");
     $("#group_avoid").css("font-weight", "normal");
 
-    const col = ['roce', 'roe', 'roic', 'opm', 'roa',
-	         'profit_growth', 'sales_growth', 'oprofit_growth',
+    const col = ['roce', 'roce_5yr', 'roe', 'roe_5yr', 'roic', 'opm', 'opm_5yr', 'roa', 'roa_5yr',
+                 'debt_eq',
+	         'profit_growth', 'profit_growth_5yr', 'profit_growth_yoy',
+                 'sales_growth', 'sales_growth_5yr', 'sales_growth_yoy',
+                 'oprofit_growth',
 	         'yield', 'pe', 'ps', 'pb', 'po',
 	         'mcap', 'sales', 'profit', 'oprofit']
+
     col.map((name, index) => {
 	let arr = data_dark.map(d => d[index+3]).sort(function(a, b){ return a - b})
         let idx = median_index(0, data_dark.length-1)
@@ -309,7 +367,7 @@ function renderTable(tableId, data) {
 
     let tmp = [...data]
     tmp.map((row, index) => {
-        for(let i=3; i<21; i++)
+        for(let i=3; i<29; i++)
             row[i] = Math.round(row[i])
     })
 
