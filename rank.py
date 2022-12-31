@@ -134,6 +134,25 @@ def portfolio(args):
         tmp[k] = v
         v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']
 
+        if '' == v['5yr_opm']:
+            v['5yr_opm'] = v['opm']
+
+        if '' == v['roa_5yr']:
+            v['roa_5yr'] = v['roa_12m']
+
+        if '' == v['roe_5yr']:
+            v['roe_5yr'] = v['roe']
+
+        if '' == v['roce_5yr']:
+            v['roce_5yr'] = v['roce']
+
+        if '' == v['sales_var_5yrs']:
+            v['sales_var_5yrs'] = v['sales_growth']
+
+        if '' == v['profit_var_5yrs']:
+            v['profit_var_5yrs'] = v['profit_growth']
+
+
     if not args.top:
         args.top = int(len(tmp)/2)
 
@@ -158,20 +177,34 @@ def portfolio(args):
                'earnings_yield', 'p_e',
                'mar_cap_rs_cr', 'cmp_rs')
 
-    # Lets rank on Profitability, Growth and Valuation
+    # Rank on Profitability
     roe = rank('roe', data)
+    roe_5yr = rank('roe_5yr', data)
     roce = rank('roce', data)
+    roce_5yr = rank('roce_5yr', data)
     roic = rank('roic', data)
     opm = rank('opm', data)
+    opm_5yr = rank('5yr_opm', data)
     roa = rank('roa_12m', data)
+    roa_5yr = rank('roa_5yr', data)
+
+    # Rank on Growth
     sales_growth = rank('sales_growth', data)
+    sales_growth_5yr = rank('sales_var_5yrs', data)
+    sales_growth_yoy = rank('qtr_sales_var', data)
     profit_growth = rank('profit_growth', data)
+    profit_growth_5yr = rank('profit_var_5yrs', data)
+    profit_growth_yoy = rank('qtr_profit_var', data)
     op_profit_growth = rank('opert_prft_gwth', data)
+
+    # Rank on Valuation
     pe = rank('p_e', data, False)
     ps = rank('cmp_sales', data, False)
     pb = rank('cmp_bv', data, False)
     po = rank('p_o', data, False)
     e_yield = rank('earnings_yield', data)
+
+    # Rank on Stability
     # mcap = rank('mar_cap_rs_cr', data)
     sales = rank('sales_rs_cr', data)
     np = rank('np_12m_rs_cr', data)
@@ -180,10 +213,23 @@ def portfolio(args):
     stats = {f: median(f, data) for f in columns}
 
     final_rank = [(
-        (roce[name] + roe[name] + roic[name] + opm[name] + roa[name]) / 5 +        # Quality
-        (sales_growth[name] + profit_growth[name] + op_profit_growth[name]) / 3 +  # Growth
-        (pe[name] + pb[name] + ps[name] + po[name] + e_yield[name]) / 5 +          # Value
-        (sales[name] + np[name] + op[name]) / 3,                                   # Size
+        # Quality
+        (roce[name] + roe[name] + opm[name] + roa[name] +
+         roce_5yr[name] + roe_5yr[name] + opm_5yr[name] + roa_5yr[name] +
+         roic[name]) / 9 +
+
+        # Growth
+        (sales_growth[name] + profit_growth[name] +
+         sales_growth_5yr[name] + profit_growth_5yr[name] +
+         sales_growth_yoy[name] + profit_growth_yoy[name] +
+         op_profit_growth[name]) / 7 +
+
+        # Value
+        (pe[name] + pb[name] + ps[name] + po[name] + e_yield[name]) / 5 +
+
+        # Stability
+        (sales[name] + np[name] + op[name]) / 3,
+
         name) for name in roe]
 
     def print_header():

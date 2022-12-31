@@ -25,7 +25,7 @@
             <thead>
                 <tr>
                 <th colspan=3>Group</th>
-                <th colspan=10>Quality</th>
+                <th colspan=9>Quality</th>
                 <th colspan=7>Growth</th>
                 <th colspan=5>Valuation</th>
                 <th colspan=4>Size</th>
@@ -40,7 +40,6 @@
                 <th id="opm_5yr_darkgreen"></th>
                 <th id="roa_darkgreen"></th>
                 <th id="roa_5yr_darkgreen"></th>
-                <th id="debt_eq_darkgreen"></th>
                 <th id="profit_growth_darkgreen"></th>
                 <th id="profit_growth_5yr_darkgreen"></th>
                 <th id="profit_growth_yoy_darkgreen"></th>
@@ -68,7 +67,6 @@
                 <th id="opm_5yr_green"></th>
                 <th id="roa_green"></th>
                 <th id="roa_5yr_green"></th>
-                <th id="debt_eq_green"></th>
                 <th id="profit_growth_green"></th>
                 <th id="profit_growth_5yr_green"></th>
                 <th id="profit_growth_yoy_green"></th>
@@ -96,7 +94,6 @@
                 <th id="opm_5yr_black"></th>
                 <th id="roa_black"></th>
                 <th id="roa_5yr_black"></th>
-                <th id="debt_eq_black"></th>
                 <th id="profit_growth_black"></th>
                 <th id="profit_growth_5yr_black"></th>
                 <th id="profit_growth_yoy_black"></th>
@@ -124,7 +121,6 @@
                 <th id="opm_5yr_red"></th>
                 <th id="roa_red"></th>
                 <th id="roa_5yr_red"></th>
-                <th id="debt_eq_red"></th>
                 <th id="profit_growth_red"></th>
                 <th id="profit_growth_5yr_red"></th>
                 <th id="profit_growth_yoy_red"></th>
@@ -154,7 +150,6 @@
                 <th>OPM 5Yr</th>
                 <th>ROA</th>
                 <th>ROA 5Yr</th>
-                <th>Debt EQ</th>
                 <th>Profit</th>
                 <th>Profit 5Yr</th>
                 <th>Profit YoY</th>
@@ -246,7 +241,6 @@ function format_data(data, count, amount) {
             d['5yr_opm'],
             d['roa_12m'],
             d['roa_5yr'],
-            d['debt_eq'],
             d['profit_growth'],
             d['profit_var_5yrs'],
             d['qtr_profit_var'],
@@ -324,7 +318,6 @@ function renderTable(tableId, data) {
     $("#group_avoid").css("font-weight", "normal");
 
     const col = ['roce', 'roce_5yr', 'roe', 'roe_5yr', 'roic', 'opm', 'opm_5yr', 'roa', 'roa_5yr',
-                 'debt_eq',
 	         'profit_growth', 'profit_growth_5yr', 'profit_growth_yoy',
                  'sales_growth', 'sales_growth_5yr', 'sales_growth_yoy',
                  'oprofit_growth',
