@@ -137,20 +137,35 @@ def portfolio(args):
         if '' == v['5yr_opm']:
             v['5yr_opm'] = v['opm']
 
+        if '' == v['roa_3yr']:
+            v['roa_3yr'] = v['roa_12m']
+
         if '' == v['roa_5yr']:
-            v['roa_5yr'] = v['roa_12m']
+            v['roa_5yr'] = v['roa_3yr']
+
+        if '' == v['roe_3yr']:
+            v['roe_3yr'] = v['roe']
 
         if '' == v['roe_5yr']:
-            v['roe_5yr'] = v['roe']
+            v['roe_5yr'] = v['roe_3yr']
+
+        if '' == v['roce_3yr']:
+            v['roce_3yr'] = v['roce']
 
         if '' == v['roce_5yr']:
-            v['roce_5yr'] = v['roce']
+            v['roce_5yr'] = v['roce_3yr']
+
+        if '' == v['sales_var_3yrs']:
+            v['sales_var_3yrs'] = v['sales_growth']
 
         if '' == v['sales_var_5yrs']:
-            v['sales_var_5yrs'] = v['sales_growth']
+            v['sales_var_5yrs'] = v['sales_var_3yrs']
+
+        if '' == v['profit_var_3yrs']:
+            v['profit_var_3yrs'] = v['profit_growth']
 
         if '' == v['profit_var_5yrs']:
-            v['profit_var_5yrs'] = v['profit_growth']
+            v['profit_var_5yrs'] = v['profit_var_3yrs']
 
 
     if not args.top:
@@ -179,20 +194,25 @@ def portfolio(args):
 
     # Rank on Profitability
     roe = rank('roe', data)
+    roe_3yr = rank('roe_3yr', data)
     roe_5yr = rank('roe_5yr', data)
     roce = rank('roce', data)
+    roce_3yr = rank('roce_3yr', data)
     roce_5yr = rank('roce_5yr', data)
     roic = rank('roic', data)
     opm = rank('opm', data)
     opm_5yr = rank('5yr_opm', data)
     roa = rank('roa_12m', data)
+    roa_3yr = rank('roa_3yr', data)
     roa_5yr = rank('roa_5yr', data)
 
     # Rank on Growth
     sales_growth = rank('sales_growth', data)
+    sales_growth_3yr = rank('sales_var_3yrs', data)
     sales_growth_5yr = rank('sales_var_5yrs', data)
     sales_growth_yoy = rank('qtr_sales_var', data)
     profit_growth = rank('profit_growth', data)
+    profit_growth_3yr = rank('profit_var_3yrs', data)
     profit_growth_5yr = rank('profit_var_5yrs', data)
     profit_growth_yoy = rank('qtr_profit_var', data)
     op_profit_growth = rank('opert_prft_gwth', data)
@@ -215,14 +235,16 @@ def portfolio(args):
     final_rank = [(
         # Quality
         (roce[name] + roe[name] + opm[name] + roa[name] +
+         roce_3yr[name] + roe_3yr[name] + roa_3yr[name] +
          roce_5yr[name] + roe_5yr[name] + opm_5yr[name] + roa_5yr[name] +
-         roic[name]) / 9 +
+         roic[name]) / 12 +
 
         # Growth
         (sales_growth[name] + profit_growth[name] +
+         sales_growth_3yr[name] + profit_growth_3yr[name] +
          sales_growth_5yr[name] + profit_growth_5yr[name] +
          sales_growth_yoy[name] + profit_growth_yoy[name] +
-         op_profit_growth[name]) / 7 +
+         op_profit_growth[name]) / 9 +
 
         # Value
         (pe[name] + pb[name] + ps[name] + po[name] + e_yield[name]) / 5 +
