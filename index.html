@@ -25,25 +25,30 @@
             <thead>
                 <tr>
                 <th colspan=3>Group</th>
-                <th colspan=9>Quality</th>
-                <th colspan=7>Growth</th>
+                <th colspan=12>Quality</th>
+                <th colspan=9>Growth</th>
                 <th colspan=5>Valuation</th>
                 <th colspan=4>Size</th>
                 </tr><tr>
                 <th colspan=3 id="group_buy" style="color: green;">Buy</th>
                 <th id="roce_darkgreen"></th>
+                <th id="roce_3yr_darkgreen"></th>
                 <th id="roce_5yr_darkgreen"></th>
                 <th id="roe_darkgreen"></th>
+                <th id="roe_3yr_darkgreen"></th>
                 <th id="roe_5yr_darkgreen"></th>
                 <th id="roic_darkgreen"></th>
                 <th id="opm_darkgreen"></th>
                 <th id="opm_5yr_darkgreen"></th>
                 <th id="roa_darkgreen"></th>
+                <th id="roa_3yr_darkgreen"></th>
                 <th id="roa_5yr_darkgreen"></th>
                 <th id="profit_growth_darkgreen"></th>
+                <th id="profit_growth_3yr_darkgreen"></th>
                 <th id="profit_growth_5yr_darkgreen"></th>
                 <th id="profit_growth_yoy_darkgreen"></th>
                 <th id="sales_growth_darkgreen"></th>
+                <th id="sales_growth_3yr_darkgreen"></th>
                 <th id="sales_growth_5yr_darkgreen"></th>
                 <th id="sales_growth_yoy_darkgreen"></th>
                 <th id="oprofit_growth_darkgreen"></th>
@@ -59,18 +64,23 @@
                 </tr><tr>
                 <th colspan=3 id="group_hold">Hold</th>
                 <th id="roce_green"></th>
+                <th id="roce_3yr_green"></th>
                 <th id="roce_5yr_green"></th>
                 <th id="roe_green"></th>
+                <th id="roe_3yr_green"></th>
                 <th id="roe_5yr_green"></th>
                 <th id="roic_green"></th>
                 <th id="opm_green"></th>
                 <th id="opm_5yr_green"></th>
                 <th id="roa_green"></th>
+                <th id="roa_3yr_green"></th>
                 <th id="roa_5yr_green"></th>
                 <th id="profit_growth_green"></th>
+                <th id="profit_growth_3yr_green"></th>
                 <th id="profit_growth_5yr_green"></th>
                 <th id="profit_growth_yoy_green"></th>
                 <th id="sales_growth_green"></th>
+                <th id="sales_growth_3yr_green"></th>
                 <th id="sales_growth_5yr_green"></th>
                 <th id="sales_growth_yoy_green"></th>
                 <th id="oprofit_growth_green"></th>
@@ -86,18 +96,23 @@
                 </tr><tr>
                 <th colspan=3 id="group_all">All</th>
                 <th id="roce_black"></th>
+                <th id="roce_3yr_black"></th>
                 <th id="roce_5yr_black"></th>
                 <th id="roe_black"></th>
+                <th id="roe_3yr_black"></th>
                 <th id="roe_5yr_black"></th>
                 <th id="roic_black"></th>
                 <th id="opm_black"></th>
                 <th id="opm_5yr_black"></th>
                 <th id="roa_black"></th>
+                <th id="roa_3yr_black"></th>
                 <th id="roa_5yr_black"></th>
                 <th id="profit_growth_black"></th>
+                <th id="profit_growth_3yr_black"></th>
                 <th id="profit_growth_5yr_black"></th>
                 <th id="profit_growth_yoy_black"></th>
                 <th id="sales_growth_black"></th>
+                <th id="sales_growth_3yr_black"></th>
                 <th id="sales_growth_5yr_black"></th>
                 <th id="sales_growth_yoy_black"></th>
                 <th id="oprofit_growth_black"></th>
@@ -113,18 +128,23 @@
                 </tr><tr>
                 <th colspan=3 id="group_avoid">Avoid</th>
                 <th id="roce_red"></th>
+                <th id="roce_3yr_red"></th>
                 <th id="roce_5yr_red"></th>
                 <th id="roe_red"></th>
+                <th id="roe_3yr_red"></th>
                 <th id="roe_5yr_red"></th>
                 <th id="roic_red"></th>
                 <th id="opm_red"></th>
                 <th id="opm_5yr_red"></th>
                 <th id="roa_red"></th>
+                <th id="roa_3yr_red"></th>
                 <th id="roa_5yr_red"></th>
                 <th id="profit_growth_red"></th>
+                <th id="profit_growth_3yr_red"></th>
                 <th id="profit_growth_5yr_red"></th>
                 <th id="profit_growth_yoy_red"></th>
                 <th id="sales_growth_red"></th>
+                <th id="sales_growth_3yr_red"></th>
                 <th id="sales_growth_5yr_red"></th>
                 <th id="sales_growth_yoy_red"></th>
                 <th id="oprofit_growth_red"></th>
@@ -142,18 +162,23 @@
                 <th>Stock</th>
                 <th>Code</th>
                 <th>ROCE</th>
+                <th>ROCE 3Yr</th>
                 <th>ROCE 5Yr</th>
                 <th>ROE</th>
+                <th>ROE 3Yr</th>
                 <th>ROE 5Yr</th>
                 <th>ROIC</th>
                 <th>OPM</th>
                 <th>OPM 5Yr</th>
                 <th>ROA</th>
+                <th>ROA 3Yr</th>
                 <th>ROA 5Yr</th>
                 <th>Profit</th>
+                <th>Profit 3Yr</th>
                 <th>Profit 5Yr</th>
                 <th>Profit YoY</th>
                 <th>Sales</th>
+                <th>Sales 3Yr</th>
                 <th>Sales 5Yr</th>
                 <th>Sales YoY</th>
                 <th>OProfit</th>
@@ -233,18 +258,23 @@ function format_data(data, count, amount) {
             name_html,
             G.map[name]? G.map[name]: '',
             d['roce'],
+            d['roce_3yr'],
             d['roce_5yr'],
             d['roe'],
+            d['roe_3yr'],
             d['roe_5yr'],
             d['roic'],
             d['opm'],
             d['5yr_opm'],
             d['roa_12m'],
+            d['roa_3yr'],
             d['roa_5yr'],
             d['profit_growth'],
+            d['profit_var_3yrs'],
             d['profit_var_5yrs'],
             d['qtr_profit_var'],
             d['sales_growth'],
+            d['sales_var_3yrs'],
             d['sales_var_5yrs'],
             d['qtr_sales_var'],
             d['opert_prft_gwth'],
@@ -317,9 +347,10 @@ function renderTable(tableId, data) {
     $("#group_avoid").css("color", "red");
     $("#group_avoid").css("font-weight", "normal");
 
-    const col = ['roce', 'roce_5yr', 'roe', 'roe_5yr', 'roic', 'opm', 'opm_5yr', 'roa', 'roa_5yr',
-	         'profit_growth', 'profit_growth_5yr', 'profit_growth_yoy',
-                 'sales_growth', 'sales_growth_5yr', 'sales_growth_yoy',
+    const col = ['roce', 'roce_3yr', 'roce_5yr', 'roe', 'roe_3yr', 'roe_5yr',
+                 'roic', 'opm', 'opm_5yr', 'roa', 'roa_3yr', 'roa_5yr',
+	         'profit_growth', 'profit_growth_3yr', 'profit_growth_5yr', 'profit_growth_yoy',
+                 'sales_growth', 'sales_growth_3yr', 'sales_growth_5yr', 'sales_growth_yoy',
                  'oprofit_growth',
 	         'yield', 'pe', 'ps', 'pb', 'po',
 	         'mcap', 'sales', 'profit', 'oprofit']
