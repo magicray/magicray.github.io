@@ -7,8 +7,9 @@ import argparse
 import requests
 from logging import critical as log
 
-growth = ('879125/growth', '52gqxv82zdhpr71bi0z5kjfpao4nueo8')
-quality = ('878969/quality', '9eztdjcv64p3m5bzsbilrfm0bsituso4')
+value_screen = ('903587/value', '18y63mipg9g6ygbhwyigxse1olb4r61i')
+growth_screen = ('879125/growth', '52gqxv82zdhpr71bi0z5kjfpao4nueo8')
+quality_screen = ('878969/quality', '9eztdjcv64p3m5bzsbilrfm0bsituso4')
 
 
 def download(screen, sessionid):
@@ -115,7 +116,7 @@ def portfolio(args):
         assert(data['timestamp'] > time.time() - 86400)
     except Exception:
         data = dict()
-        for screen, sessionid in (growth, quality):
+        for screen, sessionid in (value_screen, growth_screen, quality_screen):
             for key, value in download(screen, sessionid).items():
                 if key in data:
                     data[key].update(value)
@@ -344,7 +345,7 @@ def portfolio(args):
                 date=int(time.time()),
                 symbol=prev['symbol'],
                 sold={k: v for k, v in sold.items() if v+86400*90 > ts},
-                url='https://www.screener.in/screens/' + quality[0]),
+                url='https://www.screener.in/screens/290555/universe/'),
             fd, sort_keys=True, indent=4)
 
     print('-' * 88)
