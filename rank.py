@@ -131,6 +131,8 @@ def portfolio(args):
     for k, v in data['data'].items():
         # if all('' != y for y in v.values()):
         #     tmp[k] = v
+        if "" == v['qtr_sales_var']:
+            continue
 
         tmp[k] = v
         v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']
