@@ -106,6 +106,17 @@ def portfolio(args):
     # Profit after tax > 0 AND
     # Operating profit > 0 AND
     #
+    # EBIT latest quarter > 0 AND
+    # EBIT preceding quarter > 0 AND
+    # Operating profit latest quarter > 0 AND
+    # Operating profit preceding quarter > 0 AND
+    # Operating profit 2quarters back > 0 AND
+    # Operating profit 3quarters back > 0 AND
+    #
+    # Sales > Net profit AND
+    # Sales > Operating profit AND
+    #
+    # Current ratio > 1 AND
     # Net worth > 0 AND
     # Book value > 0 AND
     # Total Assets > 0
@@ -228,10 +239,10 @@ def portfolio(args):
     e_yield = rank('earnings_yield', data)
 
     # Rank on Stability
-    # mcap = rank('mar_cap_rs_cr', data)
     sales = rank('sales_rs_cr', data)
     np = rank('np_12m_rs_cr', data)
     op = rank('op_12m_rs_cr', data)
+    debteq = rank('debt_eq', data, False)
 
     stats = {f: median(f, data) for f in columns}
 
@@ -253,7 +264,7 @@ def portfolio(args):
         (pe[name] + pb[name] + ps[name] + po[name] + e_yield[name]) / 5 +
 
         # Stability
-        (sales[name] + np[name] + op[name]) / 3,
+        (sales[name] + np[name] + op[name] + debteq[name]) / 4,
 
         name) for name in roe]
 
