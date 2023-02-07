@@ -42,7 +42,7 @@ def download(screen, sessionid):
                 if 'td' == c.name:
                     row.append(c.text.strip())
                     flag = True
-            if row:
+            if row and row[0].strip():
                 s_no = int(row[0].strip('.'))
                 if s_no > s_no_max:
                     rows.append(row)
