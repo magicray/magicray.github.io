@@ -190,7 +190,7 @@ def portfolio(args):
 
     # Statistics is likely to work more reliable for bigger companies,
     # pick biggest args.top stocks by market cap
-    mcap = rank('sales_rs_cr', tmp)
+    mcap = rank('op_12m_rs_cr', tmp)
     #mcap = rank('mar_cap_rs_cr', tmp)
     final_rank = [(mcap[name], name) for name in mcap]
     biggest = set([name for rank, name in sorted(final_rank)[:args.top]])
