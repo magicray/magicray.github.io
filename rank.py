@@ -140,47 +140,13 @@ def portfolio(args):
 
     tmp = dict()
     for k, v in data['data'].items():
-        # if all('' != y for y in v.values()):
-        #     tmp[k] = v
-        if "" == v['qtr_sales_var']:
-            continue
+        v.pop('5yrs_return', None)
 
-        tmp[k] = v
-        v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']
-
-        if '' == v['5yr_opm']:
-            v['5yr_opm'] = v['opm']
-
-        if '' == v['roa_3yr']:
-            v['roa_3yr'] = v['roa_12m']
-
-        if '' == v['roa_5yr']:
-            v['roa_5yr'] = v['roa_3yr']
-
-        if '' == v['roe_3yr']:
-            v['roe_3yr'] = v['roe']
-
-        if '' == v['roe_5yr']:
-            v['roe_5yr'] = v['roe_3yr']
-
-        if '' == v['roce_3yr']:
-            v['roce_3yr'] = v['roce']
-
-        if '' == v['roce_5yr']:
-            v['roce_5yr'] = v['roce_3yr']
-
-        if '' == v['sales_var_3yrs']:
-            v['sales_var_3yrs'] = v['sales_growth']
-
-        if '' == v['sales_var_5yrs']:
-            v['sales_var_5yrs'] = v['sales_var_3yrs']
-
-        if '' == v['profit_var_3yrs']:
-            v['profit_var_3yrs'] = v['profit_growth']
-
-        if '' == v['profit_var_5yrs']:
-            v['profit_var_5yrs'] = v['profit_var_3yrs']
-
+        if all('' != y for y in v.values()):
+            tmp[k] = v
+            v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']
+        else:
+            log('incomplete data : %s', k)
 
     if not args.top:
         args.top = int(len(tmp)/2)
@@ -195,7 +161,6 @@ def portfolio(args):
     final_rank = [(mcap[name], name) for name in mcap]
     biggest = set([name for rank, name in sorted(final_rank)[:args.top]])
     data = {k: v for k, v in tmp.items() if k in biggest}
-    print((len(data), args.top))
     assert(len(data) == args.top)
 
     t = time.time()
