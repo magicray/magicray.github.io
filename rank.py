@@ -8,8 +8,8 @@ import requests
 from logging import critical as log
 
 value_screen = ('903587/value', '5ruq9mkugbh7rqdi6q022ld8ji8zg5ki')
-growth_screen = ('879125/growth', 'fheukf655ba57h3ixd7j3j2l6ph0k2bx')
-quality_screen = ('878969/quality', 'qpgob75yjt4dd6jn1zwkgr14yswmxuwk')
+growth_screen = ('879125/growth', 'bbv9rqsz9qblhxhp4efhtv5qvjah7mof')
+quality_screen = ('878969/quality', '36g81fd47dtp2sfxv18ymxolc36e65o5')
 
 
 def download(screen, sessionid):
