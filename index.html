@@ -21,7 +21,7 @@
         <table id="sold" class="table compact table-responsive table-striped table-bordered" style="white-space: nowrap">
             <thead><tr><th>Date</th><th>Stock</th></tr></thead>
         </table>
-        <table id="rank" class="table compact table-responsive table-striped table-bordered" style="text-align: center">
+        <table id="rank" class="table compact table-responsive table-striped table-bordered" style="text-align: center; font-weight: 500;">
             <thead>
                 <tr>
                 <th colspan=3>Group</th>
@@ -29,7 +29,7 @@
                 <th colspan=9>Growth</th>
                 <th colspan=5>Valuation</th>
                 <th colspan=5>Stability</th>
-                </tr><tr>
+                </tr><!--tr>
                 <th colspan=3 id="group_buy" style="color: green;">Buy</th>
                 <th id="roce_darkgreen"></th>
                 <th id="roce_3yr_darkgreen"></th>
@@ -62,8 +62,8 @@
                 <th id="profit_darkgreen"></th>
                 <th id="oprofit_darkgreen"></th>
                 <th id="debt2eq_darkgreen"></th>
-                </tr><tr>
-                <th colspan=3 id="group_hold">Hold</th>
+                </tr --><tr>
+                <th colspan=3 id="group_hold">Buy</th>
                 <th id="roce_green"></th>
                 <th id="roce_3yr_green"></th>
                 <th id="roce_5yr_green"></th>
@@ -129,7 +129,7 @@
                 <th id="oprofit_black"></th>
                 <th id="debt2eq_black"></th>
                 </tr><tr>
-                <th colspan=3 id="group_avoid">Avoid</th>
+                <th colspan=3 id="group_avoid">Sell</th>
                 <th id="roce_red"></th>
                 <th id="roce_3yr_red"></th>
                 <th id="roce_5yr_red"></th>
@@ -342,10 +342,10 @@ function renderTable(tableId, data) {
     let data_green = data.slice(0, median_index_black.first+1);
     let data_red = data.slice(median_index_black.second, data.length);
 
-    $("#group_buy").html("Buy (top " + max_dark_len + ")");
-    $("#group_hold").html("Hold (top " + data_green.length + ")");
+    // $("#group_buy").html("Buy (top " + max_dark_len + ")");
+    $("#group_hold").html("Buy (top " + data_green.length + ")");
     $("#group_all").html("All (" + data.length + ")");
-    $("#group_avoid").html("Avoid (bottom " + data_red.length + ")");
+    $("#group_avoid").html("Sell (bottom " + data_red.length + ")");
 
     $("#group_hold").css("color", "green");
     $("#group_hold").css("font-weight", "normal");
@@ -361,6 +361,7 @@ function renderTable(tableId, data) {
 	         'yield', 'pe', 'ps', 'pb', 'po',
 	         'mcap', 'sales', 'profit', 'oprofit', 'debt2eq']
 
+    /*
     col.map((name, index) => {
 	let arr = data_dark.map(d => d[index+3]).sort(function(a, b){ return a - b})
         let idx = median_index(0, data_dark.length-1)
@@ -368,6 +369,7 @@ function renderTable(tableId, data) {
         $('#' + name + '_darkgreen').css('color', 'Green')
         $('#' + name + '_darkgreen').css('font-weight', 'bold')
     });
+    */
 
     col.map((name, index) => {
 	let arr = data_green.map(d => d[index+3]).sort(function(a, b){ return a - b})
@@ -405,7 +407,7 @@ function renderTable(tableId, data) {
         order: [[sort_order[0], sort_order[1]]],
         rowCallback: function(row, d, i) {
             $(row).css('color', d[0]>tmp.length/2? 'Red': 'Green')
-            $(row).css('font-weight', d[0]>max_dark_len? '400': '500')
+            // $(row).css('font-weight', d[0]>max_dark_len? '400': '500')
 	}})
 }
 </script>
