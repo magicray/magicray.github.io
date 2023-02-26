@@ -84,7 +84,7 @@ def median(field, data):
     return val[-1], val[len(val)//2], val[0]
 
 
-def main():
+def portfolio(args):
     # OPM > 0 AND
     # Return on equity > 0 AND
     # Return on assets > 0 AND
@@ -106,9 +106,6 @@ def main():
     # Profit after tax > 0 AND
     # Operating profit > 0 AND
     #
-    # GPM latest quarter > 0 AND
-    # OPM latest quarter > 0 AND
-    # NPM latest quarter > 0 AND
     # EBIT latest quarter > 0 AND
     # EBIT preceding quarter > 0 AND
     # Operating profit latest quarter > 0 AND
@@ -122,7 +119,7 @@ def main():
     # Current ratio > 1 AND
     # Net worth > 0 AND
     # Book value > 0 AND
-    # Total Assets > 0 AND
+    # Total Assets > 0
 
     filename = 'universe.json'
     try:
@@ -151,29 +148,29 @@ def main():
         else:
             log('incomplete data : %s', k)
 
-    # Statistics is likely to work more reliable for bigger companies
-    threshold = 1
-    while True:
-        data = dict()
-        for k, v in tmp.items():
-            if v['op_12m_rs_cr'] < threshold:
-                continue
+    if not args.top:
+        args.top = int(len(tmp)/2)
 
-            if v['sales_rs_cr'] < threshold*10:
-                continue
+    if not args.count:
+        args.count = args.top
 
-            if v['mar_cap_rs_cr'] < threshold*10:
-                continue
-
-            data[k] = v
-
-        threshold += 1
-        if len(data) < 501:
-            break
+    # Statistics is likely to work more reliable for bigger companies,
+    # pick biggest args.top stocks by market cap
+    mcap = rank('op_12m_rs_cr', tmp)
+    #mcap = rank('mar_cap_rs_cr', tmp)
+    final_rank = [(mcap[name], name) for name in mcap]
+    biggest = set([name for rank, name in sorted(final_rank)[:args.top]])
+    data = {k: v for k, v in tmp.items() if k in biggest}
+    assert(len(data) == args.top)
 
     t = time.time()
     log('columns(%d) rows(%d) msec(%d)',
         len(data[list(data.keys())[0]]), len(data), (time.time()-t)*1000)
+
+    columns = ('roce', 'roe',
+               # 'qtr_sales_var', 'qtr_profit_var',
+               'earnings_yield', 'p_e',
+               'mar_cap_rs_cr', 'cmp_rs')
 
     # Rank on Profitability
     roe = rank('roe', data)
@@ -212,7 +209,8 @@ def main():
     np = rank('np_12m_rs_cr', data)
     op = rank('op_12m_rs_cr', data)
     debteq = rank('debt_eq', data, False)
-    # dividend = rank('div_5yrs_rs_cr', data)
+
+    stats = {f: median(f, data) for f in columns}
 
     final_rank = [(
         # Quality
@@ -236,20 +234,84 @@ def main():
 
         name) for name in roe]
 
+    def print_header():
+        headers = '{:16s}' + '{:>8s}' * 9
+        print(headers.format(time.strftime('%Y-%m-%d'),
+                             'ROCE', 'ROE',
+                             'SALES', 'PROFIT',
+                             'YIELD', 'P/E',
+                             'MCAP', 'CMP', 'QTY'))
+
+    print_header()
+    for i, f in enumerate(('Max', 'Median')):
+        print(('%s\t\t' + '%8.2f' * 4 + '%8d%8d') % (
+            f,
+            stats['roce'][i],
+            stats['roe'][i],
+            # stats['qtr_sales_var'][i],
+            # stats['qtr_profit_var'][i],
+            stats['earnings_yield'][i],
+            stats['p_e'][i],
+            stats['mar_cap_rs_cr'][i],
+            stats['cmp_rs'][i]))
+    print('-' * 88)
+
+    avg = {k: 0 for k in columns}
+    avg['count'] = 0
+
+    if int(args.count) != args.count:
+        args.count = args.count * len(final_rank)
+
+    args.count = int(args.count)
+
+    start = 0
+    args.count = args.count if args.count else len(final_rank)
+    if args.count < 0:
+        args.count *= -1
+        start = len(final_rank) - args.count
+
+    per_stock = args.amount / args.count
     count = 0
     stock_list = list()
-    for n, (_, name) in enumerate(sorted(final_rank)):
+    for n, (_, name) in enumerate(sorted(final_rank)[start:start+args.count]):
         v = data[name]
-        count = count+1
         v['name'] = name
-        v['rank'] = count
+        v['rank'] = count+1
         stock_list.append(v)
+
+        qty = 0
+        available = per_stock if args.amount > per_stock else args.amount
+        qty = math.ceil(available / v['cmp_rs'])
+
+        if qty*v['cmp_rs'] > max(available, args.amount):
+            qty -= 1
+
+        if args.amount and qty < 1:
+            break
+
+        args.amount -= qty*v['cmp_rs']
+
+        print(('%-16s' + '%8.2f' * 4 + '%8d%8d%8d') % (
+            name, v['roce'], v['roe'],
+            # v['qtr_sales_var'], v['qtr_profit_var'],
+            v['earnings_yield'], v['p_e'],
+            v['mar_cap_rs_cr'], v['cmp_rs'],
+            qty))
+
+        count += 1
+
+        for k in columns:
+            avg[k] += v[k]
+        avg['count'] += 1
+
+    for k in columns:
+        avg[k] /= avg['count']
 
     with open('magicrank.json') as fd:
         prev = json.load(fd)
 
     prev_names = set([s['name'] for s in prev['data'] if s['rank'] <= len(prev['data'])/2])
-    stock_names = set([s['name'] for s in stock_list if s['rank'] <= len(stock_list)/2])
+    stock_names = set([s['name'] for s in stock_list if s['rank'] <= args.top/2])
     with open('magicrank.json', 'w') as fd:
         ts = int(time.time())
         sold = prev.get('sold', {})
@@ -264,6 +326,22 @@ def main():
                 sold={k: v for k, v in sold.items() if v+86400*90 > ts},
                 url='https://www.screener.in/screens/290555/universe/'),
             fd, sort_keys=True, indent=4)
+
+    print('-' * 88)
+    print_header()
+    print(('%-16s' + '%8.2f' * 4 + '%8d%8d') % (
+        'Average', avg['roce'], avg['roe'],
+        # avg['qtr_sales_var'], avg['qtr_profit_var'],
+        avg['earnings_yield'], avg['p_e'],
+        avg['mar_cap_rs_cr'], avg['cmp_rs']))
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--amount', dest='amount', type=int, default=0)
+    parser.add_argument('--count', dest='count', type=float)
+    parser.add_argument('--top', dest='top', type=int, default=500)
+    portfolio(parser.parse_args())
 
 
 if __name__ == '__main__':
