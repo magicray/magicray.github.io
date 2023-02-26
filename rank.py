@@ -116,13 +116,23 @@ def main():
     # Operating profit 2quarters back > 0 AND
     # Operating profit 3quarters back > 0 AND
     #
+    # OPM 5Year > 0 AND
+    # Operating profit last year > 0 AND
+    # Operating profit preceding year > 0 AND
+    # Return on assets 3years > 0 AND
+    # Return on assets 5years > 0 AND
+    # Average return on equity 3Years > 0 AND
+    # Average return on equity 5Years > 0 AND
+    # Average return on capital employed 3Years > 0 AND
+    # Average return on capital employed 5Years > 0 AND
+    #
     # Sales > Net profit AND
     # Sales > Operating profit AND
     #
     # Current ratio > 1 AND
     # Net worth > 0 AND
     # Book value > 0 AND
-    # Total Assets > 0 AND
+    # Total Assets > 0
 
     filename = 'universe.json'
     try:
