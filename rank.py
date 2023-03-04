@@ -106,16 +106,6 @@ def main():
     # Profit after tax > 0 AND
     # Operating profit > 0 AND
     #
-    # GPM latest quarter > 0 AND
-    # OPM latest quarter > 0 AND
-    # NPM latest quarter > 0 AND
-    # EBIT latest quarter > 0 AND
-    # EBIT preceding quarter > 0 AND
-    # Operating profit latest quarter > 0 AND
-    # Operating profit preceding quarter > 0 AND
-    # Operating profit 2quarters back > 0 AND
-    # Operating profit 3quarters back > 0 AND
-    #
     # Sales > Net profit AND
     # Sales > Operating profit AND
     #
