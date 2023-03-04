@@ -149,11 +149,11 @@ def main():
             if v['op_12m_rs_cr'] < threshold:
                 continue
 
-            if v['sales_rs_cr'] < threshold*10:
-                continue
+            #if v['sales_rs_cr'] < threshold*10:
+            #    continue
 
-            if v['mar_cap_rs_cr'] < threshold*10:
-                continue
+            #if v['mar_cap_rs_cr'] < threshold*10:
+            #    continue
 
             data[k] = v
 
