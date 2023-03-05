@@ -21,6 +21,10 @@ def main():
     buy_list = [(s['rank'], s) for s in data if s['rank'] <= len(data)/2]
     buy_list = [s for _, s in sorted(buy_list)]
 
+    buy_set = set([stock_codes[b['name'].replace('.', '')] for b in buy_list])
+    existing_set = set(portfolio.keys())
+    print('Sell : {}'.format(sorted(existing_set - buy_set)))
+
     minimum_value = ARGS.amount / len(buy_list)
 
     for b in buy_list:
