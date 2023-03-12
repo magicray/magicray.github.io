@@ -20001,7 +20001,7 @@
             "sales_var_5yrs": -2.34
         }
     ],
-    "date": 1678496033,
+    "date": 1678582898,
     "sold": {
         "AGI Infra": 1677545941,
         "AVT Natural Prod": 1676336360,
@@ -20066,9 +20066,7 @@
         "I O B": 1672534851,
         "ICICI Bank": 1675566772,
         "ICICI Securities": 1674176194,
-        "IRB InvIT Fund": 1670731606,
         "India Grid Trust": 1674996331,
-        "India Infr Trust": 1670731606,
         "India Pesticides": 1675558877,
         "Indian Metals": 1675126765,
         "Indo Borax & Ch.": 1677545941,
@@ -20096,7 +20094,6 @@
         "Lak. Mach. Works": 1672534851,
         "Larsen & Toubro": 1675566772,
         "M & M Fin. Serv.": 1675566772,
-        "M R P L": 1670731606,
         "MOIL": 1675213406,
         "Maithan Alloys": 1676422741,
         "Marathon Nextgen": 1677978413,
@@ -20158,7 +20155,6 @@
         "Surya Roshni": 1676602972,
         "Sutlej Textiles": 1675472116,
         "Suven Pharma": 1675740060,
-        "T N Merc. Bank": 1670731606,
         "T N Newsprint": 1674996331,
         "TVS Motor Co.": 1674996331,
         "Talbros Engg.": 1677545941,
@@ -20166,7 +20162,6 @@
         "Tata Comm": 1674996331,
         "Thirumalai Chem.": 1674694581,
         "Time Technoplast": 1677978413,
-        "Tinplate Co.": 1670731606,
         "Titan Company": 1675566772,
         "Transpek Inds.": 1675904201,
         "UCO Bank": 1675566772,
