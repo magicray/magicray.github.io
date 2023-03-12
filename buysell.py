@@ -4,6 +4,8 @@ import requests
 import argparse
 from logging import critical as log
 
+requests.packages.urllib3.disable_warnings()
+
 def main():
     portfolio = dict()
     with open(ARGS.portfolio) as fd:
