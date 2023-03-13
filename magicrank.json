@@ -20001,7 +20001,7 @@
             "sales_var_5yrs": -2.34
         }
     ],
-    "date": 1678582898,
+    "date": 1678669088,
     "sold": {
         "AGI Infra": 1677545941,
         "AVT Natural Prod": 1676336360,
@@ -20658,6 +20658,7 @@
         "R Systems Intl": "RSYSTE",
         "REC Ltd": "RURELE",
         "RHI Magnesita": "ORIREF",
+        "RPG LifeScience": "RPGLIF",
         "Radico Khaitan": "RADKHA",
         "Rail Vikas": "RAIVIK",
         "Rain Industries": "RAIIND",
@@ -20822,8 +20823,7 @@
         "Zensar Tech": "ZENTE",
         "Zydus Lifesci": "CADHEA",
         "Zydus Wellness": "ZYDWEL",
-        "eClerx Services": "ECLSER",
-        "RPG LifeScience": "RPGLIF"
+        "eClerx Services": "ECLSER"
     },
     "url": "https://www.screener.in/screens/290555/universe/"
 }
