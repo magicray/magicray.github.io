@@ -1,15 +1,13 @@
 import re
 import bs4
-import math
 import json
 import time
-import argparse
 import requests
 from logging import critical as log
 
-value_screen = ('903587/value', '5ruq9mkugbh7rqdi6q022ld8ji8zg5ki')
-growth_screen = ('879125/growth', 'bbv9rqsz9qblhxhp4efhtv5qvjah7mof')
-quality_screen = ('878969/quality', '36g81fd47dtp2sfxv18ymxolc36e65o5')
+value_screen = ('903587/value', 'dukfsu564g7lkdsckay5fqfxlqmoq0or')
+growth_screen = ('879125/growth', 'r1grnanr161oqem9i3owfi4ue96utdac')
+quality_screen = ('878969/quality', 'nkdwcuy2gnxf1uxkrirrrwfgoyj46q14')
 
 
 def download(screen, sessionid):
@@ -149,10 +147,10 @@ def main():
             if v['op_12m_rs_cr'] < threshold:
                 continue
 
-            #if v['sales_rs_cr'] < threshold*10:
+            # if v['sales_rs_cr'] < threshold*10:
             #    continue
 
-            #if v['mar_cap_rs_cr'] < threshold*10:
+            # if v['mar_cap_rs_cr'] < threshold*10:
             #    continue
 
             data[k] = v
