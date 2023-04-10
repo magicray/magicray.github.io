@@ -5,9 +5,9 @@ import time
 import requests
 from logging import critical as log
 
-value_screen = ('903587/value', 'dukfsu564g7lkdsckay5fqfxlqmoq0or')
-growth_screen = ('879125/growth', 'r1grnanr161oqem9i3owfi4ue96utdac')
-quality_screen = ('878969/quality', 'nkdwcuy2gnxf1uxkrirrrwfgoyj46q14')
+value_screen = ('903587/value', 'g30bmxlffaorz19izzw2tl8ay314sskx')
+growth_screen = ('879125/growth', 'j82x5d5anisiqlpffvr5uuek99r84uc8')
+quality_screen = ('878969/quality', 'r5f3s4qivqezz994igpxp4gid4lqy2qh')
 
 
 def download(screen, sessionid):
