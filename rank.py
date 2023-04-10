@@ -156,7 +156,7 @@ def main():
             data[k] = v
 
         threshold += 1
-        if len(data) < 401:
+        if len(data) < 501:
             break
 
     t = time.time()
