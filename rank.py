@@ -104,13 +104,18 @@ def main():
     # Profit after tax > 0 AND
     # Operating profit > 0 AND
     #
-    # Sales > Net profit AND
     # Sales > Operating profit AND
+    # Operating profit > Net profit AND
+    # Operating profit > Profit after tax AND
+    # Operating profit > Other income AND
     #
-    # Current ratio > 1 AND
     # Net worth > 0 AND
     # Book value > 0 AND
-    # Total Assets > 0
+    # Total Assets > 0 AND
+    # Current ratio > 1 AND
+    #
+    # Current price > Face value AND
+    # Volume 1month average * Current price > 100000
 
     filename = 'universe.json'
     try:
