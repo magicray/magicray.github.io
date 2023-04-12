@@ -152,6 +152,7 @@ def main():
             if v['op_12m_rs_cr'] < threshold:
                 continue
 
+            v['vol'] = v['avg_vol_1mth'] * v['cmp_rs']
             # if v['sales_rs_cr'] < threshold*10:
             #    continue
 
@@ -205,7 +206,7 @@ def main():
     np = rank('np_12m_rs_cr', data)
     op = rank('op_12m_rs_cr', data)
     debteq = rank('debt_eq', data, False)
-    # dividend = rank('div_5yrs_rs_cr', data)
+    vol = rank('vol', data)
 
     final_rank = [(
         # Quality
@@ -225,7 +226,7 @@ def main():
         (pe[name] + pb[name] + ps[name] + po[name] + e_yield[name]) / 5 +
 
         # Stability
-        (sales[name] + np[name] + op[name] + debteq[name]) / 4,
+        (sales[name] + np[name] + op[name] + debteq[name] + vol[name]) / 5,
 
         name) for name in roe]
 
