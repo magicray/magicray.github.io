@@ -114,8 +114,8 @@ def main():
     # Total Assets > 0 AND
     # Current ratio > 1 AND
     #
-    # Current price > Face value AND
-    # Volume 1month average * Current price > 100000
+    # Volume > 0 AND
+    # Current price > Face value
 
     filename = 'universe.json'
     try:
@@ -153,11 +153,6 @@ def main():
                 continue
 
             v['vol'] = v['avg_vol_1mth'] * v['cmp_rs']
-            # if v['sales_rs_cr'] < threshold*10:
-            #    continue
-
-            # if v['mar_cap_rs_cr'] < threshold*10:
-            #    continue
 
             data[k] = v
 
@@ -202,6 +197,7 @@ def main():
     e_yield = rank('earnings_yield', data)
 
     # Rank on Stability
+    mcap = rank('mar_cap_rs_cr', data)
     sales = rank('sales_rs_cr', data)
     np = rank('np_12m_rs_cr', data)
     op = rank('op_12m_rs_cr', data)
@@ -226,7 +222,8 @@ def main():
         (pe[name] + pb[name] + ps[name] + po[name] + e_yield[name]) / 5 +
 
         # Stability
-        (sales[name] + np[name] + op[name] + debteq[name] + vol[name]) / 5,
+        (mcap[name] + sales[name] + np[name] + op[name] +
+         debteq[name] + vol[name]) / 6,
 
         name) for name in roe]
 
