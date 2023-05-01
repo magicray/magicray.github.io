@@ -19943,7 +19943,7 @@
             "cmp_sales": 6.56,
             "debt_eq": 0.0,
             "div_5yrs_rs_cr": 3.11,
-            "div_yld": 0.33,
+            "div_yld": 0.16,
             "earnings_yield": 3.67,
             "ebidt_var_3yrs": 3.93,
             "ebidt_var_5yrs": 14.06,
@@ -22501,7 +22501,7 @@
             "vol": 109418690.05
         }
     ],
-    "date": 1682816312,
+    "date": 1682902653,
     "sold": {
         "AVT Natural Prod": 1676336360,
         "Aarti Industries": 1675472116,
@@ -22907,6 +22907,7 @@
         "Havells India": "HAVIND",
         "Heranba Inds": "HERIND",
         "Hero Motocorp": "HERHON",
+        "Himadri Special": "HIMCHE",
         "Hind Unilever": "HINLEV",
         "HindAeronautics": "HINAER",
         "Hindalco Inds": "HINDAL",
@@ -22962,6 +22963,7 @@
         "JTL Industries": "JTLINF",
         "JTL Infra": "JTLINF",
         "Jamna Auto Inds": "JAMAUT",
+        "Jindal Drilling": "JINDAD",
         "Jindal Poly Film": "JINPOL",
         "Jindal Saw": "JINSAW",
         "Jindal Stain": "JINSTA",
@@ -22995,6 +22997,7 @@
         "Kitex Garments": "KITGAR",
         "Kotak Mah Bank": "KOTMAH",
         "Krishna Institu": "KRIINS",
+        "Kuantum Papers": "KAUPAP",
         "Kwality Pharma": "KWAPHA",
         "L & T Infotech": "LTINFO",
         "L G Balakrishnan": "LGBALA",
@@ -23121,6 +23124,7 @@
         "Quess Corp": "QUECOR",
         "R C F": "RCF",
         "R Systems Intl": "RSYSTE",
+        "RBL Bank": "RBLBAN",
         "REC Ltd": "RURELE",
         "RHI Magnesita": "ORIREF",
         "RPG LifeScience": "RPGLIF",
@@ -23233,6 +23237,7 @@
         "Team Lease Serv": "TEASER",
         "Tech Mahindra": "TECMAH",
         "TechnocrafInds": "TECIND",
+        "Tega Inds": "TEGIND",
         "The Ramco Cement": "RAMCEM",
         "Thermax": "THERMA",
         "Thirumalai Chem": "THICHE",
@@ -23240,6 +23245,7 @@
         "Time Technoplast": "TIMTEC",
         "Timken India": "TIMIND",
         "Tinplate Co": "TINCO",
+        "Tips Industries": "TIPIND",
         "Titan Company": "TITIND",
         "Torrent Pharma": "TORPHA",
         "Torrent Power": "TORPOW",
@@ -23292,13 +23298,7 @@
         "Zensar Tech": "ZENTE",
         "Zydus Lifesci": "CADHEA",
         "Zydus Wellness": "ZYDWEL",
-        "eClerx Services": "ECLSER",
-        "Kuantum Papers": "KAUPAP",
-        "Jindal Drilling": "JINDAD",
-        "RBL Bank": "RBLBAN",
-        "Himadri Special": "HIMCHE",
-        "Tega Inds": "TEGIND",
-        "Tips Industries": "TIPIND"
+        "eClerx Services": "ECLSER"
     },
     "url": "https://www.screener.in/screens/290555/universe/"
 }
