@@ -145,20 +145,16 @@ def main():
             log('incomplete data : %s', k)
 
     # Statistics is likely to work more reliable for bigger companies
-    threshold = 1
-    while True:
-        data = dict()
-        for k, v in tmp.items():
-            if v['op_12m_rs_cr'] < threshold:
-                continue
+    threshold = [v['op_12m_rs_cr'] for k, v in tmp.items()]
+    threshold = sorted(threshold, reverse=True)[499]
+    data = dict()
+    for k, v in tmp.items():
+        if v['op_12m_rs_cr'] < threshold:
+            continue
 
-            v['vol'] = v['avg_vol_1mth'] * v['cmp_rs']
+        v['vol'] = v['avg_vol_1mth'] * v['cmp_rs']
 
-            data[k] = v
-
-        threshold += 1
-        if len(data) < 501:
-            break
+        data[k] = v
 
     t = time.time()
     log('columns(%d) rows(%d) msec(%d)',
