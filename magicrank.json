@@ -22501,7 +22501,7 @@
             "vol": 110821936.05000001
         }
     ],
-    "date": 1684025837,
+    "date": 1684112197,
     "sold": {
         "AVT Natural Prod": 1676336360,
         "Adani Power": 1683421060,
@@ -22818,6 +22818,7 @@
         "Finolex Inds": "FININD",
         "FirstsourSolu": "FIRSOU",
         "Five-Star BusFi": "FIVSTA",
+        "Foods & Inns": "FOOINN",
         "Fortis Health": "FORHEA",
         "G M Breweries": "GMBREW",
         "G M D C": "GUJMI",
@@ -23003,6 +23004,7 @@
         "Man Infra": "MANINF",
         "Manaksia": "MANLIM",
         "Manali Petrochem": "MANPET",
+        "Manappuram Fin": "MANAFI",
         "Mangalore Chem": "MANCHE",
         "Marathon Nextgen": "MARNEX",
         "Marico": "MARLIM",
@@ -23276,9 +23278,7 @@
         "Zensar Tech": "ZENTE",
         "Zydus Lifesci": "CADHEA",
         "Zydus Wellness": "ZYDWEL",
-        "eClerx Services": "ECLSER",
-        "Manappuram Fin": "MANAFI",
-        "Foods & Inns": "FOOINN"
+        "eClerx Services": "ECLSER"
     },
     "url": "https://www.screener.in/screens/290555/universe/"
 }
