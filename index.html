@@ -193,6 +193,8 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
             'Refreshed <a href="">' + age + ' hours</a> ago - ' +
             '<a href="#sold">Recently Sold</a>')
 
+        const names = data['data'].map(obj => obj['name'])
+
         const sold = {}
         Object.keys(data['sold']).map(function(k) {
             today = new Date(data['sold'][k]*1000)
@@ -207,7 +209,12 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
             if(sold[v] == undefined)
                 sold[v] = []
             k = k.replaceAll('.', '')
-            sold[v].push((G.map[k]? G.map[k]: '') + ' (' + k + ')')
+
+            if(names.includes(k))
+                sold[v].push((G.map[k]? G.map[k]: '') + ' (' + k + ')')
+            else
+                sold[v].push('<strong>' + (G.map[k]? G.map[k]: '') + ' (' + k + ')</strong>')
+
             sold[v].sort()
         })
 
