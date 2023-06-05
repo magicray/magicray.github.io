@@ -22501,7 +22501,7 @@
             "vol": 51637191.3
         }
     ],
-    "date": 1685840961,
+    "date": 1685926899,
     "sold": {
         "AGI Infra": 1684198489,
         "Accelya Solution": 1685149052,
@@ -23013,6 +23013,7 @@
         "L&T Technology": "LTTEC",
         "LIC Housing Fin": "LICHF",
         "LTI Mindtree": "LTINFO",
+        "LTIMindtree": "LTINFO",
         "Lak Mach Works": "LAKMAC",
         "Lancer Containe": "LANCON",
         "Latent View": "LATVIE",
@@ -23328,8 +23329,7 @@
         "Zensar Tech": "ZENTE",
         "Zydus Lifesci": "CADHEA",
         "Zydus Wellness": "ZYDWEL",
-        "eClerx Services": "ECLSER",
-        "LTIMindtree": "LTINFO"
+        "eClerx Services": "ECLSER"
     },
     "url": "https://www.screener.in/screens/290555/universe/"
 }
