@@ -153,6 +153,7 @@ def main():
             continue
 
         v['vol'] = v['avg_vol_1mth'] * v['cmp_rs']
+        v['div_yield'] = (100.0 * v['div_5yrs_rs_cr']) / v['mar_cap_rs_cr']
 
         data[k] = v
 
@@ -193,6 +194,7 @@ def main():
     pb = rank('cmp_bv', data, False)
     po = rank('p_o', data, False)
     e_yield = rank('earnings_yield', data)
+    div_yield = rank('div_yield', data)
 
     # Rank on Stability
     mcap = rank('mar_cap_rs_cr', data)
@@ -201,6 +203,7 @@ def main():
     op = rank('op_12m_rs_cr', data)
     debteq = rank('debt_eq', data, False)
     vol = rank('vol', data)
+    div = rank('div_5yrs_rs_cr', data)
 
     final_rank = [(
         # Quality
@@ -218,11 +221,12 @@ def main():
          eps_growth_3yr[name] + eps_growth_5yr[name]) / 11 +
 
         # Value
-        (pe[name] + pb[name] + ps[name] + po[name] + e_yield[name]) / 5 +
+        (pe[name] + pb[name] + ps[name] + po[name] +
+         e_yield[name] + div_yield[name]) / 6 +
 
         # Stability
         (mcap[name] + sales[name] + np[name] + op[name] +
-         debteq[name] + vol[name]) / 6,
+         debteq[name] + vol[name] + div[name]) / 7,
 
         name) for name in roe]
 
