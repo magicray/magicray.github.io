@@ -154,6 +154,7 @@ def main():
 
         v['vol'] = v['avg_vol_1mth'] * v['cmp_rs']
         v['div_yield'] = (100.0 * v['div_5yrs_rs_cr']) / v['mar_cap_rs_cr']
+        v['overbought'] = (v['cmp_rs'] * 100) / v['200_dma_rs']
 
         data[k] = v
 
@@ -195,6 +196,7 @@ def main():
     po = rank('p_o', data, False)
     e_yield = rank('earnings_yield', data)
     div_yield = rank('div_yield', data)
+    overbought = rank('overbought', data, False)
 
     # Rank on Stability
     mcap = rank('mar_cap_rs_cr', data)
@@ -222,7 +224,7 @@ def main():
 
         # Value
         (pe[name] + pb[name] + ps[name] + po[name] +
-         e_yield[name] + div_yield[name]) / 6 +
+         e_yield[name] + div_yield[name] + overbought[name]) / 7 +
 
         # Stability
         (mcap[name] + sales[name] + np[name] + op[name] +
