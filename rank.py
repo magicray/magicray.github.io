@@ -206,6 +206,7 @@ def main():
     debteq = rank('debt_eq', data, False)
     vol = rank('vol', data)
     div = rank('div_5yrs_rs_cr', data)
+    fcf = rank('free_cash_flow_5yrs_rs_cr', data)
 
     final_rank = [(
         # Quality
@@ -228,7 +229,7 @@ def main():
 
         # Stability
         (mcap[name] + sales[name] + np[name] + op[name] +
-         debteq[name] + vol[name] + div[name]) / 7,
+         debteq[name] + vol[name] + div[name] + fcf[name]) / 8,
 
         name) for name in roe]
 
