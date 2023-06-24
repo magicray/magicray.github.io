@@ -144,14 +144,9 @@ def main():
         else:
             log('incomplete data : %s', k)
 
-    # Statistics is likely to work more reliable for bigger companies
-    threshold = [v['op_12m_rs_cr'] for k, v in tmp.items()]
-    threshold = sorted(threshold, reverse=True)[499]
+    # Derived fields
     data = dict()
     for k, v in tmp.items():
-        if v['op_12m_rs_cr'] < threshold:
-            continue
-
         v['vol'] = v['avg_vol_1mth'] * v['cmp_rs']
         v['div_yield'] = (100.0 * v['div_5yrs_rs_cr']) / v['mar_cap_rs_cr']
         v['overbought'] = (v['cmp_rs'] * 100) / v['200_dma_rs']
@@ -161,6 +156,23 @@ def main():
     t = time.time()
     log('columns(%d) rows(%d) msec(%d)',
         len(data[list(data.keys())[0]]), len(data), (time.time()-t)*1000)
+
+    # Rank on Size and Stability
+    mcap = rank('mar_cap_rs_cr', data)
+    sales = rank('sales_rs_cr', data)
+    np = rank('np_12m_rs_cr', data)
+    op = rank('op_12m_rs_cr', data)
+    debteq = rank('debt_eq', data, False)
+    vol = rank('vol', data)
+    div = rank('div_5yrs_rs_cr', data)
+    fcf = rank('free_cash_flow_5yrs_rs_cr', data)
+
+    size_rank = [(mcap[name] + sales[name] + np[name] + op[name] +
+                  debteq[name] + vol[name] + div[name] + fcf[name],
+                 name) for name in mcap]
+
+    biggest_stocks = set([name for _, name in sorted(size_rank)[:500]])
+    data = {k: v for k, v in data.items() if k in biggest_stocks}
 
     # Rank on Profitability
     roe = rank('roe', data)
@@ -198,16 +210,6 @@ def main():
     div_yield = rank('div_yield', data)
     overbought = rank('overbought', data, False)
 
-    # Rank on Stability
-    mcap = rank('mar_cap_rs_cr', data)
-    sales = rank('sales_rs_cr', data)
-    np = rank('np_12m_rs_cr', data)
-    op = rank('op_12m_rs_cr', data)
-    debteq = rank('debt_eq', data, False)
-    vol = rank('vol', data)
-    div = rank('div_5yrs_rs_cr', data)
-    fcf = rank('free_cash_flow_5yrs_rs_cr', data)
-
     final_rank = [(
         # Quality
         (roce[name] + roe[name] + opm[name] + roa[name] +
@@ -225,11 +227,7 @@ def main():
 
         # Value
         (pe[name] + pb[name] + ps[name] + po[name] +
-         e_yield[name] + div_yield[name] + overbought[name]) / 7 +
-
-        # Stability
-        (mcap[name] + sales[name] + np[name] + op[name] +
-         debteq[name] + vol[name] + div[name] + fcf[name]) / 8,
+         e_yield[name] + div_yield[name] + overbought[name]) / 7,
 
         name) for name in roe]
 
