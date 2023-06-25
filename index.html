@@ -25,10 +25,10 @@
             <thead>
                 <tr>
                 <th colspan=3>Group</th>
-                <th colspan=12>Quality</th>
+                <th colspan=13>Quality</th>
                 <th colspan=11>Growth</th>
-                <th colspan=7>Valuation</th>
-                <th colspan=5>Stability</th>
+                <th colspan=8>Valuation</th>
+                <th colspan=4>Stability</th>
                 </tr>
                 <tr>
                 <th colspan=3 id="group_hold">Buy</th>
@@ -44,6 +44,7 @@
                 <th id="roa_green"></th>
                 <th id="roa_3yr_green"></th>
                 <th id="roa_5yr_green"></th>
+                <th id="debt2eq_green"></th>
                 <th id="profit_growth_green"></th>
                 <th id="profit_growth_3yr_green"></th>
                 <th id="profit_growth_5yr_green"></th>
@@ -61,12 +62,12 @@
                 <th id="pb_green"></th>
                 <th id="po_green"></th>
                 <th id="div_yield_green"></th>
+                <th id="fcf_yield_green"></th>
                 <th id="overbought_green"></th>
                 <th id="mcap_green"></th>
                 <th id="sales_green"></th>
                 <th id="profit_green"></th>
                 <th id="oprofit_green"></th>
-                <th id="debt2eq_green"></th>
                 </tr><tr>
                 <th colspan=3 id="group_all">All</th>
                 <th id="roce_black"></th>
@@ -81,6 +82,7 @@
                 <th id="roa_black"></th>
                 <th id="roa_3yr_black"></th>
                 <th id="roa_5yr_black"></th>
+                <th id="debt2eq_black"></th>
                 <th id="profit_growth_black"></th>
                 <th id="profit_growth_3yr_black"></th>
                 <th id="profit_growth_5yr_black"></th>
@@ -98,12 +100,12 @@
                 <th id="pb_black"></th>
                 <th id="po_black"></th>
                 <th id="div_yield_black"></th>
+                <th id="fcf_yield_black"></th>
                 <th id="overbought_black"></th>
                 <th id="mcap_black"></th>
                 <th id="sales_black"></th>
                 <th id="profit_black"></th>
                 <th id="oprofit_black"></th>
-                <th id="debt2eq_black"></th>
                 </tr><tr>
                 <th colspan=3 id="group_avoid">Sell</th>
                 <th id="roce_red"></th>
@@ -118,6 +120,7 @@
                 <th id="roa_red"></th>
                 <th id="roa_3yr_red"></th>
                 <th id="roa_5yr_red"></th>
+                <th id="debt2eq_red"></th>
                 <th id="profit_growth_red"></th>
                 <th id="profit_growth_3yr_red"></th>
                 <th id="profit_growth_5yr_red"></th>
@@ -135,12 +138,12 @@
                 <th id="pb_red"></th>
                 <th id="po_red"></th>
                 <th id="div_yield_red"></th>
+                <th id="fcf_yield_red"></th>
                 <th id="overbought_red"></th>
                 <th id="mcap_red"></th>
                 <th id="sales_red"></th>
                 <th id="profit_red"></th>
                 <th id="oprofit_red"></th>
-                <th id="debt2eq_red"></th>
                 </tr><tr style="position: sticky; top: 0; z-index: 1; background-color: white">
                 <th>Rank</th>
                 <th>Stock</th>
@@ -157,6 +160,7 @@
                 <th>ROA</th>
                 <th>ROA 3Yr</th>
                 <th>ROA 5Yr</th>
+                <th>Debt/Eq</th>
                 <th>Profit</th>
                 <th>Profit 3Yr</th>
                 <th>Profit 5Yr</th>
@@ -174,12 +178,12 @@
                 <th>PB</th>
                 <th>PO</th>
                 <th>Div Yield</th>
+                <th>FCF Yield</th>
                 <th>Over Bought</th>
                 <th>MCap</th>
                 <th>Sales</th>
                 <th>Profit</th>
                 <th>OProfit</th>
-                <th>Debt/Eq</th>
                 </tr>
             </thead>
         </table>
@@ -265,6 +269,7 @@ function format_data(data, count, amount) {
             d['roa_12m'],
             d['roa_3yr'],
             d['roa_5yr'],
+	    d['debt_eq'],
             d['profit_growth'],
             d['profit_var_3yrs'],
             d['profit_var_5yrs'],
@@ -282,12 +287,12 @@ function format_data(data, count, amount) {
             d['cmp_bv'],
             d['p_o'],
             d['div_yield'],
+            d['fcf_yield'],
             d['overbought'],
             d['mar_cap_rs_cr'],
 	    d['sales_rs_cr'],
 	    d['np_12m_rs_cr'],
-	    d['op_12m_rs_cr'],
-	    d['debt_eq']])
+	    d['op_12m_rs_cr']])
     }
 
     return result
@@ -349,12 +354,12 @@ function renderTable(tableId, data) {
     $("#group_avoid").css("font-weight", "normal");
 
     const col = ['roce', 'roce_3yr', 'roce_5yr', 'roe', 'roe_3yr', 'roe_5yr',
-                 'roic', 'opm', 'opm_5yr', 'roa', 'roa_3yr', 'roa_5yr',
+                 'roic', 'opm', 'opm_5yr', 'roa', 'roa_3yr', 'roa_5yr', 'debt2eq',
 	         'profit_growth', 'profit_growth_3yr', 'profit_growth_5yr', 'profit_growth_yoy',
                  'sales_growth', 'sales_growth_3yr', 'sales_growth_5yr', 'sales_growth_yoy',
                  'oprofit_growth', 'eps_growth_3yr', 'eps_growth_5yr',
-	         'yield', 'pe', 'ps', 'pb', 'po', 'div_yield', 'overbought',
-	         'mcap', 'sales', 'profit', 'oprofit', 'debt2eq']
+	         'yield', 'pe', 'ps', 'pb', 'po', 'div_yield', 'fcf_yield', 'overbought',
+	         'mcap', 'sales', 'profit', 'oprofit']
 
     col.map((name, index) => {
 	let arr = data_green.map(d => d[index+3]).sort(function(a, b){ return a - b})
@@ -384,7 +389,7 @@ function renderTable(tableId, data) {
 
     let tmp = [...data]
     tmp.map((row, index) => {
-        for(let i=3; i<38; i++)
+        for(let i=3; i<39; i++)
             row[i] = Math.round(row[i])
     })
 

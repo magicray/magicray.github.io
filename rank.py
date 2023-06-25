@@ -141,17 +141,17 @@ def main():
         if all('' != y for y in v.values()):
             tmp[k] = v
             v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']
+            v['vol'] = v['avg_vol_1mth'] * v['cmp_rs']
+            v['debt_eq'] = v['debt_eq'] * 100
+            v['fcf_yield'] = (100.0 * v['free_cash_flow_5yrs_rs_cr']) / v['mar_cap_rs_cr']
+            v['div_yield'] = (100.0 * v['div_5yrs_rs_cr']) / v['mar_cap_rs_cr']
+            v['overbought'] = (v['cmp_rs'] * 100) / v['200_dma_rs']
         else:
-            log('incomplete data : %s', k)
+            log('incomplete data : name(%s) mcap(%d)', k, v['mar_cap_rs_cr'])
+            if v['mar_cap_rs_cr'] > 1000:
+                log(json.dumps({x:y for x,y in v.items() if not y}, indent=4))
 
-    # Derived fields
-    data = dict()
-    for k, v in tmp.items():
-        v['vol'] = v['avg_vol_1mth'] * v['cmp_rs']
-        v['div_yield'] = (100.0 * v['div_5yrs_rs_cr']) / v['mar_cap_rs_cr']
-        v['overbought'] = (v['cmp_rs'] * 100) / v['200_dma_rs']
-
-        data[k] = v
+    data = tmp
 
     t = time.time()
     log('columns(%d) rows(%d) msec(%d)',
@@ -162,13 +162,12 @@ def main():
     sales = rank('sales_rs_cr', data)
     np = rank('np_12m_rs_cr', data)
     op = rank('op_12m_rs_cr', data)
-    debteq = rank('debt_eq', data, False)
     vol = rank('vol', data)
     div = rank('div_5yrs_rs_cr', data)
     fcf = rank('free_cash_flow_5yrs_rs_cr', data)
 
     size_rank = [(mcap[name] + sales[name] + np[name] + op[name] +
-                  debteq[name] + vol[name] + div[name] + fcf[name],
+                  vol[name] + div[name] + fcf[name],
                  name) for name in mcap]
 
     biggest_stocks = set([name for _, name in sorted(size_rank)[:500]])
@@ -187,6 +186,7 @@ def main():
     roa = rank('roa_12m', data)
     roa_3yr = rank('roa_3yr', data)
     roa_5yr = rank('roa_5yr', data)
+    debteq = rank('debt_eq', data, False)
 
     # Rank on Growth
     sales_growth = rank('sales_growth', data)
@@ -208,6 +208,7 @@ def main():
     po = rank('p_o', data, False)
     e_yield = rank('earnings_yield', data)
     div_yield = rank('div_yield', data)
+    fcf_yield = rank('div_yield', data)
     overbought = rank('overbought', data, False)
 
     final_rank = [(
@@ -215,7 +216,7 @@ def main():
         (roce[name] + roe[name] + opm[name] + roa[name] +
          roce_3yr[name] + roe_3yr[name] + roa_3yr[name] +
          roce_5yr[name] + roe_5yr[name] + opm_5yr[name] + roa_5yr[name] +
-         roic[name]) / 12 +
+         roic[name] + debteq[name]) / 13 +
 
         # Growth
         (sales_growth[name] + profit_growth[name] +
@@ -227,7 +228,8 @@ def main():
 
         # Value
         (pe[name] + pb[name] + ps[name] + po[name] +
-         e_yield[name] + div_yield[name] + overbought[name]) / 7,
+         e_yield[name] + div_yield[name] + fcf_yield[name] +
+         overbought[name]) / 8,
 
         name) for name in roe]
 
