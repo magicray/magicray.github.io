@@ -143,8 +143,8 @@ def main():
             v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']
             v['vol'] = v['avg_vol_1mth'] * v['cmp_rs']
             v['debt_eq'] = v['debt_eq'] * 100
-            v['fcf_yield'] = (100.0 * v['free_cash_flow_5yrs_rs_cr']) / v['mar_cap_rs_cr']
-            v['div_yield'] = (100.0 * v['div_5yrs_rs_cr']) / v['mar_cap_rs_cr']
+            v['fcf_yield'] = (100 * v['free_cash_flow_5yrs_rs_cr']) / v['mar_cap_rs_cr']
+            v['div_yield'] = (100 * v['div_5yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['overbought'] = (v['cmp_rs'] * 100) / v['200_dma_rs']
         else:
             log('incomplete data : name(%s) mcap(%d)', k, v['mar_cap_rs_cr'])
@@ -157,8 +157,7 @@ def main():
     log('columns(%d) rows(%d) msec(%d)',
         len(data[list(data.keys())[0]]), len(data), (time.time()-t)*1000)
 
-    # Rank on Size and Stability
-    mcap = rank('mar_cap_rs_cr', data)
+    # Rank on Size
     sales = rank('sales_rs_cr', data)
     np = rank('np_12m_rs_cr', data)
     op = rank('op_12m_rs_cr', data)
@@ -166,9 +165,9 @@ def main():
     div = rank('div_5yrs_rs_cr', data)
     fcf = rank('free_cash_flow_5yrs_rs_cr', data)
 
-    size_rank = [(mcap[name] + sales[name] + np[name] + op[name] +
+    size_rank = [(sales[name] + np[name] + op[name] +
                   vol[name] + div[name] + fcf[name],
-                 name) for name in mcap]
+                 name) for name in sales]
 
     biggest_stocks = set([name for _, name in sorted(size_rank)[:500]])
     data = {k: v for k, v in data.items() if k in biggest_stocks}
@@ -251,9 +250,11 @@ def main():
         ts = int(time.time())
         sold = prev.get('sold', {})
         sold.update({s: ts for s in set(prev_names) - set(stock_names)})
+
         for s in list(sold.keys()):
             if s in stock_names:
                 sold.pop(s)
+
         json.dump(dict(
                 data=stock_list,
                 date=int(time.time()),
