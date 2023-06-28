@@ -143,6 +143,7 @@ def main():
             v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']
             v['vol'] = v['avg_vol_1mth'] * v['cmp_rs']
             v['debt_eq'] = v['debt_eq'] * 100
+            v['ocf_yield'] = (100 * v['cf_opr_5yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['fcf_yield'] = (100 * v['free_cash_flow_5yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['div_yield'] = (100 * v['div_5yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['overbought'] = (v['cmp_rs'] * 100) / v['200_dma_rs']
@@ -164,9 +165,10 @@ def main():
     vol = rank('vol', data)
     div = rank('div_5yrs_rs_cr', data)
     fcf = rank('free_cash_flow_5yrs_rs_cr', data)
+    ocf = rank('cf_opr_5yrs_rs_cr', data)
 
-    size_rank = [(sales[name] + np[name] + op[name] +
-                  vol[name] + div[name] + fcf[name],
+    size_rank = [(sales[name] + np[name] + op[name] + vol[name] +
+                  div[name] + ocf[name] + fcf[name],
                  name) for name in sales]
 
     biggest_stocks = set([name for _, name in sorted(size_rank)[:500]])
@@ -207,7 +209,8 @@ def main():
     po = rank('p_o', data, False)
     e_yield = rank('earnings_yield', data)
     div_yield = rank('div_yield', data)
-    fcf_yield = rank('div_yield', data)
+    ocf_yield = rank('ocf_yield', data)
+    fcf_yield = rank('fcf_yield', data)
     overbought = rank('overbought', data, False)
 
     final_rank = [(
@@ -226,9 +229,9 @@ def main():
          eps_growth_3yr[name] + eps_growth_5yr[name]) / 11 +
 
         # Value
-        (pe[name] + pb[name] + ps[name] + po[name] +
-         e_yield[name] + div_yield[name] + fcf_yield[name] +
-         overbought[name]) / 8,
+        (pe[name] + pb[name] + ps[name] + po[name] + e_yield[name] +
+         div_yield[name] + ocf_yield[name] + fcf_yield[name] +
+         overbought[name]) / 9,
 
         name) for name in roe]
 
