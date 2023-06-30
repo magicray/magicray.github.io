@@ -27,7 +27,7 @@
                 <th colspan=3>Group</th>
                 <th colspan=13>Quality</th>
                 <th colspan=11>Growth</th>
-                <th colspan=9>Valuation</th>
+                <th colspan=11>Valuation</th>
                 <th colspan=4>Stability</th>
                 </tr>
                 <tr>
@@ -62,8 +62,10 @@
                 <th id="pb_green"></th>
                 <th id="po_green"></th>
                 <th id="div_yield_green"></th>
-                <th id="ocf_yield_green"></th>
-                <th id="fcf_yield_green"></th>
+                <th id="ocf_yield_3_green"></th>
+                <th id="ocf_yield_5_green"></th>
+                <th id="fcf_yield_3_green"></th>
+                <th id="fcf_yield_5_green"></th>
                 <th id="overbought_green"></th>
                 <th id="mcap_green"></th>
                 <th id="sales_green"></th>
@@ -101,8 +103,10 @@
                 <th id="pb_black"></th>
                 <th id="po_black"></th>
                 <th id="div_yield_black"></th>
-                <th id="ocf_yield_black"></th>
-                <th id="fcf_yield_black"></th>
+                <th id="ocf_yield_3_black"></th>
+                <th id="ocf_yield_5_black"></th>
+                <th id="fcf_yield_3_black"></th>
+                <th id="fcf_yield_5_black"></th>
                 <th id="overbought_black"></th>
                 <th id="mcap_black"></th>
                 <th id="sales_black"></th>
@@ -140,8 +144,10 @@
                 <th id="pb_red"></th>
                 <th id="po_red"></th>
                 <th id="div_yield_red"></th>
-                <th id="ocf_yield_red"></th>
-                <th id="fcf_yield_red"></th>
+                <th id="ocf_yield_3_red"></th>
+                <th id="ocf_yield_5_red"></th>
+                <th id="fcf_yield_3_red"></th>
+                <th id="fcf_yield_5_red"></th>
                 <th id="overbought_red"></th>
                 <th id="mcap_red"></th>
                 <th id="sales_red"></th>
@@ -181,8 +187,10 @@
                 <th>PB</th>
                 <th>PO</th>
                 <th>Div Yield</th>
-                <th>OCF Yield</th>
-                <th>FCF Yield</th>
+                <th>OCF 3Yr Yield</th>
+                <th>OCF 5Yr Yield</th>
+                <th>FCF 3Yr Yield</th>
+                <th>FCF 5Yr Yield</th>
                 <th>Over Bought</th>
                 <th>MCap</th>
                 <th>Sales</th>
@@ -291,8 +299,10 @@ function format_data(data, count, amount) {
             d['cmp_bv'],
             d['p_o'],
             d['div_yield'],
-            d['ocf_yield'],
-            d['fcf_yield'],
+            d['ocf_yield_3'],
+            d['ocf_yield_5'],
+            d['fcf_yield_3'],
+            d['fcf_yield_5'],
             d['overbought'],
             d['mar_cap_rs_cr'],
 	    d['sales_rs_cr'],
@@ -363,7 +373,8 @@ function renderTable(tableId, data) {
 	         'profit_growth', 'profit_growth_3yr', 'profit_growth_5yr', 'profit_growth_yoy',
                  'sales_growth', 'sales_growth_3yr', 'sales_growth_5yr', 'sales_growth_yoy',
                  'oprofit_growth', 'eps_growth_3yr', 'eps_growth_5yr',
-	         'yield', 'pe', 'ps', 'pb', 'po', 'div_yield', 'ocf_yield', 'fcf_yield', 'overbought',
+	         'yield', 'pe', 'ps', 'pb', 'po', 'div_yield',
+                 'ocf_yield_3', 'ocf_yield_5', 'fcf_yield_3', 'fcf_yield_5', 'overbought',
 	         'mcap', 'sales', 'profit', 'oprofit']
 
     col.map((name, index) => {
@@ -394,7 +405,7 @@ function renderTable(tableId, data) {
 
     let tmp = [...data]
     tmp.map((row, index) => {
-        for(let i=3; i<40; i++)
+        for(let i=3; i<42; i++)
             row[i] = Math.round(row[i])
     })
 
