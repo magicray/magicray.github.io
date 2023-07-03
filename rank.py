@@ -152,7 +152,7 @@ def main():
         else:
             log('incomplete data : name(%s) mcap(%d)', k, v['mar_cap_rs_cr'])
             if v['mar_cap_rs_cr'] > 1000:
-                log(json.dumps({x:y for x,y in v.items() if not y}, indent=4))
+                log(json.dumps({x: y for x, y in v.items() if not y}, indent=4))
 
     data = tmp
 
@@ -176,7 +176,8 @@ def main():
                   ocf_3[name] + fcf_3[name],
                  name) for name in sales]
 
-    biggest_stocks = set([name for _, name in sorted(size_rank)[:500]])
+    count = min(500, int(len(size_rank)/2))
+    biggest_stocks = set([name for _, name in sorted(size_rank)[:count]])
     data = {k: v for k, v in data.items() if k in biggest_stocks}
 
     # Rank on Profitability
