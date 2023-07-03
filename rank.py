@@ -138,7 +138,8 @@ def main():
     for k, v in data['data'].items():
         v.pop('5yrs_return', None)
 
-        if all('' != y for y in v.values()):
+        try:
+            assert(all('' != y for y in v.values()))
             tmp[k] = v
             v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']
             v['vol'] = v['avg_vol_1mth'] * v['cmp_rs']
@@ -149,10 +150,9 @@ def main():
             v['fcf_yield_5'] = (100 * v['free_cash_flow_5yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['div_yield'] = (100 * v['div_5yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['overbought'] = (v['cmp_rs'] * 100) / v['200_dma_rs']
-        else:
-            log('incomplete data : name(%s) mcap(%d)', k, v['mar_cap_rs_cr'])
-            if v['mar_cap_rs_cr'] > 1000:
-                log(json.dumps({x: y for x, y in v.items() if not y}, indent=4))
+        except Exception:
+            log('incomplete data : name(%s)', k)
+            log(json.dumps({x: y for x, y in v.items() if not y}, indent=4))
 
     data = tmp
 
@@ -176,7 +176,8 @@ def main():
                   ocf_3[name] + fcf_3[name],
                  name) for name in sales]
 
-    count = min(500, int(len(size_rank)/2))
+    count = int(len(size_rank)/2)
+    count = min(500, count + 1 if count % 2 else count)
     biggest_stocks = set([name for _, name in sorted(size_rank)[:count]])
     data = {k: v for k, v in data.items() if k in biggest_stocks}
 
