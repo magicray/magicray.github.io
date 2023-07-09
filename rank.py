@@ -140,16 +140,23 @@ def main():
 
         try:
             assert(all('' != y for y in v.values()))
-            tmp[k] = v
             v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']
             v['vol'] = v['avg_vol_1mth'] * v['cmp_rs']
             v['debt_eq'] = v['debt_eq'] * 100
+
+            if v['debt_eq'] > 0:
+                v['int_ratio'] = 100 / v['int_coverage']
+            else:
+                v['int_ratio'] = 0
+
             v['ocf_yield_3'] = (100 * v['cf_opr_3yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['ocf_yield_5'] = (100 * v['cf_opr_5yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['fcf_yield_3'] = (100 * v['free_cash_flow_3yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['fcf_yield_5'] = (100 * v['free_cash_flow_5yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['div_yield'] = (100 * v['div_5yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['overbought'] = (v['cmp_rs'] * 100) / v['200_dma_rs']
+
+            tmp[k] = v
         except Exception:
             log('incomplete data : name(%s)', k)
             log(json.dumps({x: y for x, y in v.items() if not y}, indent=4))
@@ -195,6 +202,7 @@ def main():
     roa_3yr = rank('roa_3yr', data)
     roa_5yr = rank('roa_5yr', data)
     debteq = rank('debt_eq', data, False)
+    int_ratio = rank('int_ratio', data, False)
 
     # Rank on Growth
     sales_growth = rank('sales_growth', data)
@@ -227,7 +235,7 @@ def main():
         (roce[name] + roe[name] + opm[name] + roa[name] +
          roce_3yr[name] + roe_3yr[name] + roa_3yr[name] +
          roce_5yr[name] + roe_5yr[name] + opm_5yr[name] + roa_5yr[name] +
-         roic[name] + debteq[name]) / 13 +
+         roic[name] + debteq[name] + int_ratio[name]) / 14 +
 
         # Growth
         (sales_growth[name] + profit_growth[name] +

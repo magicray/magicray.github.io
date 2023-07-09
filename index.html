@@ -25,7 +25,7 @@
             <thead>
                 <tr>
                 <th colspan=3>Group</th>
-                <th colspan=13>Quality</th>
+                <th colspan=14>Quality</th>
                 <th colspan=11>Growth</th>
                 <th colspan=11>Valuation</th>
                 <th colspan=4>Stability</th>
@@ -44,6 +44,7 @@
                 <th id="roa_green"></th>
                 <th id="roa_3yr_green"></th>
                 <th id="roa_5yr_green"></th>
+                <th id="int_ratio_green"></th>
                 <th id="debt2eq_green"></th>
                 <th id="profit_growth_green"></th>
                 <th id="profit_growth_3yr_green"></th>
@@ -85,6 +86,7 @@
                 <th id="roa_black"></th>
                 <th id="roa_3yr_black"></th>
                 <th id="roa_5yr_black"></th>
+                <th id="int_ratio_black"></th>
                 <th id="debt2eq_black"></th>
                 <th id="profit_growth_black"></th>
                 <th id="profit_growth_3yr_black"></th>
@@ -126,6 +128,7 @@
                 <th id="roa_red"></th>
                 <th id="roa_3yr_red"></th>
                 <th id="roa_5yr_red"></th>
+                <th id="int_ratio_red"></th>
                 <th id="debt2eq_red"></th>
                 <th id="profit_growth_red"></th>
                 <th id="profit_growth_3yr_red"></th>
@@ -169,6 +172,7 @@
                 <th>ROA</th>
                 <th>ROA 3Yr</th>
                 <th>ROA 5Yr</th>
+                <th>Interest % EBIT</th>
                 <th>Debt/Eq</th>
                 <th>Profit</th>
                 <th>Profit 3Yr</th>
@@ -281,6 +285,7 @@ function format_data(data, count, amount) {
             d['roa_12m'],
             d['roa_3yr'],
             d['roa_5yr'],
+	    d['int_ratio'],
 	    d['debt_eq'],
             d['profit_growth'],
             d['profit_var_3yrs'],
@@ -357,7 +362,6 @@ function renderTable(tableId, data) {
     let data_green = data.slice(0, median_index_black.first+1);
     let data_red = data.slice(median_index_black.second, data.length);
 
-    // $("#group_buy").html("Buy (top " + max_dark_len + ")");
     $("#group_hold").html("Buy (top " + data_green.length + ")");
     $("#group_all").html("All (" + data.length + ")");
     $("#group_avoid").html("Sell (bottom " + data_red.length + ")");
@@ -369,7 +373,7 @@ function renderTable(tableId, data) {
     $("#group_avoid").css("font-weight", "normal");
 
     const col = ['roce', 'roce_3yr', 'roce_5yr', 'roe', 'roe_3yr', 'roe_5yr',
-                 'roic', 'opm', 'opm_5yr', 'roa', 'roa_3yr', 'roa_5yr', 'debt2eq',
+                 'roic', 'opm', 'opm_5yr', 'roa', 'roa_3yr', 'roa_5yr', 'int_ratio', 'debt2eq',
 	         'profit_growth', 'profit_growth_3yr', 'profit_growth_5yr', 'profit_growth_yoy',
                  'sales_growth', 'sales_growth_3yr', 'sales_growth_5yr', 'sales_growth_yoy',
                  'oprofit_growth', 'eps_growth_3yr', 'eps_growth_5yr',
@@ -405,7 +409,7 @@ function renderTable(tableId, data) {
 
     let tmp = [...data]
     tmp.map((row, index) => {
-        for(let i=3; i<42; i++)
+        for(let i=3; i<43; i++)
             row[i] = Math.round(row[i])
     })
 
