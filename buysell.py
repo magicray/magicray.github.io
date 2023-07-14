@@ -28,12 +28,14 @@ def main():
     print('Sell : {}'.format(sorted(existing_set - buy_set)))
 
     minimum_value = ARGS.amount / len(buy_list)
+    low_threshold = 0.9
+    high_threshold = 1.1
 
     for b in buy_list:
         symbol = stock_codes[b['name'].replace('.', '')]
         existing_value = portfolio.pop(symbol, 0)
-        if minimum_value > existing_value:
-            buy_qty = int((minimum_value - existing_value) / b['cmp_rs'])
+        if minimum_value * low_threshold > existing_value:
+            buy_qty = int((minimum_value * high_threshold - existing_value) / b['cmp_rs'])
             buy_value = int(buy_qty * b['cmp_rs'])
 
             print('{} \t{} \t{} \t{} \t{} \t{}'.format(
@@ -43,7 +45,7 @@ def main():
 
 if __name__ == '__main__':
     ARGS = argparse.ArgumentParser()
-    ARGS.add_argument('--portfolio', dest='portfolio')
-    ARGS.add_argument('--amount', dest='amount', type=int, default=0)
+    ARGS.add_argument('portfolio', help='Portfolio file from icicidirect')
+    ARGS.add_argument('amount', type=int, help='Amount to be invested')
     ARGS = ARGS.parse_args()
     main()
