@@ -46,6 +46,7 @@ def main():
 if __name__ == '__main__':
     ARGS = argparse.ArgumentParser()
     ARGS.add_argument('portfolio', help='Portfolio file from icicidirect')
-    ARGS.add_argument('amount', type=int, help='Amount to be invested')
+    ARGS.add_argument('amount', type=float, help='Amount in crores')
     ARGS = ARGS.parse_args()
+    ARGS.amount *= 10000000
     main()
