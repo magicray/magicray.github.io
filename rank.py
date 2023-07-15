@@ -8,6 +8,7 @@ from logging import critical as log
 value_screen = ('903587/value', 'ntq7v64rkj932dqh4wxed0i0knds3ubp')
 growth_screen = ('879125/growth', 'j90fefd6a7u0ipiv6pbkv0loramzir24')
 quality_screen = ('878969/quality', 'oxuroqqwaou2pjjugn5tcc37l3z4x242')
+stability_screen = ('1078958/stability', 'o7satoif02pavylqlt2t38ltttvi7h6i')
 
 
 def download(screen, sessionid):
@@ -123,7 +124,7 @@ def main():
         assert(data['timestamp'] > time.time() - 86400)
     except Exception:
         data = dict()
-        for screen, sessionid in (value_screen, growth_screen, quality_screen):
+        for screen, sessionid in (value_screen, growth_screen, quality_screen, stability_screen):
             for key, value in download(screen, sessionid).items():
                 if key in data:
                     data[key].update(value)
@@ -188,7 +189,7 @@ def main():
     biggest_stocks = set([name for _, name in sorted(size_rank)[:count]])
     data = {k: v for k, v in data.items() if k in biggest_stocks}
 
-    # Rank on Profitability
+    # Rank on Quality
     roe = rank('roe', data)
     roe_3yr = rank('roe_3yr', data)
     roe_5yr = rank('roe_5yr', data)
