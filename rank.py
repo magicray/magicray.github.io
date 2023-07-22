@@ -150,12 +150,13 @@ def main():
             else:
                 v['int_ratio'] = 0
 
+            v['npm'] = (100 * v['np_12m_rs_cr']) / v['sales_rs_cr']
+            v['div_yield'] = (100 * v['div_5yrs_rs_cr']) / v['mar_cap_rs_cr']
+            v['overbought'] = (v['cmp_rs'] * 100) / v['200_dma_rs']
             v['ocf_yield_3'] = (100 * v['cf_opr_3yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['ocf_yield_5'] = (100 * v['cf_opr_5yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['fcf_yield_3'] = (100 * v['free_cash_flow_3yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['fcf_yield_5'] = (100 * v['free_cash_flow_5yrs_rs_cr']) / v['mar_cap_rs_cr']
-            v['div_yield'] = (100 * v['div_5yrs_rs_cr']) / v['mar_cap_rs_cr']
-            v['overbought'] = (v['cmp_rs'] * 100) / v['200_dma_rs']
 
             tmp[k] = v
         except Exception:
@@ -197,6 +198,7 @@ def main():
     roce_3yr = rank('roce_3yr', data)
     roce_5yr = rank('roce_5yr', data)
     roic = rank('roic', data)
+    npm = rank('npm', data)
     opm = rank('opm', data)
     opm_5yr = rank('5yr_opm', data)
     roa = rank('roa_12m', data)
@@ -233,10 +235,10 @@ def main():
 
     final_rank = [(
         # Quality
-        (roce[name] + roe[name] + opm[name] + roa[name] +
+        (roce[name] + roe[name] + npm[name] + opm[name] + roa[name] +
          roce_3yr[name] + roe_3yr[name] + roa_3yr[name] +
          roce_5yr[name] + roe_5yr[name] + opm_5yr[name] + roa_5yr[name] +
-         roic[name] + debteq[name] + int_ratio[name]) / 14 +
+         roic[name] + debteq[name] + int_ratio[name]) / 15 +
 
         # Growth
         (sales_growth[name] + profit_growth[name] +

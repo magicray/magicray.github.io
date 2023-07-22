@@ -25,7 +25,7 @@
             <thead>
                 <tr>
                 <th colspan=3>Group</th>
-                <th colspan=14>Quality</th>
+                <th colspan=15>Quality</th>
                 <th colspan=11>Growth</th>
                 <th colspan=11>Valuation</th>
                 <th colspan=4>Stability</th>
@@ -39,6 +39,7 @@
                 <th id="roe_3yr_green"></th>
                 <th id="roe_5yr_green"></th>
                 <th id="roic_green"></th>
+                <th id="npm_green"></th>
                 <th id="opm_green"></th>
                 <th id="opm_5yr_green"></th>
                 <th id="roa_green"></th>
@@ -81,6 +82,7 @@
                 <th id="roe_3yr_black"></th>
                 <th id="roe_5yr_black"></th>
                 <th id="roic_black"></th>
+                <th id="npm_black"></th>
                 <th id="opm_black"></th>
                 <th id="opm_5yr_black"></th>
                 <th id="roa_black"></th>
@@ -123,6 +125,7 @@
                 <th id="roe_3yr_red"></th>
                 <th id="roe_5yr_red"></th>
                 <th id="roic_red"></th>
+                <th id="npm_red"></th>
                 <th id="opm_red"></th>
                 <th id="opm_5yr_red"></th>
                 <th id="roa_red"></th>
@@ -167,6 +170,7 @@
                 <th>ROE 3Yr</th>
                 <th>ROE 5Yr</th>
                 <th>ROIC</th>
+                <th>NPM</th>
                 <th>OPM</th>
                 <th>OPM 5Yr</th>
                 <th>ROA</th>
@@ -280,6 +284,7 @@ function format_data(data, count, amount) {
             d['roe_3yr'],
             d['roe_5yr'],
             d['roic'],
+            d['npm'],
             d['opm'],
             d['5yr_opm'],
             d['roa_12m'],
@@ -373,7 +378,7 @@ function renderTable(tableId, data) {
     $("#group_avoid").css("font-weight", "normal");
 
     const col = ['roce', 'roce_3yr', 'roce_5yr', 'roe', 'roe_3yr', 'roe_5yr',
-                 'roic', 'opm', 'opm_5yr', 'roa', 'roa_3yr', 'roa_5yr', 'int_ratio', 'debt2eq',
+                 'roic', 'npm', 'opm', 'opm_5yr', 'roa', 'roa_3yr', 'roa_5yr', 'int_ratio', 'debt2eq',
 	         'profit_growth', 'profit_growth_3yr', 'profit_growth_5yr', 'profit_growth_yoy',
                  'sales_growth', 'sales_growth_3yr', 'sales_growth_5yr', 'sales_growth_yoy',
                  'oprofit_growth', 'eps_growth_3yr', 'eps_growth_5yr',
@@ -409,7 +414,7 @@ function renderTable(tableId, data) {
 
     let tmp = [...data]
     tmp.map((row, index) => {
-        for(let i=3; i<43; i++)
+        for(let i=3; i<44; i++)
             row[i] = Math.round(row[i])
     })
 
