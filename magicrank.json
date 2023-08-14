@@ -24801,7 +24801,7 @@
             "vol": 19490582.3
         }
     ],
-    "date": 1691887685,
+    "date": 1691973977,
     "sold": {
         "20 Microns": 1689987667,
         "A.K.Capital Serv": 1688173929,
@@ -25338,6 +25338,7 @@
         "Hindustan Zinc": "HINZIN",
         "Hindware Home In": "SOMHOM",
         "Hitachi Energy": "ABBPOW",
+        "Honda India": "SHRHON",
         "I G Petrochems": "IGPETR",
         "I O C L": "INDOIL",
         "I R C T C": "INDRAI",
@@ -25448,6 +25449,7 @@
         "Laxmi Organic": "LAXORG",
         "Likhitha Infra": "LIKINF",
         "Linc": "LINPEN",
+        "Lincoln Pharma": "LINPH",
         "Linde India": "LININ",
         "Lloyds Metals": "LLOMET",
         "Lloyds Steels": "LLOST",
@@ -25744,6 +25746,7 @@
         "UltraTech Cem": "ULTCEM",
         "Ultramarine Pig": "ULTPIG",
         "Union Bank (I)": "UNIBAN",
+        "Uniparts India": "UNIND",
         "United Breweries": "UNIBR",
         "United Spirits": "UNISPI",
         "Uno Minda": "MININD",
@@ -25751,6 +25754,7 @@
         "Uttam SugMills": "UTTSUG",
         "V I P Inds": "VIPIND",
         "V-Guard Industri": "VGUARD",
+        "VLS Finance": "VLSFIN",
         "VRL Logistics": "VRLLOG",
         "VST Industries": "VSTIND",
         "Vadilal Inds": "VADIND",
@@ -25785,11 +25789,7 @@
         "Zensar Tech": "ZENTE",
         "Zydus Lifesci": "CADHEA",
         "Zydus Wellness": "ZYDWEL",
-        "eClerx Services": "ECLSER",
-        "VLS Finance": "VLSFIN",
-        "Uniparts India": "UNIND",
-        "Lincoln Pharma": "LINPH",
-        "Honda India": "SHRHON"
+        "eClerx Services": "ECLSER"
     },
     "url": "https://www.screener.in/screens/290555/universe/"
 }
