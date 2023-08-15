@@ -161,7 +161,7 @@ def main():
             tmp[k] = v
         except Exception:
             log('incomplete data : name(%s)', k)
-            log(json.dumps({x: y for x, y in v.items() if not y}, indent=4))
+            log(json.dumps({x: y for x, y in v.items() if '' == y}, indent=4))
 
     data = tmp
 
