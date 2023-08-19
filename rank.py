@@ -186,7 +186,6 @@ def main():
                  name) for name in sales]
 
     count = int(len(size_rank)/2)
-    count = min(500, count + 1 if count % 2 else count)
     biggest_stocks = set([name for _, name in sorted(size_rank)[:count]])
     data = {k: v for k, v in data.items() if k in biggest_stocks}
 
