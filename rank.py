@@ -23,7 +23,7 @@ def download(screen, sessionid):
             'accept-encoding': 'gzip',
             'cookie': 'sessionid={};'.format(sessionid)})
 
-        assert(200 == r.status_code)
+        assert (200 == r.status_code)
         log('downloaded {}'.format(url + str(i+1)))
 
         page = bs4.BeautifulSoup(r.content, 'lxml')
@@ -121,7 +121,7 @@ def main():
     filename = 'universe.json'
     try:
         data = json.load(open(filename))
-        assert(data['timestamp'] > time.time() - 86400)
+        assert (data['timestamp'] > time.time() - 86400)
     except Exception:
         data = dict()
         for screen, sessionid in (value_screen, growth_screen, quality_screen, stability_screen):
@@ -140,7 +140,7 @@ def main():
         v.pop('5yrs_return', None)
 
         try:
-            assert(all('' != y for y in v.values()))
+            assert (all('' != y for y in v.values()))
             v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']
             v['vol'] = v['avg_vol_1mth'] * v['cmp_rs']
             v['debt_eq'] = v['debt_eq'] * 100
@@ -185,7 +185,7 @@ def main():
                   ocf_3[name] + fcf_3[name],
                  name) for name in sales]
 
-    count = int(len(size_rank)/2)
+    count = max(300, int(len(size_rank)/2))
     biggest_stocks = set([name for _, name in sorted(size_rank)[:count]])
     data = {k: v for k, v in data.items() if k in biggest_stocks}
 
