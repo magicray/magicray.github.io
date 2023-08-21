@@ -15501,7 +15501,7 @@
             "vol": 251100983.25
         }
     ],
-    "date": 1692499307,
+    "date": 1692578559,
     "sold": {
         "20 Microns": 1689987667,
         "A.K.Capital Serv": 1688173929,
@@ -15869,6 +15869,7 @@
         "Aptech": "APTLIM",
         "Aptus Value Hou": "APTVAL",
         "Archean Chemical": "ARCCHE",
+        "Arihant Super": "ARISUP",
         "Arman Financial": "ARMFIN",
         "Arvind Ltd": "ARVLIM",
         "Asahi India Glas": "ASAIND",
@@ -16574,8 +16575,7 @@
         "Zensar Tech": "ZENTE",
         "Zydus Lifesci": "CADHEA",
         "Zydus Wellness": "ZYDWEL",
-        "eClerx Services": "ECLSER",
-        "Arihant Super": "ARISUP"
+        "eClerx Services": "ECLSER"
     },
     "url": "https://www.screener.in/screens/290555/universe/"
 }
