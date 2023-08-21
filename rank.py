@@ -185,7 +185,7 @@ def main():
                   ocf_3[name] + fcf_3[name],
                  name) for name in sales]
 
-    count = max(250, int(len(size_rank)/2))
+    count = int(len(size_rank)/2)
     biggest_stocks = set([name for _, name in sorted(size_rank)[:count]])
     data = {k: v for k, v in data.items() if k in biggest_stocks}
 
