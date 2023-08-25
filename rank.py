@@ -142,7 +142,6 @@ def main():
         try:
             assert (all('' != y for y in v.values()))
             v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']
-            v['vol'] = v['avg_vol_1mth'] * v['cmp_rs']
             v['debt_eq'] = v['debt_eq'] * 100
 
             if v['debt_eq'] > 0:
@@ -173,14 +172,13 @@ def main():
     sales = rank('sales_rs_cr', data)
     np = rank('np_12m_rs_cr', data)
     op = rank('op_12m_rs_cr', data)
-    vol = rank('vol', data)
     div = rank('div_5yrs_rs_cr', data)
     ocf_3 = rank('cf_opr_3yrs_rs_cr', data)
     ocf_5 = rank('cf_opr_5yrs_rs_cr', data)
     fcf_3 = rank('free_cash_flow_3yrs_rs_cr', data)
     fcf_5 = rank('free_cash_flow_5yrs_rs_cr', data)
 
-    size_rank = [(sales[name] + np[name] + op[name] + vol[name] +
+    size_rank = [(sales[name] + np[name] + op[name] +
                   div[name] + ocf_5[name] + fcf_5[name] +
                   ocf_3[name] + fcf_3[name],
                  name) for name in sales]
