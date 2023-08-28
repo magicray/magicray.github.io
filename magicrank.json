@@ -11774,7 +11774,7 @@
             "sales_var_5yrs": 8.01
         }
     ],
-    "date": 1693097113,
+    "date": 1693183429,
     "sold": {
         "20 Microns": 1689987667,
         "A.K.Capital Serv": 1688173929,
@@ -12615,6 +12615,7 @@
         "Neuland Labs": "NEULAB",
         "Newgen Software": "NEWSOF",
         "Nippon Life Ind": "RELNIP",
+        "Nirlon": "NIRLON",
         "Nitin Spinners": "NITSPI",
         "Nitta Gelatin": "NITGEL",
         "Nucleus Soft": "NUCSOF",
@@ -12871,8 +12872,7 @@
         "Zensar Tech": "ZENTE",
         "Zydus Lifesci": "CADHEA",
         "Zydus Wellness": "ZYDWEL",
-        "eClerx Services": "ECLSER",
-        "Nirlon": "NIRLON"
+        "eClerx Services": "ECLSER"
     },
     "url": "https://www.screener.in/screens/290555/universe/"
 }
