@@ -25,10 +25,10 @@
             <thead>
                 <tr>
                 <th colspan=3>Group</th>
-                <th colspan=15>Quality</th>
-                <th colspan=11>Growth</th>
+                <th colspan=16>Quality</th>
+                <th colspan=12>Growth</th>
                 <th colspan=11>Valuation</th>
-                <th colspan=4>Stability</th>
+                <th colspan=5>Stability</th>
                 </tr>
                 <tr>
                 <th colspan=3 id="group_hold">Buy</th>
@@ -47,6 +47,7 @@
                 <th id="roa_5yr_green"></th>
                 <th id="int_ratio_green"></th>
                 <th id="debt2eq_green"></th>
+                <th id="pscore_green"></th>
                 <th id="profit_growth_green"></th>
                 <th id="profit_growth_3yr_green"></th>
                 <th id="profit_growth_5yr_green"></th>
@@ -58,6 +59,7 @@
                 <th id="oprofit_growth_green"></th>
                 <th id="eps_growth_3yr_green"></th>
                 <th id="eps_growth_5yr_green"></th>
+                <th id="gfactor_green"></th>
                 <th id="yield_green"></th>
                 <th id="pe_green"></th>
                 <th id="ps_green"></th>
@@ -73,6 +75,7 @@
                 <th id="sales_green"></th>
                 <th id="profit_green"></th>
                 <th id="oprofit_green"></th>
+                <th id="zscore_green"></th>
                 </tr><tr>
                 <th colspan=3 id="group_all">All</th>
                 <th id="roce_black"></th>
@@ -90,6 +93,7 @@
                 <th id="roa_5yr_black"></th>
                 <th id="int_ratio_black"></th>
                 <th id="debt2eq_black"></th>
+                <th id="pscore_black"></th>
                 <th id="profit_growth_black"></th>
                 <th id="profit_growth_3yr_black"></th>
                 <th id="profit_growth_5yr_black"></th>
@@ -101,6 +105,7 @@
                 <th id="oprofit_growth_black"></th>
                 <th id="eps_growth_3yr_black"></th>
                 <th id="eps_growth_5yr_black"></th>
+                <th id="gfactor_black"></th>
                 <th id="yield_black"></th>
                 <th id="pe_black"></th>
                 <th id="ps_black"></th>
@@ -116,6 +121,7 @@
                 <th id="sales_black"></th>
                 <th id="profit_black"></th>
                 <th id="oprofit_black"></th>
+                <th id="zscore_black"></th>
                 </tr><tr>
                 <th colspan=3 id="group_avoid">Sell</th>
                 <th id="roce_red"></th>
@@ -133,6 +139,7 @@
                 <th id="roa_5yr_red"></th>
                 <th id="int_ratio_red"></th>
                 <th id="debt2eq_red"></th>
+                <th id="pscore_red"></th>
                 <th id="profit_growth_red"></th>
                 <th id="profit_growth_3yr_red"></th>
                 <th id="profit_growth_5yr_red"></th>
@@ -144,6 +151,7 @@
                 <th id="oprofit_growth_red"></th>
                 <th id="eps_growth_3yr_red"></th>
                 <th id="eps_growth_5yr_red"></th>
+                <th id="gfactor_red"></th>
                 <th id="yield_red"></th>
                 <th id="pe_red"></th>
                 <th id="ps_red"></th>
@@ -159,6 +167,7 @@
                 <th id="sales_red"></th>
                 <th id="profit_red"></th>
                 <th id="oprofit_red"></th>
+                <th id="zscore_red"></th>
                 </tr><tr style="position: sticky; top: 0; z-index: 1; background-color: white">
                 <th>Rank</th>
                 <th>Stock</th>
@@ -178,6 +187,7 @@
                 <th>ROA 5Yr</th>
                 <th>Interest % EBIT</th>
                 <th>Debt/Eq</th>
+                <th>P Score</th>
                 <th>Profit</th>
                 <th>Profit 3Yr</th>
                 <th>Profit 5Yr</th>
@@ -189,6 +199,7 @@
                 <th>OProfit</th>
                 <th>EPS 3Yr</th>
                 <th>EPS 5Yr</th>
+                <th>G Factor</th>
                 <th>Earnings Yield</th>
                 <th>PE</th>
                 <th>PS</th>
@@ -204,6 +215,7 @@
                 <th>Sales</th>
                 <th>Profit</th>
                 <th>OProfit</th>
+                <th>Z Score</th>
                 </tr>
             </thead>
         </table>
@@ -292,6 +304,7 @@ function format_data(data, count, amount) {
             d['roa_5yr'],
 	    d['int_ratio'],
 	    d['debt_eq'],
+            d['piotski_scr'],
             d['profit_growth'],
             d['profit_var_3yrs'],
             d['profit_var_5yrs'],
@@ -304,6 +317,7 @@ function format_data(data, count, amount) {
             d['eps_var_3yrs'],
             d['eps_var_5yrs'],
             d['earnings_yield'],
+            d['g_factor'],
             d['p_e'],
             d['cmp_sales'],
             d['cmp_bv'],
@@ -317,7 +331,8 @@ function format_data(data, count, amount) {
             d['mar_cap_rs_cr'],
 	    d['sales_rs_cr'],
 	    d['np_12m_rs_cr'],
-	    d['op_12m_rs_cr']])
+	    d['op_12m_rs_cr'],
+	    d['altman_z_scr']])
     }
 
     return result
@@ -378,13 +393,13 @@ function renderTable(tableId, data) {
     $("#group_avoid").css("font-weight", "normal");
 
     const col = ['roce', 'roce_3yr', 'roce_5yr', 'roe', 'roe_3yr', 'roe_5yr',
-                 'roic', 'npm', 'opm', 'opm_5yr', 'roa', 'roa_3yr', 'roa_5yr', 'int_ratio', 'debt2eq',
+                 'roic', 'npm', 'opm', 'opm_5yr', 'roa', 'roa_3yr', 'roa_5yr', 'int_ratio', 'debt2eq', 'pscore',
 	         'profit_growth', 'profit_growth_3yr', 'profit_growth_5yr', 'profit_growth_yoy',
                  'sales_growth', 'sales_growth_3yr', 'sales_growth_5yr', 'sales_growth_yoy',
-                 'oprofit_growth', 'eps_growth_3yr', 'eps_growth_5yr',
+                 'oprofit_growth', 'eps_growth_3yr', 'eps_growth_5yr', 'gfactor',
 	         'yield', 'pe', 'ps', 'pb', 'po', 'div_yield',
                  'ocf_yield_3', 'ocf_yield_5', 'fcf_yield_3', 'fcf_yield_5', 'overbought',
-	         'mcap', 'sales', 'profit', 'oprofit']
+	         'mcap', 'sales', 'profit', 'oprofit', 'zscore']
 
     col.map((name, index) => {
 	let arr = data_green.map(d => d[index+3]).sort(function(a, b){ return a - b})
@@ -414,7 +429,7 @@ function renderTable(tableId, data) {
 
     let tmp = [...data]
     tmp.map((row, index) => {
-        for(let i=3; i<44; i++)
+        for(let i=3; i<47; i++)
             row[i] = Math.round(row[i])
     })
 
