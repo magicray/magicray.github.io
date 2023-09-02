@@ -225,6 +225,7 @@ def main():
     ps = rank('cmp_sales', data, False)
     pb = rank('cmp_bv', data, False)
     po = rank('p_o', data, False)
+    peg = rank('peg', data, False)
     e_yield = rank('earnings_yield', data)
     div_yield = rank('div_yield', data)
     ocf_yield_3 = rank('ocf_yield_3', data)
@@ -251,10 +252,10 @@ def main():
          gfactor[name]) / 12 +
 
         # Value
-        (pe[name] + pb[name] + ps[name] + po[name] + e_yield[name] +
+        (pe[name] + pb[name] + ps[name] + po[name] + peg[name] + e_yield[name] +
          div_yield[name] + ocf_yield_5[name] + fcf_yield_5[name] +
          ocf_yield_3[name] + fcf_yield_3[name] +
-         overbought[name]) / 11,
+         overbought[name]) / 12,
 
         name) for name in roe]
 
