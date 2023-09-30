@@ -27,7 +27,7 @@
                 <th colspan=3>Group</th>
                 <th colspan=16>Quality</th>
                 <th colspan=12>Growth</th>
-                <th colspan=12>Valuation</th>
+                <th colspan=14>Valuation</th>
                 <th colspan=5>Stability</th>
                 </tr>
                 <tr>
@@ -71,6 +71,8 @@
                 <th id="ocf_yield_5_green"></th>
                 <th id="fcf_yield_3_green"></th>
                 <th id="fcf_yield_5_green"></th>
+                <th id="3yrs_return_green"></th>
+                <th id="5yrs_return_green"></th>
                 <th id="overbought_green"></th>
                 <th id="mcap_green"></th>
                 <th id="sales_green"></th>
@@ -118,6 +120,8 @@
                 <th id="ocf_yield_5_black"></th>
                 <th id="fcf_yield_3_black"></th>
                 <th id="fcf_yield_5_black"></th>
+                <th id="3yrs_return_black"></th>
+                <th id="5yrs_return_black"></th>
                 <th id="overbought_black"></th>
                 <th id="mcap_black"></th>
                 <th id="sales_black"></th>
@@ -165,6 +169,8 @@
                 <th id="ocf_yield_5_red"></th>
                 <th id="fcf_yield_3_red"></th>
                 <th id="fcf_yield_5_red"></th>
+                <th id="3yrs_return_red"></th>
+                <th id="5yrs_return_red"></th>
                 <th id="overbought_red"></th>
                 <th id="mcap_red"></th>
                 <th id="sales_red"></th>
@@ -214,6 +220,8 @@
                 <th>OCF 5Yr Yield</th>
                 <th>FCF 3Yr Yield</th>
                 <th>FCF 5Yr Yield</th>
+                <th>Return 3 Years</th>
+                <th>Return 5 Years</th>
                 <th>Over Bought</th>
                 <th>MCap</th>
                 <th>Sales</th>
@@ -332,6 +340,8 @@ function format_data(data, count, amount) {
             d['ocf_yield_5'],
             d['fcf_yield_3'],
             d['fcf_yield_5'],
+            d['3yrs_return'],
+            d['5yrs_return'],
             d['overbought'],
             d['mar_cap_rs_cr'],
 	    d['sales_rs_cr'],
@@ -403,7 +413,8 @@ function renderTable(tableId, data) {
                  'sales_growth', 'sales_growth_3yr', 'sales_growth_5yr', 'sales_growth_yoy',
                  'oprofit_growth', 'eps_growth_3yr', 'eps_growth_5yr', 'gfactor',
 	         'yield', 'pe', 'ps', 'pb', 'po', 'peg', 'div_yield',
-                 'ocf_yield_3', 'ocf_yield_5', 'fcf_yield_3', 'fcf_yield_5', 'overbought',
+                 'ocf_yield_3', 'ocf_yield_5', 'fcf_yield_3', 'fcf_yield_5',
+		 '3yrs_return', '5yrs_return', 'overbought',
 	         'mcap', 'sales', 'profit', 'oprofit', 'zscore']
 
     col.map((name, index) => {
@@ -434,7 +445,7 @@ function renderTable(tableId, data) {
 
     let tmp = [...data]
     tmp.map((row, index) => {
-        for(let i=3; i<48; i++)
+        for(let i=3; i<50; i++)
             row[i] = Math.round(row[i])
     })
 

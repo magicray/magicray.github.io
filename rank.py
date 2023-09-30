@@ -137,8 +137,6 @@ def main():
 
     tmp = dict()
     for k, v in data['data'].items():
-        v.pop('5yrs_return', None)
-
         try:
             assert (all('' != y for y in v.values()))
             v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']
@@ -233,6 +231,8 @@ def main():
     fcf_yield_3 = rank('fcf_yield_3', data)
     fcf_yield_5 = rank('fcf_yield_5', data)
     overbought = rank('overbought', data, False)
+    return_3yrs = rank('3yrs_return', data, False)
+    return_5yrs = rank('5yrs_return', data, False)
 
     final_rank = [(
         # Quality
@@ -255,7 +255,7 @@ def main():
         (pe[name] + pb[name] + ps[name] + po[name] + peg[name] + e_yield[name] +
          div_yield[name] + ocf_yield_5[name] + fcf_yield_5[name] +
          ocf_yield_3[name] + fcf_yield_3[name] +
-         overbought[name]) / 12,
+         return_3yrs[name] + return_5yrs[name] + overbought[name]) / 14,
 
         name) for name in roe]
 
