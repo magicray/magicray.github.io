@@ -9,6 +9,7 @@ value_screen = ('903587/value', 'fjqb4cm1d4aosrtxo086uj75cf1jqrj8')
 growth_screen = ('879125/growth', '5s1gfoc8x2r24m6c90h04ywoffhw27z7')
 quality_screen = ('878969/quality', 'wz2yvohior0ktawrj3q0z4voyoh7n53n')
 stability_screen = ('1078958/stability', 'llcbqniersbd2rrqhpb1c6um8o789v8w')
+universe_screen = ('290555/universe', 'of1rqjiv9722o1ahjdpkngx8oko50ct2')
 
 
 def download(screen, sessionid):
@@ -149,7 +150,7 @@ def main():
 
             v['npm'] = (100 * v['np_12m_rs_cr']) / v['sales_rs_cr']
             v['div_yield'] = (100 * v['div_5yrs_rs_cr']) / v['mar_cap_rs_cr']
-            v['overbought'] = (v['cmp_rs'] * 100) / v['200_dma_rs']
+            v['oversold'] = (v['200_dma_rs'] * 100) / v['cmp_rs']
             v['ocf_yield_3'] = (100 * v['cf_opr_3yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['ocf_yield_5'] = (100 * v['cf_opr_5yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['fcf_yield_3'] = (100 * v['free_cash_flow_3yrs_rs_cr']) / v['mar_cap_rs_cr']
@@ -230,7 +231,8 @@ def main():
     ocf_yield_5 = rank('ocf_yield_5', data)
     fcf_yield_3 = rank('fcf_yield_3', data)
     fcf_yield_5 = rank('fcf_yield_5', data)
-    overbought = rank('overbought', data, False)
+    oversold = rank('oversold', data)
+    overbought = rank('52w', data, False)
     return_3yrs = rank('3yrs_return', data, False)
     return_5yrs = rank('5yrs_return', data, False)
 
@@ -255,7 +257,8 @@ def main():
         (pe[name] + pb[name] + ps[name] + po[name] + peg[name] + e_yield[name] +
          div_yield[name] + ocf_yield_5[name] + fcf_yield_5[name] +
          ocf_yield_3[name] + fcf_yield_3[name] +
-         return_3yrs[name] + return_5yrs[name] + overbought[name]) / 14,
+         return_3yrs[name] + return_5yrs[name] +
+         overbought[name] + oversold[name]) / 15,
 
         name) for name in roe]
 
