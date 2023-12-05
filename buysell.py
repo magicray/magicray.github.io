@@ -28,7 +28,7 @@ def main():
     print('Sell : {}'.format(sorted(existing_set - buy_set)))
 
     minimum_value = ARGS.amount / len(buy_list)
-    low_threshold = 1.0
+    low_threshold = 1.1
     high_threshold = 1.25
 
     for b in buy_list:
@@ -38,7 +38,7 @@ def main():
             buy_qty = int((minimum_value * high_threshold - existing_value) / b['cmp_rs'])
             buy_value = int(buy_qty * b['cmp_rs'])
 
-            print('{} \t{} \t{} \t{} \t{} \t{}'.format(
+            print('{:>7d} {:>6d} {:>7d} {:>9d}\t{}\t{}'.format(
                 int(existing_value), buy_qty, int(b['cmp_rs']),
                 buy_value, symbol, b['name']))
 
