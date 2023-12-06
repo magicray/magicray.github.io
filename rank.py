@@ -5,10 +5,10 @@ import time
 import requests
 from logging import critical as log
 
-value_screen = ('903587/value', 'fjqb4cm1d4aosrtxo086uj75cf1jqrj8')
-growth_screen = ('879125/growth', '5s1gfoc8x2r24m6c90h04ywoffhw27z7')
-quality_screen = ('878969/quality', 'wz2yvohior0ktawrj3q0z4voyoh7n53n')
-stability_screen = ('1078958/stability', 'llcbqniersbd2rrqhpb1c6um8o789v8w')
+value_screen = ('903587/value', '71o5zf33j7wpdpim3dbue9nxam36sbfh')
+growth_screen = ('879125/growth', 'ogl4hcsq4q3ocwqgy9tf5kvv6xonm1bx')
+quality_screen = ('878969/quality', 'oxg00aoi7yyfmymrloppasytnapo1ump')
+stability_screen = ('1078958/stability', 'w73bnz40uff2e4hqzvxvfllmm0ge7dwj')
 universe_screen = ('290555/universe', 'of1rqjiv9722o1ahjdpkngx8oko50ct2')
 
 
