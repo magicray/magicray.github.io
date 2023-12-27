@@ -28,7 +28,7 @@ def main():
     print('Sell : {}'.format(sorted(existing_set - buy_set)))
 
     minimum_value = ARGS.amount / len(buy_list)
-    low_threshold = 1.0
+    low_threshold = 1.1
     high_threshold = 1.25
 
     for b in buy_list:
