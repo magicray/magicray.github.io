@@ -258,7 +258,7 @@ def main():
          div_yield[name] + ocf_yield_5[name] + fcf_yield_5[name] +
          ocf_yield_3[name] + fcf_yield_3[name] +
          return_3yrs[name] + return_5yrs[name] +
-         overbought[name] + oversold[name]) / 15,
+         overbought[name] + oversold[name])*2 / 15,
 
         name) for name in roe]
 
