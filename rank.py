@@ -151,11 +151,9 @@ def main():
     ocf_5 = rank('cf_opr_5yrs_rs_cr', data)
     fcf_3 = rank('free_cash_flow_3yrs_rs_cr', data)
     fcf_5 = rank('free_cash_flow_5yrs_rs_cr', data)
-    zscore = rank('altman_z_scr', data)
 
-    size_rank = [(sales[name] + np[name] + op[name] +
-                  div[name] + ocf_5[name] + fcf_5[name] +
-                  ocf_3[name] + fcf_3[name] + zscore[name],
+    size_rank = [(np[name] + op[name] + div[name] + sales[name] +
+                  ocf_5[name] + fcf_5[name] + ocf_3[name] + fcf_3[name],
                  name) for name in sales]
 
     # Divide into two halvs based upon the above factors to discard the tiny companies.
@@ -180,7 +178,6 @@ def main():
     roa_5yr = rank('roa_5yr', data)
     debteq = rank('debt_eq', data, False)       # Less is better
     int_ratio = rank('int_ratio', data, False)  # Less is better
-    pscore = rank('piotski_scr', data)
 
     # Rank on Growth - More is better
     sales_growth = rank('sales_growth', data)
@@ -194,7 +191,6 @@ def main():
     op_profit_growth = rank('opert_prft_gwth', data)
     eps_growth_3yr = rank('eps_var_3yrs', data)
     eps_growth_5yr = rank('eps_var_5yrs', data)
-    gfactor = rank('g_factor', data)
 
     # Rank on Valuation
     pe = rank('p_e', data, False)           # Less Price/Earnings is better
@@ -219,8 +215,7 @@ def main():
         (roce[name] + roe[name] + npm[name] + opm[name] + roa[name] +
          roce_3yr[name] + roe_3yr[name] + roa_3yr[name] +
          roce_5yr[name] + roe_5yr[name] + opm_5yr[name] + roa_5yr[name] +
-         roic[name] + debteq[name] + int_ratio[name] +
-         pscore[name]) / 16 +
+         roic[name] + debteq[name] + int_ratio[name]) / 15 +
 
         # Growth
         (sales_growth[name] + profit_growth[name] +
@@ -228,8 +223,7 @@ def main():
          sales_growth_5yr[name] + profit_growth_5yr[name] +
          sales_growth_yoy[name] + profit_growth_yoy[name] +
          op_profit_growth[name] +
-         eps_growth_3yr[name] + eps_growth_5yr[name] +
-         gfactor[name]) / 12 +
+         eps_growth_3yr[name] + eps_growth_5yr[name]) / 11 +
 
         # Value
         (pe[name] + pb[name] + ps[name] + po[name] + peg[name] + e_yield[name] +
