@@ -1,0 +1,28 @@
+OPM > 0 AND
+OPM 5Year > 0 AND
+OPM 10Year > 0 AND
+
+EPS > 0 AND
+EBIT > 0 AND
+Sales > 0 AND
+Net profit > 0 AND
+Profit after tax > 0 AND
+Operating profit > 0 AND
+
+Return on assets > 0 AND
+Return on assets 3years > 0 AND
+Return on assets 5years > 0 AND
+
+Return on equity > 0 AND
+Average return on equity 3Years > 0 AND
+Average return on equity 5Years > 0 AND
+Average return on equity 7Years > 0 AND
+Average return on equity 10Years > 0 AND
+
+Return on invested capital > 0 AND
+
+Return on capital employed > 0 AND
+Average return on capital employed 3Years > 0 AND
+Average return on capital employed 5Years > 0 AND
+Average return on capital employed 7Years > 0 AND
+Average return on capital employed 10Years > 0

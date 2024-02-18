@@ -1,0 +1,33 @@
+YOY Quarterly sales growth > 0 AND
+YOY Quarterly profit growth > 0 AND
+EPS latest quarter > EPS preceding year quarter AND
+EBIT latest quarter > EBIT preceding year quarter AND
+EBIDT latest quarter > EBIDT preceding year quarter AND
+Operating profit latest quarter > Operating profit preceding year quarter AND
+
+Profit growth > 0 AND
+Sales growth > 0 AND
+Operating profit growth > 0 AND
+
+EPS growth 3Years > 0 AND
+EPS growth 5Years > 0 AND
+EPS growth 7Years > 0 AND
+EPS growth 10Years > 0 AND
+
+Profit growth 3Years > 0 AND
+Profit growth 5Years > 0 AND
+Profit growth 7Years > 0 AND
+Profit growth 10Years > 0 AND
+
+EBIDT growth 3Years > 0 AND
+EBIDT growth 5Years > 0 AND
+EBIDT growth 7Years > 0 AND
+EBIDT growth 10Years > 0 AND
+
+Sales growth 3Years > 0 AND
+Sales growth 5Years > 0 AND
+Sales growth 7Years > 0 AND
+Sales growth 10Years > 0 AND
+
+Average EBIT 5Year > Average EBIT 10Year AND
+Average Earnings 5Year > Average Earnings 10Year
