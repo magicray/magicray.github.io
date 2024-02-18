@@ -85,40 +85,6 @@ def median(field, data):
 
 
 def main():
-    # OPM > 0 AND
-    # Return on equity > 0 AND
-    # Return on assets > 0 AND
-    # Return on invested capital > 0 AND
-    # Return on capital employed > 0 AND
-    #
-    # Sales growth > 0 AND
-    # Profit growth > 0 AND
-    # Operating profit growth > 0 AND
-    #
-    # Earnings yield > 0 AND
-    # Price to Sales > 0 AND
-    # Price to Earning > 0 AND
-    # Price to book value > 0 AND
-    #
-    # EPS > 0 AND
-    # EBIT > 0 AND
-    # Net profit > 0 AND
-    # Profit after tax > 0 AND
-    # Operating profit > 0 AND
-    #
-    # Sales > Operating profit AND
-    # Operating profit > Net profit AND
-    # Operating profit > Profit after tax AND
-    # Operating profit > Other income AND
-    #
-    # Net worth > 0 AND
-    # Book value > 0 AND
-    # Total Assets > 0 AND
-    # Current ratio > 1 AND
-    #
-    # Volume > 0 AND
-    # Current price > Face value
-
     filename = 'universe.json'
     try:
         data = json.load(open(filename))
@@ -140,19 +106,28 @@ def main():
     for k, v in data['data'].items():
         try:
             assert (all('' != y for y in v.values()))
-            v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']
-            v['debt_eq'] = v['debt_eq'] * 100
+            v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']  # Less is better Value
 
+            v['debt_eq'] = v['debt_eq'] * 100                  # Less is better Quality
             if v['debt_eq'] > 0:
-                v['int_ratio'] = 100 / v['int_coverage']
+                v['int_ratio'] = 100 / v['int_coverage']       # Less is better Quality
             else:
                 v['int_ratio'] = 0
 
+            # Net Profit Margin - More is better Quality
             v['npm'] = (100 * v['np_12m_rs_cr']) / v['sales_rs_cr']
+
+            # Divident yield over 5 years - More is better Quality
             v['div_yield'] = (100 * v['div_5yrs_rs_cr']) / v['mar_cap_rs_cr']
+
+            # How much below 200 DMA - More is better Value
             v['oversold'] = (v['200_dma_rs'] * 100) / v['cmp_rs']
+
+            # Operating Cashflow Yield - More is better Quality
             v['ocf_yield_3'] = (100 * v['cf_opr_3yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['ocf_yield_5'] = (100 * v['cf_opr_5yrs_rs_cr']) / v['mar_cap_rs_cr']
+
+            # Free Cashflow Yield - More is better Quality
             v['fcf_yield_3'] = (100 * v['free_cash_flow_3yrs_rs_cr']) / v['mar_cap_rs_cr']
             v['fcf_yield_5'] = (100 * v['free_cash_flow_5yrs_rs_cr']) / v['mar_cap_rs_cr']
 
@@ -163,15 +138,15 @@ def main():
 
     data = tmp
 
-    t = time.time()
-    log('columns(%d) rows(%d) msec(%d)',
-        len(data[list(data.keys())[0]]), len(data), (time.time()-t)*1000)
+    # t = time.time()
+    # log('columns(%d) rows(%d) msec(%d)',
+    #     len(data[list(data.keys())[0]]), len(data), (time.time()-t)*1000)
 
-    # Rank on Size
-    sales = rank('sales_rs_cr', data)
+    # Rank on Size - More is better
     np = rank('np_12m_rs_cr', data)
     op = rank('op_12m_rs_cr', data)
     div = rank('div_5yrs_rs_cr', data)
+    sales = rank('sales_rs_cr', data)
     ocf_3 = rank('cf_opr_3yrs_rs_cr', data)
     ocf_5 = rank('cf_opr_5yrs_rs_cr', data)
     fcf_3 = rank('free_cash_flow_3yrs_rs_cr', data)
@@ -183,11 +158,13 @@ def main():
                   ocf_3[name] + fcf_3[name] + zscore[name],
                  name) for name in sales]
 
+    # Divide into two halvs based upon the above factors to discard the tiny companies.
+    # We will take only the upper half ranked by profit, dividend, sales and cashflow.
     count = int(len(size_rank)/2)
     biggest_stocks = set([name for _, name in sorted(size_rank)[:count]])
     data = {k: v for k, v in data.items() if k in biggest_stocks}
 
-    # Rank on Quality
+    # Rank on Quality - More is better unless specified
     roe = rank('roe', data)
     roe_3yr = rank('roe_3yr', data)
     roe_5yr = rank('roe_5yr', data)
@@ -201,11 +178,11 @@ def main():
     roa = rank('roa_12m', data)
     roa_3yr = rank('roa_3yr', data)
     roa_5yr = rank('roa_5yr', data)
-    debteq = rank('debt_eq', data, False)
-    int_ratio = rank('int_ratio', data, False)
+    debteq = rank('debt_eq', data, False)       # Less is better
+    int_ratio = rank('int_ratio', data, False)  # Less is better
     pscore = rank('piotski_scr', data)
 
-    # Rank on Growth
+    # Rank on Growth - More is better
     sales_growth = rank('sales_growth', data)
     sales_growth_3yr = rank('sales_var_3yrs', data)
     sales_growth_5yr = rank('sales_var_5yrs', data)
@@ -220,22 +197,23 @@ def main():
     gfactor = rank('g_factor', data)
 
     # Rank on Valuation
-    pe = rank('p_e', data, False)
-    ps = rank('cmp_sales', data, False)
-    pb = rank('cmp_bv', data, False)
-    po = rank('p_o', data, False)
-    peg = rank('peg', data, False)
-    e_yield = rank('earnings_yield', data)
-    div_yield = rank('div_yield', data)
-    ocf_yield_3 = rank('ocf_yield_3', data)
+    pe = rank('p_e', data, False)           # Less Price/Earnings is better
+    ps = rank('cmp_sales', data, False)     # Less Price/Sales is better
+    pb = rank('cmp_bv', data, False)        # Less Price/BookValue is better
+    po = rank('p_o', data, False)           # Less Price/Operating Profit is better
+    peg = rank('peg', data, False)          # Less PE/Growth is better
+    e_yield = rank('earnings_yield', data)  # More Earnings Yield is better
+    div_yield = rank('div_yield', data)     # More divident Yield is better
+    ocf_yield_3 = rank('ocf_yield_3', data) # More Operating Cash Flow Yield is better
     ocf_yield_5 = rank('ocf_yield_5', data)
-    fcf_yield_3 = rank('fcf_yield_3', data)
+    fcf_yield_3 = rank('fcf_yield_3', data) # More Free Cash Flow Yield is better
     fcf_yield_5 = rank('fcf_yield_5', data)
-    oversold = rank('oversold', data)
-    overbought = rank('52w', data, False)
-    return_3yrs = rank('3yrs_return', data, False)
-    return_5yrs = rank('5yrs_return', data, False)
+    oversold = rank('oversold', data)               # Move oversold is cheaper
+    overbought = rank('52w', data, False)           # Less is cheaper - Position in 52 week range
+    return_3yrs = rank('3yrs_return', data, False)  # Less is cheaper
+    return_5yrs = rank('5yrs_return', data, False)  # Less is cheaper
 
+    # Ranking weightage - 25% Quality - 25% Growth - 50% Valuation
     final_rank = [(
         # Quality
         (roce[name] + roe[name] + npm[name] + opm[name] + roa[name] +
