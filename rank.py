@@ -8,8 +8,8 @@ from logging import critical as log
 value_screen = ('903587/value', 'ernlkdkijyag0d048e3ouem8774k5vyp')
 growth_screen = ('879125/growth', '8cmbf0oxunegvesbax08io8ob855d5ov')
 quality_screen = ('878969/quality', '08rubasshjfkuozbrtj9a0tp36qm3rgy')
-stability_screen = ('1078958/stability', 'b8tc69wcvriqifuaajep1wk22pqbyjfh')
 universe_screen = ('290555/universe', '5ukjoyfkgfi7r7m119prdif7ym41uxmv')
+stability_screen = ('1078958/stability', 'b8tc69wcvriqifuaajep1wk22pqbyjfh')
 
 
 def download(screen, sessionid):
@@ -137,10 +137,6 @@ def main():
             log(json.dumps({x: y for x, y in v.items() if '' == y}, indent=4))
 
     data = tmp
-
-    # t = time.time()
-    # log('columns(%d) rows(%d) msec(%d)',
-    #     len(data[list(data.keys())[0]]), len(data), (time.time()-t)*1000)
 
     # Rank on Size - More is better
     np = rank('np_12m_rs_cr', data)
