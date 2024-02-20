@@ -145,11 +145,9 @@ def main():
     sales = rank('sales_rs_cr', data)
     ocf_3 = rank('cf_opr_3yrs_rs_cr', data)
     ocf_5 = rank('cf_opr_5yrs_rs_cr', data)
-    fcf_3 = rank('free_cash_flow_3yrs_rs_cr', data)
-    fcf_5 = rank('free_cash_flow_5yrs_rs_cr', data)
 
-    size_rank = [(np[name] + op[name] + div[name] + sales[name] +
-                  ocf_5[name] + fcf_5[name] + ocf_3[name] + fcf_3[name],
+    size_rank = [(np[name] + op[name] + sales[name] +
+                  ocf_5[name] + ocf_3[name],
                  name) for name in sales]
 
     # Divide into two halvs based upon the above factors to discard the tiny companies.
@@ -198,8 +196,6 @@ def main():
     div_yield = rank('div_yield', data)     # More divident Yield is better
     ocf_yield_3 = rank('ocf_yield_3', data) # More Operating Cash Flow Yield is better
     ocf_yield_5 = rank('ocf_yield_5', data)
-    fcf_yield_3 = rank('fcf_yield_3', data) # More Free Cash Flow Yield is better
-    fcf_yield_5 = rank('fcf_yield_5', data)
     oversold = rank('oversold', data)               # Move oversold is cheaper
     overbought = rank('52w', data, False)           # Less is cheaper - Position in 52 week range
     return_3yrs = rank('3yrs_return', data, False)  # Less is cheaper
@@ -222,11 +218,11 @@ def main():
          eps_growth_3yr[name] + eps_growth_5yr[name]) / 11 +
 
         # Value
-        (pe[name] + pb[name] + ps[name] + po[name] + peg[name] + e_yield[name] +
-         div_yield[name] + ocf_yield_5[name] + fcf_yield_5[name] +
-         ocf_yield_3[name] + fcf_yield_3[name] +
+        (pe[name] + pb[name] + ps[name] + po[name] + peg[name] +
+         e_yield[name] + div_yield[name] +
+         ocf_yield_5[name] + ocf_yield_3[name] +
          return_3yrs[name] + return_5yrs[name] +
-         overbought[name] + oversold[name])*2 / 15,
+         overbought[name] + oversold[name])*2 / 13,
 
         name) for name in roe]
 
