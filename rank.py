@@ -73,15 +73,10 @@ def rank(field, data, descending=True):
     data = sorted([(v[field], k) for k, v in data.items()], reverse=descending)
 
     rank = dict()
-    for i, (ebit, name) in enumerate(data):
+    for i, (_, name) in enumerate(data):
         rank[name] = i
 
     return rank
-
-
-def median(field, data):
-    val = sorted([v[field] for k, v in data.items()])
-    return val[-1], val[len(val)//2], val[0]
 
 
 def main():
@@ -196,7 +191,7 @@ def main():
     div_yield = rank('div_yield', data)     # More divident Yield is better
     ocf_yield_3 = rank('ocf_yield_3', data) # More Operating Cash Flow Yield is better
     ocf_yield_5 = rank('ocf_yield_5', data)
-    oversold = rank('oversold', data)               # Move oversold is cheaper
+    oversold = rank('oversold', data)               # More oversold is cheaper
     overbought = rank('52w', data, False)           # Less is cheaper - Position in 52 week range
     return_3yrs = rank('3yrs_return', data, False)  # Less is cheaper
     return_5yrs = rank('5yrs_return', data, False)  # Less is cheaper
