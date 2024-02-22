@@ -136,14 +136,8 @@ def main():
     # Rank on Size - More is better
     np = rank('np_12m_rs_cr', data)
     op = rank('op_12m_rs_cr', data)
-    div = rank('div_5yrs_rs_cr', data)
     sales = rank('sales_rs_cr', data)
-    ocf_3 = rank('cf_opr_3yrs_rs_cr', data)
-    ocf_5 = rank('cf_opr_5yrs_rs_cr', data)
-
-    size_rank = [(np[name] + op[name] + sales[name] +
-                  ocf_5[name] + ocf_3[name],
-                 name) for name in sales]
+    size_rank = [(np[name] + op[name] + sales[name], name) for name in sales]
 
     # Divide into two halvs based upon the above factors to discard the tiny companies.
     # We will take only the upper half ranked by profit, dividend, sales and cashflow.
