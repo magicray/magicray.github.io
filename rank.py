@@ -114,10 +114,12 @@ def main():
     data = tmp
 
     # Rank on Size - More is better
-    np = rank('np_12m_rs_cr', data)
-    op = rank('op_12m_rs_cr', data)
-    sales = rank('sales_rs_cr', data)
-    size_rank = [(np[name] + op[name] + sales[name], name) for name in sales]
+    np = rank('np_12m_rs_cr', data)       # More net profit is better
+    op = rank('op_12m_rs_cr', data)       # More operting profit is better
+    sales = rank('sales_rs_cr', data)     # More sales is better
+    debteq = rank('debt_eq', data, False) # Less debt/equity is better
+    size_rank = [(np[name] + op[name] + sales[name] + debteq[name],
+                 name) for name in sales]
 
     # Divide into two halvs based upon the above factors to discard the tiny companies.
     # We will take only the upper half ranked by profit, dividend, sales and cashflow.
@@ -139,7 +141,6 @@ def main():
     roa = rank('roa_12m', data)
     roa_3yr = rank('roa_3yr', data)
     roa_5yr = rank('roa_5yr', data)
-    debteq = rank('debt_eq', data, False)       # Less is better
 
     # Rank on Growth - More is better
     sales_growth = rank('sales_growth', data)
@@ -170,7 +171,7 @@ def main():
         (roce[name] + roe[name] + npm[name] + opm[name] + roa[name] +
          roce_3yr[name] + roe_3yr[name] + roa_3yr[name] +
          roce_5yr[name] + roe_5yr[name] + opm_5yr[name] + roa_5yr[name] +
-         roic[name] + debteq[name]) / 14 +
+         roic[name]) / 13 +
 
         # Growth
         (sales_growth[name] + profit_growth[name] +
