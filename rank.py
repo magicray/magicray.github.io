@@ -9,7 +9,7 @@ value_screen = ('903587/value', 'ernlkdkijyag0d048e3ouem8774k5vyp')
 growth_screen = ('879125/growth', '8cmbf0oxunegvesbax08io8ob855d5ov')
 quality_screen = ('878969/quality', '08rubasshjfkuozbrtj9a0tp36qm3rgy')
 universe_screen = ('290555/universe', '5ukjoyfkgfi7r7m119prdif7ym41uxmv')
-stability_screen = ('1078958/stability', 'b8tc69wcvriqifuaajep1wk22pqbyjfh')
+stability_screen = ('1078958/stability', 'afdwewhutezl5srb4dplrlim3p0g8cm7')
 
 
 def download(screen, sessionid):
@@ -86,7 +86,7 @@ def main():
         assert (data['timestamp'] > time.time() - 86400)
     except Exception:
         data = dict()
-        for screen, sessionid in (value_screen, growth_screen, quality_screen, stability_screen):
+        for screen, sessionid in (value_screen, growth_screen, quality_screen, stability_screen, universe_screen):
             for key, value in download(screen, sessionid).items():
                 if key in data:
                     data[key].update(value)
@@ -103,28 +103,8 @@ def main():
             assert (all('' != y for y in v.values()))
             v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']  # Less is better Value
 
-            v['debt_eq'] = v['debt_eq'] * 100                  # Less is better Quality
-            if v['debt_eq'] > 0:
-                v['int_ratio'] = 100 / v['int_coverage']       # Less is better Quality
-            else:
-                v['int_ratio'] = 0
-
             # Net Profit Margin - More is better Quality
             v['npm'] = (100 * v['np_12m_rs_cr']) / v['sales_rs_cr']
-
-            # Divident yield over 5 years - More is better Quality
-            v['div_yield'] = (100 * v['div_5yrs_rs_cr']) / v['mar_cap_rs_cr']
-
-            # How much below 200 DMA - More is better Value
-            v['oversold'] = (v['200_dma_rs'] * 100) / v['cmp_rs']
-
-            # Operating Cashflow Yield - More is better Quality
-            v['ocf_yield_3'] = (100 * v['cf_opr_3yrs_rs_cr']) / v['mar_cap_rs_cr']
-            v['ocf_yield_5'] = (100 * v['cf_opr_5yrs_rs_cr']) / v['mar_cap_rs_cr']
-
-            # Free Cashflow Yield - More is better Quality
-            v['fcf_yield_3'] = (100 * v['free_cash_flow_3yrs_rs_cr']) / v['mar_cap_rs_cr']
-            v['fcf_yield_5'] = (100 * v['free_cash_flow_5yrs_rs_cr']) / v['mar_cap_rs_cr']
 
             tmp[k] = v
         except Exception:
@@ -160,7 +140,6 @@ def main():
     roa_3yr = rank('roa_3yr', data)
     roa_5yr = rank('roa_5yr', data)
     debteq = rank('debt_eq', data, False)       # Less is better
-    int_ratio = rank('int_ratio', data, False)  # Less is better
 
     # Rank on Growth - More is better
     sales_growth = rank('sales_growth', data)
@@ -182,9 +161,6 @@ def main():
     po = rank('p_o', data, False)           # Less Price/Operating Profit is better
     peg = rank('peg', data, False)          # Less PE/Growth is better
     e_yield = rank('earnings_yield', data)  # More Earnings Yield is better
-    div_yield = rank('div_yield', data)     # More divident Yield is better
-    oversold = rank('oversold', data)               # More oversold is cheaper
-    overbought = rank('52w', data, False)           # Less is cheaper - Position in 52 week range
     return_3yrs = rank('3yrs_return', data, False)  # Less is cheaper
     return_5yrs = rank('5yrs_return', data, False)  # Less is cheaper
 
@@ -194,7 +170,7 @@ def main():
         (roce[name] + roe[name] + npm[name] + opm[name] + roa[name] +
          roce_3yr[name] + roe_3yr[name] + roa_3yr[name] +
          roce_5yr[name] + roe_5yr[name] + opm_5yr[name] + roa_5yr[name] +
-         roic[name] + debteq[name] + int_ratio[name]) / 15 +
+         roic[name] + debteq[name]) / 14 +
 
         # Growth
         (sales_growth[name] + profit_growth[name] +
@@ -206,9 +182,7 @@ def main():
 
         # Value
         (pe[name] + pb[name] + ps[name] + po[name] + peg[name] +
-         e_yield[name] + div_yield[name] +
-         return_3yrs[name] + return_5yrs[name] +
-         overbought[name] + oversold[name])*2 / 11,
+         e_yield[name] + return_3yrs[name] + return_5yrs[name]) / 8,
 
         name) for name in roe]
 
