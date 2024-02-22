@@ -183,8 +183,6 @@ def main():
     peg = rank('peg', data, False)          # Less PE/Growth is better
     e_yield = rank('earnings_yield', data)  # More Earnings Yield is better
     div_yield = rank('div_yield', data)     # More divident Yield is better
-    ocf_yield_3 = rank('ocf_yield_3', data) # More Operating Cash Flow Yield is better
-    ocf_yield_5 = rank('ocf_yield_5', data)
     oversold = rank('oversold', data)               # More oversold is cheaper
     overbought = rank('52w', data, False)           # Less is cheaper - Position in 52 week range
     return_3yrs = rank('3yrs_return', data, False)  # Less is cheaper
@@ -209,9 +207,8 @@ def main():
         # Value
         (pe[name] + pb[name] + ps[name] + po[name] + peg[name] +
          e_yield[name] + div_yield[name] +
-         ocf_yield_5[name] + ocf_yield_3[name] +
          return_3yrs[name] + return_5yrs[name] +
-         overbought[name] + oversold[name])*2 / 13,
+         overbought[name] + oversold[name])*2 / 11,
 
         name) for name in roe]
 
