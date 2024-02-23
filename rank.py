@@ -162,8 +162,6 @@ def main():
     po = rank('p_o', data, False)           # Less Price/Operating Profit is better
     peg = rank('peg', data, False)          # Less PE/Growth is better
     e_yield = rank('earnings_yield', data)  # More Earnings Yield is better
-    return_3yrs = rank('3yrs_return', data, False)  # Less is cheaper
-    return_5yrs = rank('5yrs_return', data, False)  # Less is cheaper
 
     # Ranking weightage - 25% Quality - 25% Growth - 50% Valuation
     final_rank = [(
@@ -183,7 +181,7 @@ def main():
 
         # Value
         (pe[name] + pb[name] + ps[name] + po[name] + peg[name] +
-         e_yield[name] + return_3yrs[name] + return_5yrs[name])*2 / 8,
+         e_yield[name])*2 / 6,
 
         name) for name in roe]
 
