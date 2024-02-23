@@ -183,7 +183,7 @@ def main():
 
         # Value
         (pe[name] + pb[name] + ps[name] + po[name] + peg[name] +
-         e_yield[name] + return_3yrs[name] + return_5yrs[name]) / 8,
+         e_yield[name] + return_3yrs[name] + return_5yrs[name])*2 / 8,
 
         name) for name in roe]
 
