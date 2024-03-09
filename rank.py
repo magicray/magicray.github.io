@@ -160,7 +160,6 @@ def main():
     ps = rank('cmp_sales', data, False)     # Less Price/Sales is better
     pb = rank('cmp_bv', data, False)        # Less Price/BookValue is better
     po = rank('p_o', data, False)           # Less Price/Operating Profit is better
-    peg = rank('peg', data, False)          # Less PE/Growth is better
     e_yield = rank('earnings_yield', data)  # More Earnings Yield is better
 
     # Ranking weightage - 25% Quality - 25% Growth - 50% Valuation
@@ -180,8 +179,7 @@ def main():
          eps_growth_3yr[name] + eps_growth_5yr[name]) / 11 +
 
         # Value
-        (pe[name] + pb[name] + ps[name] + po[name] + peg[name] +
-         e_yield[name])*2 / 6,
+        (pe[name] + pb[name] + ps[name] + po[name] + e_yield[name])*2 / 5,
 
         name) for name in roe]
 
