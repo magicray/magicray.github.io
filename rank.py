@@ -5,9 +5,9 @@ import time
 import requests
 from logging import critical as log
 
-value_screen = ('903587/value', 'ernlkdkijyag0d048e3ouem8774k5vyp')
-growth_screen = ('879125/growth', '8cmbf0oxunegvesbax08io8ob855d5ov')
-quality_screen = ('878969/quality', '08rubasshjfkuozbrtj9a0tp36qm3rgy')
+value_screen = ('903587/value', '94ktdiog549ek070cim73une1yx3jezd')
+growth_screen = ('879125/growth', '6zv9tc1go1huuf7bcy3ck9gzf8l1t93b')
+quality_screen = ('878969/quality', 'w9z1cbgjxdk2yj074wb5vf5ti1hmgfrs')
 universe_screen = ('290555/universe', 'solt0wayip2rxb2utcj95bxhymtpt6i1')
 stability_screen = ('1078958/stability', 'afdwewhutezl5srb4dplrlim3p0g8cm7')
 
