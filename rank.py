@@ -116,9 +116,9 @@ def main():
     # Rank on Size - More is better
     np = rank('np_12m_rs_cr', data)       # More net profit is better
     op = rank('op_12m_rs_cr', data)       # More operting profit is better
+    ebit = rank('ebit_12m_rs_cr', data)   # More ebit is better
     sales = rank('sales_rs_cr', data)     # More sales is better
-    debteq = rank('debt_eq', data, False) # Less debt/equity is better
-    size_rank = [(np[name] + op[name] + sales[name] + debteq[name],
+    size_rank = [(np[name] + op[name] + ebit[name] + sales[name],
                  name) for name in sales]
 
     # Divide into two halvs based upon the above factors to discard the tiny companies.
@@ -164,13 +164,18 @@ def main():
     eps_growth_5yr = rank('eps_var_5yrs', data)
     eps_growth_7yr = rank('eps_var_7yrs', data)
     eps_growth_10yr = rank('eps_var_10yrs', data)
+    ebidt_growth_3yr = rank('ebidt_var_3yrs', data)
+    ebidt_growth_5yr = rank('ebidt_var_5yrs', data)
+    ebidt_growth_7yr = rank('ebidt_var_7yrs', data)
+    ebidt_growth_10yr = rank('ebidt_var_10yrs', data)
 
     # Rank on Valuation
-    pe = rank('p_e', data, False)           # Less Price/Earnings is better
-    ps = rank('cmp_sales', data, False)     # Less Price/Sales is better
-    pb = rank('cmp_bv', data, False)        # Less Price/BookValue is better
-    po = rank('p_o', data, False)           # Less Price/Operating Profit is better
-    e_yield = rank('earnings_yield', data)  # More Earnings Yield is better
+    pe = rank('p_e', data, False)             # Less Price/Earnings is better
+    ps = rank('cmp_sales', data, False)       # Less Price/Sales is better
+    pb = rank('cmp_bv', data, False)          # Less Price/BookValue is better
+    po = rank('p_o', data, False)             # Less Price/Operating Profit is better
+    e_yield = rank('earnings_yield', data)    # More Earnings Yield is better
+    evebitda = rank('ev_ebitda', data, False) # Less Enterprise Value / EBITDA is better
 
     # Ranking weightage - 25% Quality - 25% Growth - 50% Valuation
     final_rank = [(
@@ -191,10 +196,13 @@ def main():
          sales_growth_yoy[name] + profit_growth_yoy[name] +
          op_profit_growth[name] +
          eps_growth_3yr[name] + eps_growth_5yr[name] +
-         eps_growth_7yr[name] + eps_growth_7yr[name]) / 17 +
+         eps_growth_7yr[name] + eps_growth_10yr[name] +
+         ebidt_growth_3yr[name] + ebidt_growth_5yr[name] +
+         ebidt_growth_7yr[name] + ebidt_growth_10yr[name]) / 21 +
 
         # Value
-        (pe[name] + pb[name] + ps[name] + po[name] + e_yield[name])*2 / 5,
+        (pe[name] + pb[name] + ps[name] + po[name] +
+         e_yield[name] + evebitda[name])*2 / 6,
 
         name) for name in roe]
 
