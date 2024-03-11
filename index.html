@@ -24,14 +24,20 @@
         <table id="rank" class="table compact table-responsive table-striped table-bordered" style="text-align: center; font-weight: 500;">
             <thead>
                 <tr>
+                <th colspan=6>Stability</th>
                 <th colspan=3>Group</th>
                 <th colspan=17>Quality</th>
                 <th colspan=21>Growth</th>
                 <th colspan=6>Valuation</th>
-                <th colspan=5>Stability</th>
                 </tr>
                 <tr>
                 <th colspan=3 id="group_hold">Buy</th>
+                <th id="ev_green"></th>
+                <th id="mcap_green"></th>
+                <th id="sales_green"></th>
+                <th id="profit_green"></th>
+                <th id="oprofit_green"></th>
+                <th id="ebit_green"></th>
                 <th id="roce_green"></th>
                 <th id="roce_3yr_green"></th>
                 <th id="roce_5yr_green"></th>
@@ -66,23 +72,24 @@
                 <th id="eps_growth_5yr_green"></th>
                 <th id="eps_growth_7yr_green"></th>
                 <th id="eps_growth_10yr_green"></th>
-                <th id="ebidt_growth_3yr_green"></th>
-                <th id="ebidt_growth_5yr_green"></th>
-                <th id="ebidt_growth_7yr_green"></th>
-                <th id="ebidt_growth_10yr_green"></th>
+                <th id="ebitd_growth_3yr_green"></th>
+                <th id="ebitd_growth_5yr_green"></th>
+                <th id="ebitd_growth_7yr_green"></th>
+                <th id="ebitd_growth_10yr_green"></th>
                 <th id="yield_green"></th>
                 <th id="pe_green"></th>
                 <th id="ps_green"></th>
                 <th id="pb_green"></th>
                 <th id="po_green"></th>
                 <th id="evebitda_green"></th>
-                <th id="mcap_green"></th>
-                <th id="sales_green"></th>
-                <th id="profit_green"></th>
-                <th id="oprofit_green"></th>
-                <th id="ebit_green"></th>
                 </tr><tr>
                 <th colspan=3 id="group_all">All</th>
+                <th id="ev_black"></th>
+                <th id="mcap_black"></th>
+                <th id="sales_black"></th>
+                <th id="profit_black"></th>
+                <th id="oprofit_black"></th>
+                <th id="ebit_black"></th>
                 <th id="roce_black"></th>
                 <th id="roce_3yr_black"></th>
                 <th id="roce_5yr_black"></th>
@@ -117,23 +124,24 @@
                 <th id="eps_growth_5yr_black"></th>
                 <th id="eps_growth_7yr_black"></th>
                 <th id="eps_growth_10yr_black"></th>
-                <th id="ebidt_growth_3yr_black"></th>
-                <th id="ebidt_growth_5yr_black"></th>
-                <th id="ebidt_growth_7yr_black"></th>
-                <th id="ebidt_growth_10yr_black"></th>
+                <th id="ebitd_growth_3yr_black"></th>
+                <th id="ebitd_growth_5yr_black"></th>
+                <th id="ebitd_growth_7yr_black"></th>
+                <th id="ebitd_growth_10yr_black"></th>
                 <th id="yield_black"></th>
                 <th id="pe_black"></th>
                 <th id="ps_black"></th>
                 <th id="pb_black"></th>
                 <th id="po_black"></th>
                 <th id="evebitda_black"></th>
-                <th id="mcap_black"></th>
-                <th id="sales_black"></th>
-                <th id="profit_black"></th>
-                <th id="oprofit_black"></th>
-                <th id="ebit_black"></th>
                 </tr><tr>
                 <th colspan=3 id="group_avoid">Sell</th>
+                <th id="ev_red"></th>
+                <th id="mcap_red"></th>
+                <th id="sales_red"></th>
+                <th id="profit_red"></th>
+                <th id="oprofit_red"></th>
+                <th id="ebit_red"></th>
                 <th id="roce_red"></th>
                 <th id="roce_3yr_red"></th>
                 <th id="roce_5yr_red"></th>
@@ -168,25 +176,26 @@
                 <th id="eps_growth_5yr_red"></th>
                 <th id="eps_growth_7yr_red"></th>
                 <th id="eps_growth_10yr_red"></th>
-                <th id="ebidt_growth_3yr_red"></th>
-                <th id="ebidt_growth_5yr_red"></th>
-                <th id="ebidt_growth_7yr_red"></th>
-                <th id="ebidt_growth_10yr_red"></th>
+                <th id="ebitd_growth_3yr_red"></th>
+                <th id="ebitd_growth_5yr_red"></th>
+                <th id="ebitd_growth_7yr_red"></th>
+                <th id="ebitd_growth_10yr_red"></th>
                 <th id="yield_red"></th>
                 <th id="pe_red"></th>
                 <th id="ps_red"></th>
                 <th id="pb_red"></th>
                 <th id="po_red"></th>
                 <th id="evebitda_red"></th>
-                <th id="mcap_red"></th>
-                <th id="sales_red"></th>
-                <th id="profit_red"></th>
-                <th id="oprofit_red"></th>
-                <th id="ebit_red"></th>
                 </tr><tr style="position: sticky; top: 0; z-index: 1; background-color: white">
                 <th>Rank</th>
                 <th>Stock</th>
                 <th>Code</th>
+                <th>EV</th>
+                <th>MCap</th>
+                <th>Sales</th>
+                <th>Profit</th>
+                <th>OProfit</th>
+                <th>EBIT</th>
                 <th>ROCE</th>
                 <th>ROCE 3Yr</th>
                 <th>ROCE 5Yr</th>
@@ -221,21 +230,16 @@
                 <th>EPS 5Yr</th>
                 <th>EPS 7Yr</th>
                 <th>EPS 10Yr</th>
-                <th>EBIDT 3Yr</th>
-                <th>EBIDT 5Yr</th>
-                <th>EBIDT 7Yr</th>
-                <th>EBIDT 10Yr</th>
+                <th>EBITD 3Yr</th>
+                <th>EBITD 5Yr</th>
+                <th>EBITD 7Yr</th>
+                <th>EBITD 10Yr</th>
                 <th>Earnings Yield</th>
                 <th>PE</th>
                 <th>PS</th>
                 <th>PB</th>
                 <th>PO</th>
                 <th>EVEBITDA</th>
-                <th>MCap</th>
-                <th>Sales</th>
-                <th>Profit</th>
-                <th>OProfit</th>
-                <th>EBIT</th>
                 </tr>
             </thead>
         </table>
@@ -309,6 +313,12 @@ function format_data(data, count, amount) {
             d['rank'],
             name_html,
             G.map[name]? G.map[name]: '',
+            d['ev_rs_cr'],
+            d['mar_cap_rs_cr'],
+            d['sales_rs_cr'],
+            d['np_12m_rs_cr'],
+            d['op_12m_rs_cr'],
+            d['ebit_12m_rs_cr'],
             d['roce'],
             d['roce_3yr'],
             d['roce_5yr'],
@@ -352,12 +362,7 @@ function format_data(data, count, amount) {
             d['cmp_sales'],
             d['cmp_bv'],
             d['p_o'],
-            d['ev_ebitda'],
-            d['mar_cap_rs_cr'],
-	    d['sales_rs_cr'],
-	    d['np_12m_rs_cr'],
-	    d['op_12m_rs_cr'],
-	    d['ebit_12m_rs_cr']])
+            d['ev_ebitda']])
     }
 
     return result
@@ -417,7 +422,8 @@ function renderTable(tableId, data) {
     $("#group_avoid").css("color", "red");
     $("#group_avoid").css("font-weight", "normal");
 
-    const col = ['roce', 'roce_3yr', 'roce_5yr', 'roce_7yr', 'roce_10yr',
+    const col = ['ev', 'mcap', 'sales', 'profit', 'oprofit', 'ebit',
+                 'roce', 'roce_3yr', 'roce_5yr', 'roce_7yr', 'roce_10yr',
                  'roe', 'roe_3yr', 'roe_5yr', 'roe_7yr', 'roe_10yr',
                  'roic', 'npm', 'opm', 'opm_5yr', 'roa', 'roa_3yr', 'roa_5yr',
 
@@ -427,11 +433,9 @@ function renderTable(tableId, data) {
                  'sales_growth_7yr', 'sales_growth_10yr', 'sales_growth_yoy',
                  'oprofit_growth',
                  'eps_growth_3yr', 'eps_growth_5yr', 'eps_growth_7yr', 'eps_growth_10yr',
-                 'ebidt_growth_3yr', 'ebidt_growth_5yr', 'ebidt_growth_7yr', 'ebidt_growth_10yr',
+                 'ebitd_growth_3yr', 'ebitd_growth_5yr', 'ebitd_growth_7yr', 'ebitd_growth_10yr',
 
-	         'yield', 'pe', 'ps', 'pb', 'po', 'evebitda',
-
-	         'mcap', 'sales', 'profit', 'oprofit', 'ebit']
+	         'yield', 'pe', 'ps', 'pb', 'po', 'evebitda']
 
     col.map((name, index) => {
 	let arr = data_green.map(d => d[index+3]).sort(function(a, b){ return a - b})
@@ -461,7 +465,7 @@ function renderTable(tableId, data) {
 
     let tmp = [...data]
     tmp.map((row, index) => {
-        for(let i=3; i<52; i++)
+        for(let i=3; i<53; i++)
             row[i] = Math.round(row[i])
     })
 
