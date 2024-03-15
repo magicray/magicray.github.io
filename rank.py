@@ -122,7 +122,7 @@ def main():
                  name) for name in sales]
 
     # Divide into two halvs based upon the above factors to discard the tiny companies.
-    # We will take only the upper half ranked by profit, sales and debt2eq.
+    # We will take only the upper half ranked by profit and sales
     count = int(len(size_rank)/2)
     biggest_stocks = set([name for _, name in sorted(size_rank)[:count]])
     data = {k: v for k, v in data.items() if k in biggest_stocks}
