@@ -25,7 +25,7 @@
             <thead>
                 <tr>
                 <th colspan=3>Group</th>
-                <th colspan=6>Stability</th>
+                <th colspan=7>Stability</th>
                 <th colspan=17>Quality</th>
                 <th colspan=21>Growth</th>
                 <th colspan=6>Valuation</th>
@@ -34,6 +34,7 @@
                 <th colspan=3 id="group_hold">Buy</th>
                 <th id="ev_green"></th>
                 <th id="mcap_green"></th>
+                <th id="net_worth_green"></th>
                 <th id="sales_green"></th>
                 <th id="profit_green"></th>
                 <th id="oprofit_green"></th>
@@ -86,6 +87,7 @@
                 <th colspan=3 id="group_all">All</th>
                 <th id="ev_black"></th>
                 <th id="mcap_black"></th>
+                <th id="net_worth_black"></th>
                 <th id="sales_black"></th>
                 <th id="profit_black"></th>
                 <th id="oprofit_black"></th>
@@ -138,6 +140,7 @@
                 <th colspan=3 id="group_avoid">Sell</th>
                 <th id="ev_red"></th>
                 <th id="mcap_red"></th>
+                <th id="net_worth_red"></th>
                 <th id="sales_red"></th>
                 <th id="profit_red"></th>
                 <th id="oprofit_red"></th>
@@ -192,6 +195,7 @@
                 <th>Code</th>
                 <th>EV</th>
                 <th>MCap</th>
+                <th>Networth</th>
                 <th>Sales</th>
                 <th>Profit</th>
                 <th>OProfit</th>
@@ -315,6 +319,7 @@ function format_data(data, count, amount) {
             G.map[name]? G.map[name]: '',
             d['ev_rs_cr'],
             d['mar_cap_rs_cr'],
+            d['net_worth_rs_cr'],
             d['sales_rs_cr'],
             d['np_12m_rs_cr'],
             d['op_12m_rs_cr'],
@@ -422,7 +427,7 @@ function renderTable(tableId, data) {
     $("#group_avoid").css("color", "red");
     $("#group_avoid").css("font-weight", "normal");
 
-    const col = ['ev', 'mcap', 'sales', 'profit', 'oprofit', 'ebit',
+    const col = ['ev', 'mcap', 'net_worth', 'sales', 'profit', 'oprofit', 'ebit',
                  'roce', 'roce_3yr', 'roce_5yr', 'roce_7yr', 'roce_10yr',
                  'roe', 'roe_3yr', 'roe_5yr', 'roe_7yr', 'roe_10yr',
                  'roic', 'npm', 'opm', 'opm_5yr', 'roa', 'roa_3yr', 'roa_5yr',

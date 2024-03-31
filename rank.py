@@ -114,12 +114,14 @@ def main():
     data = tmp
 
     # Rank on Size - More is better
-    np = rank('np_12m_rs_cr', data)       # More net profit is better
-    op = rank('op_12m_rs_cr', data)       # More operting profit is better
-    ebit = rank('ebit_12m_rs_cr', data)   # More ebit is better
-    sales = rank('sales_rs_cr', data)     # More sales is better
-    size_rank = [(np[name] + op[name] + ebit[name] + sales[name],
-                 name) for name in sales]
+    np = rank('np_12m_rs_cr', data)           # More net profit is better
+    op = rank('op_12m_rs_cr', data)           # More operting profit is better
+    ebit = rank('ebit_12m_rs_cr', data)       # More ebit is better
+    sales = rank('sales_rs_cr', data)         # More sales is better
+    networth = rank('net_worth_rs_cr', data)  # Higher networth is better
+    size_rank = [(np[name] + op[name] + ebit[name] +
+                  sales[name] + networth[name],
+                  name) for name in sales]
 
     # Divide into two halvs based upon the above factors to discard the tiny companies.
     # We will take only the upper half ranked by profit and sales
