@@ -9,7 +9,7 @@ value_screen = ('903587/value', '0t7nz838eqacx4ogx9lxon3orzmrp3y2')
 growth_screen = ('879125/growth', 'mg8zp70fg4y5uq9c81xzff7e9trctfyk')
 quality_screen = ('878969/quality', 'c567e2d2k4gjhi1stc75wj2sru26l0w5')
 universe_screen = ('290555/universe', 'prsosyddcczf1k9mutfn4grvu0w2fr5m')
-stability_screen = ('1078958/stability', 'pq0flz3vv7ujb9wnke5ixe63uvc96nzc')
+stability_screen = ('1078958/stability', 'x0v7i1yx9ymxxds2iz2kizvoccnm2xmm')
 
 
 def download(screen, sessionid):
