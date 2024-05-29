@@ -9087,6 +9087,9 @@
         "Vesuvius India": 1710059030,
         "eClerx Services": 1715993231
     },
+    "blacklisted": [
+        "Brightcom Group"
+    ],
     "symbol": {
         "20 Microns": "20MICR",
         "3M India": "3MIND",
