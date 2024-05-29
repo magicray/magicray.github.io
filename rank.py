@@ -97,14 +97,21 @@ def main():
         with open(filename, 'w') as fd:
             json.dump(data, fd)
 
+    with open('magicrank.json') as fd:
+        blacklisted = json.load(fd)['blacklisted']
+
     tmp = dict()
     for k, v in data['data'].items():
         try:
+            assert (k not in blacklisted)
             assert (all('' != y for y in v.values()))
+
             v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']  # Less is better Value
 
             # Net Profit Margin - More is better Quality
             v['npm'] = (100 * v['np_12m_rs_cr']) / v['sales_rs_cr']
+
+            v['volume'] = v['avg_vol_1wk'] * v['cmp_rs']
 
             tmp[k] = v
         except Exception:
@@ -118,9 +125,10 @@ def main():
     op = rank('op_12m_rs_cr', data)           # More operting profit is better
     ebit = rank('ebit_12m_rs_cr', data)       # More ebit is better
     sales = rank('sales_rs_cr', data)         # More sales is better
+    volume = rank('volume', data)             # Higher volume is better
     networth = rank('net_worth_rs_cr', data)  # Higher networth is better
     size_rank = [(np[name] + op[name] + ebit[name] +
-                  sales[name] + networth[name],
+                  sales[name] + volume[name] + networth[name],
                   name) for name in sales]
 
     # Divide into two halvs based upon the above factors to discard the tiny companies.
@@ -235,6 +243,7 @@ def main():
                 data=stock_list,
                 date=int(time.time()),
                 symbol=prev['symbol'],
+                blacklisted=prev['blacklisted'],
                 sold={k: v for k, v in sold.items() if v+86400*90 > ts},
                 url='https://www.screener.in/screens/290555/universe/'),
             fd, sort_keys=True, indent=4)

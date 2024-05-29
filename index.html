@@ -25,7 +25,7 @@
             <thead>
                 <tr>
                 <th colspan=3>Group</th>
-                <th colspan=7>Stability</th>
+                <th colspan=8>Stability</th>
                 <th colspan=17>Quality</th>
                 <th colspan=21>Growth</th>
                 <th colspan=6>Valuation</th>
@@ -39,6 +39,7 @@
                 <th id="profit_green"></th>
                 <th id="oprofit_green"></th>
                 <th id="ebit_green"></th>
+                <th id="volume_green"></th>
                 <th id="roce_green"></th>
                 <th id="roce_3yr_green"></th>
                 <th id="roce_5yr_green"></th>
@@ -92,6 +93,7 @@
                 <th id="profit_black"></th>
                 <th id="oprofit_black"></th>
                 <th id="ebit_black"></th>
+                <th id="volume_black"></th>
                 <th id="roce_black"></th>
                 <th id="roce_3yr_black"></th>
                 <th id="roce_5yr_black"></th>
@@ -145,6 +147,7 @@
                 <th id="profit_red"></th>
                 <th id="oprofit_red"></th>
                 <th id="ebit_red"></th>
+                <th id="volume_red"></th>
                 <th id="roce_red"></th>
                 <th id="roce_3yr_red"></th>
                 <th id="roce_5yr_red"></th>
@@ -200,6 +203,7 @@
                 <th>Profit</th>
                 <th>OProfit</th>
                 <th>EBIT</th>
+                <th>Volume</th>
                 <th>ROCE</th>
                 <th>ROCE 3Yr</th>
                 <th>ROCE 5Yr</th>
@@ -324,6 +328,7 @@ function format_data(data, count, amount) {
             d['np_12m_rs_cr'],
             d['op_12m_rs_cr'],
             d['ebit_12m_rs_cr'],
+            d['volume'] / 10000000,
             d['roce'],
             d['roce_3yr'],
             d['roce_5yr'],
@@ -427,7 +432,7 @@ function renderTable(tableId, data) {
     $("#group_avoid").css("color", "red");
     $("#group_avoid").css("font-weight", "normal");
 
-    const col = ['ev', 'mcap', 'net_worth', 'sales', 'profit', 'oprofit', 'ebit',
+    const col = ['ev', 'mcap', 'net_worth', 'sales', 'profit', 'oprofit', 'ebit', 'volume',
                  'roce', 'roce_3yr', 'roce_5yr', 'roce_7yr', 'roce_10yr',
                  'roe', 'roe_3yr', 'roe_5yr', 'roe_7yr', 'roe_10yr',
                  'roic', 'npm', 'opm', 'opm_5yr', 'roa', 'roa_3yr', 'roa_5yr',
@@ -470,7 +475,7 @@ function renderTable(tableId, data) {
 
     let tmp = [...data]
     tmp.map((row, index) => {
-        for(let i=3; i<54; i++)
+        for(let i=3; i<55; i++)
             row[i] = Math.round(row[i])
     })
 
