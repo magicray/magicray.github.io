@@ -8,7 +8,7 @@ from logging import critical as log
 value_screen = ('903587/value', 'e26hgydy5j74fuedsft9vnto29g8bawb')
 growth_screen = ('879125/growth', '67h9btxwx6gh0exgs4fry7r1uqihh3ho')
 quality_screen = ('878969/quality', 't5ct7veaj17jmw99y58bxs7v4it8efs3')
-universe_screen = ('290555/universe', 'prsosyddcczf1k9mutfn4grvu0w2fr5m')
+universe_screen = ('290555/universe', 'wp9g4ev10d32hgkrd5bwrfaz8zrkwjvz')
 stability_screen = ('1078958/stability', 'ambebtzp72zh89rubov5ekdtlryd8tuu')
 
 
