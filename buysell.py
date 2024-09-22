@@ -20,16 +20,20 @@ def main():
     data = r['data']
     stock_codes = r['symbol']
 
-    buy_list = [(s['rank'], s) for s in data if s['rank'] <= len(data)/2]
+    buy_list = [(s['rank'], s) for s in data if s['rank'] <= len(data)/4]
     buy_list = [s for _, s in sorted(buy_list)]
-
     buy_set = set([stock_codes[b['name'].replace('.', '')] for b in buy_list])
+
+    hold_list = [(s['rank'], s) for s in data if s['rank'] < len(data)*3/4]
+    hold_list = [s for _, s in sorted(hold_list)]
+    hold_set = set([stock_codes[s['name'].replace('.', '')] for s in hold_list])
+
     existing_set = set(portfolio.keys())
-    print('Sell : {}'.format(sorted(existing_set - buy_set)))
+    print('Sell : {}'.format(sorted(existing_set - hold_set)))
 
     minimum_value = ARGS.amount / len(buy_list)
     low_threshold = 1.0
-    high_threshold = 1.1
+    high_threshold = 1.0
 
     for b in buy_list:
         symbol = stock_codes[b['name'].replace('.', '')]
