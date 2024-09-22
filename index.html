@@ -31,7 +31,7 @@
                 <th colspan=6>Valuation</th>
                 </tr>
                 <tr>
-                <th colspan=3 id="group_hold">Buy</th>
+                <th colspan=3 id="group_buy">Buy</th>
                 <th id="ev_green"></th>
                 <th id="mcap_green"></th>
                 <th id="net_worth_green"></th>
@@ -85,7 +85,7 @@
                 <th id="po_green"></th>
                 <th id="evebitda_green"></th>
                 </tr><tr>
-                <th colspan=3 id="group_all">All</th>
+                <th colspan=3 id="group_hold">Hold</th>
                 <th id="ev_black"></th>
                 <th id="mcap_black"></th>
                 <th id="net_worth_black"></th>
@@ -139,7 +139,7 @@
                 <th id="po_black"></th>
                 <th id="evebitda_black"></th>
                 </tr><tr>
-                <th colspan=3 id="group_avoid">Sell</th>
+                <th colspan=3 id="group_sell">Sell</th>
                 <th id="ev_red"></th>
                 <th id="mcap_red"></th>
                 <th id="net_worth_red"></th>
@@ -415,22 +415,21 @@ function renderTable(tableId, data) {
         }
     }
 
-    let median_index_black = median_index(0, data.length-1)
-    let max_dark_len = Math.floor(data.length/4)
+    let buy_end_index = Math.ceil(data.length/4);
+    let sell_begin_index = Math.ceil(data.length*3/4);
+    let data_green = data.slice(0, buy_end_index);
+    let data_hold = data.slice(buy_end_index, sell_begin_index)
+    let data_red = data.slice(sell_begin_index, data.length);
 
-    let data_dark = data.slice(0, max_dark_len);
-    let data_green = data.slice(0, median_index_black.first+1);
-    let data_red = data.slice(median_index_black.second, data.length);
+    $("#group_buy").html("Buy (top " + data_green.length + ")");
+    $("#group_hold").html("Hold (" + data_hold.length + ")");
+    $("#group_sell").html("Sell (bottom " + data_red.length + ")");
 
-    $("#group_hold").html("Buy (top " + data_green.length + ")");
-    $("#group_all").html("All (" + data.length + ")");
-    $("#group_avoid").html("Sell (bottom " + data_red.length + ")");
-
-    $("#group_hold").css("color", "green");
+    $("#group_buy").css("color", "green");
+    $("#group_buy").css("font-weight", "normal");
     $("#group_hold").css("font-weight", "normal");
-    $("#group_all").css("font-weight", "normal");
-    $("#group_avoid").css("color", "red");
-    $("#group_avoid").css("font-weight", "normal");
+    $("#group_sell").css("color", "red");
+    $("#group_sell").css("font-weight", "normal");
 
     const col = ['ev', 'mcap', 'net_worth', 'sales', 'profit', 'oprofit', 'ebit', 'volume',
                  'roce', 'roce_3yr', 'roce_5yr', 'roce_7yr', 'roce_10yr',
@@ -482,7 +481,10 @@ function renderTable(tableId, data) {
     G.rank = $('#' + tableId).dataTable({bPaginate: false, data: tmp, info: false,
         order: [[sort_order[0], sort_order[1]]],
         rowCallback: function(row, d, i) {
-            $(row).css('color', d[0]>tmp.length/2? 'Red': 'Green')
+            if(d[0] <= buy_end_index)
+                $(row).css('color', 'Green')
+            if(d[0] > sell_begin_index)
+                $(row).css('color', 'Red')
 	}})
 }
 </script>
