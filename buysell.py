@@ -20,11 +20,11 @@ def main():
     data = r['data']
     stock_codes = r['symbol']
 
-    buy_list = [(s['rank'], s) for s in data if s['rank'] <= len(data)/4]
+    buy_list = [(s['rank'], s) for s in data if s['rank'] < len(data)/3]
     buy_list = [s for _, s in sorted(buy_list)]
     buy_set = set([stock_codes[b['name'].replace('.', '')] for b in buy_list])
 
-    hold_list = [(s['rank'], s) for s in data if s['rank'] < len(data)*3/4]
+    hold_list = [(s['rank'], s) for s in data if s['rank'] < len(data)*2/3]
     hold_list = [s for _, s in sorted(hold_list)]
     hold_set = set([stock_codes[s['name'].replace('.', '')] for s in hold_list])
 
