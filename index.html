@@ -416,7 +416,7 @@ function renderTable(tableId, data) {
     }
 
     let buy_end_index = Math.floor(data.length/3);
-    let sell_begin_index = Math.floor(data.length*2/3);
+    let sell_begin_index = data.length - buy_end_index;
     let data_green = data.slice(0, buy_end_index);
     let data_hold = data.slice(buy_end_index, sell_begin_index)
     let data_red = data.slice(sell_begin_index, data.length);
