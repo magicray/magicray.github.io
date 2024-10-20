@@ -13,7 +13,6 @@
         <p id="timestamp" class="text-center"></p>
         <div id="head" class="row">
         <div class="col"></div>
-        <input id="count" type="text" class="col" placeholder="Max Rank" style="text-align: center">
         <input id="filter" type="text" class="col" placeholder="Search" style="text-align: center">
         <input id="amount" type="text" class="col" placeholder="Amount" style="text-align: center">
         <div class="col"></div>
@@ -304,17 +303,21 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
     })
 })
 
-function format_data(data, count, amount) {
+function format_data(data, amount) {
     const result = []
+
+    count = data.length
+    buy_end_index = Math.floor(data.length/3)
 
     for(let i=0; i<count; i++) {
         const d = data[i]
         const cmp = d['cmp_rs']
-        const qty = amount? Math.floor(amount/(count*cmp)): ''
+        const qty = amount? 3*Math.floor(amount/(count*cmp)): ''
 
         const name = d['name'].replaceAll('.', '')
         const name_html = '<div class="text-nowrap">' + name +
-                          '<small> - ' + cmp + (amount > 0? ' * ' + qty: '') + 
+                          '<small> - ' + cmp +
+                          ((amount>0) && (i<buy_end_index)? ' * ' + qty: '') + 
                           '</small></div>'
 
         result.push([
@@ -378,7 +381,6 @@ function format_data(data, count, amount) {
     return result
 }
 
-$('#count').keyup(function(e) {render()})
 $('#amount').keyup(function(e) {render()})
 $('#filter').keyup(function(e) {G.rank.fnFilter(this.value)})
 $(window).on('hashchange', hashchange)
@@ -398,9 +400,7 @@ function hashchange(e) {
 }
 
 function render() {
-    let count = $('#count').val()
-    count = Math.min(G.data['data'].length, count? count: G.data['data'].length)
-    renderTable('rank', format_data(G.data['data'], count, $('#amount').val()))
+    renderTable('rank', format_data(G.data['data'], $('#amount').val()))
     G.rank.fnFilter($('#filter').val())
     $('.dataTables_filter').hide()
 }
