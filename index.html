@@ -14,7 +14,7 @@
         <div id="head" class="row">
         <div class="col"></div>
         <input id="filter" type="text" class="col" placeholder="Search" style="text-align: center">
-        <input id="amount" type="text" class="col" placeholder="Value in Lacs" style="text-align: center">
+        <input id="amount" type="text" class="col" placeholder="Value in Crores" style="text-align: center">
         <div class="col"></div>
         </div>
         <table id="sold" class="table compact table-responsive table-striped table-bordered" style="white-space: nowrap">
@@ -400,7 +400,7 @@ function hashchange(e) {
 }
 
 function render() {
-    renderTable('rank', format_data(G.data['data'], $('#amount').val()*10**5))
+    renderTable('rank', format_data(G.data['data'], $('#amount').val()*10**7))
     G.rank.fnFilter($('#filter').val())
     $('.dataTables_filter').hide()
 }
