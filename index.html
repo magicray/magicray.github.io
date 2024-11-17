@@ -15,6 +15,7 @@
         <div class="col"></div>
         <input id="filter" type="text" class="col" placeholder="Search" style="text-align: center">
         <input id="amount" type="text" class="col" placeholder="Value in Crores" style="text-align: center">
+        <input id="stock_count" type="text" class="col" placeholder="Stock Count" style="text-align: center">
         <div class="col"></div>
         </div>
         <table id="sold" class="table compact table-responsive table-striped table-bordered" style="white-space: nowrap">
@@ -84,7 +85,7 @@
                 <th id="po_green"></th>
                 <th id="evebitda_green"></th>
                 </tr><tr>
-                <th colspan=3 id="group_hold">Hold</th>
+                <th colspan=3 id="group_all">All</th>
                 <th id="ev_black"></th>
                 <th id="mcap_black"></th>
                 <th id="net_worth_black"></th>
@@ -303,21 +304,24 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
     })
 })
 
-function format_data(data, amount) {
+function format_data(data, amount, stock_count) {
     const result = []
 
     count = data.length
-    buy_end_index = Math.floor(data.length/3)
+    buy_end_index = Math.floor(data.length/2)
+
+    if(stock_count == '')
+        stock_count = buy_end_index
 
     for(let i=0; i<count; i++) {
         const d = data[i]
         const cmp = d['cmp_rs']
-        const qty = amount? 3*Math.floor(amount/(count*cmp)): ''
+        const qty = amount? Math.ceil(amount/(stock_count*cmp)): ''
 
         const name = d['name'].replaceAll('.', '')
         const name_html = '<div class="text-nowrap">' + name +
                           '<small> - ' + cmp +
-                          ((amount>0) && (i<buy_end_index)? ' * ' + qty: '') + 
+                          ((amount>0) && (i<stock_count)? ' * ' + qty: '') +
                           '</small></div>'
 
         result.push([
@@ -382,6 +386,7 @@ function format_data(data, amount) {
 }
 
 $('#amount').keyup(function(e) {render()})
+$('#stock_count').keyup(function(e) {render()})
 $('#filter').keyup(function(e) {G.rank.fnFilter(this.value)})
 $(window).on('hashchange', hashchange)
 
@@ -400,7 +405,9 @@ function hashchange(e) {
 }
 
 function render() {
-    renderTable('rank', format_data(G.data['data'], $('#amount').val()*10**7))
+    renderTable('rank', format_data(G.data['data'],
+                                    $('#amount').val()*10**7,
+                                    $('#stock_count').val()))
     G.rank.fnFilter($('#filter').val())
     $('.dataTables_filter').hide()
 }
@@ -415,19 +422,17 @@ function renderTable(tableId, data) {
         }
     }
 
-    let buy_end_index = Math.floor(data.length/3);
-    let sell_begin_index = data.length - buy_end_index;
-    let data_green = data.slice(0, buy_end_index);
-    let data_hold = data.slice(buy_end_index, sell_begin_index)
-    let data_red = data.slice(sell_begin_index, data.length);
+    let top_half = Math.floor(data.length/2);
+    let data_green = data.slice(0, top_half);
+    let data_red = data.slice(top_half, data.length);
 
     $("#group_buy").html("Buy (top " + data_green.length + ")");
-    $("#group_hold").html("Hold (" + data_hold.length + ")");
+    $("#group_all").html("All (" + data.length + ")");
     $("#group_sell").html("Sell (bottom " + data_red.length + ")");
 
     $("#group_buy").css("color", "green");
     $("#group_buy").css("font-weight", "normal");
-    $("#group_hold").css("font-weight", "normal");
+    $("#group_all").css("font-weight", "normal");
     $("#group_sell").css("color", "red");
     $("#group_sell").css("font-weight", "normal");
 
@@ -481,9 +486,9 @@ function renderTable(tableId, data) {
     G.rank = $('#' + tableId).dataTable({bPaginate: false, data: tmp, info: false,
         order: [[sort_order[0], sort_order[1]]],
         rowCallback: function(row, d, i) {
-            if(d[0] <= buy_end_index)
+            if(d[0] <= top_half)
                 $(row).css('color', 'Green')
-            if(d[0] > sell_begin_index)
+            if(d[0] > top_half)
                 $(row).css('color', 'Red')
 	}})
 }
