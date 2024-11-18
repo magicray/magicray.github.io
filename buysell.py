@@ -20,7 +20,8 @@ def main():
     data = r['data']
     stock_codes = r['symbol']
 
-    buy_list = [(s['rank'], s) for s in data if s['rank'] < ARGS.count]
+    stock_count = min(50, len(data)//2)
+    buy_list = [(s['rank'], s) for s in data if s['rank'] < stock_count]
     buy_list = [s for _, s in sorted(buy_list)]
     buy_set = set([stock_codes[b['name'].replace('.', '')] for b in buy_list])
 
@@ -32,7 +33,7 @@ def main():
     existing_set = set(portfolio.keys())
     print('Sell : {}'.format(sorted(existing_set - hold_set)))
 
-    minimum_value = ARGS.amount / ARGS.count
+    minimum_value = ARGS.amount / stock_count
     low_threshold = 1.0
     high_threshold = 1.0
 
@@ -52,7 +53,6 @@ if __name__ == '__main__':
     ARGS = argparse.ArgumentParser()
     ARGS.add_argument('portfolio', help='Portfolio file from icicidirect')
     ARGS.add_argument('amount', type=float, help='Amount in crores')
-    ARGS.add_argument('count', type=int, help='Stocks to buy')
     ARGS = ARGS.parse_args()
     ARGS.amount *= 10000000
     main()

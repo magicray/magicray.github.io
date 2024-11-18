@@ -15,7 +15,6 @@
         <div class="col"></div>
         <input id="filter" type="text" class="col" placeholder="Search" style="text-align: center">
         <input id="amount" type="text" class="col" placeholder="Value in Crores" style="text-align: center">
-        <input id="stock_count" type="text" class="col" placeholder="Stock Count" style="text-align: center">
         <div class="col"></div>
         </div>
         <table id="sold" class="table compact table-responsive table-striped table-bordered" style="white-space: nowrap">
@@ -304,14 +303,12 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
     })
 })
 
-function format_data(data, amount, stock_count) {
+function format_data(data, amount) {
     const result = []
 
     count = data.length
     buy_end_index = Math.floor(data.length/2)
-
-    if(stock_count == '')
-        stock_count = buy_end_index
+    stock_count = Math.floor(Math.min(50, data.length/2))
 
     for(let i=0; i<count; i++) {
         const d = data[i]
@@ -405,9 +402,7 @@ function hashchange(e) {
 }
 
 function render() {
-    renderTable('rank', format_data(G.data['data'],
-                                    $('#amount').val()*10**7,
-                                    $('#stock_count').val()))
+    renderTable('rank', format_data(G.data['data'], $('#amount').val()*10**7))
     G.rank.fnFilter($('#filter').val())
     $('.dataTables_filter').hide()
 }
