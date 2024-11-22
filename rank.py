@@ -228,8 +228,8 @@ def main():
     with open('magicrank.json') as fd:
         prev = json.load(fd)
 
-    prev_names = set([s['name'] for s in prev['data'] if s['rank'] <= len(prev['data'])/2])
-    stock_names = set([s['name'] for s in stock_list if s['rank'] < len(stock_list)/2])
+    prev_names = set([s['name'] for s in prev['data'] if s['rank'] <= len(prev['data'])//2])
+    stock_names = set([s['name'] for s in stock_list if s['rank'] <= len(stock_list)//2])
     with open('magicrank.json', 'w') as fd:
         ts = int(time.time())
         sold = prev.get('sold', {})
