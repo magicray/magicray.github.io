@@ -5,11 +5,11 @@ import time
 import requests
 from logging import critical as log
 
-value_screen = ('903587/value', 'kxnrbtnctmddn88gnblfugqba8na2dm5')
-growth_screen = ('879125/growth', 'ooqmgdz9433mvjmn87466wfjv18esapj')
-quality_screen = ('878969/quality', 'g4sza7bo3o9fkwpp0th79fqs9b21c1hm')
-universe_screen = ('290555/universe', 'n6fkpbbkmf7glliy204jpuzwxk758qsn')
-stability_screen = ('1078958/stability', '37vz9md3b25lug79u5uhpik1blmrxhs0')
+value_screen = ('903587/value', 'dvyshx1ty0ixy88xlnjx1nsk7z1uysg3')
+growth_screen = ('879125/growth', 'aawhovzfeuf6ca2ivcskyry5zzwe1py0')
+quality_screen = ('878969/quality', '3socobtql434ezuu2w4ecn2884efr3t1')
+universe_screen = ('290555/universe', 'v0qox2fx8cafzluexu4bakurtn1de4io')
+stability_screen = ('1078958/stability', 'jwzl47hynx7m30aozqki3muqicoojs5d')
 
 
 def download(screen, sessionid):
