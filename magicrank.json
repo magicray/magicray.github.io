@@ -7,8 +7,8 @@
         {
             "10yr_opm": 23.2,
             "5yr_opm": 28.18,
-            "5yrs_return": 49.24,
-            "avg_vol_1wk": 17245980.0,
+            "5yrs_return": 49.73,
+            "avg_vol_1wk": 19519422.0,
             "b_v_rs": 96.95,
             "cmp_bv": 2.31,
             "cmp_rs": 224.3,
@@ -67,13 +67,13 @@
             "sales_var_3yrs": 5.7,
             "sales_var_5yrs": 14.66,
             "sales_var_7yrs": 8.46,
-            "volume": 3868273314.0
+            "volume": 4378206354.6
         },
         {
             "10yr_opm": 57.12,
             "5yr_opm": 58.49,
-            "5yrs_return": 14.48,
-            "avg_vol_1wk": 545278.0,
+            "5yrs_return": 15.62,
+            "avg_vol_1wk": 476079.0,
             "b_v_rs": 173.72,
             "cmp_bv": 1.05,
             "cmp_rs": 181.9,
@@ -132,13 +132,13 @@
             "sales_var_3yrs": 64.76,
             "sales_var_5yrs": 67.73,
             "sales_var_7yrs": 135.06,
-            "volume": 99186068.2
+            "volume": 86598770.10000001
         },
         {
             "10yr_opm": 12.24,
             "5yr_opm": 13.54,
-            "5yrs_return": 57.22,
-            "avg_vol_1wk": 6964.0,
+            "5yrs_return": 57.26,
+            "avg_vol_1wk": 7278.0,
             "b_v_rs": 2320.49,
             "cmp_bv": 5.73,
             "cmp_rs": 13303.0,
@@ -197,13 +197,13 @@
             "sales_var_3yrs": 20.69,
             "sales_var_5yrs": 17.77,
             "sales_var_7yrs": 14.43,
-            "volume": 92642092.0
+            "volume": 96819234.0
         },
         {
             "10yr_opm": 50.53,
             "5yr_opm": 54.34,
-            "5yrs_return": 35.52,
-            "avg_vol_1wk": 98545.0,
+            "5yrs_return": 36.0,
+            "avg_vol_1wk": 92608.0,
             "b_v_rs": 666.5,
             "cmp_bv": 2.76,
             "cmp_rs": 1837.4,
@@ -262,13 +262,13 @@
             "sales_var_3yrs": 31.37,
             "sales_var_5yrs": 20.37,
             "sales_var_7yrs": 20.67,
-            "volume": 181066583.0
+            "volume": 170157939.20000002
         },
         {
             "10yr_opm": 92.77,
             "5yr_opm": 94.48,
-            "5yrs_return": 42.97,
-            "avg_vol_1wk": 3102456.0,
+            "5yrs_return": 42.4,
+            "avg_vol_1wk": 3045590.0,
             "b_v_rs": 356.77,
             "cmp_bv": 1.13,
             "cmp_rs": 403.85,
@@ -327,13 +327,13 @@
             "sales_var_3yrs": 11.99,
             "sales_var_5yrs": 11.49,
             "sales_var_7yrs": 11.94,
-            "volume": 1252926855.6000001
+            "volume": 1229961521.5
         },
         {
             "10yr_opm": 92.92,
             "5yr_opm": 94.6,
-            "5yrs_return": 39.96,
-            "avg_vol_1wk": 3861328.0,
+            "5yrs_return": 39.11,
+            "avg_vol_1wk": 4091106.0,
             "b_v_rs": 297.64,
             "cmp_bv": 1.25,
             "cmp_rs": 372.95,
@@ -392,13 +392,13 @@
             "sales_var_3yrs": 12.8,
             "sales_var_5yrs": 13.49,
             "sales_var_7yrs": 13.91,
-            "volume": 1440082277.6
+            "volume": 1525777982.7
         },
         {
             "10yr_opm": 15.61,
             "5yr_opm": 16.48,
-            "5yrs_return": 81.97,
-            "avg_vol_1wk": 271679.0,
+            "5yrs_return": 81.59,
+            "avg_vol_1wk": 277671.0,
             "b_v_rs": 96.59,
             "cmp_bv": 8.43,
             "cmp_rs": 814.05,
@@ -457,13 +457,13 @@
             "sales_var_3yrs": 28.77,
             "sales_var_5yrs": 45.73,
             "sales_var_7yrs": 28.5,
-            "volume": 221160289.95
+            "volume": 226038077.54999998
         },
         {
             "10yr_opm": 14.3,
             "5yr_opm": 13.03,
-            "5yrs_return": 13.47,
-            "avg_vol_1wk": 72741.0,
+            "5yrs_return": 13.41,
+            "avg_vol_1wk": 75955.0,
             "b_v_rs": 296.98,
             "cmp_bv": 4.05,
             "cmp_rs": 1201.9,
@@ -522,13 +522,13 @@
             "sales_var_3yrs": 17.49,
             "sales_var_5yrs": 16.67,
             "sales_var_7yrs": 15.05,
-            "volume": 87427407.9
+            "volume": 91290314.5
         },
         {
             "10yr_opm": 16.41,
             "5yr_opm": 18.01,
-            "5yrs_return": 19.52,
-            "avg_vol_1wk": 101200.0,
+            "5yrs_return": 19.53,
+            "avg_vol_1wk": 109871.0,
             "b_v_rs": 795.85,
             "cmp_bv": 2.71,
             "cmp_rs": 2156.8,
@@ -587,13 +587,13 @@
             "sales_var_3yrs": 16.52,
             "sales_var_5yrs": 26.39,
             "sales_var_7yrs": 22.87,
-            "volume": 218268160.00000003
+            "volume": 236969772.8
         },
         {
             "10yr_opm": 11.53,
             "5yr_opm": 11.32,
-            "5yrs_return": 64.83,
-            "avg_vol_1wk": 41012.0,
+            "5yrs_return": 65.43,
+            "avg_vol_1wk": 38718.0,
             "b_v_rs": 187.92,
             "cmp_bv": 5.62,
             "cmp_rs": 1056.0,
@@ -652,13 +652,13 @@
             "sales_var_3yrs": 7.94,
             "sales_var_5yrs": 26.87,
             "sales_var_7yrs": 13.69,
-            "volume": 43308672.0
+            "volume": 40886208.0
         },
         {
             "10yr_opm": 14.6,
             "5yr_opm": 14.1,
-            "5yrs_return": 42.97,
-            "avg_vol_1wk": 82521.0,
+            "5yrs_return": 43.16,
+            "avg_vol_1wk": 83557.0,
             "b_v_rs": 397.11,
             "cmp_bv": 1.6,
             "cmp_rs": 635.9,
@@ -717,13 +717,13 @@
             "sales_var_3yrs": 17.3,
             "sales_var_5yrs": 13.9,
             "sales_var_7yrs": 15.71,
-            "volume": 52475103.9
+            "volume": 53133896.3
         },
         {
             "10yr_opm": 18.08,
             "5yr_opm": 20.42,
-            "5yrs_return": 78.19,
-            "avg_vol_1wk": 2934222.0,
+            "5yrs_return": 76.47,
+            "avg_vol_1wk": 3486960.0,
             "b_v_rs": 42.04,
             "cmp_bv": 8.02,
             "cmp_rs": 337.15,
@@ -782,13 +782,13 @@
             "sales_var_3yrs": 37.17,
             "sales_var_5yrs": 22.78,
             "sales_var_7yrs": 15.73,
-            "volume": 989272947.3
+            "volume": 1175628564.0
         },
         {
             "10yr_opm": 71.4,
             "5yr_opm": 71.52,
-            "5yrs_return": 38.53,
-            "avg_vol_1wk": 4625591.0,
+            "5yrs_return": 37.97,
+            "avg_vol_1wk": 3002914.0,
             "b_v_rs": 300.31,
             "cmp_bv": 2.21,
             "cmp_rs": 665.05,
@@ -847,13 +847,13 @@
             "sales_var_3yrs": 31.66,
             "sales_var_5yrs": 21.55,
             "sales_var_7yrs": 18.36,
-            "volume": 3076249294.5499997
+            "volume": 1997087955.6999998
         },
         {
             "10yr_opm": 14.35,
             "5yr_opm": 17.6,
-            "5yrs_return": 58.71,
-            "avg_vol_1wk": 190403.0,
+            "5yrs_return": 59.25,
+            "avg_vol_1wk": 158660.0,
             "b_v_rs": 494.04,
             "cmp_bv": 3.03,
             "cmp_rs": 1497.0,
@@ -912,13 +912,13 @@
             "sales_var_3yrs": 10.27,
             "sales_var_5yrs": 17.0,
             "sales_var_7yrs": 8.0,
-            "volume": 285033291.0
+            "volume": 237514020.0
         },
         {
             "10yr_opm": 10.74,
             "5yr_opm": 8.98,
-            "5yrs_return": 4.82,
-            "avg_vol_1wk": 221032.0,
+            "5yrs_return": 4.75,
+            "avg_vol_1wk": 220366.0,
             "b_v_rs": 205.58,
             "cmp_bv": 3.14,
             "cmp_rs": 644.85,
@@ -977,13 +977,13 @@
             "sales_var_3yrs": 3.68,
             "sales_var_5yrs": 6.4,
             "sales_var_7yrs": 7.45,
-            "volume": 142532485.20000002
+            "volume": 142103015.1
         },
         {
             "10yr_opm": 11.98,
             "5yr_opm": 12.37,
-            "5yrs_return": 34.9,
-            "avg_vol_1wk": 5388903.0,
+            "5yrs_return": 34.75,
+            "avg_vol_1wk": 5808150.0,
             "b_v_rs": 550.5,
             "cmp_bv": 1.41,
             "cmp_rs": 773.95,
@@ -1042,13 +1042,13 @@
             "sales_var_3yrs": 6.93,
             "sales_var_5yrs": 15.08,
             "sales_var_7yrs": 10.96,
-            "volume": 4170741476.8500004
+            "volume": 4495217692.5
         },
         {
             "10yr_opm": 17.12,
             "5yr_opm": 18.18,
-            "5yrs_return": 57.87,
-            "avg_vol_1wk": 57431.0,
+            "5yrs_return": 57.46,
+            "avg_vol_1wk": 57885.0,
             "b_v_rs": 543.4,
             "cmp_bv": 4.92,
             "cmp_rs": 2671.8,
@@ -1107,13 +1107,13 @@
             "sales_var_3yrs": 19.8,
             "sales_var_5yrs": 17.18,
             "sales_var_7yrs": 10.82,
-            "volume": 153444145.8
+            "volume": 154657143.0
         },
         {
             "10yr_opm": 76.6,
             "5yr_opm": 77.15,
-            "5yrs_return": 2.33,
-            "avg_vol_1wk": 83450.0,
+            "5yrs_return": 2.42,
+            "avg_vol_1wk": 78014.0,
             "b_v_rs": 143.78,
             "cmp_bv": 2.12,
             "cmp_rs": 304.8,
@@ -1172,13 +1172,13 @@
             "sales_var_3yrs": 32.25,
             "sales_var_5yrs": 17.61,
             "sales_var_7yrs": 18.85,
-            "volume": 25435560.0
+            "volume": 23778667.2
         },
         {
             "10yr_opm": 15.22,
             "5yr_opm": 16.94,
-            "5yrs_return": 42.74,
-            "avg_vol_1wk": 35435.0,
+            "5yrs_return": 42.9,
+            "avg_vol_1wk": 35208.0,
             "b_v_rs": 597.16,
             "cmp_bv": 2.34,
             "cmp_rs": 1395.1,
@@ -1237,13 +1237,13 @@
             "sales_var_3yrs": 7.04,
             "sales_var_5yrs": 10.82,
             "sales_var_7yrs": 8.92,
-            "volume": 49435368.5
+            "volume": 49118680.8
         },
         {
             "10yr_opm": 22.01,
             "5yr_opm": 24.3,
-            "5yrs_return": 4.11,
-            "avg_vol_1wk": 1925382.0,
+            "5yrs_return": 4.3,
+            "avg_vol_1wk": 1924162.0,
             "b_v_rs": 402.05,
             "cmp_bv": 3.14,
             "cmp_rs": 1264.4,
@@ -1302,13 +1302,13 @@
             "sales_var_3yrs": 14.86,
             "sales_var_5yrs": 13.26,
             "sales_var_7yrs": 12.54,
-            "volume": 2434453000.8
+            "volume": 2432910432.8
         },
         {
             "10yr_opm": 92.08,
             "5yr_opm": 91.52,
-            "5yrs_return": 11.23,
-            "avg_vol_1wk": 232049.0,
+            "5yrs_return": 11.02,
+            "avg_vol_1wk": 159282.0,
             "b_v_rs": 380.57,
             "cmp_bv": 2.09,
             "cmp_rs": 793.6,
@@ -1367,13 +1367,13 @@
             "sales_var_3yrs": 24.96,
             "sales_var_5yrs": 13.82,
             "sales_var_7yrs": 14.34,
-            "volume": 184154086.4
+            "volume": 126406195.2
         },
         {
             "10yr_opm": 17.81,
             "5yr_opm": 21.85,
-            "5yrs_return": 62.91,
-            "avg_vol_1wk": 58495.0,
+            "5yrs_return": 64.14,
+            "avg_vol_1wk": 57082.0,
             "b_v_rs": 324.24,
             "cmp_bv": 2.7,
             "cmp_rs": 874.5,
@@ -1432,13 +1432,13 @@
             "sales_var_3yrs": 20.94,
             "sales_var_5yrs": 6.35,
             "sales_var_7yrs": 1.69,
-            "volume": 51153877.5
+            "volume": 49918209.0
         },
         {
             "10yr_opm": 67.31,
             "5yr_opm": 67.34,
-            "5yrs_return": 11.42,
-            "avg_vol_1wk": 1151610.0,
+            "5yrs_return": 11.46,
+            "avg_vol_1wk": 1197118.0,
             "b_v_rs": 181.07,
             "cmp_bv": 0.72,
             "cmp_rs": 130.15,
@@ -1497,13 +1497,13 @@
             "sales_var_3yrs": 22.58,
             "sales_var_5yrs": 12.84,
             "sales_var_7yrs": 15.13,
-            "volume": 149882041.5
+            "volume": 155804907.70000002
         },
         {
             "10yr_opm": 49.95,
             "5yr_opm": 55.66,
-            "5yrs_return": 39.35,
-            "avg_vol_1wk": 10011291.0,
+            "5yrs_return": 38.84,
+            "avg_vol_1wk": 9579484.0,
             "b_v_rs": 37.32,
             "cmp_bv": 1.54,
             "cmp_rs": 57.53,
@@ -1562,13 +1562,13 @@
             "sales_var_3yrs": 24.21,
             "sales_var_5yrs": 16.76,
             "sales_var_7yrs": 12.27,
-            "volume": 575949571.23
+            "volume": 551107714.52
         },
         {
             "10yr_opm": 87.22,
             "5yr_opm": 86.07,
-            "5yrs_return": 14.79,
-            "avg_vol_1wk": 339554.0,
+            "5yrs_return": 14.68,
+            "avg_vol_1wk": 403072.0,
             "b_v_rs": 547.79,
             "cmp_bv": 0.72,
             "cmp_rs": 393.5,
@@ -1627,13 +1627,13 @@
             "sales_var_3yrs": 9.93,
             "sales_var_5yrs": 4.95,
             "sales_var_7yrs": 6.44,
-            "volume": 133614499.0
+            "volume": 158608832.0
         },
         {
             "10yr_opm": 14.5,
             "5yr_opm": 13.74,
-            "5yrs_return": 4.76,
-            "avg_vol_1wk": 59022.0,
+            "5yrs_return": 5.84,
+            "avg_vol_1wk": 65544.0,
             "b_v_rs": 227.92,
             "cmp_bv": 2.19,
             "cmp_rs": 499.85,
@@ -1692,13 +1692,13 @@
             "sales_var_3yrs": 10.27,
             "sales_var_5yrs": 10.65,
             "sales_var_7yrs": 4.47,
-            "volume": 29502146.700000003
+            "volume": 32762168.400000002
         },
         {
             "10yr_opm": 76.33,
             "5yr_opm": 76.59,
-            "5yrs_return": 22.63,
-            "avg_vol_1wk": 435601.0,
+            "5yrs_return": 22.25,
+            "avg_vol_1wk": 436911.0,
             "b_v_rs": 731.49,
             "cmp_bv": 4.32,
             "cmp_rs": 3156.9,
@@ -1757,13 +1757,13 @@
             "sales_var_3yrs": 18.38,
             "sales_var_5yrs": 15.86,
             "sales_var_7yrs": 17.05,
-            "volume": 1375148796.9
+            "volume": 1379284335.9
         },
         {
             "10yr_opm": 72.57,
             "5yr_opm": 75.91,
-            "5yrs_return": 13.68,
-            "avg_vol_1wk": 10578873.0,
+            "5yrs_return": 14.15,
+            "avg_vol_1wk": 11603520.0,
             "b_v_rs": 17.02,
             "cmp_bv": 2.32,
             "cmp_rs": 39.44,
@@ -1822,13 +1822,13 @@
             "sales_var_3yrs": 24.95,
             "sales_var_5yrs": 15.33,
             "sales_var_7yrs": 14.18,
-            "volume": 417230751.12
+            "volume": 457642828.79999995
         },
         {
             "10yr_opm": 91.1,
             "5yr_opm": 89.53,
-            "5yrs_return": 14.55,
-            "avg_vol_1wk": 1399971.0,
+            "5yrs_return": 14.69,
+            "avg_vol_1wk": 1580778.0,
             "b_v_rs": 660.87,
             "cmp_bv": 0.86,
             "cmp_rs": 568.45,
@@ -1887,13 +1887,13 @@
             "sales_var_3yrs": 12.06,
             "sales_var_5yrs": 7.33,
             "sales_var_7yrs": 9.52,
-            "volume": 795813514.95
+            "volume": 898593254.1
         },
         {
             "10yr_opm": 14.08,
             "5yr_opm": 15.72,
-            "5yrs_return": 77.99,
-            "avg_vol_1wk": 1489440.0,
+            "5yrs_return": 78.17,
+            "avg_vol_1wk": 1511478.0,
             "b_v_rs": 91.08,
             "cmp_bv": 8.83,
             "cmp_rs": 803.95,
@@ -1952,13 +1952,13 @@
             "sales_var_3yrs": 17.95,
             "sales_var_5yrs": 17.7,
             "sales_var_7yrs": 13.36,
-            "volume": 1197435288.0
+            "volume": 1215152738.1000001
         },
         {
             "10yr_opm": 34.26,
             "5yr_opm": 32.33,
-            "5yrs_return": 36.48,
-            "avg_vol_1wk": 4751982.0,
+            "5yrs_return": 36.52,
+            "avg_vol_1wk": 4583112.0,
             "b_v_rs": 116.57,
             "cmp_bv": 2.52,
             "cmp_rs": 293.35,
@@ -2017,13 +2017,13 @@
             "sales_var_3yrs": 22.26,
             "sales_var_5yrs": 19.47,
             "sales_var_7yrs": 19.72,
-            "volume": 1393993919.7
+            "volume": 1344455905.2
         },
         {
             "10yr_opm": 61.09,
             "5yr_opm": 60.45,
-            "5yrs_return": 27.42,
-            "avg_vol_1wk": 992380.0,
+            "5yrs_return": 27.25,
+            "avg_vol_1wk": 896002.0,
             "b_v_rs": 52.16,
             "cmp_bv": 3.64,
             "cmp_rs": 189.76,
@@ -2082,13 +2082,13 @@
             "sales_var_3yrs": 49.64,
             "sales_var_5yrs": 35.28,
             "sales_var_7yrs": 37.44,
-            "volume": 188314028.79999998
+            "volume": 170025339.51999998
         },
         {
             "10yr_opm": 18.43,
             "5yr_opm": 18.02,
-            "5yrs_return": -3.56,
-            "avg_vol_1wk": 289748.0,
+            "5yrs_return": -3.5,
+            "avg_vol_1wk": 300264.0,
             "b_v_rs": 73.69,
             "cmp_bv": 2.88,
             "cmp_rs": 212.27,
@@ -2147,13 +2147,13 @@
             "sales_var_3yrs": 7.07,
             "sales_var_5yrs": 8.82,
             "sales_var_7yrs": 8.22,
-            "volume": 61504807.96
+            "volume": 63737039.28
         },
         {
             "10yr_opm": 58.34,
             "5yr_opm": 58.63,
-            "5yrs_return": 55.67,
-            "avg_vol_1wk": 4277831.0,
+            "5yrs_return": 55.45,
+            "avg_vol_1wk": 4067604.0,
             "b_v_rs": 123.48,
             "cmp_bv": 1.84,
             "cmp_rs": 226.59,
@@ -2212,13 +2212,13 @@
             "sales_var_3yrs": 20.09,
             "sales_var_5yrs": 10.07,
             "sales_var_7yrs": 7.86,
-            "volume": 969313726.29
+            "volume": 921678390.36
         },
         {
             "10yr_opm": 11.15,
             "5yr_opm": 11.24,
-            "5yrs_return": 51.73,
-            "avg_vol_1wk": 838977.0,
+            "5yrs_return": 51.94,
+            "avg_vol_1wk": 873736.0,
             "b_v_rs": 110.98,
             "cmp_bv": 3.62,
             "cmp_rs": 402.05,
@@ -2277,13 +2277,13 @@
             "sales_var_3yrs": 16.95,
             "sales_var_5yrs": 15.99,
             "sales_var_7yrs": 13.34,
-            "volume": 337310702.85
+            "volume": 351285558.8
         },
         {
             "10yr_opm": 13.04,
             "5yr_opm": 12.12,
-            "5yrs_return": 30.07,
-            "avg_vol_1wk": 9502126.0,
+            "5yrs_return": 30.32,
+            "avg_vol_1wk": 8781110.0,
             "b_v_rs": 20.83,
             "cmp_bv": 6.6,
             "cmp_rs": 137.55,
@@ -2342,13 +2342,13 @@
             "sales_var_3yrs": 17.29,
             "sales_var_5yrs": 14.04,
             "sales_var_7yrs": 5.23,
-            "volume": 1307017431.3000002
+            "volume": 1207841680.5
         },
         {
             "10yr_opm": 12.31,
             "5yr_opm": 12.84,
-            "5yrs_return": 49.57,
-            "avg_vol_1wk": 73958.0,
+            "5yrs_return": 49.59,
+            "avg_vol_1wk": 77298.0,
             "b_v_rs": 394.45,
             "cmp_bv": 4.92,
             "cmp_rs": 1942.4,
@@ -2407,13 +2407,13 @@
             "sales_var_3yrs": 15.5,
             "sales_var_5yrs": 11.92,
             "sales_var_7yrs": 10.04,
-            "volume": 143656019.20000002
+            "volume": 150143635.20000002
         },
         {
             "10yr_opm": 56.56,
             "5yr_opm": 62.59,
-            "5yrs_return": 48.47,
-            "avg_vol_1wk": 2607988.0,
+            "5yrs_return": 48.67,
+            "avg_vol_1wk": 2739272.0,
             "b_v_rs": 129.03,
             "cmp_bv": 0.83,
             "cmp_rs": 107.51,
@@ -2472,13 +2472,13 @@
             "sales_var_3yrs": 16.1,
             "sales_var_5yrs": 8.23,
             "sales_var_7yrs": 9.55,
-            "volume": 280384789.88
+            "volume": 294499132.72
         },
         {
             "10yr_opm": 73.88,
             "5yr_opm": 74.0,
-            "5yrs_return": 1.77,
-            "avg_vol_1wk": 91356.0,
+            "5yrs_return": 2.3,
+            "avg_vol_1wk": 90568.0,
             "b_v_rs": 550.93,
             "cmp_bv": 2.96,
             "cmp_rs": 1631.7,
@@ -2537,13 +2537,13 @@
             "sales_var_3yrs": 21.76,
             "sales_var_5yrs": 21.15,
             "sales_var_7yrs": 25.01,
-            "volume": 149065585.20000002
+            "volume": 147779805.6
         },
         {
             "10yr_opm": 24.3,
             "5yr_opm": 25.73,
-            "5yrs_return": 18.23,
-            "avg_vol_1wk": 1292791.0,
+            "5yrs_return": 18.2,
+            "avg_vol_1wk": 1519856.0,
             "b_v_rs": 238.05,
             "cmp_bv": 4.17,
             "cmp_rs": 993.45,
@@ -2602,13 +2602,13 @@
             "sales_var_3yrs": 15.43,
             "sales_var_5yrs": 10.27,
             "sales_var_7yrs": 10.03,
-            "volume": 1284323218.95
+            "volume": 1509900943.2
         },
         {
             "10yr_opm": 35.06,
             "5yr_opm": 35.45,
-            "5yrs_return": 27.85,
-            "avg_vol_1wk": 630515.0,
+            "5yrs_return": 26.86,
+            "avg_vol_1wk": 572092.0,
             "b_v_rs": 453.42,
             "cmp_bv": 4.42,
             "cmp_rs": 2004.3,
@@ -2667,13 +2667,13 @@
             "sales_var_3yrs": 25.07,
             "sales_var_5yrs": 19.75,
             "sales_var_7yrs": 22.21,
-            "volume": 1263741214.5
+            "volume": 1146643995.6
         },
         {
             "10yr_opm": 14.66,
             "5yr_opm": 15.81,
-            "5yrs_return": 28.29,
-            "avg_vol_1wk": 145236.0,
+            "5yrs_return": 28.52,
+            "avg_vol_1wk": 148537.0,
             "b_v_rs": 62.01,
             "cmp_bv": 4.38,
             "cmp_rs": 271.7,
@@ -2732,13 +2732,13 @@
             "sales_var_3yrs": 13.47,
             "sales_var_5yrs": 8.33,
             "sales_var_7yrs": 7.36,
-            "volume": 39460621.199999996
+            "volume": 40357502.9
         },
         {
             "10yr_opm": 17.87,
             "5yr_opm": 18.61,
-            "5yrs_return": 14.85,
-            "avg_vol_1wk": 12159.0,
+            "5yrs_return": 15.14,
+            "avg_vol_1wk": 11778.0,
             "b_v_rs": 307.76,
             "cmp_bv": 4.8,
             "cmp_rs": 1478.3,
@@ -2797,13 +2797,13 @@
             "sales_var_3yrs": 11.26,
             "sales_var_5yrs": 12.69,
             "sales_var_7yrs": 11.29,
-            "volume": 17974649.7
+            "volume": 17411417.4
         },
         {
             "10yr_opm": 7.99,
             "5yr_opm": 8.39,
-            "5yrs_return": 96.33,
-            "avg_vol_1wk": 34587.0,
+            "5yrs_return": 95.69,
+            "avg_vol_1wk": 36504.0,
             "b_v_rs": 1121.17,
             "cmp_bv": 7.48,
             "cmp_rs": 8385.0,
@@ -2862,13 +2862,13 @@
             "sales_var_3yrs": 25.87,
             "sales_var_5yrs": 20.14,
             "sales_var_7yrs": 18.04,
-            "volume": 290011995.0
+            "volume": 306086040.0
         },
         {
             "10yr_opm": 14.28,
             "5yr_opm": 14.76,
-            "5yrs_return": 60.32,
-            "avg_vol_1wk": 542022.0,
+            "5yrs_return": 60.71,
+            "avg_vol_1wk": 583619.0,
             "b_v_rs": 60.78,
             "cmp_bv": 5.08,
             "cmp_rs": 308.75,
@@ -2927,13 +2927,13 @@
             "sales_var_3yrs": 52.76,
             "sales_var_5yrs": 18.16,
             "sales_var_7yrs": 16.57,
-            "volume": 167349292.5
+            "volume": 180192366.25
         },
         {
             "10yr_opm": 71.63,
             "5yr_opm": 70.99,
-            "5yrs_return": 46.08,
-            "avg_vol_1wk": 1328995.0,
+            "5yrs_return": 45.26,
+            "avg_vol_1wk": 1186784.0,
             "b_v_rs": 281.45,
             "cmp_bv": 5.74,
             "cmp_rs": 1614.2,
@@ -2992,13 +2992,13 @@
             "sales_var_3yrs": 36.57,
             "sales_var_5yrs": 24.29,
             "sales_var_7yrs": 24.55,
-            "volume": 2145263729.0
+            "volume": 1915706732.8
         },
         {
             "10yr_opm": 32.03,
             "5yr_opm": 31.84,
-            "5yrs_return": 29.79,
-            "avg_vol_1wk": 59387.0,
+            "5yrs_return": 30.28,
+            "avg_vol_1wk": 61489.0,
             "b_v_rs": 375.01,
             "cmp_bv": 5.48,
             "cmp_rs": 2056.8,
@@ -3057,13 +3057,13 @@
             "sales_var_3yrs": 15.14,
             "sales_var_5yrs": 17.55,
             "sales_var_7yrs": 20.03,
-            "volume": 122147181.60000001
+            "volume": 126470575.20000002
         },
         {
             "10yr_opm": 7.62,
             "5yr_opm": 7.45,
-            "5yrs_return": 102.55,
-            "avg_vol_1wk": 272354.0,
+            "5yrs_return": 101.96,
+            "avg_vol_1wk": 252678.0,
             "b_v_rs": 400.45,
             "cmp_bv": 3.17,
             "cmp_rs": 1270.0,
@@ -3122,13 +3122,13 @@
             "sales_var_3yrs": 14.63,
             "sales_var_5yrs": 19.2,
             "sales_var_7yrs": 17.49,
-            "volume": 345889580.0
+            "volume": 320901060.0
         },
         {
             "10yr_opm": 14.23,
             "5yr_opm": 14.28,
-            "5yrs_return": 4.38,
-            "avg_vol_1wk": 223712.0,
+            "5yrs_return": 4.0,
+            "avg_vol_1wk": 176001.0,
             "b_v_rs": 988.08,
             "cmp_bv": 1.91,
             "cmp_rs": 1885.6,
@@ -3187,13 +3187,13 @@
             "sales_var_3yrs": 10.45,
             "sales_var_5yrs": 6.81,
             "sales_var_7yrs": 7.3,
-            "volume": 421831347.2
+            "volume": 331867485.59999996
         },
         {
             "10yr_opm": 56.61,
             "5yr_opm": 55.38,
-            "5yrs_return": 15.42,
-            "avg_vol_1wk": 2392468.0,
+            "5yrs_return": 15.68,
+            "avg_vol_1wk": 2354952.0,
             "b_v_rs": 230.57,
             "cmp_bv": 3.31,
             "cmp_rs": 763.25,
@@ -3252,13 +3252,13 @@
             "sales_var_3yrs": 39.47,
             "sales_var_5yrs": 30.25,
             "sales_var_7yrs": 37.07,
-            "volume": 1826051201.0
+            "volume": 1797417114.0
         },
         {
             "10yr_opm": 9.09,
             "5yr_opm": 8.86,
-            "5yrs_return": 75.02,
-            "avg_vol_1wk": 436202.0,
+            "5yrs_return": 74.67,
+            "avg_vol_1wk": 332340.0,
             "b_v_rs": 106.72,
             "cmp_bv": 7.66,
             "cmp_rs": 817.9,
@@ -3317,13 +3317,13 @@
             "sales_var_3yrs": 33.67,
             "sales_var_5yrs": 26.03,
             "sales_var_7yrs": 23.63,
-            "volume": 356769615.8
+            "volume": 271820886.0
         },
         {
             "10yr_opm": 60.7,
             "5yr_opm": 59.04,
-            "5yrs_return": 17.94,
-            "avg_vol_1wk": 2532725.0,
+            "5yrs_return": 17.48,
+            "avg_vol_1wk": 2365266.0,
             "b_v_rs": 154.89,
             "cmp_bv": 1.82,
             "cmp_rs": 282.1,
@@ -3382,13 +3382,13 @@
             "sales_var_3yrs": 17.49,
             "sales_var_5yrs": 9.07,
             "sales_var_7yrs": 12.92,
-            "volume": 714481722.5
+            "volume": 667241538.6
         },
         {
             "10yr_opm": 26.28,
             "5yr_opm": 24.41,
-            "5yrs_return": 13.34,
-            "avg_vol_1wk": 1107248.0,
+            "5yrs_return": 13.64,
+            "avg_vol_1wk": 1160694.0,
             "b_v_rs": 18.39,
             "cmp_bv": 10.9,
             "cmp_rs": 200.51,
@@ -3447,13 +3447,13 @@
             "sales_var_3yrs": 8.57,
             "sales_var_5yrs": 6.71,
             "sales_var_7yrs": 5.93,
-            "volume": 222014296.48
+            "volume": 232730753.94
         },
         {
             "10yr_opm": 10.63,
             "5yr_opm": 11.76,
-            "5yrs_return": 63.32,
-            "avg_vol_1wk": 180277.0,
+            "5yrs_return": 63.64,
+            "avg_vol_1wk": 172646.0,
             "b_v_rs": 137.13,
             "cmp_bv": 8.48,
             "cmp_rs": 1163.0,
@@ -3512,13 +3512,13 @@
             "sales_var_3yrs": 34.1,
             "sales_var_5yrs": 26.09,
             "sales_var_7yrs": 20.03,
-            "volume": 209662151.0
+            "volume": 200787298.0
         },
         {
             "10yr_opm": 25.19,
             "5yr_opm": 24.82,
-            "5yrs_return": 5.52,
-            "avg_vol_1wk": 5399313.0,
+            "5yrs_return": 5.91,
+            "avg_vol_1wk": 5571862.0,
             "b_v_rs": 228.57,
             "cmp_bv": 6.63,
             "cmp_rs": 1514.9,
@@ -3577,13 +3577,13 @@
             "sales_var_3yrs": 10.25,
             "sales_var_5yrs": 12.41,
             "sales_var_7yrs": 12.71,
-            "volume": 8179419263.700001
+            "volume": 8440813743.8
         },
         {
             "10yr_opm": 12.71,
             "5yr_opm": 14.46,
-            "5yrs_return": 62.25,
-            "avg_vol_1wk": 4330825.0,
+            "5yrs_return": 62.74,
+            "avg_vol_1wk": 5315050.0,
             "b_v_rs": 65.09,
             "cmp_bv": 8.72,
             "cmp_rs": 567.25,
@@ -3642,13 +3642,13 @@
             "sales_var_3yrs": 15.16,
             "sales_var_5yrs": 10.3,
             "sales_var_7yrs": 8.78,
-            "volume": 2456660481.25
+            "volume": 3014962112.5
         },
         {
             "10yr_opm": 27.02,
             "5yr_opm": 26.96,
-            "5yrs_return": 1.39,
-            "avg_vol_1wk": 4538685.0,
+            "5yrs_return": 1.51,
+            "avg_vol_1wk": 5097456.0,
             "b_v_rs": 294.12,
             "cmp_bv": 10.3,
             "cmp_rs": 3028.3,
@@ -3707,13 +3707,13 @@
             "sales_var_3yrs": 10.01,
             "sales_var_5yrs": 10.22,
             "sales_var_7yrs": 10.98,
-            "volume": 13744499785.5
+            "volume": 15436626004.800001
         },
         {
             "10yr_opm": 9.82,
             "5yr_opm": 10.75,
-            "5yrs_return": 39.46,
-            "avg_vol_1wk": 25930.0,
+            "5yrs_return": 38.69,
+            "avg_vol_1wk": 26411.0,
             "b_v_rs": 276.46,
             "cmp_bv": 4.34,
             "cmp_rs": 1199.0,
@@ -3772,13 +3772,13 @@
             "sales_var_3yrs": 11.29,
             "sales_var_5yrs": 10.57,
             "sales_var_7yrs": 9.7,
-            "volume": 31090070.0
+            "volume": 31666789.0
         },
         {
             "10yr_opm": 67.39,
             "5yr_opm": 67.35,
-            "5yrs_return": 25.62,
-            "avg_vol_1wk": 6431695.0,
+            "5yrs_return": 24.87,
+            "avg_vol_1wk": 5645469.0,
             "b_v_rs": 155.6,
             "cmp_bv": 6.58,
             "cmp_rs": 1023.85,
@@ -3837,13 +3837,13 @@
             "sales_var_3yrs": 30.12,
             "sales_var_5yrs": 21.46,
             "sales_var_7yrs": 27.47,
-            "volume": 6585090925.75
+            "volume": 5780113435.650001
         },
         {
             "10yr_opm": 10.55,
             "5yr_opm": 9.54,
-            "5yrs_return": 40.02,
-            "avg_vol_1wk": 67908.0,
+            "5yrs_return": 39.71,
+            "avg_vol_1wk": 72654.0,
             "b_v_rs": 381.4,
             "cmp_bv": 3.28,
             "cmp_rs": 1249.8,
@@ -3902,13 +3902,13 @@
             "sales_var_3yrs": 14.73,
             "sales_var_5yrs": 11.98,
             "sales_var_7yrs": 14.39,
-            "volume": 84871418.39999999
+            "volume": 90802969.2
         },
         {
             "10yr_opm": 8.75,
             "5yr_opm": 8.2,
             "5yrs_return": 72.66,
-            "avg_vol_1wk": 471503.0,
+            "avg_vol_1wk": 491606.0,
             "b_v_rs": 73.99,
             "cmp_bv": 3.27,
             "cmp_rs": 241.71,
@@ -3967,13 +3967,13 @@
             "sales_var_3yrs": 12.51,
             "sales_var_5yrs": 8.9,
             "sales_var_7yrs": 8.97,
-            "volume": 113966990.13000001
+            "volume": 118826086.26
         },
         {
             "10yr_opm": 21.34,
             "5yr_opm": 23.29,
-            "5yrs_return": 14.69,
-            "avg_vol_1wk": 1098333.0,
+            "5yrs_return": 14.85,
+            "avg_vol_1wk": 1176680.0,
             "b_v_rs": 386.24,
             "cmp_bv": 4.04,
             "cmp_rs": 1561.8,
@@ -4032,13 +4032,13 @@
             "sales_var_3yrs": 8.17,
             "sales_var_5yrs": 9.97,
             "sales_var_7yrs": 8.91,
-            "volume": 1715376479.3999999
+            "volume": 1837738824.0
         },
         {
             "10yr_opm": 16.06,
             "5yr_opm": 17.31,
-            "5yrs_return": 48.48,
-            "avg_vol_1wk": 6182369.0,
+            "5yrs_return": 49.09,
+            "avg_vol_1wk": 6464421.0,
             "b_v_rs": 112.17,
             "cmp_bv": 3.48,
             "cmp_rs": 390.1,
@@ -4097,13 +4097,13 @@
             "sales_var_3yrs": 15.21,
             "sales_var_5yrs": 17.58,
             "sales_var_7yrs": 13.59,
-            "volume": 2411742146.9
+            "volume": 2521770632.1000004
         },
         {
             "10yr_opm": 15.88,
             "5yr_opm": 17.44,
-            "5yrs_return": 40.64,
-            "avg_vol_1wk": 1608285.0,
+            "5yrs_return": 40.82,
+            "avg_vol_1wk": 1705823.0,
             "b_v_rs": 619.52,
             "cmp_bv": 5.58,
             "cmp_rs": 3454.9,
@@ -4162,13 +4162,13 @@
             "sales_var_3yrs": 20.87,
             "sales_var_5yrs": 16.13,
             "sales_var_7yrs": 8.13,
-            "volume": 5556463846.5
+            "volume": 5893447882.7
         },
         {
             "10yr_opm": 8.97,
             "5yr_opm": 9.41,
-            "5yrs_return": 72.62,
-            "avg_vol_1wk": 104234.0,
+            "5yrs_return": 72.8,
+            "avg_vol_1wk": 113855.0,
             "b_v_rs": 2302.19,
             "cmp_bv": 6.85,
             "cmp_rs": 15781.0,
@@ -4227,13 +4227,13 @@
             "sales_var_3yrs": 35.56,
             "sales_var_5yrs": 21.25,
             "sales_var_7yrs": 13.04,
-            "volume": 1644916754.0
+            "volume": 1796745755.0
         },
         {
             "10yr_opm": 65.14,
             "5yr_opm": 63.37,
-            "5yrs_return": 20.72,
-            "avg_vol_1wk": 94398.0,
+            "5yrs_return": 20.83,
+            "avg_vol_1wk": 69848.0,
             "b_v_rs": 373.18,
             "cmp_bv": 3.65,
             "cmp_rs": 1363.7,
@@ -4292,13 +4292,13 @@
             "sales_var_3yrs": 29.46,
             "sales_var_5yrs": 11.14,
             "sales_var_7yrs": 13.4,
-            "volume": 128730552.60000001
+            "volume": 95251717.60000001
         },
         {
             "10yr_opm": 10.11,
             "5yr_opm": 9.34,
-            "5yrs_return": 33.62,
-            "avg_vol_1wk": 22307.0,
+            "5yrs_return": 33.3,
+            "avg_vol_1wk": 20302.0,
             "b_v_rs": 268.48,
             "cmp_bv": 3.63,
             "cmp_rs": 973.6,
@@ -4357,13 +4357,13 @@
             "sales_var_3yrs": 15.03,
             "sales_var_5yrs": 16.81,
             "sales_var_7yrs": 13.91,
-            "volume": 21718095.2
+            "volume": 19766027.2
         },
         {
             "10yr_opm": 11.28,
             "5yr_opm": 12.09,
-            "5yrs_return": 47.17,
-            "avg_vol_1wk": 258908.0,
+            "5yrs_return": 46.92,
+            "avg_vol_1wk": 237494.0,
             "b_v_rs": 364.44,
             "cmp_bv": 2.57,
             "cmp_rs": 937.15,
@@ -4422,13 +4422,13 @@
             "sales_var_3yrs": 9.52,
             "sales_var_5yrs": 6.62,
             "sales_var_7yrs": 3.14,
-            "volume": 242635632.2
+            "volume": 222567502.1
         },
         {
             "10yr_opm": 66.37,
             "5yr_opm": 65.33,
-            "5yrs_return": 8.32,
-            "avg_vol_1wk": 2356748.0,
+            "5yrs_return": 8.66,
+            "avg_vol_1wk": 1749675.0,
             "b_v_rs": 127.76,
             "cmp_bv": 1.68,
             "cmp_rs": 214.83,
@@ -4487,13 +4487,13 @@
             "sales_var_3yrs": 12.43,
             "sales_var_5yrs": 6.95,
             "sales_var_7yrs": 8.01,
-            "volume": 506300172.84000003
+            "volume": 375882680.25
         },
         {
             "10yr_opm": 4.53,
             "5yr_opm": 4.08,
-            "5yrs_return": 65.67,
-            "avg_vol_1wk": 857667.0,
+            "5yrs_return": 64.92,
+            "avg_vol_1wk": 818326.0,
             "b_v_rs": 32.25,
             "cmp_bv": 6.71,
             "cmp_rs": 216.53,
@@ -4552,13 +4552,13 @@
             "sales_var_3yrs": 14.38,
             "sales_var_5yrs": 21.35,
             "sales_var_7yrs": 16.15,
-            "volume": 185710635.51
+            "volume": 177192128.78
         },
         {
             "10yr_opm": 58.83,
             "5yr_opm": 58.39,
-            "5yrs_return": 32.14,
-            "avg_vol_1wk": 1515519.0,
+            "5yrs_return": 32.21,
+            "avg_vol_1wk": 1547725.0,
             "b_v_rs": 288.26,
             "cmp_bv": 4.89,
             "cmp_rs": 1409.4,
@@ -4617,13 +4617,13 @@
             "sales_var_3yrs": 21.2,
             "sales_var_5yrs": 20.75,
             "sales_var_7yrs": 15.19,
-            "volume": 2135972478.6000001
+            "volume": 2181363615.0
         },
         {
             "10yr_opm": 26.05,
             "5yr_opm": 28.16,
-            "5yrs_return": 54.39,
-            "avg_vol_1wk": 4344.0,
+            "5yrs_return": 54.04,
+            "avg_vol_1wk": 5142.0,
             "b_v_rs": 992.62,
             "cmp_bv": 6.67,
             "cmp_rs": 6620.1,
@@ -4682,13 +4682,13 @@
             "sales_var_3yrs": 14.84,
             "sales_var_5yrs": 14.01,
             "sales_var_7yrs": 12.85,
-            "volume": 28757714.400000002
+            "volume": 34040554.2
         },
         {
             "10yr_opm": 14.12,
             "5yr_opm": 13.77,
-            "5yrs_return": 61.5,
-            "avg_vol_1wk": 1038017.0,
+            "5yrs_return": 62.39,
+            "avg_vol_1wk": 1082634.0,
             "b_v_rs": 63.72,
             "cmp_bv": 3.49,
             "cmp_rs": 222.24,
@@ -4747,13 +4747,13 @@
             "sales_var_3yrs": 14.35,
             "sales_var_5yrs": 8.81,
             "sales_var_7yrs": 8.4,
-            "volume": 230688898.08
+            "volume": 240604580.16
         },
         {
             "10yr_opm": 44.45,
             "5yr_opm": 49.62,
-            "5yrs_return": 36.62,
-            "avg_vol_1wk": 4192660.0,
+            "5yrs_return": 36.75,
+            "avg_vol_1wk": 4510850.0,
             "b_v_rs": 199.35,
             "cmp_bv": 9.73,
             "cmp_rs": 1939.9,
@@ -4812,13 +4812,13 @@
             "sales_var_3yrs": 14.07,
             "sales_var_5yrs": 14.59,
             "sales_var_7yrs": 11.13,
-            "volume": 8133341134.0
+            "volume": 8750597915.0
         },
         {
             "10yr_opm": 10.83,
             "5yr_opm": 11.01,
-            "5yrs_return": 25.34,
-            "avg_vol_1wk": 189408.0,
+            "5yrs_return": 25.31,
+            "avg_vol_1wk": 180869.0,
             "b_v_rs": 376.32,
             "cmp_bv": 5.9,
             "cmp_rs": 2220.5,
@@ -4877,13 +4877,13 @@
             "sales_var_3yrs": 8.02,
             "sales_var_5yrs": 12.89,
             "sales_var_7yrs": 11.73,
-            "volume": 420580464.0
+            "volume": 401619614.5
         },
         {
             "10yr_opm": 68.04,
             "5yr_opm": 77.25,
-            "5yrs_return": 27.67,
-            "avg_vol_1wk": 34284.0,
+            "5yrs_return": 27.58,
+            "avg_vol_1wk": 33609.0,
             "b_v_rs": 1187.83,
             "cmp_bv": 3.71,
             "cmp_rs": 4409.5,
@@ -4942,13 +4942,13 @@
             "sales_var_3yrs": 18.54,
             "sales_var_5yrs": 12.58,
             "sales_var_7yrs": 4.32,
-            "volume": 151175298.0
+            "volume": 148198885.5
         },
         {
             "10yr_opm": 22.63,
             "5yr_opm": 24.83,
-            "5yrs_return": 27.18,
-            "avg_vol_1wk": 212136.0,
+            "5yrs_return": 26.31,
+            "avg_vol_1wk": 197252.0,
             "b_v_rs": 220.54,
             "cmp_bv": 7.59,
             "cmp_rs": 1673.3,
@@ -5007,13 +5007,13 @@
             "sales_var_3yrs": 17.35,
             "sales_var_5yrs": 17.16,
             "sales_var_7yrs": 15.74,
-            "volume": 354967168.8
+            "volume": 330061771.59999996
         },
         {
             "10yr_opm": 12.25,
             "5yr_opm": 12.8,
-            "5yrs_return": 57.2,
-            "avg_vol_1wk": 169021.0,
+            "5yrs_return": 57.02,
+            "avg_vol_1wk": 154545.0,
             "b_v_rs": 653.15,
             "cmp_bv": 11.83,
             "cmp_rs": 7730.0,
@@ -5072,13 +5072,13 @@
             "sales_var_3yrs": 22.45,
             "sales_var_5yrs": 20.47,
             "sales_var_7yrs": 18.65,
-            "volume": 1306532330.0
+            "volume": 1194632850.0
         },
         {
             "10yr_opm": 16.34,
             "5yr_opm": 16.92,
-            "5yrs_return": 5.72,
-            "avg_vol_1wk": 10194267.0,
+            "5yrs_return": 5.66,
+            "avg_vol_1wk": 9474966.0,
             "b_v_rs": 623.1,
             "cmp_bv": 2.22,
             "cmp_rs": 1381.7,
@@ -5137,13 +5137,13 @@
             "sales_var_3yrs": 11.49,
             "sales_var_5yrs": 10.04,
             "sales_var_7yrs": 13.75,
-            "volume": 14085418713.9
+            "volume": 13091560522.2
         },
         {
             "10yr_opm": 27.46,
             "5yr_opm": 27.0,
-            "5yrs_return": 53.84,
-            "avg_vol_1wk": 42492.0,
+            "5yrs_return": 53.4,
+            "avg_vol_1wk": 36749.0,
             "b_v_rs": 470.32,
             "cmp_bv": 8.68,
             "cmp_rs": 4084.1,
@@ -5202,13 +5202,13 @@
             "sales_var_3yrs": 15.93,
             "sales_var_5yrs": 18.55,
             "sales_var_7yrs": 13.76,
-            "volume": 173541577.2
+            "volume": 150086590.9
         },
         {
             "10yr_opm": 7.22,
             "5yr_opm": 8.07,
-            "5yrs_return": 22.71,
-            "avg_vol_1wk": 130536.0,
+            "5yrs_return": 23.27,
+            "avg_vol_1wk": 132371.0,
             "b_v_rs": 301.45,
             "cmp_bv": 3.58,
             "cmp_rs": 1078.9,
@@ -5267,13 +5267,13 @@
             "sales_var_3yrs": 11.63,
             "sales_var_5yrs": 11.73,
             "sales_var_7yrs": 11.67,
-            "volume": 140835290.4
+            "volume": 142815071.9
         },
         {
             "10yr_opm": 38.24,
             "5yr_opm": 34.0,
-            "5yrs_return": 25.56,
-            "avg_vol_1wk": 1299508.0,
+            "5yrs_return": 25.74,
+            "avg_vol_1wk": 1351086.0,
             "b_v_rs": 183.71,
             "cmp_bv": 5.04,
             "cmp_rs": 925.85,
@@ -5332,13 +5332,13 @@
             "sales_var_3yrs": 28.29,
             "sales_var_5yrs": 15.8,
             "sales_var_7yrs": 29.25,
-            "volume": 1203149481.8
+            "volume": 1250902973.1000001
         },
         {
             "10yr_opm": 40.84,
             "5yr_opm": 44.55,
-            "5yrs_return": 24.15,
-            "avg_vol_1wk": 388652.0,
+            "5yrs_return": 23.47,
+            "avg_vol_1wk": 381415.0,
             "b_v_rs": 209.57,
             "cmp_bv": 18.42,
             "cmp_rs": 3860.8,
@@ -5397,13 +5397,13 @@
             "sales_var_3yrs": 15.59,
             "sales_var_5yrs": 15.06,
             "sales_var_7yrs": 11.93,
-            "volume": 1500507641.6000001
+            "volume": 1472567032.0
         },
         {
             "10yr_opm": 11.79,
             "5yr_opm": 15.58,
-            "5yrs_return": 92.39,
-            "avg_vol_1wk": 630610.0,
+            "5yrs_return": 92.27,
+            "avg_vol_1wk": 615940.0,
             "b_v_rs": 55.08,
             "cmp_bv": 10.9,
             "cmp_rs": 600.4,
@@ -5462,13 +5462,13 @@
             "sales_var_3yrs": 17.05,
             "sales_var_5yrs": 19.95,
             "sales_var_7yrs": 16.66,
-            "volume": 378618244.0
+            "volume": 369810376.0
         },
         {
             "10yr_opm": 16.8,
             "5yr_opm": 17.23,
-            "5yrs_return": 51.46,
-            "avg_vol_1wk": 332134.0,
+            "5yrs_return": 50.91,
+            "avg_vol_1wk": 285310.0,
             "b_v_rs": 408.6,
             "cmp_bv": 13.11,
             "cmp_rs": 5357.7,
@@ -5527,13 +5527,13 @@
             "sales_var_3yrs": 27.87,
             "sales_var_5yrs": 27.34,
             "sales_var_7yrs": 21.62,
-            "volume": 1779474331.8
+            "volume": 1528605387.0
         },
         {
             "10yr_opm": 19.49,
             "5yr_opm": 21.54,
-            "5yrs_return": 95.7,
-            "avg_vol_1wk": 146223.0,
+            "5yrs_return": 96.25,
+            "avg_vol_1wk": 150208.0,
             "b_v_rs": 272.26,
             "cmp_bv": 4.1,
             "cmp_rs": 1115.9,
@@ -5592,13 +5592,13 @@
             "sales_var_3yrs": 32.43,
             "sales_var_5yrs": 20.08,
             "sales_var_7yrs": 15.86,
-            "volume": 163170245.70000002
+            "volume": 167617107.20000002
         },
         {
             "10yr_opm": 20.48,
             "5yr_opm": 19.26,
-            "5yrs_return": 26.84,
-            "avg_vol_1wk": 122885.0,
+            "5yrs_return": 27.1,
+            "avg_vol_1wk": 107584.0,
             "b_v_rs": 147.33,
             "cmp_bv": 5.63,
             "cmp_rs": 829.65,
@@ -5657,13 +5657,13 @@
             "sales_var_3yrs": 28.55,
             "sales_var_5yrs": 22.21,
             "sales_var_7yrs": 15.42,
-            "volume": 101951540.25
+            "volume": 89257065.6
         },
         {
             "10yr_opm": 4.04,
             "5yr_opm": 3.98,
-            "5yrs_return": 57.43,
-            "avg_vol_1wk": 179860.0,
+            "5yrs_return": 56.41,
+            "avg_vol_1wk": 167862.0,
             "b_v_rs": 499.73,
             "cmp_bv": 34.91,
             "cmp_rs": 17445.0,
@@ -5722,13 +5722,13 @@
             "sales_var_3yrs": 53.73,
             "sales_var_5yrs": 54.6,
             "sales_var_7yrs": 45.3,
-            "volume": 3137657700.0
+            "volume": 2928352590.0
         },
         {
             "10yr_opm": 18.47,
             "5yr_opm": 19.52,
-            "5yrs_return": 12.32,
-            "avg_vol_1wk": 145067.0,
+            "5yrs_return": 12.27,
+            "avg_vol_1wk": 176574.0,
             "b_v_rs": 125.08,
             "cmp_bv": 6.02,
             "cmp_rs": 753.25,
@@ -5787,13 +5787,13 @@
             "sales_var_3yrs": 9.0,
             "sales_var_5yrs": 10.07,
             "sales_var_7yrs": 8.24,
-            "volume": 109271717.75
+            "volume": 133004365.5
         },
         {
             "10yr_opm": 19.11,
             "5yr_opm": 22.05,
-            "5yrs_return": 62.83,
-            "avg_vol_1wk": 312739.0,
+            "5yrs_return": 62.46,
+            "avg_vol_1wk": 289194.0,
             "b_v_rs": 336.27,
             "cmp_bv": 9.93,
             "cmp_rs": 3340.7,
@@ -5852,13 +5852,13 @@
             "sales_var_3yrs": 27.81,
             "sales_var_5yrs": 14.3,
             "sales_var_7yrs": 13.41,
-            "volume": 1044767177.3
+            "volume": 966110395.8
         },
         {
             "10yr_opm": 17.6,
             "5yr_opm": 18.13,
-            "5yrs_return": 14.67,
-            "avg_vol_1wk": 436712.0,
+            "5yrs_return": 14.31,
+            "avg_vol_1wk": 474085.0,
             "b_v_rs": 506.55,
             "cmp_bv": 5.49,
             "cmp_rs": 2783.2,
@@ -5917,13 +5917,13 @@
             "sales_var_3yrs": 5.96,
             "sales_var_5yrs": 9.98,
             "sales_var_7yrs": 11.73,
-            "volume": 1215456838.3999999
+            "volume": 1319473372.0
         },
         {
             "10yr_opm": 17.73,
             "5yr_opm": 18.3,
-            "5yrs_return": 15.23,
-            "avg_vol_1wk": 155099.0,
+            "5yrs_return": 15.31,
+            "avg_vol_1wk": 167056.0,
             "b_v_rs": 1002.37,
             "cmp_bv": 5.44,
             "cmp_rs": 5454.5,
@@ -5982,13 +5982,13 @@
             "sales_var_3yrs": 6.83,
             "sales_var_5yrs": 9.21,
             "sales_var_7yrs": 10.61,
-            "volume": 845987495.5
+            "volume": 911206952.0
         },
         {
             "10yr_opm": 30.56,
             "5yr_opm": 35.39,
-            "5yrs_return": 21.77,
-            "avg_vol_1wk": 733142.0,
+            "5yrs_return": 21.74,
+            "avg_vol_1wk": 773413.0,
             "b_v_rs": 45.79,
             "cmp_bv": 15.63,
             "cmp_rs": 715.7,
@@ -6047,13 +6047,13 @@
             "sales_var_3yrs": 35.51,
             "sales_var_5yrs": 15.6,
             "sales_var_7yrs": 18.02,
-            "volume": 524709729.40000004
+            "volume": 553531684.1
         },
         {
             "10yr_opm": 12.34,
             "5yr_opm": 13.87,
-            "5yrs_return": 33.99,
-            "avg_vol_1wk": 244800.0,
+            "5yrs_return": 34.06,
+            "avg_vol_1wk": 271399.0,
             "b_v_rs": 58.87,
             "cmp_bv": 8.22,
             "cmp_rs": 483.85,
@@ -6112,13 +6112,13 @@
             "sales_var_3yrs": 11.61,
             "sales_var_5yrs": 13.92,
             "sales_var_7yrs": 11.84,
-            "volume": 118446480.0
+            "volume": 131316406.15
         },
         {
             "10yr_opm": 15.2,
             "5yr_opm": 14.49,
-            "5yrs_return": 33.38,
-            "avg_vol_1wk": 1671555.0,
+            "5yrs_return": 32.83,
+            "avg_vol_1wk": 1664699.0,
             "b_v_rs": 710.12,
             "cmp_bv": 5.33,
             "cmp_rs": 3784.0,
@@ -6177,13 +6177,13 @@
             "sales_var_3yrs": 17.78,
             "sales_var_5yrs": 11.95,
             "sales_var_7yrs": 11.46,
-            "volume": 6325164120.0
+            "volume": 6299221016.0
         },
         {
             "10yr_opm": 7.59,
             "5yr_opm": 7.65,
-            "5yrs_return": 4.35,
-            "avg_vol_1wk": 152963.0,
+            "5yrs_return": 4.42,
+            "avg_vol_1wk": 143346.0,
             "b_v_rs": 123.83,
             "cmp_bv": 5.34,
             "cmp_rs": 660.95,
@@ -6242,13 +6242,13 @@
             "sales_var_3yrs": 4.15,
             "sales_var_5yrs": 6.14,
             "sales_var_7yrs": 8.84,
-            "volume": 101100894.85000001
+            "volume": 94744538.7
         },
         {
             "10yr_opm": 20.74,
             "5yr_opm": 23.7,
-            "5yrs_return": 13.14,
-            "avg_vol_1wk": 5236.0,
+            "5yrs_return": 13.49,
+            "avg_vol_1wk": 5054.0,
             "b_v_rs": 1992.14,
             "cmp_bv": 15.12,
             "cmp_rs": 30130.0,
@@ -6307,13 +6307,13 @@
             "sales_var_3yrs": 9.26,
             "sales_var_5yrs": 9.38,
             "sales_var_7yrs": 9.95,
-            "volume": 157760680.0
+            "volume": 152277020.0
         },
         {
             "10yr_opm": 28.56,
             "5yr_opm": 27.53,
-            "5yrs_return": 18.46,
-            "avg_vol_1wk": 161289.0,
+            "5yrs_return": 18.47,
+            "avg_vol_1wk": 175877.0,
             "b_v_rs": 303.44,
             "cmp_bv": 8.02,
             "cmp_rs": 2434.2,
@@ -6372,13 +6372,13 @@
             "sales_var_3yrs": 11.63,
             "sales_var_5yrs": 12.43,
             "sales_var_7yrs": 11.82,
-            "volume": 392609683.79999995
+            "volume": 428119793.4
         },
         {
             "10yr_opm": 16.17,
             "5yr_opm": 15.7,
-            "5yrs_return": 25.22,
-            "avg_vol_1wk": 1787087.0,
+            "5yrs_return": 27.0,
+            "avg_vol_1wk": 1862801.0,
             "b_v_rs": 190.77,
             "cmp_bv": 9.03,
             "cmp_rs": 1722.3,
@@ -6437,13 +6437,13 @@
             "sales_var_3yrs": 23.28,
             "sales_var_5yrs": 23.56,
             "sales_var_7yrs": 22.02,
-            "volume": 3077899940.1
+            "volume": 3208302162.2999997
         },
         {
             "10yr_opm": 9.94,
             "5yr_opm": 10.98,
-            "5yrs_return": 153.11,
-            "avg_vol_1wk": 358733.0,
+            "5yrs_return": 154.19,
+            "avg_vol_1wk": 345872.0,
             "b_v_rs": 41.71,
             "cmp_bv": 11.78,
             "cmp_rs": 491.35,
@@ -6502,13 +6502,13 @@
             "sales_var_3yrs": 20.31,
             "sales_var_5yrs": 23.55,
             "sales_var_7yrs": 15.95,
-            "volume": 176263459.55
+            "volume": 169944207.20000002
         },
         {
             "10yr_opm": 12.07,
             "5yr_opm": 13.25,
-            "5yrs_return": 50.02,
-            "avg_vol_1wk": 464526.0,
+            "5yrs_return": 49.87,
+            "avg_vol_1wk": 372004.0,
             "b_v_rs": 178.99,
             "cmp_bv": 19.5,
             "cmp_rs": 3490.3,
@@ -6567,13 +6567,13 @@
             "sales_var_3yrs": 21.87,
             "sales_var_5yrs": 18.52,
             "sales_var_7yrs": 15.23,
-            "volume": 1621335097.8000002
+            "volume": 1298405561.2
         },
         {
             "10yr_opm": 10.3,
             "5yr_opm": 10.36,
-            "5yrs_return": 66.35,
-            "avg_vol_1wk": 196481.0,
+            "5yrs_return": 65.39,
+            "avg_vol_1wk": 173025.0,
             "b_v_rs": 605.5,
             "cmp_bv": 7.07,
             "cmp_rs": 4278.2,
@@ -6632,13 +6632,13 @@
             "sales_var_3yrs": 19.35,
             "sales_var_5yrs": 14.78,
             "sales_var_7yrs": 15.9,
-            "volume": 840585014.1999999
+            "volume": 740235555.0
         },
         {
             "10yr_opm": 24.76,
             "5yr_opm": 25.83,
-            "5yrs_return": 31.58,
-            "avg_vol_1wk": 137628.0,
+            "5yrs_return": 31.49,
+            "avg_vol_1wk": 135968.0,
             "b_v_rs": 272.95,
             "cmp_bv": 6.95,
             "cmp_rs": 1896.0,
@@ -6697,13 +6697,13 @@
             "sales_var_3yrs": 21.85,
             "sales_var_5yrs": 19.44,
             "sales_var_7yrs": 18.15,
-            "volume": 260942688.0
+            "volume": 257795328.0
         },
         {
             "10yr_opm": 22.07,
             "5yr_opm": 22.63,
-            "5yrs_return": 67.78,
-            "avg_vol_1wk": 83058.0,
+            "5yrs_return": 68.07,
+            "avg_vol_1wk": 65503.0,
             "b_v_rs": 484.73,
             "cmp_bv": 29.11,
             "cmp_rs": 14110.0,
@@ -6762,13 +6762,13 @@
             "sales_var_3yrs": 24.07,
             "sales_var_5yrs": 27.51,
             "sales_var_7yrs": 21.62,
-            "volume": 1171948380.0
+            "volume": 924247330.0
         },
         {
             "10yr_opm": 30.0,
             "5yr_opm": 27.55,
-            "5yrs_return": 5.96,
-            "avg_vol_1wk": 36773.0,
+            "5yrs_return": 6.1,
+            "avg_vol_1wk": 30891.0,
             "b_v_rs": 270.75,
             "cmp_bv": 6.36,
             "cmp_rs": 1721.7,
@@ -6827,13 +6827,13 @@
             "sales_var_3yrs": 11.64,
             "sales_var_5yrs": 16.92,
             "sales_var_7yrs": 17.44,
-            "volume": 63312074.1
+            "volume": 53185034.7
         },
         {
             "10yr_opm": 17.2,
             "5yr_opm": 17.87,
-            "5yrs_return": 18.68,
-            "avg_vol_1wk": 1163751.0,
+            "5yrs_return": 18.21,
+            "avg_vol_1wk": 1220283.0,
             "b_v_rs": 216.97,
             "cmp_bv": 2.62,
             "cmp_rs": 569.25,
@@ -6892,13 +6892,13 @@
             "sales_var_3yrs": 6.56,
             "sales_var_5yrs": 5.27,
             "sales_var_7yrs": 5.81,
-            "volume": 662465256.75
+            "volume": 694646097.75
         },
         {
             "10yr_opm": 15.02,
             "5yr_opm": 15.71,
-            "5yrs_return": 35.95,
-            "avg_vol_1wk": 809920.0,
+            "5yrs_return": 36.36,
+            "avg_vol_1wk": 771524.0,
             "b_v_rs": 57.96,
             "cmp_bv": 5.77,
             "cmp_rs": 334.2,
@@ -6957,13 +6957,13 @@
             "sales_var_3yrs": 10.46,
             "sales_var_5yrs": 14.26,
             "sales_var_7yrs": 12.33,
-            "volume": 270675264.0
+            "volume": 257843320.79999998
         },
         {
             "10yr_opm": 39.93,
             "5yr_opm": 45.82,
-            "5yrs_return": 44.5,
-            "avg_vol_1wk": 1785139.0,
+            "5yrs_return": 42.03,
+            "avg_vol_1wk": 1788516.0,
             "b_v_rs": 14.69,
             "cmp_bv": 11.2,
             "cmp_rs": 164.43,
@@ -7022,13 +7022,13 @@
             "sales_var_3yrs": 47.32,
             "sales_var_5yrs": 13.95,
             "sales_var_7yrs": 14.97,
-            "volume": 293530405.77000004
+            "volume": 294085685.88
         },
         {
             "10yr_opm": 11.18,
             "5yr_opm": 11.13,
-            "5yrs_return": 49.32,
-            "avg_vol_1wk": 1514679.0,
+            "5yrs_return": 49.26,
+            "avg_vol_1wk": 1686331.0,
             "b_v_rs": 99.75,
             "cmp_bv": 12.23,
             "cmp_rs": 1219.8,
@@ -7087,13 +7087,13 @@
             "sales_var_3yrs": 26.37,
             "sales_var_5yrs": 21.94,
             "sales_var_7yrs": 20.79,
-            "volume": 1847605444.2
+            "volume": 2056986553.8
         },
         {
             "10yr_opm": 23.41,
             "5yr_opm": 24.7,
-            "5yrs_return": 68.44,
-            "avg_vol_1wk": 12870453.0,
+            "5yrs_return": 68.41,
+            "avg_vol_1wk": 12283802.0,
             "b_v_rs": 27.32,
             "cmp_bv": 15.13,
             "cmp_rs": 413.5,
@@ -7152,13 +7152,13 @@
             "sales_var_3yrs": 15.65,
             "sales_var_5yrs": 12.88,
             "sales_var_7yrs": 12.53,
-            "volume": 5321932315.5
+            "volume": 5079352127.0
         },
         {
             "10yr_opm": 16.31,
             "5yr_opm": 17.47,
-            "5yrs_return": 54.95,
-            "avg_vol_1wk": 295946.0,
+            "5yrs_return": 55.39,
+            "avg_vol_1wk": 296776.0,
             "b_v_rs": 272.78,
             "cmp_bv": 14.54,
             "cmp_rs": 3966.0,
@@ -7217,13 +7217,13 @@
             "sales_var_3yrs": 18.97,
             "sales_var_5yrs": 14.89,
             "sales_var_7yrs": 10.66,
-            "volume": 1173721836.0
+            "volume": 1177013616.0
         },
         {
             "10yr_opm": 26.45,
             "5yr_opm": 26.94,
-            "5yrs_return": 7.79,
-            "avg_vol_1wk": 142793.0,
+            "5yrs_return": 8.52,
+            "avg_vol_1wk": 123122.0,
             "b_v_rs": 259.92,
             "cmp_bv": 11.91,
             "cmp_rs": 3096.8,
@@ -7282,13 +7282,13 @@
             "sales_var_3yrs": 5.65,
             "sales_var_5yrs": 13.09,
             "sales_var_7yrs": 12.84,
-            "volume": 442201362.40000004
+            "volume": 381284209.6
         },
         {
             "10yr_opm": 6.58,
             "5yr_opm": 6.58,
-            "5yrs_return": 44.01,
-            "avg_vol_1wk": 289058.0,
+            "5yrs_return": 44.65,
+            "avg_vol_1wk": 312890.0,
             "b_v_rs": 151.65,
             "cmp_bv": 11.46,
             "cmp_rs": 1738.6,
@@ -7347,13 +7347,13 @@
             "sales_var_3yrs": 16.56,
             "sales_var_5yrs": 21.78,
             "sales_var_7yrs": 21.36,
-            "volume": 502556238.79999995
+            "volume": 543990554.0
         },
         {
             "10yr_opm": 38.1,
             "5yr_opm": 39.74,
-            "5yrs_return": 37.77,
-            "avg_vol_1wk": 640337.0,
+            "5yrs_return": 37.55,
+            "avg_vol_1wk": 714489.0,
             "b_v_rs": 369.5,
             "cmp_bv": 23.51,
             "cmp_rs": 8688.5,
@@ -7412,13 +7412,13 @@
             "sales_var_3yrs": 44.76,
             "sales_var_5yrs": 22.84,
             "sales_var_7yrs": 23.09,
-            "volume": 5563568024.5
+            "volume": 6207837676.5
         },
         {
             "10yr_opm": 27.27,
             "5yr_opm": 27.09,
-            "5yrs_return": 22.08,
-            "avg_vol_1wk": 36014.0,
+            "5yrs_return": 21.82,
+            "avg_vol_1wk": 35921.0,
             "b_v_rs": 385.14,
             "cmp_bv": 12.16,
             "cmp_rs": 4684.2,
@@ -7477,13 +7477,13 @@
             "sales_var_3yrs": 12.32,
             "sales_var_5yrs": 13.49,
             "sales_var_7yrs": 10.14,
-            "volume": 168696778.79999998
+            "volume": 168261148.2
         },
         {
             "10yr_opm": 4.07,
             "5yr_opm": 3.98,
-            "5yrs_return": 49.22,
-            "avg_vol_1wk": 7803997.0,
+            "5yrs_return": 49.67,
+            "avg_vol_1wk": 8078481.0,
             "b_v_rs": 9.18,
             "cmp_bv": 12.27,
             "cmp_rs": 112.66,
@@ -7542,13 +7542,13 @@
             "sales_var_3yrs": 16.11,
             "sales_var_5yrs": 8.28,
             "sales_var_7yrs": 5.19,
-            "volume": 879198302.02
+            "volume": 910121669.4599999
         },
         {
             "10yr_opm": 13.8,
             "5yr_opm": 14.75,
-            "5yrs_return": 46.59,
-            "avg_vol_1wk": 1349207.0,
+            "5yrs_return": 47.58,
+            "avg_vol_1wk": 1410511.0,
             "b_v_rs": 153.64,
             "cmp_bv": 30.53,
             "cmp_rs": 4691.1,
@@ -7607,13 +7607,13 @@
             "sales_var_3yrs": 56.18,
             "sales_var_5yrs": 37.5,
             "sales_var_7yrs": 34.45,
-            "volume": 6329264957.700001
+            "volume": 6616848152.1
         },
         {
             "10yr_opm": 9.02,
             "5yr_opm": 7.9,
-            "5yrs_return": 36.97,
-            "avg_vol_1wk": 380919.0,
+            "5yrs_return": 36.06,
+            "avg_vol_1wk": 372972.0,
             "b_v_rs": 167.72,
             "cmp_bv": 6.69,
             "cmp_rs": 1121.3,
@@ -7672,13 +7672,13 @@
             "sales_var_3yrs": 14.58,
             "sales_var_5yrs": 11.06,
             "sales_var_7yrs": 8.42,
-            "volume": 427124474.7
+            "volume": 418213503.59999996
         },
         {
             "10yr_opm": 12.59,
             "5yr_opm": 14.65,
-            "5yrs_return": 16.58,
-            "avg_vol_1wk": 15727.0,
+            "5yrs_return": 16.68,
+            "avg_vol_1wk": 13262.0,
             "b_v_rs": 308.14,
             "cmp_bv": 30.06,
             "cmp_rs": 9262.0,
@@ -7737,13 +7737,13 @@
             "sales_var_3yrs": 28.67,
             "sales_var_5yrs": 15.59,
             "sales_var_7yrs": 17.03,
-            "volume": 145663474.0
+            "volume": 122832644.0
         },
         {
             "10yr_opm": 28.58,
             "5yr_opm": 30.02,
-            "5yrs_return": 103.01,
-            "avg_vol_1wk": 356022.0,
+            "5yrs_return": 103.31,
+            "avg_vol_1wk": 314084.0,
             "b_v_rs": 51.46,
             "cmp_bv": 15.47,
             "cmp_rs": 795.9,
@@ -7802,13 +7802,13 @@
             "sales_var_3yrs": 47.81,
             "sales_var_5yrs": 47.45,
             "sales_var_7yrs": 29.4,
-            "volume": 283357909.8
+            "volume": 249979455.6
         },
         {
             "10yr_opm": 20.97,
             "5yr_opm": 22.98,
-            "5yrs_return": 12.55,
-            "avg_vol_1wk": 20069.0,
+            "5yrs_return": 12.34,
+            "avg_vol_1wk": 20885.0,
             "b_v_rs": 313.98,
             "cmp_bv": 30.38,
             "cmp_rs": 9540.0,
@@ -7867,13 +7867,13 @@
             "sales_var_3yrs": 4.09,
             "sales_var_5yrs": 3.72,
             "sales_var_7yrs": 3.7,
-            "volume": 191458260.0
+            "volume": 199242900.0
         },
         {
             "10yr_opm": 22.43,
             "5yr_opm": 26.53,
-            "5yrs_return": 51.71,
-            "avg_vol_1wk": 2297554.0,
+            "5yrs_return": 51.2,
+            "avg_vol_1wk": 2158316.0,
             "b_v_rs": 78.41,
             "cmp_bv": 9.38,
             "cmp_rs": 735.55,
@@ -7932,13 +7932,13 @@
             "sales_var_3yrs": 39.71,
             "sales_var_5yrs": 13.3,
             "sales_var_7yrs": 10.65,
-            "volume": 1689965844.6999998
+            "volume": 1587549333.8
         },
         {
             "10yr_opm": 19.83,
             "5yr_opm": 19.58,
-            "5yrs_return": 15.0,
-            "avg_vol_1wk": 17186.0,
+            "5yrs_return": 15.03,
+            "avg_vol_1wk": 17509.0,
             "b_v_rs": 1261.61,
             "cmp_bv": 33.01,
             "cmp_rs": 41640.0,
@@ -7997,13 +7997,13 @@
             "sales_var_3yrs": 8.29,
             "sales_var_5yrs": 10.87,
             "sales_var_7yrs": 9.88,
-            "volume": 715625040.0
+            "volume": 729074760.0
         },
         {
             "10yr_opm": 22.86,
             "5yr_opm": 21.75,
-            "5yrs_return": 104.84,
-            "avg_vol_1wk": 7410753.0,
+            "5yrs_return": 106.58,
+            "avg_vol_1wk": 7808034.0,
             "b_v_rs": 121.21,
             "cmp_bv": 5.73,
             "cmp_rs": 694.2,
@@ -8062,13 +8062,13 @@
             "sales_var_3yrs": 64.61,
             "sales_var_5yrs": 49.46,
             "sales_var_7yrs": 23.13,
-            "volume": 5144544732.6
+            "volume": 5420337202.8
         },
         {
             "10yr_opm": 10.26,
             "5yr_opm": 10.34,
-            "5yrs_return": 23.51,
-            "avg_vol_1wk": 1683372.0,
+            "5yrs_return": 23.62,
+            "avg_vol_1wk": 1793753.0,
             "b_v_rs": 130.93,
             "cmp_bv": 26.97,
             "cmp_rs": 3531.9,
@@ -8127,13 +8127,13 @@
             "sales_var_3yrs": 28.04,
             "sales_var_5yrs": 23.49,
             "sales_var_7yrs": 20.78,
-            "volume": 5945501566.8
+            "volume": 6335356220.7
         },
         {
             "10yr_opm": 33.14,
             "5yr_opm": 37.16,
-            "5yrs_return": 48.06,
-            "avg_vol_1wk": 118233.0,
+            "5yrs_return": 47.28,
+            "avg_vol_1wk": 124763.0,
             "b_v_rs": 139.44,
             "cmp_bv": 6.83,
             "cmp_rs": 953.0,
@@ -8192,13 +8192,13 @@
             "sales_var_3yrs": 50.12,
             "sales_var_5yrs": 11.86,
             "sales_var_7yrs": 11.62,
-            "volume": 112676049.0
+            "volume": 118899139.0
         },
         {
             "10yr_opm": 12.68,
             "5yr_opm": 13.7,
-            "5yrs_return": 90.21,
-            "avg_vol_1wk": 293909.0,
+            "5yrs_return": 89.56,
+            "avg_vol_1wk": 275338.0,
             "b_v_rs": 127.83,
             "cmp_bv": 11.87,
             "cmp_rs": 1517.4,
@@ -8257,13 +8257,13 @@
             "sales_var_3yrs": 44.82,
             "sales_var_5yrs": 55.14,
             "sales_var_7yrs": 41.14,
-            "volume": 445977516.6
+            "volume": 417797881.20000005
         },
         {
             "10yr_opm": 13.82,
             "5yr_opm": 13.24,
-            "5yrs_return": 21.47,
-            "avg_vol_1wk": 159918.0,
+            "5yrs_return": 21.08,
+            "avg_vol_1wk": 173342.0,
             "b_v_rs": 406.46,
             "cmp_bv": 7.11,
             "cmp_rs": 2888.8,
@@ -8322,13 +8322,13 @@
             "sales_var_3yrs": 15.26,
             "sales_var_5yrs": 10.83,
             "sales_var_7yrs": 8.94,
-            "volume": 461971118.40000004
+            "volume": 500750369.6
         },
         {
             "10yr_opm": 17.59,
             "5yr_opm": 17.86,
-            "5yrs_return": 31.12,
-            "avg_vol_1wk": 67488.0,
+            "5yrs_return": 30.78,
+            "avg_vol_1wk": 76929.0,
             "b_v_rs": 788.03,
             "cmp_bv": 8.4,
             "cmp_rs": 6621.0,
@@ -8387,13 +8387,13 @@
             "sales_var_3yrs": 14.13,
             "sales_var_5yrs": 15.41,
             "sales_var_7yrs": 13.64,
-            "volume": 446838048.0
+            "volume": 509346909.0
         },
         {
             "10yr_opm": 17.27,
             "5yr_opm": 17.79,
-            "5yrs_return": 42.07,
-            "avg_vol_1wk": 93779.0,
+            "5yrs_return": 42.36,
+            "avg_vol_1wk": 86034.0,
             "b_v_rs": 352.3,
             "cmp_bv": 11.68,
             "cmp_rs": 4115.6,
@@ -8452,13 +8452,13 @@
             "sales_var_3yrs": 13.25,
             "sales_var_5yrs": 13.12,
             "sales_var_7yrs": 10.8,
-            "volume": 385956852.40000004
+            "volume": 354081530.40000004
         },
         {
             "10yr_opm": 12.99,
             "5yr_opm": 13.5,
-            "5yrs_return": 53.92,
-            "avg_vol_1wk": 48776.0,
+            "5yrs_return": 53.87,
+            "avg_vol_1wk": 42164.0,
             "b_v_rs": 88.16,
             "cmp_bv": 9.11,
             "cmp_rs": 803.15,
@@ -8517,13 +8517,13 @@
             "sales_var_3yrs": 19.16,
             "sales_var_5yrs": 14.38,
             "sales_var_7yrs": 15.11,
-            "volume": 39174444.4
+            "volume": 33864016.6
         },
         {
             "10yr_opm": 9.39,
             "5yr_opm": 10.71,
-            "5yrs_return": 53.62,
-            "avg_vol_1wk": 889634.0,
+            "5yrs_return": 54.0,
+            "avg_vol_1wk": 1012825.0,
             "b_v_rs": 91.92,
             "cmp_bv": 6.41,
             "cmp_rs": 588.95,
@@ -8582,13 +8582,13 @@
             "sales_var_3yrs": 19.33,
             "sales_var_5yrs": 17.87,
             "sales_var_7yrs": 10.01,
-            "volume": 523949944.3
+            "volume": 596503283.75
         },
         {
             "10yr_opm": 29.66,
             "5yr_opm": 30.68,
-            "5yrs_return": 20.22,
-            "avg_vol_1wk": 300412.0,
+            "5yrs_return": 20.7,
+            "avg_vol_1wk": 280988.0,
             "b_v_rs": 224.29,
             "cmp_bv": 15.75,
             "cmp_rs": 3532.8,
@@ -8647,13 +8647,13 @@
             "sales_var_3yrs": 10.62,
             "sales_var_5yrs": 7.72,
             "sales_var_7yrs": 9.89,
-            "volume": 1061295513.6
+            "volume": 992674406.4000001
         },
         {
             "10yr_opm": 19.83,
             "5yr_opm": 18.5,
-            "5yrs_return": 56.32,
-            "avg_vol_1wk": 987682.0,
+            "5yrs_return": 57.58,
+            "avg_vol_1wk": 999024.0,
             "b_v_rs": 115.7,
             "cmp_bv": 9.43,
             "cmp_rs": 1090.6,
@@ -8712,13 +8712,13 @@
             "sales_var_3yrs": 11.89,
             "sales_var_5yrs": 17.61,
             "sales_var_7yrs": 16.44,
-            "volume": 1077165989.1999998
+            "volume": 1089535574.3999999
         },
         {
             "10yr_opm": 19.06,
             "5yr_opm": 19.34,
-            "5yrs_return": 14.22,
-            "avg_vol_1wk": 1763309.0,
+            "5yrs_return": 14.59,
+            "avg_vol_1wk": 1702902.0,
             "b_v_rs": 30.68,
             "cmp_bv": 23.28,
             "cmp_rs": 714.3,
@@ -8777,13 +8777,13 @@
             "sales_var_3yrs": 4.42,
             "sales_var_5yrs": 8.17,
             "sales_var_7yrs": 7.99,
-            "volume": 1259531618.6999998
+            "volume": 1216382898.6
         },
         {
             "10yr_opm": 12.54,
             "5yr_opm": 13.09,
-            "5yrs_return": 27.78,
-            "avg_vol_1wk": 286703.0,
+            "5yrs_return": 28.09,
+            "avg_vol_1wk": 249908.0,
             "b_v_rs": 571.15,
             "cmp_bv": 13.45,
             "cmp_rs": 7681.0,
@@ -8842,13 +8842,13 @@
             "sales_var_3yrs": 14.12,
             "sales_var_5yrs": 14.15,
             "sales_var_7yrs": 14.9,
-            "volume": 2202165743.0
+            "volume": 1919543348.0
         },
         {
             "10yr_opm": 7.32,
             "5yr_opm": 6.98,
-            "5yrs_return": 33.05,
-            "avg_vol_1wk": 230808.0,
+            "5yrs_return": 33.13,
+            "avg_vol_1wk": 257089.0,
             "b_v_rs": 675.8,
             "cmp_bv": 12.26,
             "cmp_rs": 8284.5,
@@ -8907,13 +8907,13 @@
             "sales_var_3yrs": 33.34,
             "sales_var_5yrs": 20.27,
             "sales_var_7yrs": 24.78,
-            "volume": 1912128876.0
+            "volume": 2129853820.5
         },
         {
             "10yr_opm": 20.91,
             "5yr_opm": 20.62,
-            "5yrs_return": 15.29,
-            "avg_vol_1wk": 650530.0,
+            "5yrs_return": 15.24,
+            "avg_vol_1wk": 704860.0,
             "b_v_rs": 95.89,
             "cmp_bv": 15.75,
             "cmp_rs": 1510.6,
@@ -8972,13 +8972,13 @@
             "sales_var_3yrs": 9.82,
             "sales_var_5yrs": 12.49,
             "sales_var_7yrs": 11.64,
-            "volume": 982690618.0
+            "volume": 1064761515.9999999
         },
         {
             "10yr_opm": 22.78,
             "5yr_opm": 29.76,
-            "5yrs_return": 60.6,
-            "avg_vol_1wk": 21342750.0,
+            "5yrs_return": 60.75,
+            "avg_vol_1wk": 24085258.0,
             "b_v_rs": 27.55,
             "cmp_bv": 12.51,
             "cmp_rs": 344.55,
@@ -9037,13 +9037,13 @@
             "sales_var_3yrs": 4.36,
             "sales_var_5yrs": 20.01,
             "sales_var_7yrs": 3.12,
-            "volume": 7353644512.5
+            "volume": 8298575643.900001
         },
         {
             "10yr_opm": 8.05,
             "5yr_opm": 7.92,
-            "5yrs_return": 16.92,
-            "avg_vol_1wk": 582152.0,
+            "5yrs_return": 16.95,
+            "avg_vol_1wk": 424086.0,
             "b_v_rs": 329.29,
             "cmp_bv": 13.12,
             "cmp_rs": 4320.4,
@@ -9102,13 +9102,13 @@
             "sales_var_3yrs": 24.21,
             "sales_var_5yrs": 19.0,
             "sales_var_7yrs": 21.68,
-            "volume": 2515129500.7999997
+            "volume": 1832221154.3999999
         },
         {
             "10yr_opm": 8.09,
             "5yr_opm": 7.68,
-            "5yrs_return": 66.68,
-            "avg_vol_1wk": 403220.0,
+            "5yrs_return": 66.53,
+            "avg_vol_1wk": 431951.0,
             "b_v_rs": 80.53,
             "cmp_bv": 15.79,
             "cmp_rs": 1271.2,
@@ -9167,13 +9167,13 @@
             "sales_var_3yrs": 16.04,
             "sales_var_5yrs": 14.27,
             "sales_var_7yrs": 10.31,
-            "volume": 512573264.0
+            "volume": 549096111.2
         },
         {
             "10yr_opm": 13.15,
             "5yr_opm": 17.68,
-            "5yrs_return": 50.69,
-            "avg_vol_1wk": 4255447.0,
+            "5yrs_return": 52.18,
+            "avg_vol_1wk": 2532719.0,
             "b_v_rs": 118.11,
             "cmp_bv": 8.98,
             "cmp_rs": 1060.3,
@@ -9232,13 +9232,13 @@
             "sales_var_3yrs": 10.83,
             "sales_var_5yrs": 10.93,
             "sales_var_7yrs": 7.93,
-            "volume": 4512050454.099999
+            "volume": 2685441955.7
         },
         {
             "10yr_opm": 13.95,
             "5yr_opm": 13.58,
-            "5yrs_return": 48.35,
-            "avg_vol_1wk": 130892.0,
+            "5yrs_return": 48.21,
+            "avg_vol_1wk": 132674.0,
             "b_v_rs": 201.11,
             "cmp_bv": 14.86,
             "cmp_rs": 2988.4,
@@ -9297,10 +9297,10 @@
             "sales_var_3yrs": 19.2,
             "sales_var_5yrs": 15.12,
             "sales_var_7yrs": 15.22,
-            "volume": 391157652.8
+            "volume": 396482981.6
         }
     ],
-    "date": 1760231219,
+    "date": 1760317728,
     "sold": {
         "Action Const.Eq.": 1754701899,
         "Bank of Baroda": 1753492452,
