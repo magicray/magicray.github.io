@@ -7,7 +7,7 @@
         {
             "10yr_opm": 23.2,
             "5yr_opm": 28.18,
-            "5yrs_return": 47.02,
+            "5yrs_return": 47.1,
             "avg_vol_1wk": 9283893.0,
             "b_v_rs": 108.0,
             "cmp_bv": 2.32,
@@ -72,7 +72,7 @@
         {
             "10yr_opm": 57.12,
             "5yr_opm": 58.49,
-            "5yrs_return": 13.93,
+            "5yrs_return": 13.95,
             "avg_vol_1wk": 2088363.0,
             "b_v_rs": 210.81,
             "cmp_bv": 0.83,
@@ -137,7 +137,7 @@
         {
             "10yr_opm": 12.24,
             "5yr_opm": 13.54,
-            "5yrs_return": 58.99,
+            "5yrs_return": 58.14,
             "avg_vol_1wk": 7025.0,
             "b_v_rs": 2729.24,
             "cmp_bv": 5.31,
@@ -202,7 +202,7 @@
         {
             "10yr_opm": 18.08,
             "5yr_opm": 20.42,
-            "5yrs_return": 75.5,
+            "5yrs_return": 75.78,
             "avg_vol_1wk": 1241663.0,
             "b_v_rs": 51.73,
             "cmp_bv": 6.21,
@@ -267,7 +267,7 @@
         {
             "10yr_opm": 50.53,
             "5yr_opm": 54.34,
-            "5yrs_return": 29.69,
+            "5yrs_return": 28.68,
             "avg_vol_1wk": 196493.0,
             "b_v_rs": 727.95,
             "cmp_bv": 2.53,
@@ -332,7 +332,7 @@
         {
             "10yr_opm": 92.77,
             "5yr_opm": 94.48,
-            "5yrs_return": 34.74,
+            "5yrs_return": 34.56,
             "avg_vol_1wk": 5118518.0,
             "b_v_rs": 384.79,
             "cmp_bv": 0.96,
@@ -397,7 +397,7 @@
         {
             "10yr_opm": 92.92,
             "5yr_opm": 94.6,
-            "5yrs_return": 32.82,
+            "5yrs_return": 32.5,
             "avg_vol_1wk": 4654592.0,
             "b_v_rs": 317.03,
             "cmp_bv": 1.13,
@@ -462,7 +462,7 @@
         {
             "10yr_opm": 11.96,
             "5yr_opm": 12.18,
-            "5yrs_return": 19.8,
+            "5yrs_return": 19.64,
             "avg_vol_1wk": 1049440.0,
             "b_v_rs": 245.56,
             "cmp_bv": 1.87,
@@ -527,7 +527,7 @@
         {
             "10yr_opm": 14.3,
             "5yr_opm": 13.03,
-            "5yrs_return": 8.39,
+            "5yrs_return": 7.62,
             "avg_vol_1wk": 40237.0,
             "b_v_rs": 335.28,
             "cmp_bv": 3.5,
@@ -592,7 +592,7 @@
         {
             "10yr_opm": 17.12,
             "5yr_opm": 18.18,
-            "5yrs_return": 56.35,
+            "5yrs_return": 56.56,
             "avg_vol_1wk": 38791.0,
             "b_v_rs": 598.73,
             "cmp_bv": 4.38,
@@ -657,7 +657,7 @@
         {
             "10yr_opm": 11.12,
             "5yr_opm": 10.3,
-            "5yrs_return": 66.22,
+            "5yrs_return": 63.92,
             "avg_vol_1wk": 80002.0,
             "b_v_rs": 722.58,
             "cmp_bv": 3.29,
@@ -722,7 +722,7 @@
         {
             "10yr_opm": 14.6,
             "5yr_opm": 14.1,
-            "5yrs_return": 38.41,
+            "5yrs_return": 38.28,
             "avg_vol_1wk": 85071.0,
             "b_v_rs": 418.95,
             "cmp_bv": 1.44,
@@ -787,7 +787,7 @@
         {
             "10yr_opm": 11.98,
             "5yr_opm": 12.37,
-            "5yrs_return": 28.96,
+            "5yrs_return": 28.04,
             "avg_vol_1wk": 5059468.0,
             "b_v_rs": 600.14,
             "cmp_bv": 1.3,
@@ -852,7 +852,7 @@
         {
             "10yr_opm": 76.6,
             "5yr_opm": 77.15,
-            "5yrs_return": -1.88,
+            "5yrs_return": -1.92,
             "avg_vol_1wk": 116868.0,
             "b_v_rs": 154.91,
             "cmp_bv": 2.05,
@@ -917,7 +917,7 @@
         {
             "10yr_opm": 71.4,
             "5yr_opm": 71.52,
-            "5yrs_return": 33.39,
+            "5yrs_return": 31.95,
             "avg_vol_1wk": 5374572.0,
             "b_v_rs": 322.18,
             "cmp_bv": 2.56,
@@ -982,7 +982,7 @@
         {
             "10yr_opm": 72.57,
             "5yr_opm": 75.91,
-            "5yrs_return": 11.68,
+            "5yrs_return": 12.61,
             "avg_vol_1wk": 6898663.0,
             "b_v_rs": 18.32,
             "cmp_bv": 1.89,
@@ -1112,7 +1112,7 @@
         {
             "10yr_opm": 61.09,
             "5yr_opm": 60.45,
-            "5yrs_return": 23.07,
+            "5yrs_return": 22.05,
             "avg_vol_1wk": 2069168.0,
             "b_v_rs": 69.39,
             "cmp_bv": 2.75,
@@ -1177,7 +1177,7 @@
         {
             "10yr_opm": 92.08,
             "5yr_opm": 91.52,
-            "5yrs_return": 13.5,
+            "5yrs_return": 13.01,
             "avg_vol_1wk": 537719.0,
             "b_v_rs": 410.23,
             "cmp_bv": 2.16,
@@ -1242,7 +1242,7 @@
         {
             "10yr_opm": 24.3,
             "5yr_opm": 25.73,
-            "5yrs_return": 16.38,
+            "5yrs_return": 16.59,
             "avg_vol_1wk": 734415.0,
             "b_v_rs": 251.45,
             "cmp_bv": 3.68,
@@ -1307,7 +1307,7 @@
         {
             "10yr_opm": 67.31,
             "5yr_opm": 67.34,
-            "5yrs_return": 14.43,
+            "5yrs_return": 14.15,
             "avg_vol_1wk": 5141262.0,
             "b_v_rs": 189.4,
             "cmp_bv": 0.98,
@@ -1372,7 +1372,7 @@
         {
             "10yr_opm": 14.23,
             "5yr_opm": 14.28,
-            "5yrs_return": 1.18,
+            "5yrs_return": 1.53,
             "avg_vol_1wk": 199735.0,
             "b_v_rs": 1061.49,
             "cmp_bv": 1.72,
@@ -1437,7 +1437,7 @@
         {
             "10yr_opm": 58.92,
             "5yr_opm": 58.43,
-            "5yrs_return": 67.37,
+            "5yrs_return": 67.19,
             "avg_vol_1wk": 1542469.0,
             "b_v_rs": 570.81,
             "cmp_bv": 1.49,
@@ -1502,7 +1502,7 @@
         {
             "10yr_opm": 15.22,
             "5yr_opm": 16.94,
-            "5yrs_return": 46.51,
+            "5yrs_return": 45.39,
             "avg_vol_1wk": 73098.0,
             "b_v_rs": 625.98,
             "cmp_bv": 2.89,
@@ -1567,7 +1567,7 @@
         {
             "10yr_opm": 10.74,
             "5yr_opm": 8.98,
-            "5yrs_return": 11.56,
+            "5yrs_return": 10.88,
             "avg_vol_1wk": 4290673.0,
             "b_v_rs": 220.95,
             "cmp_bv": 3.9,
@@ -1632,7 +1632,7 @@
         {
             "10yr_opm": 91.1,
             "5yr_opm": 89.53,
-            "5yrs_return": 11.15,
+            "5yrs_return": 10.99,
             "avg_vol_1wk": 879576.0,
             "b_v_rs": 700.21,
             "cmp_bv": 0.78,
@@ -1697,7 +1697,7 @@
         {
             "10yr_opm": 11.15,
             "5yr_opm": 11.24,
-            "5yrs_return": 52.14,
+            "5yrs_return": 52.02,
             "avg_vol_1wk": 491285.0,
             "b_v_rs": 120.58,
             "cmp_bv": 3.4,
@@ -1762,7 +1762,7 @@
         {
             "10yr_opm": 76.33,
             "5yr_opm": 76.59,
-            "5yrs_return": 25.76,
+            "5yrs_return": 26.16,
             "avg_vol_1wk": 541457.0,
             "b_v_rs": 817.47,
             "cmp_bv": 4.45,
@@ -1827,7 +1827,7 @@
         {
             "10yr_opm": 14.28,
             "5yr_opm": 14.76,
-            "5yrs_return": 64.51,
+            "5yrs_return": 64.45,
             "avg_vol_1wk": 545799.0,
             "b_v_rs": 61.64,
             "cmp_bv": 5.39,
@@ -1892,7 +1892,7 @@
         {
             "10yr_opm": 32.07,
             "5yr_opm": 31.89,
-            "5yrs_return": 30.92,
+            "5yrs_return": 31.39,
             "avg_vol_1wk": 43400.0,
             "b_v_rs": 415.64,
             "cmp_bv": 4.62,
@@ -1957,7 +1957,7 @@
         {
             "10yr_opm": 18.43,
             "5yr_opm": 18.02,
-            "5yrs_return": -5.2,
+            "5yrs_return": -4.98,
             "avg_vol_1wk": 524397.0,
             "b_v_rs": 81.98,
             "cmp_bv": 2.43,
@@ -2022,7 +2022,7 @@
         {
             "10yr_opm": 73.88,
             "5yr_opm": 74.0,
-            "5yrs_return": 1.34,
+            "5yrs_return": 0.81,
             "avg_vol_1wk": 167189.0,
             "b_v_rs": 591.18,
             "cmp_bv": 2.76,
@@ -2087,7 +2087,7 @@
         {
             "10yr_opm": 9.09,
             "5yr_opm": 8.86,
-            "5yrs_return": 70.73,
+            "5yrs_return": 70.29,
             "avg_vol_1wk": 437297.0,
             "b_v_rs": 119.11,
             "cmp_bv": 6.53,
@@ -2152,7 +2152,7 @@
         {
             "10yr_opm": 58.34,
             "5yr_opm": 58.63,
-            "5yrs_return": 50.34,
+            "5yrs_return": 50.66,
             "avg_vol_1wk": 1367298.0,
             "b_v_rs": 132.43,
             "cmp_bv": 1.87,
@@ -2217,7 +2217,7 @@
         {
             "10yr_opm": 9.49,
             "5yr_opm": 9.25,
-            "5yrs_return": 17.0,
+            "5yrs_return": 16.24,
             "avg_vol_1wk": 319795.0,
             "b_v_rs": 204.28,
             "cmp_bv": 2.55,
@@ -2282,7 +2282,7 @@
         {
             "10yr_opm": 8.06,
             "5yr_opm": 8.13,
-            "5yrs_return": 44.1,
+            "5yrs_return": 44.12,
             "avg_vol_1wk": 1086599.0,
             "b_v_rs": 262.19,
             "cmp_bv": 1.72,
@@ -2347,7 +2347,7 @@
         {
             "10yr_opm": 13.04,
             "5yr_opm": 12.12,
-            "5yrs_return": 25.96,
+            "5yrs_return": 25.95,
             "avg_vol_1wk": 9666319.0,
             "b_v_rs": 21.42,
             "cmp_bv": 6.75,
@@ -2412,7 +2412,7 @@
         {
             "10yr_opm": 71.63,
             "5yr_opm": 70.99,
-            "5yrs_return": 36.39,
+            "5yrs_return": 35.74,
             "avg_vol_1wk": 1268934.0,
             "b_v_rs": 308.32,
             "cmp_bv": 5.38,
@@ -2477,7 +2477,7 @@
         {
             "10yr_opm": 35.06,
             "5yr_opm": 35.45,
-            "5yrs_return": 18.52,
+            "5yrs_return": 18.3,
             "avg_vol_1wk": 1004179.0,
             "b_v_rs": 478.72,
             "cmp_bv": 4.29,
@@ -2542,7 +2542,7 @@
         {
             "10yr_opm": 51.28,
             "5yr_opm": 51.28,
-            "5yrs_return": 15.83,
+            "5yrs_return": 15.53,
             "avg_vol_1wk": 3116313.0,
             "b_v_rs": 32.22,
             "cmp_bv": 14.22,
@@ -2607,7 +2607,7 @@
         {
             "10yr_opm": 26.28,
             "5yr_opm": 24.41,
-            "5yrs_return": 8.8,
+            "5yrs_return": 7.89,
             "avg_vol_1wk": 944393.0,
             "b_v_rs": 18.39,
             "cmp_bv": 10.28,
@@ -2672,7 +2672,7 @@
         {
             "10yr_opm": 6.93,
             "5yr_opm": 8.12,
-            "5yrs_return": 83.59,
+            "5yrs_return": 82.36,
             "avg_vol_1wk": 313613.0,
             "b_v_rs": 280.04,
             "cmp_bv": 6.22,
@@ -2737,7 +2737,7 @@
         {
             "10yr_opm": 7.99,
             "5yr_opm": 8.39,
-            "5yrs_return": 93.55,
+            "5yrs_return": 92.78,
             "avg_vol_1wk": 70537.0,
             "b_v_rs": 1208.04,
             "cmp_bv": 7.58,
@@ -2802,7 +2802,7 @@
         {
             "10yr_opm": 11.05,
             "5yr_opm": 9.31,
-            "5yrs_return": 3.07,
+            "5yrs_return": 4.18,
             "avg_vol_1wk": 23172713.0,
             "b_v_rs": 14.91,
             "cmp_bv": 1.34,
@@ -2867,7 +2867,7 @@
         {
             "10yr_opm": 10.11,
             "5yr_opm": 9.34,
-            "5yrs_return": 32.3,
+            "5yrs_return": 32.17,
             "avg_vol_1wk": 1286411.0,
             "b_v_rs": 287.24,
             "cmp_bv": 3.44,
@@ -2932,7 +2932,7 @@
         {
             "10yr_opm": 12.31,
             "5yr_opm": 12.84,
-            "5yrs_return": 52.7,
+            "5yrs_return": 52.44,
             "avg_vol_1wk": 110205.0,
             "b_v_rs": 410.47,
             "cmp_bv": 5.49,
@@ -2997,7 +2997,7 @@
         {
             "10yr_opm": 8.27,
             "5yr_opm": 8.63,
-            "5yrs_return": 102.66,
+            "5yrs_return": 103.07,
             "avg_vol_1wk": 157554.0,
             "b_v_rs": 306.16,
             "cmp_bv": 5.57,
@@ -3127,10 +3127,10 @@
         {
             "10yr_opm": 9.82,
             "5yr_opm": 10.75,
-            "5yrs_return": 35.07,
+            "5yrs_return": 35.21,
             "avg_vol_1wk": 20745.0,
-            "b_v_rs": 306.37,
-            "cmp_bv": 3.68,
+            "b_v_rs": 311.69,
+            "cmp_bv": 3.62,
             "cmp_rs": 1127.9,
             "cmp_sales": 1.88,
             "earnings_yield": 5.64,
@@ -3139,10 +3139,10 @@
             "ebidt_var_5yrs": 15.81,
             "ebidt_var_7yrs": 13.09,
             "ebit_12m_rs_cr": 505.1,
-            "eps_var_10yrs": 17.36,
-            "eps_var_3yrs": 12.08,
-            "eps_var_5yrs": 21.85,
-            "eps_var_7yrs": 18.65,
+            "eps_var_10yrs": 17.56,
+            "eps_var_3yrs": 12.73,
+            "eps_var_5yrs": 22.27,
+            "eps_var_7yrs": 18.94,
             "ev_ebitda": 14.35,
             "ev_rs_cr": 8957.24,
             "face_value_rs": 2.0,
@@ -3192,7 +3192,7 @@
         {
             "10yr_opm": 8.75,
             "5yr_opm": 8.2,
-            "5yrs_return": 64.01,
+            "5yrs_return": 65.17,
             "avg_vol_1wk": 1038542.0,
             "b_v_rs": 79.27,
             "cmp_bv": 2.8,
@@ -3257,7 +3257,7 @@
         {
             "10yr_opm": 60.7,
             "5yr_opm": 59.04,
-            "5yrs_return": 17.28,
+            "5yrs_return": 16.18,
             "avg_vol_1wk": 6429243.0,
             "b_v_rs": 178.13,
             "cmp_bv": 1.92,
@@ -3322,7 +3322,7 @@
         {
             "10yr_opm": 10.63,
             "5yr_opm": 11.76,
-            "5yrs_return": 66.68,
+            "5yrs_return": 66.83,
             "avg_vol_1wk": 214391.0,
             "b_v_rs": 154.84,
             "cmp_bv": 8.62,
@@ -3387,7 +3387,7 @@
         {
             "10yr_opm": 10.55,
             "5yr_opm": 9.54,
-            "5yrs_return": 32.68,
+            "5yrs_return": 33.37,
             "avg_vol_1wk": 200247.0,
             "b_v_rs": 407.68,
             "cmp_bv": 3.02,
@@ -3517,7 +3517,7 @@
         {
             "10yr_opm": 16.56,
             "5yr_opm": 16.82,
-            "5yrs_return": 15.2,
+            "5yrs_return": 15.87,
             "avg_vol_1wk": 16366.0,
             "b_v_rs": 552.36,
             "cmp_bv": 4.16,
@@ -3582,7 +3582,7 @@
         {
             "10yr_opm": 64.82,
             "5yr_opm": 63.35,
-            "5yrs_return": 19.15,
+            "5yrs_return": 19.1,
             "avg_vol_1wk": 49776.0,
             "b_v_rs": 397.2,
             "cmp_bv": 3.11,
@@ -3647,7 +3647,7 @@
         {
             "10yr_opm": 21.34,
             "5yr_opm": 23.29,
-            "5yrs_return": 15.16,
+            "5yrs_return": 15.1,
             "avg_vol_1wk": 1031299.0,
             "b_v_rs": 407.53,
             "cmp_bv": 3.71,
@@ -3712,7 +3712,7 @@
         {
             "10yr_opm": 27.02,
             "5yr_opm": 26.96,
-            "5yrs_return": 2.95,
+            "5yrs_return": 2.97,
             "avg_vol_1wk": 3136361.0,
             "b_v_rs": 294.12,
             "cmp_bv": 10.71,
@@ -3777,7 +3777,7 @@
         {
             "10yr_opm": 8.97,
             "5yr_opm": 9.41,
-            "5yrs_return": 70.45,
+            "5yrs_return": 70.5,
             "avg_vol_1wk": 40354.0,
             "b_v_rs": 2661.07,
             "cmp_bv": 6.35,
@@ -3842,7 +3842,7 @@
         {
             "10yr_opm": 20.34,
             "5yr_opm": 20.99,
-            "5yrs_return": 6.43,
+            "5yrs_return": 5.39,
             "avg_vol_1wk": 482813.0,
             "b_v_rs": 164.12,
             "cmp_bv": 3.32,
@@ -3907,7 +3907,7 @@
         {
             "10yr_opm": 26.15,
             "5yr_opm": 25.78,
-            "5yrs_return": 32.69,
+            "5yrs_return": 32.89,
             "avg_vol_1wk": 139912.0,
             "b_v_rs": 265.13,
             "cmp_bv": 3.39,
@@ -3972,7 +3972,7 @@
         {
             "10yr_opm": 14.12,
             "5yr_opm": 13.77,
-            "5yrs_return": 54.97,
+            "5yrs_return": 54.07,
             "avg_vol_1wk": 1931403.0,
             "b_v_rs": 67.06,
             "cmp_bv": 2.94,
@@ -4037,7 +4037,7 @@
         {
             "10yr_opm": 15.88,
             "5yr_opm": 17.44,
-            "5yrs_return": 39.67,
+            "5yrs_return": 38.74,
             "avg_vol_1wk": 2438596.0,
             "b_v_rs": 666.2,
             "cmp_bv": 5.63,
@@ -4102,7 +4102,7 @@
         {
             "10yr_opm": 58.83,
             "5yr_opm": 58.39,
-            "5yrs_return": 31.58,
+            "5yrs_return": 30.42,
             "avg_vol_1wk": 1661138.0,
             "b_v_rs": 310.52,
             "cmp_bv": 4.77,
@@ -4167,7 +4167,7 @@
         {
             "10yr_opm": 10.83,
             "5yr_opm": 11.01,
-            "5yrs_return": 23.54,
+            "5yrs_return": 22.51,
             "avg_vol_1wk": 312282.0,
             "b_v_rs": 412.95,
             "cmp_bv": 5.48,
@@ -4232,7 +4232,7 @@
         {
             "10yr_opm": 12.25,
             "5yr_opm": 12.8,
-            "5yrs_return": 51.89,
+            "5yrs_return": 51.77,
             "avg_vol_1wk": 190521.0,
             "b_v_rs": 703.75,
             "cmp_bv": 10.69,
@@ -4297,7 +4297,7 @@
         {
             "10yr_opm": 13.05,
             "5yr_opm": 14.96,
-            "5yrs_return": 63.62,
+            "5yrs_return": 61.55,
             "avg_vol_1wk": 160538.0,
             "b_v_rs": 246.08,
             "cmp_bv": 3.51,
@@ -4362,7 +4362,7 @@
         {
             "10yr_opm": 4.04,
             "5yr_opm": 3.98,
-            "5yrs_return": 47.52,
+            "5yrs_return": 47.08,
             "avg_vol_1wk": 212735.0,
             "b_v_rs": 671.61,
             "cmp_bv": 22.28,
@@ -4427,7 +4427,7 @@
         {
             "10yr_opm": 22.05,
             "5yr_opm": 24.51,
-            "5yrs_return": 46.14,
+            "5yrs_return": 46.37,
             "avg_vol_1wk": 441724.0,
             "b_v_rs": 112.41,
             "cmp_bv": 8.02,
@@ -4492,7 +4492,7 @@
         {
             "10yr_opm": 14.24,
             "5yr_opm": 15.54,
-            "5yrs_return": 25.87,
+            "5yrs_return": 25.07,
             "avg_vol_1wk": 429816.0,
             "b_v_rs": 188.23,
             "cmp_bv": 3.77,
@@ -4557,7 +4557,7 @@
         {
             "10yr_opm": 66.37,
             "5yr_opm": 65.33,
-            "5yrs_return": 7.41,
+            "5yrs_return": 7.47,
             "avg_vol_1wk": 5055235.0,
             "b_v_rs": 133.95,
             "cmp_bv": 1.96,
@@ -4622,7 +4622,7 @@
         {
             "10yr_opm": 44.45,
             "5yr_opm": 49.62,
-            "5yrs_return": 35.79,
+            "5yrs_return": 35.96,
             "avg_vol_1wk": 7879593.0,
             "b_v_rs": 206.58,
             "cmp_bv": 10.47,
@@ -4687,7 +4687,7 @@
         {
             "10yr_opm": 22.63,
             "5yr_opm": 24.83,
-            "5yrs_return": 29.26,
+            "5yrs_return": 28.69,
             "avg_vol_1wk": 177637.0,
             "b_v_rs": 243.03,
             "cmp_bv": 7.12,
@@ -4752,7 +4752,7 @@
         {
             "10yr_opm": 27.46,
             "5yr_opm": 27.0,
-            "5yrs_return": 56.31,
+            "5yrs_return": 56.3,
             "avg_vol_1wk": 102896.0,
             "b_v_rs": 535.27,
             "cmp_bv": 8.33,
@@ -4817,7 +4817,7 @@
         {
             "10yr_opm": 25.66,
             "5yr_opm": 23.9,
-            "5yrs_return": 22.4,
+            "5yrs_return": 21.51,
             "avg_vol_1wk": 658878.0,
             "b_v_rs": 805.24,
             "cmp_bv": 8.86,
@@ -4882,7 +4882,7 @@
         {
             "10yr_opm": 6.58,
             "5yr_opm": 6.58,
-            "5yrs_return": 39.7,
+            "5yrs_return": 39.94,
             "avg_vol_1wk": 607367.0,
             "b_v_rs": 165.89,
             "cmp_bv": 10.42,
@@ -4947,7 +4947,7 @@
         {
             "10yr_opm": 4.95,
             "5yr_opm": 5.14,
-            "5yrs_return": 70.04,
+            "5yrs_return": 70.32,
             "avg_vol_1wk": 48024.0,
             "b_v_rs": 375.55,
             "cmp_bv": 8.06,
@@ -5012,7 +5012,7 @@
         {
             "10yr_opm": 11.28,
             "5yr_opm": 12.09,
-            "5yrs_return": 50.04,
+            "5yrs_return": 50.57,
             "avg_vol_1wk": 1038706.0,
             "b_v_rs": 386.55,
             "cmp_bv": 2.91,
@@ -5077,7 +5077,7 @@
         {
             "10yr_opm": 19.49,
             "5yr_opm": 21.54,
-            "5yrs_return": 96.68,
+            "5yrs_return": 96.41,
             "avg_vol_1wk": 340408.0,
             "b_v_rs": 290.8,
             "cmp_bv": 3.69,
@@ -5142,7 +5142,7 @@
         {
             "10yr_opm": 68.04,
             "5yr_opm": 77.25,
-            "5yrs_return": 21.6,
+            "5yrs_return": 21.24,
             "avg_vol_1wk": 47371.0,
             "b_v_rs": 1361.76,
             "cmp_bv": 3.45,
@@ -5207,7 +5207,7 @@
         {
             "10yr_opm": 17.2,
             "5yr_opm": 20.32,
-            "5yrs_return": 40.76,
+            "5yrs_return": 39.78,
             "avg_vol_1wk": 5019214.0,
             "b_v_rs": 198.66,
             "cmp_bv": 10.28,
@@ -5337,7 +5337,7 @@
         {
             "10yr_opm": 12.1,
             "5yr_opm": 15.21,
-            "5yrs_return": 107.89,
+            "5yrs_return": 107.09,
             "avg_vol_1wk": 3855145.0,
             "b_v_rs": 71.61,
             "cmp_bv": 12.52,
@@ -5402,7 +5402,7 @@
         {
             "10yr_opm": 18.38,
             "5yr_opm": 18.11,
-            "5yrs_return": 23.64,
+            "5yrs_return": 23.49,
             "avg_vol_1wk": 324168.0,
             "b_v_rs": 1223.59,
             "cmp_bv": 7.27,
@@ -5467,7 +5467,7 @@
         {
             "10yr_opm": 16.34,
             "5yr_opm": 16.92,
-            "5yrs_return": 11.57,
+            "5yrs_return": 11.41,
             "avg_vol_1wk": 10688713.0,
             "b_v_rs": 648.28,
             "cmp_bv": 2.39,
@@ -5532,7 +5532,7 @@
         {
             "10yr_opm": 17.2,
             "5yr_opm": 17.87,
-            "5yrs_return": 16.23,
+            "5yrs_return": 16.5,
             "avg_vol_1wk": 1152138.0,
             "b_v_rs": 227.55,
             "cmp_bv": 2.41,
@@ -5597,7 +5597,7 @@
         {
             "10yr_opm": 16.17,
             "5yr_opm": 15.7,
-            "5yrs_return": 29.96,
+            "5yrs_return": 29.65,
             "avg_vol_1wk": 1387437.0,
             "b_v_rs": 206.06,
             "cmp_bv": 8.72,
@@ -5727,7 +5727,7 @@
         {
             "10yr_opm": 12.08,
             "5yr_opm": 13.26,
-            "5yrs_return": 48.49,
+            "5yrs_return": 48.82,
             "avg_vol_1wk": 781935.0,
             "b_v_rs": 170.83,
             "cmp_bv": 20.15,
@@ -5792,7 +5792,7 @@
         {
             "10yr_opm": 17.73,
             "5yr_opm": 18.3,
-            "5yrs_return": 15.61,
+            "5yrs_return": 15.48,
             "avg_vol_1wk": 163358.0,
             "b_v_rs": 1116.21,
             "cmp_bv": 5.11,
@@ -5857,7 +5857,7 @@
         {
             "10yr_opm": 17.6,
             "5yr_opm": 18.13,
-            "5yrs_return": 15.87,
+            "5yrs_return": 15.53,
             "avg_vol_1wk": 5836053.0,
             "b_v_rs": 505.75,
             "cmp_bv": 5.43,
@@ -5922,7 +5922,7 @@
         {
             "10yr_opm": 20.75,
             "5yr_opm": 23.71,
-            "5yrs_return": 14.24,
+            "5yrs_return": 14.09,
             "avg_vol_1wk": 7383.0,
             "b_v_rs": 1887.55,
             "cmp_bv": 15.67,
@@ -5987,7 +5987,7 @@
         {
             "10yr_opm": 10.3,
             "5yr_opm": 10.36,
-            "5yrs_return": 60.75,
+            "5yrs_return": 59.85,
             "avg_vol_1wk": 155929.0,
             "b_v_rs": 647.28,
             "cmp_bv": 6.3,
@@ -6052,7 +6052,7 @@
         {
             "10yr_opm": 16.8,
             "5yr_opm": 17.23,
-            "5yrs_return": 61.22,
+            "5yrs_return": 59.68,
             "avg_vol_1wk": 455259.0,
             "b_v_rs": 457.0,
             "cmp_bv": 13.78,
@@ -6117,7 +6117,7 @@
         {
             "10yr_opm": 20.48,
             "5yr_opm": 19.26,
-            "5yrs_return": 30.47,
+            "5yrs_return": 29.53,
             "avg_vol_1wk": 263045.0,
             "b_v_rs": 156.29,
             "cmp_bv": 6.39,
@@ -6182,7 +6182,7 @@
         {
             "10yr_opm": 22.07,
             "5yr_opm": 22.63,
-            "5yrs_return": 68.85,
+            "5yrs_return": 67.85,
             "avg_vol_1wk": 115127.0,
             "b_v_rs": 565.36,
             "cmp_bv": 24.34,
@@ -6247,7 +6247,7 @@
         {
             "10yr_opm": 15.2,
             "5yr_opm": 14.49,
-            "5yrs_return": 29.02,
+            "5yrs_return": 28.8,
             "avg_vol_1wk": 1406873.0,
             "b_v_rs": 737.04,
             "cmp_bv": 5.46,
@@ -6312,7 +6312,7 @@
         {
             "10yr_opm": 33.14,
             "5yr_opm": 37.16,
-            "5yrs_return": 42.56,
+            "5yrs_return": 43.1,
             "avg_vol_1wk": 109888.0,
             "b_v_rs": 156.17,
             "cmp_bv": 5.74,
@@ -6377,7 +6377,7 @@
         {
             "10yr_opm": 11.79,
             "5yr_opm": 15.58,
-            "5yrs_return": 92.3,
+            "5yrs_return": 94.57,
             "avg_vol_1wk": 1001306.0,
             "b_v_rs": 61.55,
             "cmp_bv": 11.78,
@@ -6442,7 +6442,7 @@
         {
             "10yr_opm": 20.36,
             "5yr_opm": 20.21,
-            "5yrs_return": 48.71,
+            "5yrs_return": 48.77,
             "avg_vol_1wk": 1140608.0,
             "b_v_rs": 40.89,
             "cmp_bv": 13.19,
@@ -6507,7 +6507,7 @@
         {
             "10yr_opm": 23.41,
             "5yr_opm": 24.7,
-            "5yrs_return": 63.78,
+            "5yrs_return": 63.26,
             "avg_vol_1wk": 11994587.0,
             "b_v_rs": 29.5,
             "cmp_bv": 14.11,
@@ -6572,7 +6572,7 @@
         {
             "10yr_opm": 15.02,
             "5yr_opm": 15.71,
-            "5yrs_return": 36.27,
+            "5yrs_return": 35.53,
             "avg_vol_1wk": 1017358.0,
             "b_v_rs": 61.75,
             "cmp_bv": 5.82,
@@ -6637,7 +6637,7 @@
         {
             "10yr_opm": 17.59,
             "5yr_opm": 17.86,
-            "5yrs_return": 23.72,
+            "5yrs_return": 23.54,
             "avg_vol_1wk": 115909.0,
             "b_v_rs": 838.81,
             "cmp_bv": 6.7,
@@ -6702,7 +6702,7 @@
         {
             "10yr_opm": 27.27,
             "5yr_opm": 27.09,
-            "5yrs_return": 17.84,
+            "5yrs_return": 17.69,
             "avg_vol_1wk": 34344.0,
             "b_v_rs": 385.14,
             "cmp_bv": 11.74,
@@ -6767,7 +6767,7 @@
         {
             "10yr_opm": 26.2,
             "5yr_opm": 26.95,
-            "5yrs_return": 28.25,
+            "5yrs_return": 27.89,
             "avg_vol_1wk": 1785011.0,
             "b_v_rs": 324.34,
             "cmp_bv": 5.49,
@@ -6832,7 +6832,7 @@
         {
             "10yr_opm": 26.45,
             "5yr_opm": 26.94,
-            "5yrs_return": 6.52,
+            "5yrs_return": 6.72,
             "avg_vol_1wk": 149191.0,
             "b_v_rs": 285.02,
             "cmp_bv": 11.02,
@@ -6897,7 +6897,7 @@
         {
             "10yr_opm": 16.31,
             "5yr_opm": 17.47,
-            "5yrs_return": 53.27,
+            "5yrs_return": 52.36,
             "avg_vol_1wk": 566926.0,
             "b_v_rs": 284.81,
             "cmp_bv": 15.22,
@@ -6962,7 +6962,7 @@
         {
             "10yr_opm": 11.18,
             "5yr_opm": 11.13,
-            "5yrs_return": 47.68,
+            "5yrs_return": 46.42,
             "avg_vol_1wk": 532210.0,
             "b_v_rs": 108.0,
             "cmp_bv": 11.87,
@@ -7027,7 +7027,7 @@
         {
             "10yr_opm": 20.97,
             "5yr_opm": 22.98,
-            "5yrs_return": 7.65,
+            "5yrs_return": 7.56,
             "avg_vol_1wk": 27663.0,
             "b_v_rs": 356.78,
             "cmp_bv": 23.2,
@@ -7092,7 +7092,7 @@
         {
             "10yr_opm": 38.1,
             "5yr_opm": 39.74,
-            "5yrs_return": 43.58,
+            "5yrs_return": 43.11,
             "avg_vol_1wk": 442400.0,
             "b_v_rs": 409.27,
             "cmp_bv": 23.66,
@@ -7157,7 +7157,7 @@
         {
             "10yr_opm": 13.8,
             "5yr_opm": 14.75,
-            "5yrs_return": 40.84,
+            "5yrs_return": 41.31,
             "avg_vol_1wk": 495573.0,
             "b_v_rs": 171.64,
             "cmp_bv": 25.4,
@@ -7222,7 +7222,7 @@
         {
             "10yr_opm": 15.86,
             "5yr_opm": 16.08,
-            "5yrs_return": 13.76,
+            "5yrs_return": 13.22,
             "avg_vol_1wk": 413331.0,
             "b_v_rs": 192.8,
             "cmp_bv": 4.94,
@@ -7287,7 +7287,7 @@
         {
             "10yr_opm": 22.86,
             "5yr_opm": 21.75,
-            "5yrs_return": 88.35,
+            "5yrs_return": 86.72,
             "avg_vol_1wk": 1914385.0,
             "b_v_rs": 128.17,
             "cmp_bv": 4.76,
@@ -7352,7 +7352,7 @@
         {
             "10yr_opm": 6.19,
             "5yr_opm": 6.59,
-            "5yrs_return": 36.09,
+            "5yrs_return": 35.27,
             "avg_vol_1wk": 262024.0,
             "b_v_rs": 151.33,
             "cmp_bv": 11.74,
@@ -7417,7 +7417,7 @@
         {
             "10yr_opm": 13.82,
             "5yr_opm": 13.24,
-            "5yrs_return": 18.42,
+            "5yrs_return": 18.99,
             "avg_vol_1wk": 154676.0,
             "b_v_rs": 444.88,
             "cmp_bv": 6.09,
@@ -7482,7 +7482,7 @@
         {
             "10yr_opm": 17.27,
             "5yr_opm": 17.79,
-            "5yrs_return": 37.94,
+            "5yrs_return": 38.16,
             "avg_vol_1wk": 52060.0,
             "b_v_rs": 352.3,
             "cmp_bv": 11.27,
@@ -7547,7 +7547,7 @@
         {
             "10yr_opm": 10.71,
             "5yr_opm": 11.55,
-            "5yrs_return": 7.99,
+            "5yrs_return": 8.02,
             "avg_vol_1wk": 23080.0,
             "b_v_rs": 83.46,
             "cmp_bv": 12.54,
@@ -7612,7 +7612,7 @@
         {
             "10yr_opm": 18.29,
             "5yr_opm": 19.34,
-            "5yrs_return": 21.4,
+            "5yrs_return": 21.01,
             "avg_vol_1wk": 69690.0,
             "b_v_rs": 206.09,
             "cmp_bv": 7.38,
@@ -7677,7 +7677,7 @@
         {
             "10yr_opm": 10.26,
             "5yr_opm": 10.34,
-            "5yrs_return": 23.71,
+            "5yrs_return": 24.09,
             "avg_vol_1wk": 842553.0,
             "b_v_rs": 144.21,
             "cmp_bv": 27.07,
@@ -7742,7 +7742,7 @@
         {
             "10yr_opm": 22.78,
             "5yr_opm": 29.76,
-            "5yrs_return": 53.55,
+            "5yrs_return": 51.94,
             "avg_vol_1wk": 5083784.0,
             "b_v_rs": 30.89,
             "cmp_bv": 10.17,
@@ -7807,7 +7807,7 @@
         {
             "10yr_opm": 10.27,
             "5yr_opm": 10.71,
-            "5yrs_return": 50.36,
+            "5yrs_return": 50.3,
             "avg_vol_1wk": 355759.0,
             "b_v_rs": 102.04,
             "cmp_bv": 5.83,
@@ -7872,7 +7872,7 @@
         {
             "10yr_opm": 29.66,
             "5yr_opm": 30.68,
-            "5yrs_return": 23.16,
+            "5yrs_return": 22.96,
             "avg_vol_1wk": 118512.0,
             "b_v_rs": 249.65,
             "cmp_bv": 14.77,
@@ -7937,7 +7937,7 @@
         {
             "10yr_opm": 12.54,
             "5yr_opm": 13.09,
-            "5yrs_return": 25.49,
+            "5yrs_return": 26.15,
             "avg_vol_1wk": 280674.0,
             "b_v_rs": 632.42,
             "cmp_bv": 11.69,
@@ -8002,7 +8002,7 @@
         {
             "10yr_opm": 16.73,
             "5yr_opm": 17.74,
-            "5yrs_return": 10.32,
+            "5yrs_return": 10.29,
             "avg_vol_1wk": 370683.0,
             "b_v_rs": 155.0,
             "cmp_bv": 37.5,
@@ -8067,7 +8067,7 @@
         {
             "10yr_opm": 20.91,
             "5yr_opm": 20.62,
-            "5yrs_return": 13.18,
+            "5yrs_return": 13.16,
             "avg_vol_1wk": 866735.0,
             "b_v_rs": 93.87,
             "cmp_bv": 15.68,
@@ -8132,7 +8132,7 @@
         {
             "10yr_opm": 11.33,
             "5yr_opm": 11.07,
-            "5yrs_return": 11.82,
+            "5yrs_return": 11.92,
             "avg_vol_1wk": 856244.0,
             "b_v_rs": 138.3,
             "cmp_bv": 10.42,
@@ -8197,7 +8197,7 @@
         {
             "10yr_opm": 8.09,
             "5yr_opm": 7.68,
-            "5yrs_return": 57.27,
+            "5yrs_return": 57.24,
             "avg_vol_1wk": 2252329.0,
             "b_v_rs": 86.03,
             "cmp_bv": 11.85,
@@ -8262,7 +8262,7 @@
         {
             "10yr_opm": 14.32,
             "5yr_opm": 16.03,
-            "5yrs_return": 20.28,
+            "5yrs_return": 20.43,
             "avg_vol_1wk": 603983.0,
             "b_v_rs": 115.6,
             "cmp_bv": 12.35,
@@ -8327,7 +8327,7 @@
         {
             "10yr_opm": 8.05,
             "5yr_opm": 7.92,
-            "5yrs_return": 11.34,
+            "5yrs_return": 11.15,
             "avg_vol_1wk": 327045.0,
             "b_v_rs": 351.75,
             "cmp_bv": 11.48,
@@ -8392,7 +8392,7 @@
         {
             "10yr_opm": 13.15,
             "5yr_opm": 17.68,
-            "5yrs_return": 45.28,
+            "5yrs_return": 44.42,
             "avg_vol_1wk": 2779302.0,
             "b_v_rs": 124.9,
             "cmp_bv": 7.37,
@@ -8457,7 +8457,7 @@
         {
             "10yr_opm": 13.95,
             "5yr_opm": 13.58,
-            "5yrs_return": 48.97,
+            "5yrs_return": 48.73,
             "avg_vol_1wk": 1619492.0,
             "b_v_rs": 217.9,
             "cmp_bv": 15.02,
@@ -8520,7 +8520,7 @@
             "volume": 5300759265.2
         }
     ],
-    "date": 1763773551,
+    "date": 1763860679,
     "sold": {
         "AGI Greenpac": 1760836379,
         "AU Small Finance": 1760749341,
