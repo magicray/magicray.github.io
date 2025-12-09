@@ -242,8 +242,8 @@ def main():
         json.dump(dict(
                 data=stock_list,
                 date=int(time.time()),
-                symbol=prev['symbol'],
-                blacklisted=prev['blacklisted'],
+                #symbol=prev['symbol'],
+                #blacklisted=prev['blacklisted'],
                 sold={k: v for k, v in sold.items() if v+86400*90 > ts},
                 url='https://www.screener.in/screens/290555/universe/'),
             fd, sort_keys=True, indent=4)

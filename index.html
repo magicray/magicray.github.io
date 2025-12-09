@@ -257,7 +257,7 @@ const G = {}
 fetch('https://magicray.github.io/magicrank.json').then(function(response) {
     response.json().then(function(data) {
         G.data = data
-        G.map = data['symbol']
+        //G.map = data['symbol']
 
         const age = Math.floor((Date.now() / 1000 - data['date'])/3600)
         const total = G.data['data'].length
@@ -282,12 +282,14 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
             const v = today.toJSON().substr(0, 10) + " " + today.toString().substr(0, 4)
             if(sold[v] == undefined)
                 sold[v] = []
-            k = k.replaceAll('.', '')
+            //k = k.replaceAll('.', '')
 
             if(names.includes(k))
-                sold[v].push((G.map[k]? G.map[k]: '') + ' (' + k + ')')
+                //sold[v].push((G.map[k]? G.map[k]: '') + ' (' + k + ')')
+                sold[v].push(k)
             else
-                sold[v].push('<strong>' + (G.map[k]? G.map[k]: '') + ' (' + k + ')</strong>')
+                //sold[v].push('<strong>' + (G.map[k]? G.map[k]: '') + ' (' + k + ')</strong>')
+                sold[v].push('<strong>' + k + '</strong>')
 
             sold[v].sort()
         })

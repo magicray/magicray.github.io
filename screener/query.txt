@@ -22,4 +22,8 @@ Book value > 0 AND
 Sales > Operating profit AND
 Operating profit > Interest AND
 Operating profit > Net profit AND
-Operating profit > Profit after tax
+Operating profit > Profit after tax AND
+
+Interest Coverage Ratio > 1 AND
+
+Last result date > 202502
