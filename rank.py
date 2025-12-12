@@ -97,13 +97,13 @@ def main():
         with open(filename, 'w') as fd:
             json.dump(data, fd)
 
-    with open('magicrank.json') as fd:
-        blacklisted = json.load(fd)['blacklisted']
+    #with open('magicrank.json') as fd:
+    #    blacklisted = json.load(fd)['blacklisted']
 
     tmp = dict()
     for k, v in data['data'].items():
         try:
-            assert (k not in blacklisted)
+            #assert (k not in blacklisted)
             assert (all('' != y for y in v.values()))
 
             v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']  # Less is better Value
