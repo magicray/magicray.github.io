@@ -1,15 +1,15 @@
 import re
 import bs4
-import math
 import json
 import time
-import argparse
 import requests
 from logging import critical as log
 
-value_screen = ('903587/value', '5ruq9mkugbh7rqdi6q022ld8ji8zg5ki')
-growth_screen = ('879125/growth', 'bbv9rqsz9qblhxhp4efhtv5qvjah7mof')
-quality_screen = ('878969/quality', '36g81fd47dtp2sfxv18ymxolc36e65o5')
+value_screen = ('903587/value', 'vmoa63pxefoafjba66rh406ez0k1eerx')
+growth_screen = ('879125/growth', '1lsm4uh2p167pgxqwm3f6ci4fo5019h0')
+quality_screen = ('878969/quality', 'xsll3ahohzba2o3ey9uhsk91qizuo3ra')
+universe_screen = ('290555/universe', 'aarug8yrorogmg6ibjww0v10gz97hpl1')
+stability_screen = ('1078958/stability', 'iv7ox3w9hedmtdhhrlk7mztnaawflqr3')
 
 
 def download(screen, sessionid):
@@ -24,7 +24,7 @@ def download(screen, sessionid):
             'accept-encoding': 'gzip',
             'cookie': 'sessionid={};'.format(sessionid)})
 
-        assert(200 == r.status_code)
+        assert (200 == r.status_code)
         log('downloaded {}'.format(url + str(i+1)))
 
         page = bs4.BeautifulSoup(r.content, 'lxml')
@@ -73,61 +73,20 @@ def rank(field, data, descending=True):
     data = sorted([(v[field], k) for k, v in data.items()], reverse=descending)
 
     rank = dict()
-    for i, (ebit, name) in enumerate(data):
+    for i, (_, name) in enumerate(data):
         rank[name] = i
 
     return rank
 
 
-def median(field, data):
-    val = sorted([v[field] for k, v in data.items()])
-    return val[-1], val[len(val)//2], val[0]
-
-
-def portfolio(args):
-    # OPM > 0 AND
-    # Return on equity > 0 AND
-    # Return on assets > 0 AND
-    # Return on invested capital > 0 AND
-    # Return on capital employed > 0 AND
-    #
-    # Sales growth > 0 AND
-    # Profit growth > 0 AND
-    # Operating profit growth > 0 AND
-    #
-    # Earnings yield > 0 AND
-    # Price to Sales > 0 AND
-    # Price to Earning > 0 AND
-    # Price to book value > 0 AND
-    #
-    # EPS > 0 AND
-    # EBIT > 0 AND
-    # Net profit > 0 AND
-    # Profit after tax > 0 AND
-    # Operating profit > 0 AND
-    #
-    # EBIT latest quarter > 0 AND
-    # EBIT preceding quarter > 0 AND
-    # Operating profit latest quarter > 0 AND
-    # Operating profit preceding quarter > 0 AND
-    # Operating profit 2quarters back > 0 AND
-    # Operating profit 3quarters back > 0 AND
-    #
-    # Sales > Net profit AND
-    # Sales > Operating profit AND
-    #
-    # Current ratio > 1 AND
-    # Net worth > 0 AND
-    # Book value > 0 AND
-    # Total Assets > 0
-
+def main():
     filename = 'universe.json'
     try:
         data = json.load(open(filename))
-        assert(data['timestamp'] > time.time() - 86400)
+        assert (data['timestamp'] > time.time() - 86400)
     except Exception:
         data = dict()
-        for screen, sessionid in (value_screen, growth_screen, quality_screen):
+        for screen, sessionid in (value_screen, growth_screen, quality_screen, stability_screen, universe_screen):
             for key, value in download(screen, sessionid).items():
                 if key in data:
                     data[key].update(value)
@@ -138,210 +97,156 @@ def portfolio(args):
         with open(filename, 'w') as fd:
             json.dump(data, fd)
 
+    #with open('magicrank.json') as fd:
+    #    blacklisted = json.load(fd)['blacklisted']
+
     tmp = dict()
     for k, v in data['data'].items():
-        v.pop('5yrs_return', None)
+        try:
+            #assert (k not in blacklisted)
+            assert (all('' != y for y in v.values()))
 
-        if all('' != y for y in v.values()):
+            v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']  # Less is better Value
+
+            # Net Profit Margin - More is better Quality
+            v['npm'] = (100 * v['np_12m_rs_cr']) / v['sales_rs_cr']
+
+            v['volume'] = v['avg_vol_1wk'] * v['cmp_rs']
+
             tmp[k] = v
-            v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']
-        else:
-            log('incomplete data : %s', k)
+        except Exception:
+            log('incomplete data : name(%s)', k)
+            log(json.dumps({x: y for x, y in v.items() if '' == y}, indent=4))
 
-    if not args.top:
-        args.top = int(len(tmp)/2)
+    data = tmp
 
-    if not args.count:
-        args.count = args.top
+    # Rank on Size - More is better
+    np = rank('np_12m_rs_cr', data)           # More net profit is better
+    op = rank('op_12m_rs_cr', data)           # More operting profit is better
+    ebit = rank('ebit_12m_rs_cr', data)       # More ebit is better
+    sales = rank('sales_rs_cr', data)         # More sales is better
+    volume = rank('volume', data)             # Higher volume is better
+    networth = rank('net_worth_rs_cr', data)  # Higher networth is better
+    size_rank = [(np[name] + op[name] + ebit[name] +
+                  sales[name] + volume[name] + networth[name],
+                  name) for name in sales]
 
-    # Statistics is likely to work more reliable for bigger companies,
-    # pick biggest args.top stocks by market cap
-    mcap = rank('op_12m_rs_cr', tmp)
-    #mcap = rank('mar_cap_rs_cr', tmp)
-    final_rank = [(mcap[name], name) for name in mcap]
-    biggest = set([name for rank, name in sorted(final_rank)[:args.top]])
-    data = {k: v for k, v in tmp.items() if k in biggest}
-    assert(len(data) == args.top)
+    # Divide into two halvs based upon the above factors to discard the tiny companies.
+    # We will take only the upper half ranked by profit and sales
+    count = int(len(size_rank)/2)
+    biggest_stocks = set([name for _, name in sorted(size_rank)[:count]])
+    data = {k: v for k, v in data.items() if k in biggest_stocks}
 
-    t = time.time()
-    log('columns(%d) rows(%d) msec(%d)',
-        len(data[list(data.keys())[0]]), len(data), (time.time()-t)*1000)
-
-    columns = ('roce', 'roe',
-               # 'qtr_sales_var', 'qtr_profit_var',
-               'earnings_yield', 'p_e',
-               'mar_cap_rs_cr', 'cmp_rs')
-
-    # Rank on Profitability
+    # Rank on Quality - More is better unless specified
     roe = rank('roe', data)
     roe_3yr = rank('roe_3yr', data)
     roe_5yr = rank('roe_5yr', data)
+    roe_7yr = rank('roe_7yr', data)
+    roe_10yr = rank('roe_10yr', data)
     roce = rank('roce', data)
     roce_3yr = rank('roce_3yr', data)
     roce_5yr = rank('roce_5yr', data)
+    roce_7yr = rank('roce_7yr', data)
+    roce_10yr = rank('roce_10yr', data)
     roic = rank('roic', data)
+    npm = rank('npm', data)
     opm = rank('opm', data)
     opm_5yr = rank('5yr_opm', data)
     roa = rank('roa_12m', data)
     roa_3yr = rank('roa_3yr', data)
     roa_5yr = rank('roa_5yr', data)
 
-    # Rank on Growth
+    # Rank on Growth - More is better
     sales_growth = rank('sales_growth', data)
     sales_growth_3yr = rank('sales_var_3yrs', data)
     sales_growth_5yr = rank('sales_var_5yrs', data)
+    sales_growth_7yr = rank('sales_var_7yrs', data)
+    sales_growth_10yr = rank('sales_var_10yrs', data)
     sales_growth_yoy = rank('qtr_sales_var', data)
     profit_growth = rank('profit_growth', data)
     profit_growth_3yr = rank('profit_var_3yrs', data)
     profit_growth_5yr = rank('profit_var_5yrs', data)
+    profit_growth_7yr = rank('profit_var_7yrs', data)
+    profit_growth_10yr = rank('profit_var_10yrs', data)
     profit_growth_yoy = rank('qtr_profit_var', data)
     op_profit_growth = rank('opert_prft_gwth', data)
+    eps_growth_3yr = rank('eps_var_3yrs', data)
+    eps_growth_5yr = rank('eps_var_5yrs', data)
+    eps_growth_7yr = rank('eps_var_7yrs', data)
+    eps_growth_10yr = rank('eps_var_10yrs', data)
+    ebidt_growth_3yr = rank('ebidt_var_3yrs', data)
+    ebidt_growth_5yr = rank('ebidt_var_5yrs', data)
+    ebidt_growth_7yr = rank('ebidt_var_7yrs', data)
+    ebidt_growth_10yr = rank('ebidt_var_10yrs', data)
 
     # Rank on Valuation
-    pe = rank('p_e', data, False)
-    ps = rank('cmp_sales', data, False)
-    pb = rank('cmp_bv', data, False)
-    po = rank('p_o', data, False)
-    e_yield = rank('earnings_yield', data)
+    pe = rank('p_e', data, False)             # Less Price/Earnings is better
+    ps = rank('cmp_sales', data, False)       # Less Price/Sales is better
+    pb = rank('cmp_bv', data, False)          # Less Price/BookValue is better
+    po = rank('p_o', data, False)             # Less Price/Operating Profit is better
+    e_yield = rank('earnings_yield', data)    # More Earnings Yield is better
+    evebitda = rank('ev_ebitda', data, False) # Less Enterprise Value / EBITDA is better
 
-    # Rank on Stability
-    sales = rank('sales_rs_cr', data)
-    np = rank('np_12m_rs_cr', data)
-    op = rank('op_12m_rs_cr', data)
-    debteq = rank('debt_eq', data, False)
-
-    stats = {f: median(f, data) for f in columns}
-
+    # Ranking weightage - 25% Quality - 25% Growth - 50% Valuation
     final_rank = [(
         # Quality
-        (roce[name] + roe[name] + opm[name] + roa[name] +
+        (roce[name] + roe[name] + npm[name] + opm[name] + roa[name] +
          roce_3yr[name] + roe_3yr[name] + roa_3yr[name] +
          roce_5yr[name] + roe_5yr[name] + opm_5yr[name] + roa_5yr[name] +
-         roic[name]) / 12 +
+         roce_7yr[name] + roe_7yr[name] +
+         roce_10yr[name] + roe_10yr[name] +
+         roic[name]) / 17 +
 
         # Growth
         (sales_growth[name] + profit_growth[name] +
          sales_growth_3yr[name] + profit_growth_3yr[name] +
          sales_growth_5yr[name] + profit_growth_5yr[name] +
+         sales_growth_7yr[name] + profit_growth_7yr[name] +
+         sales_growth_10yr[name] + profit_growth_10yr[name] +
          sales_growth_yoy[name] + profit_growth_yoy[name] +
-         op_profit_growth[name]) / 9 +
+         op_profit_growth[name] +
+         eps_growth_3yr[name] + eps_growth_5yr[name] +
+         eps_growth_7yr[name] + eps_growth_10yr[name] +
+         ebidt_growth_3yr[name] + ebidt_growth_5yr[name] +
+         ebidt_growth_7yr[name] + ebidt_growth_10yr[name]) / 21 +
 
         # Value
-        (pe[name] + pb[name] + ps[name] + po[name] + e_yield[name]) / 5 +
-
-        # Stability
-        (sales[name] + np[name] + op[name] + debteq[name]) / 4,
+        (pe[name] + pb[name] + ps[name] + po[name] +
+         e_yield[name] + evebitda[name])*2 / 6,
 
         name) for name in roe]
 
-    def print_header():
-        headers = '{:16s}' + '{:>8s}' * 9
-        print(headers.format(time.strftime('%Y-%m-%d'),
-                             'ROCE', 'ROE',
-                             'SALES', 'PROFIT',
-                             'YIELD', 'P/E',
-                             'MCAP', 'CMP', 'QTY'))
-
-    print_header()
-    for i, f in enumerate(('Max', 'Median')):
-        print(('%s\t\t' + '%8.2f' * 4 + '%8d%8d') % (
-            f,
-            stats['roce'][i],
-            stats['roe'][i],
-            # stats['qtr_sales_var'][i],
-            # stats['qtr_profit_var'][i],
-            stats['earnings_yield'][i],
-            stats['p_e'][i],
-            stats['mar_cap_rs_cr'][i],
-            stats['cmp_rs'][i]))
-    print('-' * 88)
-
-    avg = {k: 0 for k in columns}
-    avg['count'] = 0
-
-    if int(args.count) != args.count:
-        args.count = args.count * len(final_rank)
-
-    args.count = int(args.count)
-
-    start = 0
-    args.count = args.count if args.count else len(final_rank)
-    if args.count < 0:
-        args.count *= -1
-        start = len(final_rank) - args.count
-
-    per_stock = args.amount / args.count
     count = 0
     stock_list = list()
-    for n, (_, name) in enumerate(sorted(final_rank)[start:start+args.count]):
+    for n, (_, name) in enumerate(sorted(final_rank)):
         v = data[name]
+        count = count+1
         v['name'] = name
-        v['rank'] = count+1
+        v['rank'] = count
         stock_list.append(v)
-
-        qty = 0
-        available = per_stock if args.amount > per_stock else args.amount
-        qty = math.ceil(available / v['cmp_rs'])
-
-        if qty*v['cmp_rs'] > max(available, args.amount):
-            qty -= 1
-
-        if args.amount and qty < 1:
-            break
-
-        args.amount -= qty*v['cmp_rs']
-
-        print(('%-16s' + '%8.2f' * 4 + '%8d%8d%8d') % (
-            name, v['roce'], v['roe'],
-            # v['qtr_sales_var'], v['qtr_profit_var'],
-            v['earnings_yield'], v['p_e'],
-            v['mar_cap_rs_cr'], v['cmp_rs'],
-            qty))
-
-        count += 1
-
-        for k in columns:
-            avg[k] += v[k]
-        avg['count'] += 1
-
-    for k in columns:
-        avg[k] /= avg['count']
 
     with open('magicrank.json') as fd:
         prev = json.load(fd)
 
-    prev_names = set([s['name'] for s in prev['data'] if s['rank'] <= len(prev['data'])/2])
-    stock_names = set([s['name'] for s in stock_list if s['rank'] <= args.top/2])
+    prev_names = set([s['name'] for s in prev['data'] if s['rank'] <= len(prev['data'])//2])
+    stock_names = set([s['name'] for s in stock_list if s['rank'] <= len(stock_list)//2])
     with open('magicrank.json', 'w') as fd:
         ts = int(time.time())
         sold = prev.get('sold', {})
         sold.update({s: ts for s in set(prev_names) - set(stock_names)})
+
         for s in list(sold.keys()):
             if s in stock_names:
                 sold.pop(s)
+
         json.dump(dict(
                 data=stock_list,
                 date=int(time.time()),
-                symbol=prev['symbol'],
+                #symbol=prev['symbol'],
+                #blacklisted=prev['blacklisted'],
                 sold={k: v for k, v in sold.items() if v+86400*90 > ts},
                 url='https://www.screener.in/screens/290555/universe/'),
             fd, sort_keys=True, indent=4)
-
-    print('-' * 88)
-    print_header()
-    print(('%-16s' + '%8.2f' * 4 + '%8d%8d') % (
-        'Average', avg['roce'], avg['roe'],
-        # avg['qtr_sales_var'], avg['qtr_profit_var'],
-        avg['earnings_yield'], avg['p_e'],
-        avg['mar_cap_rs_cr'], avg['cmp_rs']))
-
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--amount', dest='amount', type=int, default=0)
-    parser.add_argument('--count', dest='count', type=float)
-    parser.add_argument('--top', dest='top', type=int, default=500)
-    portfolio(parser.parse_args())
 
 
 if __name__ == '__main__':

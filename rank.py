@@ -141,13 +141,9 @@ def main():
     roe = rank('roe', data)
     roe_3yr = rank('roe_3yr', data)
     roe_5yr = rank('roe_5yr', data)
-    roe_7yr = rank('roe_7yr', data)
-    roe_10yr = rank('roe_10yr', data)
     roce = rank('roce', data)
     roce_3yr = rank('roce_3yr', data)
     roce_5yr = rank('roce_5yr', data)
-    roce_7yr = rank('roce_7yr', data)
-    roce_10yr = rank('roce_10yr', data)
     roic = rank('roic', data)
     npm = rank('npm', data)
     opm = rank('opm', data)
@@ -160,24 +156,16 @@ def main():
     sales_growth = rank('sales_growth', data)
     sales_growth_3yr = rank('sales_var_3yrs', data)
     sales_growth_5yr = rank('sales_var_5yrs', data)
-    sales_growth_7yr = rank('sales_var_7yrs', data)
-    sales_growth_10yr = rank('sales_var_10yrs', data)
     sales_growth_yoy = rank('qtr_sales_var', data)
     profit_growth = rank('profit_growth', data)
     profit_growth_3yr = rank('profit_var_3yrs', data)
     profit_growth_5yr = rank('profit_var_5yrs', data)
-    profit_growth_7yr = rank('profit_var_7yrs', data)
-    profit_growth_10yr = rank('profit_var_10yrs', data)
     profit_growth_yoy = rank('qtr_profit_var', data)
     op_profit_growth = rank('opert_prft_gwth', data)
     eps_growth_3yr = rank('eps_var_3yrs', data)
     eps_growth_5yr = rank('eps_var_5yrs', data)
-    eps_growth_7yr = rank('eps_var_7yrs', data)
-    eps_growth_10yr = rank('eps_var_10yrs', data)
     ebidt_growth_3yr = rank('ebidt_var_3yrs', data)
     ebidt_growth_5yr = rank('ebidt_var_5yrs', data)
-    ebidt_growth_7yr = rank('ebidt_var_7yrs', data)
-    ebidt_growth_10yr = rank('ebidt_var_10yrs', data)
 
     # Rank on Valuation
     pe = rank('p_e', data, False)             # Less Price/Earnings is better
@@ -193,22 +181,16 @@ def main():
         (roce[name] + roe[name] + npm[name] + opm[name] + roa[name] +
          roce_3yr[name] + roe_3yr[name] + roa_3yr[name] +
          roce_5yr[name] + roe_5yr[name] + opm_5yr[name] + roa_5yr[name] +
-         roce_7yr[name] + roe_7yr[name] +
-         roce_10yr[name] + roe_10yr[name] +
-         roic[name]) / 17 +
+         roic[name]) / 13 +
 
         # Growth
         (sales_growth[name] + profit_growth[name] +
          sales_growth_3yr[name] + profit_growth_3yr[name] +
          sales_growth_5yr[name] + profit_growth_5yr[name] +
-         sales_growth_7yr[name] + profit_growth_7yr[name] +
-         sales_growth_10yr[name] + profit_growth_10yr[name] +
          sales_growth_yoy[name] + profit_growth_yoy[name] +
          op_profit_growth[name] +
          eps_growth_3yr[name] + eps_growth_5yr[name] +
-         eps_growth_7yr[name] + eps_growth_10yr[name] +
-         ebidt_growth_3yr[name] + ebidt_growth_5yr[name] +
-         ebidt_growth_7yr[name] + ebidt_growth_10yr[name]) / 21 +
+         ebidt_growth_3yr[name] + ebidt_growth_5yr[name]) / 13 +
 
         # Value
         (pe[name] + pb[name] + ps[name] + po[name] +
@@ -242,8 +224,6 @@ def main():
         json.dump(dict(
                 data=stock_list,
                 date=int(time.time()),
-                #symbol=prev['symbol'],
-                #blacklisted=prev['blacklisted'],
                 sold={k: v for k, v in sold.items() if v+86400*90 > ts},
                 url='https://www.screener.in/screens/290555/universe/'),
             fd, sort_keys=True, indent=4)
