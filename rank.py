@@ -5,7 +5,6 @@ import time
 import requests
 from logging import critical as log
 
-value_screen = ('903587/value', 'vmoa63pxefoafjba66rh406ez0k1eerx')
 growth_screen = ('879125/growth', '1lsm4uh2p167pgxqwm3f6ci4fo5019h0')
 quality_screen = ('878969/quality', 'xsll3ahohzba2o3ey9uhsk91qizuo3ra')
 universe_screen = ('290555/universe', 'aarug8yrorogmg6ibjww0v10gz97hpl1')
@@ -86,7 +85,7 @@ def main():
         assert (data['timestamp'] > time.time() - 86400)
     except Exception:
         data = dict()
-        for screen, sessionid in (value_screen, growth_screen, quality_screen, stability_screen, universe_screen):
+        for screen, sessionid in (growth_screen, quality_screen, stability_screen, universe_screen):
             for key, value in download(screen, sessionid).items():
                 if key in data:
                     data[key].update(value)
@@ -111,8 +110,6 @@ def main():
             # Net Profit Margin - More is better Quality
             v['npm'] = (100 * v['np_12m_rs_cr']) / v['sales_rs_cr']
 
-            v['volume'] = v['avg_vol_1wk'] * v['cmp_rs']
-
             tmp[k] = v
         except Exception:
             log('incomplete data : name(%s)', k)
@@ -125,10 +122,9 @@ def main():
     op = rank('op_12m_rs_cr', data)           # More operting profit is better
     ebit = rank('ebit_12m_rs_cr', data)       # More ebit is better
     sales = rank('sales_rs_cr', data)         # More sales is better
-    volume = rank('volume', data)             # Higher volume is better
     networth = rank('net_worth_rs_cr', data)  # Higher networth is better
     size_rank = [(np[name] + op[name] + ebit[name] +
-                  sales[name] + volume[name] + networth[name],
+                  sales[name] + networth[name],
                   name) for name in sales]
 
     # Divide into two halvs based upon the above factors to discard the tiny companies.
