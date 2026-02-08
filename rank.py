@@ -8,7 +8,7 @@ from logging import critical as log
 growth_screen = ('879125/growth', '1lsm4uh2p167pgxqwm3f6ci4fo5019h0')
 quality_screen = ('878969/quality', 'xsll3ahohzba2o3ey9uhsk91qizuo3ra')
 universe_screen = ('290555/universe', 'aarug8yrorogmg6ibjww0v10gz97hpl1')
-stability_screen = ('1078958/stability', 'iv7ox3w9hedmtdhhrlk7mztnaawflqr3')
+#stability_screen = ('1078958/stability', 'iv7ox3w9hedmtdhhrlk7mztnaawflqr3')
 
 
 def download(screen, sessionid):
@@ -85,7 +85,7 @@ def main():
         assert (data['timestamp'] > time.time() - 86400)
     except Exception:
         data = dict()
-        for screen, sessionid in (growth_screen, quality_screen, stability_screen, universe_screen):
+        for screen, sessionid in (growth_screen, quality_screen, universe_screen):
             for key, value in download(screen, sessionid).items():
                 if key in data:
                     data[key].update(value)
