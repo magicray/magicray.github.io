@@ -1,0 +1,156 @@
+UNIVERSE - 14
+    Market Capitalization
+    Return on assets
+    Return on invested capital
+    Price to Earning
+    EBIT
+    Earnings yield
+    Price to book value
+    Price to Sales
+    EVEBITDA
+    Net profit
+    Sales
+    Operating profit
+    Enterprise Value
+    Net worth
+QUALITY - 12
+    Return on capital employed
+    Return on equity
+    Return on assets
+    Return on invested capital
+    OPM
+    Average return on capital employed 5Years
+    Average return on capital employed 3Years
+    Average return on equity 5Years
+    Average return on equity 3Years
+    Return on assets 5years
+    Return on assets 3years
+    OPM 5Years
+GROWTH - 11
+    Sales growth
+    Sales growth 5Years
+    Sales growth 3Years
+    Profit growth
+    Profit growth 3Years
+    Profit growth 5Years
+    EBIDT growth 3Years
+    EBIDT growth 5Years
+    EPS growth 3Years
+    EPS growth 5Years
+    Operating profit growth
+REMOVED
+    Return on capital employed
+    Return on equity
+    Sales growth
+    Profit growth
+    Operating profit growth
+    EBIDT growth 3 Years
+    EBIDT growth 5 Years
+
+GROWTH SCORE
+YOY Quarterly sales growth > 0 AND
+YOY Quarterly profit growth > 0 AND
+EPS latest quarter > EPS preceding year quarter AND
+EBIT latest quarter > EBIT preceding year quarter AND
+EBIDT latest quarter > EBIDT preceding year quarter AND
+Operating profit latest quarter > Operating profit preceding year quarter AND
+
+Profit growth > 0 AND
+Sales growth > 0 AND
+Operating profit growth > 0 AND
+
+EPS growth 3Years > 0 AND
+EPS growth 5Years > 0 AND
+EPS growth 7Years > 0 AND
+EPS growth 10Years > 0 AND
+
+Profit growth 3Years > 0 AND
+Profit growth 5Years > 0 AND
+Profit growth 7Years > 0 AND
+Profit growth 10Years > 0 AND
+
+EBIDT growth 3Years > 0 AND
+EBIDT growth 5Years > 0 AND
+EBIDT growth 7Years > 0 AND
+EBIDT growth 10Years > 0 AND
+
+Sales growth 3Years > 0 AND
+Sales growth 5Years > 0 AND
+Sales growth 7Years > 0 AND
+Sales growth 10Years > 0 AND
+
+Average EBIT 5Year > Average EBIT 10Year AND
+Average Earnings 5Year > Average Earnings 10Year
+
+GROWTH SCORE NEW
+Profit growth > 0 AND
+Sales growth > 0 AND
+Operating profit growth > 0 AND
+
+EPS growth 3Years > 0 AND
+EPS growth 5Years > 0 AND
+
+Profit growth 3Years > 0 AND
+Profit growth 5Years > 0 AND
+
+EBIDT growth 3Years > 0 AND
+EBIDT growth 5Years > 0 AND
+
+Sales growth 3Years > 0 AND
+Sales growth 5Years > 0
+
+QUALITY SCORE
+OPM > 0 AND
+OPM 5Year > 0 AND
+OPM 10Year > 0 AND
+
+EPS > 0 AND
+EBIT > 0 AND
+Sales > 0 AND
+Net profit > 0 AND
+Profit after tax > 0 AND
+Operating profit > 0 AND
+
+Return on assets > 0 AND
+Return on assets 3years > 0 AND
+Return on assets 5years > 0 AND
+
+Return on equity > 0 AND
+Average return on equity 3Years > 0 AND
+Average return on equity 5Years > 0 AND
+Average return on equity 7Years > 0 AND
+Average return on equity 10Years > 0 AND
+
+Return on invested capital > 0 AND
+
+Return on capital employed > 0 AND
+Average return on capital employed 3Years > 0 AND
+Average return on capital employed 5Years > 0 AND
+Average return on capital employed 7Years > 0 AND
+Average return on capital employed 10Years > 0
+
+QUALITY SCORE NEW
+
+OPM > 0 AND
+OPM 5Year > 0 AND
+
+EPS > 0 AND
+EBIT > 0 AND
+Sales > 0 AND
+Net profit > 0 AND
+Profit after tax > 0 AND
+Operating profit > 0 AND
+
+Return on assets > 0 AND
+Return on assets 3years > 0 AND
+Return on assets 5years > 0 AND
+
+Return on equity > 0 AND
+Average return on equity 3Years > 0 AND
+Average return on equity 5Years > 0 AND
+
+Return on invested capital > 0 AND
+
+Return on capital employed > 0 AND
+Average return on capital employed 3Years > 0 AND
+Average return on capital employed 5Years > 0
