@@ -1,0 +1,29 @@
+Quality Score > 0 AND
+Growth Score > 0 AND
+
+OPM latest quarter > 0 AND
+GPM latest quarter > 0 AND
+NPM latest quarter > 0 AND
+
+EPS latest quarter > 0 AND
+EBIT latest quarter > 0 AND
+Sales latest quarter > 0 AND
+EBIDT latest quarter > 0 AND
+Net Profit latest quarter > 0 AND
+Profit after tax latest quarter > 0 AND
+Profit before tax latest quarter > 0 AND
+Operating profit latest quarter > 0 AND
+Sales latest quarter > EBIT latest quarter AND
+Sales latest quarter > Operating profit latest quarter AND
+
+Sales > EBIT AND
+EBIT > Interest AND
+Book value > 0 AND
+Sales > Operating profit AND
+Operating profit > Interest AND
+Operating profit > Net profit AND
+Operating profit > Profit after tax AND
+
+Interest Coverage Ratio > 1 AND
+
+Last result date > 202508

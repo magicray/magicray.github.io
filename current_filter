@@ -1,0 +1,64 @@
+OPM latest quarter > 0 AND
+NPM latest quarter > 0 AND
+GPM latest quarter > 0 AND
+
+EPS latest quarter > 0 AND
+EBIT latest quarter > 0 AND
+Sales latest quarter > 0 AND
+EBIDT latest quarter > 0 AND
+Net Profit latest quarter > 0 AND
+Profit after tax latest quarter > 0 AND
+Profit before tax latest quarter > 0 AND
+Operating profit latest quarter > 0 AND
+Sales latest quarter > Operating profit latest quarter AND
+
+EPS > 0 AND
+EBIT > 0 AND
+Sales > 0 AND
+Net profit > 0 AND
+Profit after tax > 0 AND
+Operating profit > 0 AND
+
+Sales > Operating profit AND
+Operating profit > Interest AND
+Operating profit > Net profit AND
+Operating profit > Profit after tax AND
+
+OPM > 0 AND
+OPM 5Year > 0 AND
+
+Return on assets > 0 AND
+Return on assets 3years > 0 AND
+Return on assets 5years > 0 AND
+
+Return on equity > 0 AND
+Average return on equity 3Years > 0 AND
+Average return on equity 5Years > 0 AND
+
+Return on invested capital > 0 AND
+
+Return on capital employed > 0 AND
+Average return on capital employed 3Years > 0 AND
+Average return on capital employed 5Years > 0 AND
+
+Profit growth > 0 AND
+Sales growth > 0 AND
+Operating profit growth > 0 AND
+
+EPS growth 3Years > 0 AND
+EPS growth 5Years > 0 AND
+
+Profit growth 3Years > 0 AND
+Profit growth 5Years > 0 AND
+
+EBIDT growth 3Years > 0 AND
+EBIDT growth 5Years > 0 AND
+
+Sales growth 3Years > 0 AND
+Sales growth 5Years > 0 AND
+
+Book value > 0 AND
+Interest Coverage Ratio > 1 AND
+
+Last result date > 202508
+
