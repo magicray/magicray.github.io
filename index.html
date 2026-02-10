@@ -26,7 +26,7 @@
                 <th colspan=2>Group</th>
                 <th colspan=7>Stability</th>
                 <th colspan=13>Quality</th>
-                <th colspan=11>Growth</th>
+                <th colspan=13>Growth</th>
                 <th colspan=6>Valuation</th>
                 </tr>
                 <tr>
@@ -51,9 +51,11 @@
                 <th id="roa_green"></th>
                 <th id="roa_3yr_green"></th>
                 <th id="roa_5yr_green"></th>
+                <th id="profit_growth_yoy_green"></th>
                 <th id="profit_growth_green"></th>
                 <th id="profit_growth_3yr_green"></th>
                 <th id="profit_growth_5yr_green"></th>
+                <th id="sales_growth_yoy_green"></th>
                 <th id="sales_growth_green"></th>
                 <th id="sales_growth_3yr_green"></th>
                 <th id="sales_growth_5yr_green"></th>
@@ -90,9 +92,11 @@
                 <th id="roa_black"></th>
                 <th id="roa_3yr_black"></th>
                 <th id="roa_5yr_black"></th>
+                <th id="profit_growth_yoy_black"></th>
                 <th id="profit_growth_black"></th>
                 <th id="profit_growth_3yr_black"></th>
                 <th id="profit_growth_5yr_black"></th>
+                <th id="sales_growth_yoy_black"></th>
                 <th id="sales_growth_black"></th>
                 <th id="sales_growth_3yr_black"></th>
                 <th id="sales_growth_5yr_black"></th>
@@ -129,9 +133,11 @@
                 <th id="roa_red"></th>
                 <th id="roa_3yr_red"></th>
                 <th id="roa_5yr_red"></th>
+                <th id="profit_growth_yoy_red"></th>
                 <th id="profit_growth_red"></th>
                 <th id="profit_growth_3yr_red"></th>
                 <th id="profit_growth_5yr_red"></th>
+                <th id="sales_growth_yoy_red"></th>
                 <th id="sales_growth_red"></th>
                 <th id="sales_growth_3yr_red"></th>
                 <th id="sales_growth_5yr_red"></th>
@@ -169,10 +175,12 @@
                 <th>ROA</th>
                 <th>ROA 3Yr</th>
                 <th>ROA 5Yr</th>
-                <th>Profit</th>
+                <th>Profit Qtr</th>
+                <th>Profit 1Yr</th>
                 <th>Profit 3Yr</th>
                 <th>Profit 5Yr</th>
-                <th>Sales</th>
+                <th>Sales Qtr</th>
+                <th>Sales 1Yr</th>
                 <th>Sales 3Yr</th>
                 <th>Sales 5Yr</th>
                 <th>OProfit</th>
@@ -281,9 +289,11 @@ function format_data(data, amount) {
             d['roa_12m'],
             d['roa_3yr'],
             d['roa_5yr'],
+            d['qtr_profit_var'],
             d['profit_growth'],
             d['profit_var_3yrs'],
             d['profit_var_5yrs'],
+            d['qtr_sales_var'],
             d['sales_growth'],
             d['sales_var_3yrs'],
             d['sales_var_5yrs'],
@@ -357,8 +367,8 @@ function renderTable(tableId, data) {
                  'roe', 'roe_3yr', 'roe_5yr',
                  'roic', 'npm', 'opm', 'opm_5yr', 'roa', 'roa_3yr', 'roa_5yr',
 
-	         'profit_growth', 'profit_growth_3yr', 'profit_growth_5yr',
-                 'sales_growth', 'sales_growth_3yr', 'sales_growth_5yr',
+	         'profit_growth_yoy', 'profit_growth', 'profit_growth_3yr', 'profit_growth_5yr',
+                 'sales_growth_yoy', 'sales_growth', 'sales_growth_3yr', 'sales_growth_5yr',
                  'oprofit_growth',
                  'eps_growth_3yr', 'eps_growth_5yr',
                  'ebitd_growth_3yr', 'ebitd_growth_5yr',
@@ -393,7 +403,7 @@ function renderTable(tableId, data) {
 
     let tmp = [...data]
     tmp.map((row, index) => {
-        for(let i=2; i<39; i++)
+        for(let i=2; i<41; i++)
             row[i] = Math.round(row[i])
     })
 
