@@ -152,9 +152,11 @@ def main():
     sales_growth = rank('sales_growth', data)
     sales_growth_3yr = rank('sales_var_3yrs', data)
     sales_growth_5yr = rank('sales_var_5yrs', data)
+    sales_growth_yoy = rank('qtr_sales_var', data)
     profit_growth = rank('profit_growth', data)
     profit_growth_3yr = rank('profit_var_3yrs', data)
     profit_growth_5yr = rank('profit_var_5yrs', data)
+    profit_growth_yoy = rank('qtr_profit_var', data)
     op_profit_growth = rank('opert_prft_gwth', data)
     eps_growth_3yr = rank('eps_var_3yrs', data)
     eps_growth_5yr = rank('eps_var_5yrs', data)
@@ -181,9 +183,10 @@ def main():
         (sales_growth[name] + profit_growth[name] +
          sales_growth_3yr[name] + profit_growth_3yr[name] +
          sales_growth_5yr[name] + profit_growth_5yr[name] +
+         sales_growth_yoy[name] + profit_growth_yoy[name] +
          op_profit_growth[name] +
          eps_growth_3yr[name] + eps_growth_5yr[name] +
-         ebidt_growth_3yr[name] + ebidt_growth_5yr[name]) / 11 +
+         ebidt_growth_3yr[name] + ebidt_growth_5yr[name]) / 13 +
 
         # Value
         (pe[name] + pb[name] + ps[name] + po[name] +
