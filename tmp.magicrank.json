@@ -11235,7 +11235,7 @@
             "sales_var_5yrs": 12.82
         }
     ],
-    "date": 1771156863,
+    "date": 1771157027,
     "sold": {
         "AU Small Finance": 1770717630,
         "Adani Ports": 1770254829,
@@ -11243,14 +11243,15 @@
         "AvenuesAI": 1770717630,
         "Bajaj Finance": 1770168388,
         "Cipla": 1769217240,
-        "Coforge": 1771156863,
+        "Coforge": 1771156597,
         "Coromandel Inter": 1768353498,
-        "Firstsour.Solu.": 1771156863,
+        "Firstsour.Solu.": 1771156597,
         "Force Motors": 1770717630,
         "Granules India": 1770516167,
+        "Hi-Tech Pipes": 1771157027,
         "India Glycols": 1770516167,
         "Infibeam Avenues": 1770082986,
-        "Jamna Auto Inds.": 1771156863,
+        "Jamna Auto Inds.": 1771157027,
         "Lumax Auto Tech.": 1770717630,
         "M & M Fin. Serv.": 1769650012,
         "Manorama Indust.": 1770717630,
@@ -11259,9 +11260,9 @@
         "Ratnamani Metals": 1770427568,
         "Shakti Pumps": 1771032458,
         "Thangamayil Jew.": 1770254829,
-        "UTI AMC": 1771156863,
+        "UTI AMC": 1771157027,
         "Ugro Capital": 1770516167,
-        "Va Tech Wabag": 1771156863
+        "Va Tech Wabag": 1771157027
     },
     "url": "https://www.screener.in/screens/290555/universe/"
 }
