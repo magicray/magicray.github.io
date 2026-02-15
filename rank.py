@@ -5,34 +5,34 @@ import time
 import requests
 from logging import critical as log
 
-#OPM > 0 AND
-#OPM 5Year > 0 AND
+# OPM > 0 AND
+# OPM 5Year > 0 AND
 #
-#Return on equity > 0 AND
-#Average return on equity 3Years > 0 AND
-#Average return on equity 5Years > 0 AND
+# Return on equity > 0 AND
+# Average return on equity 3Years > 0 AND
+# Average return on equity 5Years > 0 AND
 #
-#Return on capital employed > 0 AND
-#Average return on capital employed 3Years > 0 AND
-#Average return on capital employed 5Years > 0 AND
+# Return on capital employed > 0 AND
+# Average return on capital employed 3Years > 0 AND
+# Average return on capital employed 5Years > 0 AND
 #
-#Sales growth > 0 AND
-#Sales growth 3Years > 0 AND
-#Sales growth 5Years > 0 AND
+# Sales growth > 0 AND
+# Sales growth 3Years > 0 AND
+# Sales growth 5Years > 0 AND
 #
-#Profit growth > 0 AND
-#Profit growth 3Years > 0 AND
-#Profit growth 5Years > 0 AND
+# Profit growth > 0 AND
+# Profit growth 3Years > 0 AND
+# Profit growth 5Years > 0 AND
 #
-#EPS growth 3Years > 0 AND
-#EPS growth 5Years > 0 AND
+# EPS growth 3Years > 0 AND
+# EPS growth 5Years > 0 AND
 #
-#Operating profit growth > 0 AND
+# Operating profit growth > 0 AND
 #
-#Operating profit > Interest AND
-#Operating profit > Net profit AND
+# Operating profit > Interest AND
+# Operating profit > Net profit AND
 #
-#Last result date > 202508
+# Last result date > 202508
 
 
 growth_screen = ('879125/growth', '1lsm4uh2p167pgxqwm3f6ci4fo5019h0')
