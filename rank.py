@@ -8,7 +8,6 @@ from logging import critical as log
 growth_screen = ('879125/growth', '1lsm4uh2p167pgxqwm3f6ci4fo5019h0')
 quality_screen = ('878969/quality', 'xsll3ahohzba2o3ey9uhsk91qizuo3ra')
 universe_screen = ('290555/universe', 'aarug8yrorogmg6ibjww0v10gz97hpl1')
-#stability_screen = ('1078958/stability', 'iv7ox3w9hedmtdhhrlk7mztnaawflqr3')
 
 
 def download(screen, sessionid):
@@ -96,19 +95,12 @@ def main():
         with open(filename, 'w') as fd:
             json.dump(data, fd)
 
-    #with open('magicrank.json') as fd:
-    #    blacklisted = json.load(fd)['blacklisted']
-
     tmp = dict()
     for k, v in data['data'].items():
         try:
-            #assert (k not in blacklisted)
             assert (all('' != y for y in v.values()))
 
             v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']  # Less is better Value
-
-            # Net Profit Margin - More is better Quality
-            v['npm'] = (100 * v['np_12m_rs_cr']) / v['sales_rs_cr']
 
             tmp[k] = v
         except Exception:
@@ -140,8 +132,6 @@ def main():
     roce = rank('roce', data)
     roce_3yr = rank('roce_3yr', data)
     roce_5yr = rank('roce_5yr', data)
-    roic = rank('roic', data)
-    npm = rank('npm', data)
     opm = rank('opm', data)
     opm_5yr = rank('5yr_opm', data)
     roa = rank('roa_12m', data)
@@ -160,8 +150,6 @@ def main():
     op_profit_growth = rank('opert_prft_gwth', data)
     eps_growth_3yr = rank('eps_var_3yrs', data)
     eps_growth_5yr = rank('eps_var_5yrs', data)
-    ebidt_growth_3yr = rank('ebidt_var_3yrs', data)
-    ebidt_growth_5yr = rank('ebidt_var_5yrs', data)
 
     # Rank on Valuation
     pe = rank('p_e', data, False)             # Less Price/Earnings is better
@@ -174,10 +162,9 @@ def main():
     # Ranking weightage - 25% Quality - 25% Growth - 50% Valuation
     final_rank = [(
         # Quality
-        (roce[name] + roe[name] + npm[name] + opm[name] + roa[name] +
+        (roce[name] + roe[name] + opm[name] + roa[name] +
          roce_3yr[name] + roe_3yr[name] + roa_3yr[name] +
-         roce_5yr[name] + roe_5yr[name] + opm_5yr[name] + roa_5yr[name] +
-         roic[name]) / 13 +
+         roce_5yr[name] + roe_5yr[name] + opm_5yr[name] + roa_5yr[name]) / 11 +
 
         # Growth
         (sales_growth[name] + profit_growth[name] +
@@ -185,8 +172,7 @@ def main():
          sales_growth_5yr[name] + profit_growth_5yr[name] +
          sales_growth_yoy[name] + profit_growth_yoy[name] +
          op_profit_growth[name] +
-         eps_growth_3yr[name] + eps_growth_5yr[name] +
-         ebidt_growth_3yr[name] + ebidt_growth_5yr[name]) / 13 +
+         eps_growth_3yr[name] + eps_growth_5yr[name]) / 11 +
 
         # Value
         (pe[name] + pb[name] + ps[name] + po[name] +
