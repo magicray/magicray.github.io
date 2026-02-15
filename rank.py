@@ -5,6 +5,36 @@ import time
 import requests
 from logging import critical as log
 
+#OPM > 0 AND
+#OPM 5Year > 0 AND
+#
+#Return on equity > 0 AND
+#Average return on equity 3Years > 0 AND
+#Average return on equity 5Years > 0 AND
+#
+#Return on capital employed > 0 AND
+#Average return on capital employed 3Years > 0 AND
+#Average return on capital employed 5Years > 0 AND
+#
+#Sales growth > 0 AND
+#Sales growth 3Years > 0 AND
+#Sales growth 5Years > 0 AND
+#
+#Profit growth > 0 AND
+#Profit growth 3Years > 0 AND
+#Profit growth 5Years > 0 AND
+#
+#EPS growth 3Years > 0 AND
+#EPS growth 5Years > 0 AND
+#
+#Operating profit growth > 0 AND
+#
+#Operating profit > Interest AND
+#Operating profit > Net profit AND
+#
+#Last result date > 202508
+
+
 growth_screen = ('879125/growth', '1lsm4uh2p167pgxqwm3f6ci4fo5019h0')
 quality_screen = ('878969/quality', 'xsll3ahohzba2o3ey9uhsk91qizuo3ra')
 universe_screen = ('290555/universe', 'aarug8yrorogmg6ibjww0v10gz97hpl1')
@@ -134,9 +164,6 @@ def main():
     roce_5yr = rank('roce_5yr', data)
     opm = rank('opm', data)
     opm_5yr = rank('5yr_opm', data)
-    roa = rank('roa_12m', data)
-    roa_3yr = rank('roa_3yr', data)
-    roa_5yr = rank('roa_5yr', data)
 
     # Rank on Growth - More is better
     sales_growth = rank('sales_growth', data)
@@ -162,9 +189,9 @@ def main():
     # Ranking weightage - 25% Quality - 25% Growth - 50% Valuation
     final_rank = [(
         # Quality
-        (roce[name] + roe[name] + opm[name] + roa[name] +
-         roce_3yr[name] + roe_3yr[name] + roa_3yr[name] +
-         roce_5yr[name] + roe_5yr[name] + opm_5yr[name] + roa_5yr[name]) / 11 +
+        (roce[name] + roe[name] + opm[name] +
+         roce_3yr[name] + roe_3yr[name] +
+         roce_5yr[name] + roe_5yr[name] + opm_5yr[name]) / 8 +
 
         # Growth
         (sales_growth[name] + profit_growth[name] +
