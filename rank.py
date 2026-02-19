@@ -35,9 +35,9 @@ from logging import critical as log
 # Last result date > 202508
 
 
-growth_screen = ('879125/growth', '1lsm4uh2p167pgxqwm3f6ci4fo5019h0')
-quality_screen = ('878969/quality', 'xsll3ahohzba2o3ey9uhsk91qizuo3ra')
-universe_screen = ('290555/universe', 'aarug8yrorogmg6ibjww0v10gz97hpl1')
+growth_screen = ('879125/growth', 'xhmg3hvpbyrqi1e7gfxv591q8s2kp20w')
+quality_screen = ('878969/quality', 'twi12n5njemkxkajxiap26ykak06nwv4')
+universe_screen = ('290555/universe', 'q1r1t4alwa4azlwuxlb4fh6gyrk8rxxw')
 
 
 def download(screen, sessionid):
