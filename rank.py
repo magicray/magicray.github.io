@@ -35,8 +35,8 @@ from logging import critical as log
 # Last result date > 202508
 
 
-growth_screen = ('879125/growth', 'xhmg3hvpbyrqi1e7gfxv591q8s2kp20w')
-quality_screen = ('878969/quality', 'twi12n5njemkxkajxiap26ykak06nwv4')
+growth_screen = ('879125/growth', 'chrdjfpkcw07dhqo4nwfh0yd7g191lxl')
+quality_screen = ('878969/quality', '7ntrq89s65vvh06jwgewobakgkgr4gvz')
 universe_screen = ('290555/universe', 'q1r1t4alwa4azlwuxlb4fh6gyrk8rxxw')
 
 
