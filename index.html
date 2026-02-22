@@ -24,20 +24,13 @@
             <thead>
                 <tr>
                 <th colspan=2>Group</th>
-                <th colspan=7>Stability</th>
                 <th colspan=3>Quality</th>
                 <th colspan=3>Growth</th>
                 <th colspan=6>Valuation</th>
+                <th colspan=7>Stability</th>
                 </tr>
                 <tr>
                 <th colspan=2 id="group_buy">Buy</th>
-                <th id="ev_green"></th>
-                <th id="mcap_green"></th>
-                <th id="net_worth_green"></th>
-                <th id="sales_green"></th>
-                <th id="profit_green"></th>
-                <th id="oprofit_green"></th>
-                <th id="ebit_green"></th>
                 <th id="roce_green"></th>
                 <th id="roe_green"></th>
                 <th id="opm_green"></th>
@@ -50,15 +43,15 @@
                 <th id="pb_green"></th>
                 <th id="po_green"></th>
                 <th id="evebitda_green"></th>
+                <th id="ev_green"></th>
+                <th id="mcap_green"></th>
+                <th id="net_worth_green"></th>
+                <th id="sales_green"></th>
+                <th id="profit_green"></th>
+                <th id="oprofit_green"></th>
+                <th id="ebit_green"></th>
                 </tr><tr>
                 <th colspan=2 id="group_all">All</th>
-                <th id="ev_black"></th>
-                <th id="mcap_black"></th>
-                <th id="net_worth_black"></th>
-                <th id="sales_black"></th>
-                <th id="profit_black"></th>
-                <th id="oprofit_black"></th>
-                <th id="ebit_black"></th>
                 <th id="roce_black"></th>
                 <th id="roe_black"></th>
                 <th id="opm_black"></th>
@@ -71,15 +64,15 @@
                 <th id="pb_black"></th>
                 <th id="po_black"></th>
                 <th id="evebitda_black"></th>
+                <th id="ev_black"></th>
+                <th id="mcap_black"></th>
+                <th id="net_worth_black"></th>
+                <th id="sales_black"></th>
+                <th id="profit_black"></th>
+                <th id="oprofit_black"></th>
+                <th id="ebit_black"></th>
                 </tr><tr>
                 <th colspan=2 id="group_sell">Sell</th>
-                <th id="ev_red"></th>
-                <th id="mcap_red"></th>
-                <th id="net_worth_red"></th>
-                <th id="sales_red"></th>
-                <th id="profit_red"></th>
-                <th id="oprofit_red"></th>
-                <th id="ebit_red"></th>
                 <th id="roce_red"></th>
                 <th id="roe_red"></th>
                 <th id="opm_red"></th>
@@ -92,16 +85,16 @@
                 <th id="pb_red"></th>
                 <th id="po_red"></th>
                 <th id="evebitda_red"></th>
+                <th id="ev_red"></th>
+                <th id="mcap_red"></th>
+                <th id="net_worth_red"></th>
+                <th id="sales_red"></th>
+                <th id="profit_red"></th>
+                <th id="oprofit_red"></th>
+                <th id="ebit_red"></th>
                 </tr><tr style="position: sticky; top: 0; z-index: 10; background-color: white">
                 <th>Rank</th>
                 <th>Stock</th>
-                <th>EV</th>
-                <th>MCap</th>
-                <th>Networth</th>
-                <th>Sales</th>
-                <th>Profit</th>
-                <th>OProfit</th>
-                <th>EBIT</th>
                 <th>ROCE</th>
                 <th>ROE</th>
                 <th>OPM</th>
@@ -114,6 +107,13 @@
                 <th>PB</th>
                 <th>PO</th>
                 <th>EVEBITDA</th>
+                <th>EV</th>
+                <th>MCap</th>
+                <th>Networth</th>
+                <th>Sales</th>
+                <th>Profit</th>
+                <th>OProfit</th>
+                <th>EBIT</th>
                 </tr>
             </thead>
         </table>
@@ -189,13 +189,6 @@ function format_data(data, amount) {
         result.push([
             d['rank'],
             name_html,
-            d['ev_rs_cr'],
-            d['mar_cap_rs_cr'],
-            d['net_worth_rs_cr'],
-            d['sales_rs_cr'],
-            d['np_12m_rs_cr'],
-            d['op_12m_rs_cr'],
-            d['ebit_12m_rs_cr'],
 
             d['roce'],
             d['roe'],
@@ -210,7 +203,15 @@ function format_data(data, amount) {
             d['cmp_sales'],
             d['cmp_bv'],
             d['p_o'],
-            d['ev_ebitda']])
+            d['ev_ebitda'],
+
+            d['ev_rs_cr'],
+            d['mar_cap_rs_cr'],
+            d['net_worth_rs_cr'],
+            d['sales_rs_cr'],
+            d['np_12m_rs_cr'],
+            d['op_12m_rs_cr'],
+            d['ebit_12m_rs_cr']])
     }
 
     return result
@@ -265,13 +266,10 @@ function renderTable(tableId, data) {
     $("#group_sell").css("color", "red");
     $("#group_sell").css("font-weight", "normal");
 
-    const col = ['ev', 'mcap', 'net_worth', 'sales', 'profit', 'oprofit', 'ebit',
-
-                 'roce', 'roe', 'opm',
-
+    const col = ['roce', 'roe', 'opm',
 	         'profit_growth', 'sales_growth', 'oprofit_growth',
-
-	         'yield', 'pe', 'ps', 'pb', 'po', 'evebitda']
+	         'yield', 'pe', 'ps', 'pb', 'po', 'evebitda',
+	         'ev', 'mcap', 'net_worth', 'sales', 'profit', 'oprofit', 'ebit']
 
     col.map((name, index) => {
 	let arr = data_green.map(d => d[index+2]).sort(function(a, b){ return a - b})
