@@ -151,7 +151,7 @@ def main():
 
     # Divide into two halvs based upon the above factors to discard the tiny companies.
     # We will take only the upper half ranked by profit and sales
-    count = int(len(size_rank)/2)
+    count = min(200, int(len(size_rank)/2))
     biggest_stocks = set([name for _, name in sorted(size_rank)[:count]])
     data = {k: v for k, v in data.items() if k in biggest_stocks}
 
@@ -162,8 +162,6 @@ def main():
     roce = rank('roce', data)
     roce_3yr = rank('roce_3yr', data)
     roce_5yr = rank('roce_5yr', data)
-    opm = rank('opm', data)
-    opm_5yr = rank('5yr_opm', data)
 
     # Rank on Growth - More is better
     sales_growth = rank('sales_growth', data)
@@ -173,8 +171,6 @@ def main():
     profit_growth_3yr = rank('profit_var_3yrs', data)
     profit_growth_5yr = rank('profit_var_5yrs', data)
     op_profit_growth = rank('opert_prft_gwth', data)
-    eps_growth_3yr = rank('eps_var_3yrs', data)
-    eps_growth_5yr = rank('eps_var_5yrs', data)
 
     # Rank on Valuation
     pe = rank('p_e', data, False)             # Less Price/Earnings is better
@@ -187,16 +183,15 @@ def main():
     # Ranking weightage - 25% Quality - 25% Growth - 50% Valuation
     final_rank = [(
         # Quality
-        (roce[name] + roe[name] + opm[name] +
+        (roce[name] + roe[name] +
          roce_3yr[name] + roe_3yr[name] +
-         roce_5yr[name] + roe_5yr[name] + opm_5yr[name]) / 8 +
+         roce_5yr[name] + roe_5yr[name]) / 6 +
 
         # Growth
         (sales_growth[name] + profit_growth[name] +
          sales_growth_3yr[name] + profit_growth_3yr[name] +
          sales_growth_5yr[name] + profit_growth_5yr[name] +
-         op_profit_growth[name] +
-         eps_growth_3yr[name] + eps_growth_5yr[name]) / 9 +
+         op_profit_growth[name]) / 7 +
 
         # Value
         (pe[name] + pb[name] + ps[name] + po[name] +

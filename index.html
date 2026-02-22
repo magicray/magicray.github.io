@@ -25,8 +25,8 @@
                 <tr>
                 <th colspan=2>Group</th>
                 <th colspan=7>Stability</th>
-                <th colspan=8>Quality</th>
-                <th colspan=9>Growth</th>
+                <th colspan=6>Quality</th>
+                <th colspan=7>Growth</th>
                 <th colspan=6>Valuation</th>
                 </tr>
                 <tr>
@@ -44,8 +44,6 @@
                 <th id="roe_green"></th>
                 <th id="roe_3yr_green"></th>
                 <th id="roe_5yr_green"></th>
-                <th id="opm_green"></th>
-                <th id="opm_5yr_green"></th>
                 <th id="profit_growth_green"></th>
                 <th id="profit_growth_3yr_green"></th>
                 <th id="profit_growth_5yr_green"></th>
@@ -53,8 +51,6 @@
                 <th id="sales_growth_3yr_green"></th>
                 <th id="sales_growth_5yr_green"></th>
                 <th id="oprofit_growth_green"></th>
-                <th id="eps_growth_3yr_green"></th>
-                <th id="eps_growth_5yr_green"></th>
                 <th id="yield_green"></th>
                 <th id="pe_green"></th>
                 <th id="ps_green"></th>
@@ -76,8 +72,6 @@
                 <th id="roe_black"></th>
                 <th id="roe_3yr_black"></th>
                 <th id="roe_5yr_black"></th>
-                <th id="opm_black"></th>
-                <th id="opm_5yr_black"></th>
                 <th id="profit_growth_black"></th>
                 <th id="profit_growth_3yr_black"></th>
                 <th id="profit_growth_5yr_black"></th>
@@ -85,8 +79,6 @@
                 <th id="sales_growth_3yr_black"></th>
                 <th id="sales_growth_5yr_black"></th>
                 <th id="oprofit_growth_black"></th>
-                <th id="eps_growth_3yr_black"></th>
-                <th id="eps_growth_5yr_black"></th>
                 <th id="yield_black"></th>
                 <th id="pe_black"></th>
                 <th id="ps_black"></th>
@@ -108,8 +100,6 @@
                 <th id="roe_red"></th>
                 <th id="roe_3yr_red"></th>
                 <th id="roe_5yr_red"></th>
-                <th id="opm_red"></th>
-                <th id="opm_5yr_red"></th>
                 <th id="profit_growth_red"></th>
                 <th id="profit_growth_3yr_red"></th>
                 <th id="profit_growth_5yr_red"></th>
@@ -117,8 +107,6 @@
                 <th id="sales_growth_3yr_red"></th>
                 <th id="sales_growth_5yr_red"></th>
                 <th id="oprofit_growth_red"></th>
-                <th id="eps_growth_3yr_red"></th>
-                <th id="eps_growth_5yr_red"></th>
                 <th id="yield_red"></th>
                 <th id="pe_red"></th>
                 <th id="ps_red"></th>
@@ -141,8 +129,6 @@
                 <th>ROE</th>
                 <th>ROE 3Yr</th>
                 <th>ROE 5Yr</th>
-                <th>OPM</th>
-                <th>OPM 5Yr</th>
                 <th>Profit</th>
                 <th>Profit 3Yr</th>
                 <th>Profit 5Yr</th>
@@ -150,8 +136,6 @@
                 <th>Sales 3Yr</th>
                 <th>Sales 5Yr</th>
                 <th>OProfit</th>
-                <th>EPS 3Yr</th>
-                <th>EPS 5Yr</th>
                 <th>Earnings Yield</th>
                 <th>PE</th>
                 <th>PS</th>
@@ -247,8 +231,6 @@ function format_data(data, amount) {
             d['roe'],
             d['roe_3yr'],
             d['roe_5yr'],
-            d['opm'],
-            d['5yr_opm'],
 
             d['profit_growth'],
             d['profit_var_3yrs'],
@@ -257,8 +239,6 @@ function format_data(data, amount) {
             d['sales_var_3yrs'],
             d['sales_var_5yrs'],
             d['opert_prft_gwth'],
-            d['eps_var_3yrs'],
-            d['eps_var_5yrs'],
 
             d['earnings_yield'],
             d['p_e'],
@@ -323,12 +303,10 @@ function renderTable(tableId, data) {
     const col = ['ev', 'mcap', 'net_worth', 'sales', 'profit', 'oprofit', 'ebit',
                  'roce', 'roce_3yr', 'roce_5yr',
                  'roe', 'roe_3yr', 'roe_5yr',
-                 'opm', 'opm_5yr',
 
 	         'profit_growth', 'profit_growth_3yr', 'profit_growth_5yr',
                  'sales_growth', 'sales_growth_3yr', 'sales_growth_5yr',
                  'oprofit_growth',
-                 'eps_growth_3yr', 'eps_growth_5yr',
 
 	         'yield', 'pe', 'ps', 'pb', 'po', 'evebitda']
 
@@ -360,7 +338,7 @@ function renderTable(tableId, data) {
 
     let tmp = [...data]
     tmp.map((row, index) => {
-        for(let i=2; i<32; i++)
+        for(let i=2; i<28; i++)
             row[i] = Math.round(row[i])
     })
 
