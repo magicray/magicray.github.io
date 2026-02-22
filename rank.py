@@ -156,20 +156,21 @@ def main():
     data = {k: v for k, v in data.items() if k in biggest_stocks}
 
     # Rank on Quality - More is better unless specified
+    opm = rank('opm', data)
     roe = rank('roe', data)
-    roe_3yr = rank('roe_3yr', data)
-    roe_5yr = rank('roe_5yr', data)
+    #roe_3yr = rank('roe_3yr', data)
+    #roe_5yr = rank('roe_5yr', data)
     roce = rank('roce', data)
-    roce_3yr = rank('roce_3yr', data)
-    roce_5yr = rank('roce_5yr', data)
+    #roce_3yr = rank('roce_3yr', data)
+    #roce_5yr = rank('roce_5yr', data)
 
     # Rank on Growth - More is better
     sales_growth = rank('sales_growth', data)
-    sales_growth_3yr = rank('sales_var_3yrs', data)
-    sales_growth_5yr = rank('sales_var_5yrs', data)
+    #sales_growth_3yr = rank('sales_var_3yrs', data)
+    #sales_growth_5yr = rank('sales_var_5yrs', data)
     profit_growth = rank('profit_growth', data)
-    profit_growth_3yr = rank('profit_var_3yrs', data)
-    profit_growth_5yr = rank('profit_var_5yrs', data)
+    #profit_growth_3yr = rank('profit_var_3yrs', data)
+    #profit_growth_5yr = rank('profit_var_5yrs', data)
     op_profit_growth = rank('opert_prft_gwth', data)
 
     # Rank on Valuation
@@ -183,15 +184,11 @@ def main():
     # Ranking weightage - 25% Quality - 25% Growth - 50% Valuation
     final_rank = [(
         # Quality
-        (roce[name] + roe[name] +
-         roce_3yr[name] + roe_3yr[name] +
-         roce_5yr[name] + roe_5yr[name]) / 6 +
+        (opm[name] + roce[name] + roe[name]) / 3 +
 
         # Growth
         (sales_growth[name] + profit_growth[name] +
-         sales_growth_3yr[name] + profit_growth_3yr[name] +
-         sales_growth_5yr[name] + profit_growth_5yr[name] +
-         op_profit_growth[name]) / 7 +
+         op_profit_growth[name]) / 3 +
 
         # Value
         (pe[name] + pb[name] + ps[name] + po[name] +
