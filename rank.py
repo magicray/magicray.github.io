@@ -182,8 +182,9 @@ def main():
          op_profit_growth[name]) / 3 +
 
         # Value
-        (pe[name] + pb[name] + ps[name] + po[name] +
-         e_yield[name] + evebitda[name])*2 / 6,
+        (pe[name] + pb[name])*2/2,
+        #(pe[name] + pb[name] + ps[name] + po[name] +
+        # e_yield[name] + evebitda[name])*2 / 6,
 
         name) for name in roe]
 
