@@ -142,10 +142,9 @@ def main():
     # Rank on Size - More is better
     np = rank('np_12m_rs_cr', data)           # More net profit is better
     op = rank('op_12m_rs_cr', data)           # More operting profit is better
-    ebit = rank('ebit_12m_rs_cr', data)       # More ebit is better
     sales = rank('sales_rs_cr', data)         # More sales is better
     networth = rank('net_worth_rs_cr', data)  # Higher networth is better
-    size_rank = [(np[name] + op[name] + ebit[name] +
+    size_rank = [(np[name] + op[name] +
                   sales[name] + networth[name],
                   name) for name in sales]
 
@@ -158,19 +157,11 @@ def main():
     # Rank on Quality - More is better unless specified
     opm = rank('opm', data)
     roe = rank('roe', data)
-    #roe_3yr = rank('roe_3yr', data)
-    #roe_5yr = rank('roe_5yr', data)
     roce = rank('roce', data)
-    #roce_3yr = rank('roce_3yr', data)
-    #roce_5yr = rank('roce_5yr', data)
 
     # Rank on Growth - More is better
     sales_growth = rank('sales_growth', data)
-    #sales_growth_3yr = rank('sales_var_3yrs', data)
-    #sales_growth_5yr = rank('sales_var_5yrs', data)
     profit_growth = rank('profit_growth', data)
-    #profit_growth_3yr = rank('profit_var_3yrs', data)
-    #profit_growth_5yr = rank('profit_var_5yrs', data)
     op_profit_growth = rank('opert_prft_gwth', data)
 
     # Rank on Valuation
