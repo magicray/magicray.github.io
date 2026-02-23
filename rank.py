@@ -130,8 +130,6 @@ def main():
         try:
             assert (all('' != y for y in v.values()))
 
-            v['p_o'] = v['mar_cap_rs_cr'] / v['op_12m_rs_cr']  # Less is better Value
-
             tmp[k] = v
         except Exception:
             log('incomplete data : name(%s)', k)
@@ -168,8 +166,6 @@ def main():
     pe = rank('p_e', data, False)             # Less Price/Earnings is better
     ps = rank('cmp_sales', data, False)       # Less Price/Sales is better
     pb = rank('cmp_bv', data, False)          # Less Price/BookValue is better
-    po = rank('p_o', data, False)             # Less Price/Operating Profit is better
-    e_yield = rank('earnings_yield', data)    # More Earnings Yield is better
     evebitda = rank('ev_ebitda', data, False) # Less Enterprise Value / EBITDA is better
 
     # Ranking weightage - 25% Quality - 25% Growth - 50% Valuation
@@ -182,9 +178,8 @@ def main():
          op_profit_growth[name]) / 3 +
 
         # Value
-        (pe[name] + pb[name])*2/2,
-        #(pe[name] + pb[name] + ps[name] + po[name] +
-        # e_yield[name] + evebitda[name])*2 / 6,
+        (pe[name] + pb[name] + ps[name] +
+         evebitda[name])*2 / 4,
 
         name) for name in roe]
 
