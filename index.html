@@ -40,7 +40,7 @@
                 <th id="pe_green"></th>
                 <th id="ps_green"></th>
                 <th id="pb_green"></th>
-                <th id="evebitda_green"></th>
+                <th id="ev_op_green"></th>
                 <th id="mcap_green"></th>
                 <th id="net_worth_green"></th>
                 <th id="sales_green"></th>
@@ -58,7 +58,7 @@
                 <th id="pe_black"></th>
                 <th id="ps_black"></th>
                 <th id="pb_black"></th>
-                <th id="evebitda_black"></th>
+                <th id="ev_op_black"></th>
                 <th id="mcap_black"></th>
                 <th id="net_worth_black"></th>
                 <th id="sales_black"></th>
@@ -76,7 +76,7 @@
                 <th id="pe_red"></th>
                 <th id="ps_red"></th>
                 <th id="pb_red"></th>
-                <th id="evebitda_red"></th>
+                <th id="ev_op_red"></th>
                 <th id="mcap_red"></th>
                 <th id="net_worth_red"></th>
                 <th id="sales_red"></th>
@@ -95,7 +95,7 @@
                 <th>PE</th>
                 <th>PS</th>
                 <th>PB</th>
-                <th>EVEBITDA</th>
+                <th>EV/OP</th>
                 <th>MCap</th>
                 <th>Networth</th>
                 <th>Sales</th>
@@ -189,7 +189,7 @@ function format_data(data, amount) {
             d['p_e'],
             d['cmp_sales'],
             d['cmp_bv'],
-            d['ev_ebitda'],
+            d['ev_op'],
 
             d['mar_cap_rs_cr'],
             d['net_worth_rs_cr'],
@@ -253,7 +253,7 @@ function renderTable(tableId, data) {
 
     const col = ['roce', 'roe', 'opm',
 	         'profit_growth', 'sales_growth', 'oprofit_growth',
-	         'pe', 'ps', 'pb', 'evebitda',
+	         'pe', 'ps', 'pb', 'ev_op',
 	         'mcap', 'net_worth', 'sales', 'profit', 'oprofit', 'ev']
 
     col.map((name, index) => {

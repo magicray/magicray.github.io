@@ -35,8 +35,8 @@ from logging import critical as log
 # Last result date > 202508
 
 
-growth_screen = ('879125/growth', 'chrdjfpkcw07dhqo4nwfh0yd7g191lxl')
-quality_screen = ('878969/quality', '7ntrq89s65vvh06jwgewobakgkgr4gvz')
+#growth_screen = ('879125/growth', 'chrdjfpkcw07dhqo4nwfh0yd7g191lxl')
+#quality_screen = ('878969/quality', '7ntrq89s65vvh06jwgewobakgkgr4gvz')
 universe_screen = ('290555/universe', 'q1r1t4alwa4azlwuxlb4fh6gyrk8rxxw')
 
 
@@ -114,7 +114,8 @@ def main():
         assert (data['timestamp'] > time.time() - 86400)
     except Exception:
         data = dict()
-        for screen, sessionid in (growth_screen, quality_screen, universe_screen):
+        #for screen, sessionid in (growth_screen, quality_screen, universe_screen):
+        for screen, sessionid in [universe_screen]:
             for key, value in download(screen, sessionid).items():
                 if key in data:
                     data[key].update(value)
@@ -129,6 +130,8 @@ def main():
     for k, v in data['data'].items():
         try:
             assert (all('' != y for y in v.values()))
+
+            v['ev_op'] = v['ev_rs_cr'] / v['op_12m_rs_cr']
 
             tmp[k] = v
         except Exception:
@@ -166,7 +169,7 @@ def main():
     pe = rank('p_e', data, False)             # Less Price/Earnings is better
     ps = rank('cmp_sales', data, False)       # Less Price/Sales is better
     pb = rank('cmp_bv', data, False)          # Less Price/BookValue is better
-    evebitda = rank('ev_ebitda', data, False) # Less Enterprise Value / EBITDA is better
+    ev_op = rank('ev_op', data, False)       # Less Enterprise Value / EBITDA is better
 
     # Ranking weightage - 25% Quality - 25% Growth - 50% Valuation
     final_rank = [(
@@ -179,7 +182,7 @@ def main():
 
         # Value
         (pe[name] + pb[name] + ps[name] +
-         evebitda[name])*2 / 4,
+         ev_op[name])*2 / 4,
 
         name) for name in roe]
 
