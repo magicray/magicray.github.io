@@ -132,6 +132,7 @@ def main():
             assert (all('' != y for y in v.values()))
 
             v['ev_op'] = v['ev_rs_cr'] / v['op_12m_rs_cr']
+            v['ev_sales'] = v['ev_rs_cr'] / v['sales_rs_cr']
 
             tmp[k] = v
         except Exception:
@@ -169,7 +170,8 @@ def main():
     pe = rank('p_e', data, False)             # Less Price/Earnings is better
     ps = rank('cmp_sales', data, False)       # Less Price/Sales is better
     pb = rank('cmp_bv', data, False)          # Less Price/BookValue is better
-    ev_op = rank('ev_op', data, False)       # Less Enterprise Value / EBITDA is better
+    ev_op = rank('ev_op', data, False)        # Less Enterprise Value / EBIT is better
+    ev_sales = rank('ev_sales', data, False)  # Less Enterprise Value / Sales is better
 
     # Ranking weightage - 25% Quality - 25% Growth - 50% Valuation
     final_rank = [(
@@ -182,7 +184,7 @@ def main():
 
         # Value
         (pe[name] + pb[name] + ps[name] +
-         ev_op[name])*2 / 4,
+         ev_op[name] + ev_sales[name])*2 / 5,
 
         name) for name in roe]
 
