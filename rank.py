@@ -131,8 +131,13 @@ def main():
         try:
             assert (all('' != y for y in v.values()))
 
-            v['ev_op'] = v['ev_rs_cr'] / v['op_12m_rs_cr']
-            v['ev_sales'] = v['ev_rs_cr'] / v['sales_rs_cr']
+            v['np_ev'] = v['np_12m_rs_cr'] / v['ev_rs_cr']
+            v['op_ev'] = v['op_12m_rs_cr'] / v['ev_rs_cr']
+            v['sales_ev'] = v['sales_rs_cr'] / v['ev_rs_cr']
+
+            v['np_mc'] = v['np_12m_rs_cr'] / v['mar_cap_rs_cr']
+            v['op_mc'] = v['op_12m_rs_cr'] / v['mar_cap_rs_cr']
+            v['sales_mc'] = v['sales_rs_cr'] / v['mar_cap_rs_cr']
 
             tmp[k] = v
         except Exception:
@@ -145,9 +150,7 @@ def main():
     np = rank('np_12m_rs_cr', data)           # More net profit is better
     op = rank('op_12m_rs_cr', data)           # More operting profit is better
     sales = rank('sales_rs_cr', data)         # More sales is better
-    networth = rank('net_worth_rs_cr', data)  # Higher networth is better
-    size_rank = [(np[name] + op[name] +
-                  sales[name] + networth[name],
+    size_rank = [(np[name] + op[name] + sales[name],
                   name) for name in sales]
 
     # Divide into two halvs based upon the above factors to discard the tiny companies.
@@ -167,11 +170,12 @@ def main():
     op_profit_growth = rank('opert_prft_gwth', data)
 
     # Rank on Valuation
-    pe = rank('p_e', data, False)             # Less Price/Earnings is better
-    ps = rank('cmp_sales', data, False)       # Less Price/Sales is better
-    pb = rank('cmp_bv', data, False)          # Less Price/BookValue is better
-    ev_op = rank('ev_op', data, False)        # Less Enterprise Value / EBIT is better
-    ev_sales = rank('ev_sales', data, False)  # Less Enterprise Value / Sales is better
+    np_ev = rank('np_ev', data)
+    op_ev = rank('op_ev', data)
+    sales_ev = rank('sales_ev', data)
+    np_mc = rank('np_mc', data)
+    op_mc = rank('op_mc', data)
+    sales_mc = rank('sales_mc', data)
 
     # Ranking weightage - 25% Quality - 25% Growth - 50% Valuation
     final_rank = [(
@@ -183,8 +187,8 @@ def main():
          op_profit_growth[name]) / 3 +
 
         # Value
-        (pe[name] + pb[name] + ps[name] +
-         ev_op[name] + ev_sales[name])*2 / 5,
+        (np_ev[name] + op_ev[name] + sales_ev[name] +
+         np_mc[name] + op_mc[name] + sales_mc[name]) * 2 / 6,
 
         name) for name in roe]
 
