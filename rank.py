@@ -176,7 +176,7 @@ def main():
 
         # Value
         (np_ev[name] + op_ev[name] + sales_ev[name] +
-         np_mc[name] + op_mc[name] + sales_mc[name]) * 2 / 6,
+         np_mc[name] + op_mc[name] + sales_mc[name]) / 6,
 
         name) for name in roe]
 
