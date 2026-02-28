@@ -15,9 +15,6 @@ Sales growth > 0 AND
 Profit growth > 0 AND
 Operating profit growth > 0 AND
 
-Interest Coverage Ratio > 0 AND
-Operating profit > Net profit AND
-
 Last result date > 202508
 """
 
