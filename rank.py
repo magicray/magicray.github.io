@@ -115,6 +115,9 @@ def main():
         try:
             assert (all('' != y for y in v.values()))
 
+            v['net_margin'] = v['np_12m_rs_cr'] / v['sales_rs_cr']
+            v['operating_margin'] = v['op_12m_rs_cr'] / v['sales_rs_cr']
+
             v['np_ev'] = v['np_12m_rs_cr'] / v['ev_rs_cr']
             v['op_ev'] = v['op_12m_rs_cr'] / v['ev_rs_cr']
             v['sales_ev'] = v['sales_rs_cr'] / v['ev_rs_cr']
@@ -122,6 +125,9 @@ def main():
             v['np_mc'] = v['np_12m_rs_cr'] / v['mar_cap_rs_cr']
             v['op_mc'] = v['op_12m_rs_cr'] / v['mar_cap_rs_cr']
             v['sales_mc'] = v['sales_rs_cr'] / v['mar_cap_rs_cr']
+
+            v['nw_ev'] = v['net_worth_rs_cr'] / v['ev_rs_cr']
+            v['nw_mc'] = v['net_worth_rs_cr'] / v['mar_cap_rs_cr']
 
             tmp[k] = v
         except Exception:
@@ -144,7 +150,8 @@ def main():
     data = {k: v for k, v in data.items() if k in biggest_stocks}
 
     # Rank on Quality - More is better unless specified
-    opm = rank('opm', data)
+    npm = rank('net_margin', data)
+    opm = rank('operating_margin', data)
     roe = rank('roe', data)
     roce = rank('roce', data)
 
@@ -160,11 +167,13 @@ def main():
     np_mc = rank('np_mc', data)
     op_mc = rank('op_mc', data)
     sales_mc = rank('sales_mc', data)
+    nw_ev = rank('nw_ev', data)
+    nw_mc = rank('nw_mc', data)
 
-    # Ranking weightage - 25% Quality - 25% Growth - 50% Valuation
+    # Ranking weightage - 33% Quality - 33% Growth - 33% Valuation
     final_rank = [(
         # Quality
-        (opm[name] + roce[name] + roe[name]) / 3 +
+        (npm[name] + opm[name] + roce[name] + roe[name]) / 4 +
 
         # Growth
         (sales_growth[name] + profit_growth[name] +
@@ -172,7 +181,8 @@ def main():
 
         # Value
         (np_ev[name] + op_ev[name] + sales_ev[name] +
-         np_mc[name] + op_mc[name] + sales_mc[name]) / 6,
+         np_mc[name] + op_mc[name] + sales_mc[name] +
+         nw_ev[name] + nw_mc[name]) / 8,
 
         name) for name in roe]
 
