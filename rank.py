@@ -115,19 +115,8 @@ def main():
         try:
             assert (all('' != y for y in v.values()))
 
-            v['net_margin'] = v['np_12m_rs_cr'] / v['sales_rs_cr']
-            v['operating_margin'] = v['op_12m_rs_cr'] / v['sales_rs_cr']
-
-            v['np_ev'] = v['np_12m_rs_cr'] / v['ev_rs_cr']
             v['op_ev'] = v['op_12m_rs_cr'] / v['ev_rs_cr']
-            v['sales_ev'] = v['sales_rs_cr'] / v['ev_rs_cr']
-
             v['np_mc'] = v['np_12m_rs_cr'] / v['mar_cap_rs_cr']
-            v['op_mc'] = v['op_12m_rs_cr'] / v['mar_cap_rs_cr']
-            v['sales_mc'] = v['sales_rs_cr'] / v['mar_cap_rs_cr']
-
-            v['nw_ev'] = v['net_worth_rs_cr'] / v['ev_rs_cr']
-            v['nw_mc'] = v['net_worth_rs_cr'] / v['mar_cap_rs_cr']
 
             tmp[k] = v
         except Exception:
@@ -149,9 +138,9 @@ def main():
     biggest_stocks = set([name for _, name in sorted(size_rank)[:count]])
     data = {k: v for k, v in data.items() if k in biggest_stocks}
 
+    assert(len(data) == 200)
+
     # Rank on Quality - More is better unless specified
-    npm = rank('net_margin', data)
-    opm = rank('operating_margin', data)
     roe = rank('roe', data)
     roce = rank('roce', data)
 
@@ -161,28 +150,20 @@ def main():
     op_profit_growth = rank('opert_prft_gwth', data)
 
     # Rank on Valuation
-    np_ev = rank('np_ev', data)
     op_ev = rank('op_ev', data)
-    sales_ev = rank('sales_ev', data)
     np_mc = rank('np_mc', data)
-    op_mc = rank('op_mc', data)
-    sales_mc = rank('sales_mc', data)
-    nw_ev = rank('nw_ev', data)
-    nw_mc = rank('nw_mc', data)
 
     # Ranking weightage - 33% Quality - 33% Growth - 33% Valuation
     final_rank = [(
         # Quality
-        (npm[name] + opm[name] + roce[name] + roe[name]) / 4 +
+        (roe[name] + roce[name]) / 2 +
 
         # Growth
         (sales_growth[name] + profit_growth[name] +
          op_profit_growth[name]) / 3 +
 
         # Value
-        (np_ev[name] + op_ev[name] + sales_ev[name] +
-         np_mc[name] + op_mc[name] + sales_mc[name] +
-         nw_ev[name] + nw_mc[name]) / 8,
+        (np_mc[name] + op_ev[name]) / 2,
 
         name) for name in roe]
 
