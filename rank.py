@@ -7,13 +7,19 @@ from logging import critical as log
 
 
 SCREENER = """
-OPM > 0 AND
 Return on equity > 0 AND
 Return on capital employed > 0 AND
 
 Sales growth > 0 AND
 Profit growth > 0 AND
 Operating profit growth > 0 AND
+
+Earnings yield > 0 AND
+Price to Earning  > 0 AND
+
+Sales > 0 AND
+Net profit > 0 AND
+Operating profit > 0 AND
 
 Last result date > 202508
 """
@@ -115,9 +121,6 @@ def main():
         try:
             assert (all('' != y for y in v.values()))
 
-            v['op_ev'] = v['op_12m_rs_cr'] / v['ev_rs_cr']
-            v['np_mc'] = v['np_12m_rs_cr'] / v['mar_cap_rs_cr']
-
             tmp[k] = v
         except Exception:
             log('incomplete data : name(%s)', k)
@@ -150,8 +153,8 @@ def main():
     op_profit_growth = rank('opert_prft_gwth', data)
 
     # Rank on Valuation
-    op_ev = rank('op_ev', data)
-    np_mc = rank('np_mc', data)
+    pe = rank('p_e', data, False)
+    earnings_yield = rank('earnings_yield', data)
 
     # Ranking weightage - 33% Quality - 33% Growth - 33% Valuation
     final_rank = [(
@@ -163,7 +166,7 @@ def main():
          op_profit_growth[name]) / 3 +
 
         # Value
-        (np_mc[name] + op_ev[name]) / 2,
+        (pe[name] + earnings_yield[name]) / 2,
 
         name) for name in roe]
 
