@@ -10,14 +10,12 @@ SCREENER = """
 Return on equity > 0 AND
 Return on capital employed > 0 AND
 
-Sales growth > 0 AND
 Profit growth > 0 AND
 Operating profit growth > 0 AND
 
 Earnings yield > 0 AND
 Price to Earning  > 0 AND
 
-Sales > Operating profit  AND
 Operating profit > Net profit  AND
 Net profit > 0 AND
 
@@ -131,9 +129,7 @@ def main():
     # Rank on Size - More is better
     np = rank('np_12m_rs_cr', data)           # More net profit is better
     op = rank('op_12m_rs_cr', data)           # More operting profit is better
-    sales = rank('sales_rs_cr', data)         # More sales is better
-    size_rank = [(np[name] + op[name] + sales[name],
-                  name) for name in sales]
+    size_rank = [(np[name] + op[name], name) for name in np]
 
     # Divide into two halvs based upon the above factors to discard the tiny companies.
     # We will take only the upper half ranked by profit and sales
@@ -148,7 +144,6 @@ def main():
     roce = rank('roce', data)
 
     # Rank on Growth - More is better
-    sales_growth = rank('sales_growth', data)
     profit_growth = rank('profit_growth', data)
     op_profit_growth = rank('opert_prft_gwth', data)
 
@@ -162,8 +157,7 @@ def main():
         (roe[name] + roce[name]) / 2 +
 
         # Growth
-        (sales_growth[name] + profit_growth[name] +
-         op_profit_growth[name]) / 3 +
+        (profit_growth[name] + op_profit_growth[name]) / 2 +
 
         # Value
         (pe[name] + earnings_yield[name]) / 2,
