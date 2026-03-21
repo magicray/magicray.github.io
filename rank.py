@@ -17,9 +17,9 @@ Operating profit growth > 0 AND
 Earnings yield > 0 AND
 Price to Earning  > 0 AND
 
-Sales > 0 AND
+Sales > Operating profit  AND
+Operating profit > Net profit  AND
 Net profit > 0 AND
-Operating profit > 0 AND
 
 Last result date > 202508
 """
