@@ -113,20 +113,6 @@
             "roe": 30.2
         },
         {
-            "cmp_rs": 2193.1,
-            "earnings_yield": 6.79,
-            "mar_cap_rs_cr": 61889.46,
-            "name": "Glenmark Pharma.",
-            "np_12m_rs_cr": 1065.01,
-            "op_12m_rs_cr": 4370.84,
-            "opert_prft_gwth": 90.48,
-            "p_e": 22.87,
-            "profit_growth": 317.76,
-            "rank": 9,
-            "roce": 19.4,
-            "roe": 15.79
-        },
-        {
             "cmp_rs": 3562.3,
             "earnings_yield": 7.94,
             "mar_cap_rs_cr": 143015.12,
@@ -136,9 +122,23 @@
             "opert_prft_gwth": 57.82,
             "p_e": 16.4,
             "profit_growth": 75.64,
-            "rank": 10,
+            "rank": 9,
             "roce": 13.19,
             "roe": 19.58
+        },
+        {
+            "cmp_rs": 2193.1,
+            "earnings_yield": 6.79,
+            "mar_cap_rs_cr": 61889.46,
+            "name": "Glenmark Pharma.",
+            "np_12m_rs_cr": 1065.01,
+            "op_12m_rs_cr": 4370.84,
+            "opert_prft_gwth": 90.48,
+            "p_e": 22.87,
+            "profit_growth": 317.76,
+            "rank": 10,
+            "roce": 19.4,
+            "roe": 15.79
         },
         {
             "cmp_rs": 120.51,
@@ -211,20 +211,6 @@
             "roe": 31.45
         },
         {
-            "cmp_rs": 10503.5,
-            "earnings_yield": 3.38,
-            "mar_cap_rs_cr": 63863.27,
-            "name": "Dixon Technolog.",
-            "np_12m_rs_cr": 1811.23,
-            "op_12m_rs_cr": 1900.94,
-            "opert_prft_gwth": 52.41,
-            "p_e": 45.33,
-            "profit_growth": 121.73,
-            "rank": 16,
-            "roce": 39.95,
-            "roe": 32.85
-        },
-        {
             "cmp_rs": 141.08,
             "earnings_yield": 16.38,
             "mar_cap_rs_cr": 199222.43,
@@ -234,7 +220,7 @@
             "opert_prft_gwth": 104.3,
             "p_e": 5.57,
             "profit_growth": 268.38,
-            "rank": 17,
+            "rank": 16,
             "roce": 7.36,
             "roe": 6.51
         },
@@ -248,9 +234,23 @@
             "opert_prft_gwth": 26.88,
             "p_e": 12.73,
             "profit_growth": 25.52,
-            "rank": 18,
+            "rank": 17,
             "roce": 15.05,
             "roe": 18.58
+        },
+        {
+            "cmp_rs": 10503.5,
+            "earnings_yield": 3.38,
+            "mar_cap_rs_cr": 63863.27,
+            "name": "Dixon Technolog.",
+            "np_12m_rs_cr": 1811.23,
+            "op_12m_rs_cr": 1900.94,
+            "opert_prft_gwth": 52.41,
+            "p_e": 45.33,
+            "profit_growth": 121.73,
+            "rank": 18,
+            "roce": 39.95,
+            "roe": 32.85
         },
         {
             "cmp_rs": 2849.2,
@@ -281,20 +281,6 @@
             "roe": 8.62
         },
         {
-            "cmp_rs": 5247.0,
-            "earnings_yield": 6.98,
-            "mar_cap_rs_cr": 104987.1,
-            "name": "Hero Motocorp",
-            "np_12m_rs_cr": 5470.53,
-            "op_12m_rs_cr": 6371.32,
-            "opert_prft_gwth": 13.94,
-            "p_e": 18.98,
-            "profit_growth": 33.24,
-            "rank": 21,
-            "roce": 30.34,
-            "roe": 23.06
-        },
-        {
             "cmp_rs": 194.71,
             "earnings_yield": 2.12,
             "mar_cap_rs_cr": 122153.2,
@@ -304,9 +290,23 @@
             "opert_prft_gwth": 240.49,
             "p_e": 75.67,
             "profit_growth": 137.89,
-            "rank": 22,
+            "rank": 21,
             "roce": 62.57,
             "roe": 49.92
+        },
+        {
+            "cmp_rs": 5247.0,
+            "earnings_yield": 6.98,
+            "mar_cap_rs_cr": 104987.1,
+            "name": "Hero Motocorp",
+            "np_12m_rs_cr": 5470.53,
+            "op_12m_rs_cr": 6371.32,
+            "opert_prft_gwth": 13.94,
+            "p_e": 18.98,
+            "profit_growth": 33.24,
+            "rank": 22,
+            "roce": 30.34,
+            "roe": 23.06
         },
         {
             "cmp_rs": 22072.0,
@@ -337,20 +337,6 @@
             "roe": 36.04
         },
         {
-            "cmp_rs": 579.0,
-            "earnings_yield": 7.33,
-            "mar_cap_rs_cr": 20402.88,
-            "name": "Sarda Energy",
-            "np_12m_rs_cr": 1054.69,
-            "op_12m_rs_cr": 1710.47,
-            "opert_prft_gwth": 52.85,
-            "p_e": 19.45,
-            "profit_growth": 52.78,
-            "rank": 25,
-            "roce": 15.27,
-            "roe": 13.44
-        },
-        {
             "cmp_rs": 945.05,
             "earnings_yield": 19.11,
             "mar_cap_rs_cr": 14072.87,
@@ -360,9 +346,23 @@
             "opert_prft_gwth": 175.54,
             "p_e": 6.54,
             "profit_growth": 478.11,
-            "rank": 26,
+            "rank": 25,
             "roce": 4.3,
             "roe": 2.51
+        },
+        {
+            "cmp_rs": 579.0,
+            "earnings_yield": 7.33,
+            "mar_cap_rs_cr": 20402.88,
+            "name": "Sarda Energy",
+            "np_12m_rs_cr": 1054.69,
+            "op_12m_rs_cr": 1710.47,
+            "opert_prft_gwth": 52.85,
+            "p_e": 19.45,
+            "profit_growth": 52.78,
+            "rank": 26,
+            "roce": 15.27,
+            "roe": 13.44
         },
         {
             "cmp_rs": 183.68,
@@ -421,20 +421,6 @@
             "roe": 52.07
         },
         {
-            "cmp_rs": 4093.6,
-            "earnings_yield": 1.46,
-            "mar_cap_rs_cr": 104816.63,
-            "name": "GE Vernova T&D",
-            "np_12m_rs_cr": 1067.97,
-            "op_12m_rs_cr": 1490.83,
-            "opert_prft_gwth": 120.04,
-            "p_e": 93.79,
-            "profit_growth": 128.94,
-            "rank": 31,
-            "roce": 54.74,
-            "roe": 40.35
-        },
-        {
             "cmp_rs": 389.5,
             "earnings_yield": 28.05,
             "mar_cap_rs_cr": 68333.88,
@@ -444,9 +430,23 @@
             "opert_prft_gwth": 22.69,
             "p_e": 7.1,
             "profit_growth": 28.15,
-            "rank": 32,
+            "rank": 31,
             "roce": 13.32,
             "roe": 10.99
+        },
+        {
+            "cmp_rs": 4093.6,
+            "earnings_yield": 1.46,
+            "mar_cap_rs_cr": 104816.63,
+            "name": "GE Vernova T&D",
+            "np_12m_rs_cr": 1067.97,
+            "op_12m_rs_cr": 1490.83,
+            "opert_prft_gwth": 120.04,
+            "p_e": 93.79,
+            "profit_growth": 128.94,
+            "rank": 32,
+            "roce": 54.74,
+            "roe": 40.35
         },
         {
             "cmp_rs": 922.4,
@@ -561,20 +561,6 @@
             "roe": 23.6
         },
         {
-            "cmp_rs": 7548.0,
-            "earnings_yield": 3.3,
-            "mar_cap_rs_cr": 113637.14,
-            "name": "Polycab India",
-            "np_12m_rs_cr": 2657.19,
-            "op_12m_rs_cr": 3869.81,
-            "opert_prft_gwth": 43.52,
-            "p_e": 43.27,
-            "profit_growth": 42.77,
-            "rank": 41,
-            "roce": 29.72,
-            "roe": 21.44
-        },
-        {
             "cmp_rs": 2439.9,
             "earnings_yield": 21.71,
             "mar_cap_rs_cr": 7829.78,
@@ -584,9 +570,37 @@
             "opert_prft_gwth": 25.45,
             "p_e": 8.35,
             "profit_growth": 20.75,
-            "rank": 42,
+            "rank": 41,
             "roce": 11.75,
             "roe": 9.11
+        },
+        {
+            "cmp_rs": 7548.0,
+            "earnings_yield": 3.3,
+            "mar_cap_rs_cr": 113637.14,
+            "name": "Polycab India",
+            "np_12m_rs_cr": 2657.19,
+            "op_12m_rs_cr": 3869.81,
+            "opert_prft_gwth": 43.52,
+            "p_e": 43.27,
+            "profit_growth": 42.77,
+            "rank": 42,
+            "roce": 29.72,
+            "roe": 21.44
+        },
+        {
+            "cmp_rs": 178.57,
+            "earnings_yield": 7.86,
+            "mar_cap_rs_cr": 17662.76,
+            "name": "Castrol India",
+            "np_12m_rs_cr": 949.93,
+            "op_12m_rs_cr": 1347.52,
+            "opert_prft_gwth": 5.41,
+            "p_e": 18.43,
+            "profit_growth": 4.13,
+            "rank": 43,
+            "roce": 60.27,
+            "roe": 45.86
         },
         {
             "cmp_rs": 172.06,
@@ -598,9 +612,23 @@
             "opert_prft_gwth": 18.34,
             "p_e": 28.03,
             "profit_growth": 29.25,
-            "rank": 43,
+            "rank": 44,
             "roce": 14.26,
             "roe": 28.82
+        },
+        {
+            "cmp_rs": 170.85,
+            "earnings_yield": 10.82,
+            "mar_cap_rs_cr": 29943.15,
+            "name": "M R P L",
+            "np_12m_rs_cr": 2178.22,
+            "op_12m_rs_cr": 5582.69,
+            "opert_prft_gwth": 59.42,
+            "p_e": 13.75,
+            "profit_growth": 162.62,
+            "rank": 45,
+            "roce": 4.38,
+            "roe": 0.45
         },
         {
             "cmp_rs": 1979.8,
@@ -612,7 +640,7 @@
             "opert_prft_gwth": 59.95,
             "p_e": 48.14,
             "profit_growth": 79.99,
-            "rank": 44,
+            "rank": 46,
             "roce": 22.36,
             "roe": 18.95
         },
@@ -626,23 +654,9 @@
             "opert_prft_gwth": 34.7,
             "p_e": 37.21,
             "profit_growth": 53.2,
-            "rank": 45,
+            "rank": 47,
             "roce": 13.48,
             "roe": 23.18
-        },
-        {
-            "cmp_rs": 170.85,
-            "earnings_yield": 10.82,
-            "mar_cap_rs_cr": 29943.15,
-            "name": "M R P L",
-            "np_12m_rs_cr": 2178.22,
-            "op_12m_rs_cr": 5582.69,
-            "opert_prft_gwth": 59.42,
-            "p_e": 13.75,
-            "profit_growth": 162.62,
-            "rank": 46,
-            "roce": 4.38,
-            "roe": 0.45
         },
         {
             "cmp_rs": 5377.4,
@@ -654,7 +668,7 @@
             "opert_prft_gwth": 35.47,
             "p_e": 47.17,
             "profit_growth": 36.28,
-            "rank": 47,
+            "rank": 48,
             "roce": 30.44,
             "roe": 24.08
         },
@@ -668,7 +682,7 @@
             "opert_prft_gwth": 29.23,
             "p_e": 34.18,
             "profit_growth": 48.83,
-            "rank": 48,
+            "rank": 49,
             "roce": 20.72,
             "roe": 18.51
         },
@@ -682,7 +696,7 @@
             "opert_prft_gwth": 29.21,
             "p_e": 29.11,
             "profit_growth": 28.8,
-            "rank": 49,
+            "rank": 50,
             "roce": 23.2,
             "roe": 16.89
         },
@@ -696,7 +710,7 @@
             "opert_prft_gwth": 22.28,
             "p_e": 37.94,
             "profit_growth": 21.64,
-            "rank": 50,
+            "rank": 51,
             "roce": 43.33,
             "roe": 32.35
         },
@@ -710,7 +724,7 @@
             "opert_prft_gwth": 7.45,
             "p_e": 17.94,
             "profit_growth": 4.37,
-            "rank": 51,
+            "rank": 52,
             "roce": 37.5,
             "roe": 28.83
         },
@@ -724,7 +738,7 @@
             "opert_prft_gwth": 17.64,
             "p_e": 12.41,
             "profit_growth": 14.21,
-            "rank": 52,
+            "rank": 53,
             "roce": 10.57,
             "roe": 19.11
         },
@@ -738,7 +752,7 @@
             "opert_prft_gwth": 22.24,
             "p_e": 23.55,
             "profit_growth": 61.83,
-            "rank": 53,
+            "rank": 54,
             "roce": 15.95,
             "roe": 9.96
         },
@@ -752,23 +766,9 @@
             "opert_prft_gwth": 20.64,
             "p_e": 25.07,
             "profit_growth": 28.96,
-            "rank": 54,
+            "rank": 55,
             "roce": 13.93,
             "roe": 18.05
-        },
-        {
-            "cmp_rs": 9816.0,
-            "earnings_yield": 4.5,
-            "mar_cap_rs_cr": 274355.08,
-            "name": "Bajaj Auto",
-            "np_12m_rs_cr": 8884.14,
-            "op_12m_rs_cr": 11709.13,
-            "opert_prft_gwth": 23.53,
-            "p_e": 30.68,
-            "profit_growth": 18.67,
-            "rank": 55,
-            "roce": 28.06,
-            "roe": 22.77
         },
         {
             "cmp_rs": 70.14,
@@ -785,32 +785,18 @@
             "roe": 22.81
         },
         {
-            "cmp_rs": 1514.2,
-            "earnings_yield": 3.41,
-            "mar_cap_rs_cr": 75710.0,
-            "name": "Bharti Hexacom",
-            "np_12m_rs_cr": 1754.9,
-            "op_12m_rs_cr": 4791.0,
-            "opert_prft_gwth": 22.62,
-            "p_e": 42.96,
-            "profit_growth": 67.76,
+            "cmp_rs": 9816.0,
+            "earnings_yield": 4.5,
+            "mar_cap_rs_cr": 274355.08,
+            "name": "Bajaj Auto",
+            "np_12m_rs_cr": 8884.14,
+            "op_12m_rs_cr": 11709.13,
+            "opert_prft_gwth": 23.53,
+            "p_e": 30.68,
+            "profit_growth": 18.67,
             "rank": 57,
-            "roce": 17.44,
-            "roe": 25.15
-        },
-        {
-            "cmp_rs": 2043.3,
-            "earnings_yield": 5.18,
-            "mar_cap_rs_cr": 31871.75,
-            "name": "Godfrey Phillips",
-            "np_12m_rs_cr": 1284.17,
-            "op_12m_rs_cr": 1300.97,
-            "opert_prft_gwth": 18.39,
-            "p_e": 24.55,
-            "profit_growth": 19.89,
-            "rank": 58,
-            "roce": 26.32,
-            "roe": 19.93
+            "roce": 28.06,
+            "roe": 22.77
         },
         {
             "cmp_rs": 433.55,
@@ -822,7 +808,7 @@
             "opert_prft_gwth": 9.95,
             "p_e": 5.67,
             "profit_growth": 13.14,
-            "rank": 59,
+            "rank": 58,
             "roce": 9.73,
             "roe": 21.01
         },
@@ -836,9 +822,37 @@
             "opert_prft_gwth": 16.96,
             "p_e": 12.19,
             "profit_growth": 10.83,
-            "rank": 60,
+            "rank": 59,
             "roce": 18.9,
             "roe": 14.39
+        },
+        {
+            "cmp_rs": 2043.3,
+            "earnings_yield": 5.18,
+            "mar_cap_rs_cr": 31871.75,
+            "name": "Godfrey Phillips",
+            "np_12m_rs_cr": 1284.17,
+            "op_12m_rs_cr": 1300.97,
+            "opert_prft_gwth": 18.39,
+            "p_e": 24.55,
+            "profit_growth": 19.89,
+            "rank": 60,
+            "roce": 26.32,
+            "roe": 19.93
+        },
+        {
+            "cmp_rs": 1514.2,
+            "earnings_yield": 3.41,
+            "mar_cap_rs_cr": 75710.0,
+            "name": "Bharti Hexacom",
+            "np_12m_rs_cr": 1754.9,
+            "op_12m_rs_cr": 4791.0,
+            "opert_prft_gwth": 22.62,
+            "p_e": 42.96,
+            "profit_growth": 67.76,
+            "rank": 61,
+            "roce": 17.44,
+            "roe": 25.15
         },
         {
             "cmp_rs": 3353.5,
@@ -850,7 +864,7 @@
             "opert_prft_gwth": 18.14,
             "p_e": 50.25,
             "profit_growth": 24.43,
-            "rank": 61,
+            "rank": 62,
             "roce": 115.1,
             "roe": 85.8
         },
@@ -864,7 +878,7 @@
             "opert_prft_gwth": 13.66,
             "p_e": 12.69,
             "profit_growth": 19.6,
-            "rank": 62,
+            "rank": 63,
             "roce": 14.8,
             "roe": 14.02
         },
@@ -878,7 +892,7 @@
             "opert_prft_gwth": 23.1,
             "p_e": 11.79,
             "profit_growth": 21.99,
-            "rank": 63,
+            "rank": 64,
             "roce": 7.38,
             "roe": 17.65
         },
@@ -892,37 +906,9 @@
             "opert_prft_gwth": 24.0,
             "p_e": 24.53,
             "profit_growth": 33.25,
-            "rank": 64,
+            "rank": 65,
             "roce": 15.62,
             "roe": 14.69
-        },
-        {
-            "cmp_rs": 441.65,
-            "earnings_yield": 3.9,
-            "mar_cap_rs_cr": 45610.97,
-            "name": "Kalyan Jewellers",
-            "np_12m_rs_cr": 1128.5,
-            "op_12m_rs_cr": 2154.92,
-            "opert_prft_gwth": 51.54,
-            "p_e": 39.43,
-            "profit_growth": 73.99,
-            "rank": 65,
-            "roce": 15.03,
-            "roe": 15.95
-        },
-        {
-            "cmp_rs": 298.65,
-            "earnings_yield": 7.57,
-            "mar_cap_rs_cr": 374192.57,
-            "name": "ITC",
-            "np_12m_rs_cr": 35356.29,
-            "op_12m_rs_cr": 26913.07,
-            "opert_prft_gwth": 4.47,
-            "p_e": 18.14,
-            "profit_growth": 5.26,
-            "rank": 66,
-            "roce": 36.79,
-            "roe": 27.32
         },
         {
             "cmp_rs": 420.7,
@@ -934,7 +920,7 @@
             "opert_prft_gwth": 9.87,
             "p_e": 11.2,
             "profit_growth": 7.69,
-            "rank": 67,
+            "rank": 66,
             "roce": 16.34,
             "roe": 18.65
         },
@@ -948,23 +934,37 @@
             "opert_prft_gwth": 21.3,
             "p_e": 18.41,
             "profit_growth": 22.69,
-            "rank": 68,
+            "rank": 67,
             "roce": 9.37,
             "roe": 18.05
         },
         {
-            "cmp_rs": 1435.4,
-            "earnings_yield": 4.95,
-            "mar_cap_rs_cr": 140646.41,
-            "name": "Tech Mahindra",
-            "np_12m_rs_cr": 4591.0,
-            "op_12m_rs_cr": 8304.9,
-            "opert_prft_gwth": 33.46,
-            "p_e": 29.25,
-            "profit_growth": 28.38,
+            "cmp_rs": 298.65,
+            "earnings_yield": 7.57,
+            "mar_cap_rs_cr": 374192.57,
+            "name": "ITC",
+            "np_12m_rs_cr": 35356.29,
+            "op_12m_rs_cr": 26913.07,
+            "opert_prft_gwth": 4.47,
+            "p_e": 18.14,
+            "profit_growth": 5.26,
+            "rank": 68,
+            "roce": 36.79,
+            "roe": 27.32
+        },
+        {
+            "cmp_rs": 441.65,
+            "earnings_yield": 3.9,
+            "mar_cap_rs_cr": 45610.97,
+            "name": "Kalyan Jewellers",
+            "np_12m_rs_cr": 1128.5,
+            "op_12m_rs_cr": 2154.92,
+            "opert_prft_gwth": 51.54,
+            "p_e": 39.43,
+            "profit_growth": 73.99,
             "rank": 69,
-            "roce": 18.56,
-            "roe": 14.62
+            "roce": 15.03,
+            "roe": 15.95
         },
         {
             "cmp_rs": 271.8,
@@ -981,6 +981,20 @@
             "roe": 14.47
         },
         {
+            "cmp_rs": 1435.4,
+            "earnings_yield": 4.95,
+            "mar_cap_rs_cr": 140646.41,
+            "name": "Tech Mahindra",
+            "np_12m_rs_cr": 4591.0,
+            "op_12m_rs_cr": 8304.9,
+            "opert_prft_gwth": 33.46,
+            "p_e": 29.25,
+            "profit_growth": 28.38,
+            "rank": 71,
+            "roce": 18.56,
+            "roe": 14.62
+        },
+        {
             "cmp_rs": 2414.2,
             "earnings_yield": 3.42,
             "mar_cap_rs_cr": 40898.0,
@@ -990,7 +1004,7 @@
             "opert_prft_gwth": 17.25,
             "p_e": 40.66,
             "profit_growth": 17.75,
-            "rank": 71,
+            "rank": 72,
             "roce": 63.25,
             "roe": 46.87
         },
@@ -1004,7 +1018,7 @@
             "opert_prft_gwth": 8.92,
             "p_e": 5.3,
             "profit_growth": 10.16,
-            "rank": 72,
+            "rank": 73,
             "roce": 9.96,
             "roe": 21.51
         },
@@ -1018,23 +1032,9 @@
             "opert_prft_gwth": 8.5,
             "p_e": 10.05,
             "profit_growth": 98.59,
-            "rank": 73,
+            "rank": 74,
             "roce": 9.39,
             "roe": 9.01
-        },
-        {
-            "cmp_rs": 469.6,
-            "earnings_yield": 7.37,
-            "mar_cap_rs_cr": 20460.65,
-            "name": "Aadhar Hsg. Fin.",
-            "np_12m_rs_cr": 1029.8,
-            "op_12m_rs_cr": 2695.55,
-            "opert_prft_gwth": 19.2,
-            "p_e": 19.63,
-            "profit_growth": 19.97,
-            "rank": 74,
-            "roce": 11.42,
-            "roe": 16.86
         },
         {
             "cmp_rs": 643.75,
@@ -1051,6 +1051,20 @@
             "roe": 3.29
         },
         {
+            "cmp_rs": 469.6,
+            "earnings_yield": 7.37,
+            "mar_cap_rs_cr": 20460.65,
+            "name": "Aadhar Hsg. Fin.",
+            "np_12m_rs_cr": 1029.8,
+            "op_12m_rs_cr": 2695.55,
+            "opert_prft_gwth": 19.2,
+            "p_e": 19.63,
+            "profit_growth": 19.97,
+            "rank": 76,
+            "roce": 11.42,
+            "roe": 16.86
+        },
+        {
             "cmp_rs": 138.77,
             "earnings_yield": 6.55,
             "mar_cap_rs_cr": 125873.43,
@@ -1060,7 +1074,7 @@
             "opert_prft_gwth": 17.02,
             "p_e": 6.24,
             "profit_growth": 22.89,
-            "rank": 76,
+            "rank": 77,
             "roce": 6.79,
             "roe": 17.75
         },
@@ -1074,23 +1088,9 @@
             "opert_prft_gwth": 20.64,
             "p_e": 35.8,
             "profit_growth": 21.58,
-            "rank": 77,
+            "rank": 78,
             "roce": 29.81,
             "roe": 24.1
-        },
-        {
-            "cmp_rs": 3738.1,
-            "earnings_yield": 3.32,
-            "mar_cap_rs_cr": 177592.31,
-            "name": "TVS Motor Co.",
-            "np_12m_rs_cr": 3064.39,
-            "op_12m_rs_cr": 8084.07,
-            "opert_prft_gwth": 31.61,
-            "p_e": 60.89,
-            "profit_growth": 49.26,
-            "rank": 78,
-            "roce": 15.35,
-            "roe": 28.39
         },
         {
             "cmp_rs": 41.97,
@@ -1107,6 +1107,20 @@
             "roe": 7.38
         },
         {
+            "cmp_rs": 3738.1,
+            "earnings_yield": 3.32,
+            "mar_cap_rs_cr": 177592.31,
+            "name": "TVS Motor Co.",
+            "np_12m_rs_cr": 3064.39,
+            "op_12m_rs_cr": 8084.07,
+            "opert_prft_gwth": 31.61,
+            "p_e": 60.89,
+            "profit_growth": 49.26,
+            "rank": 80,
+            "roce": 15.35,
+            "roe": 28.39
+        },
+        {
             "cmp_rs": 4439.3,
             "earnings_yield": 1.89,
             "mar_cap_rs_cr": 394114.91,
@@ -1116,37 +1130,9 @@
             "opert_prft_gwth": 48.75,
             "p_e": 80.76,
             "profit_growth": 50.76,
-            "rank": 80,
+            "rank": 81,
             "roce": 19.14,
             "roe": 31.75
-        },
-        {
-            "cmp_rs": 765.2,
-            "earnings_yield": 6.6,
-            "mar_cap_rs_cr": 63084.59,
-            "name": "Jindal Stain.",
-            "np_12m_rs_cr": 2940.32,
-            "op_12m_rs_cr": 5111.04,
-            "opert_prft_gwth": 10.51,
-            "p_e": 21.34,
-            "profit_growth": 22.34,
-            "rank": 81,
-            "roce": 18.16,
-            "roe": 16.15
-        },
-        {
-            "cmp_rs": 25725.0,
-            "earnings_yield": 3.83,
-            "mar_cap_rs_cr": 54665.63,
-            "name": "Abbott India",
-            "np_12m_rs_cr": 1524.13,
-            "op_12m_rs_cr": 1839.77,
-            "opert_prft_gwth": 15.3,
-            "p_e": 35.87,
-            "profit_growth": 14.21,
-            "rank": 82,
-            "roce": 46.25,
-            "roe": 35.68
         },
         {
             "cmp_rs": 14525.0,
@@ -1158,7 +1144,7 @@
             "opert_prft_gwth": 31.42,
             "p_e": 90.51,
             "profit_growth": 29.4,
-            "rank": 83,
+            "rank": 82,
             "roce": 38.13,
             "roe": 32.64
         },
@@ -1172,23 +1158,9 @@
             "opert_prft_gwth": 10.26,
             "p_e": 7.63,
             "profit_growth": 14.09,
-            "rank": 84,
+            "rank": 83,
             "roce": 13.95,
             "roe": 12.15
-        },
-        {
-            "cmp_rs": 846.65,
-            "earnings_yield": 9.27,
-            "mar_cap_rs_cr": 22059.43,
-            "name": "PNB Housing",
-            "np_12m_rs_cr": 2246.29,
-            "op_12m_rs_cr": 7852.47,
-            "opert_prft_gwth": 15.2,
-            "p_e": 9.82,
-            "profit_growth": 23.04,
-            "rank": 85,
-            "roce": 9.46,
-            "roe": 12.27
         },
         {
             "cmp_rs": 448.45,
@@ -1200,23 +1172,51 @@
             "opert_prft_gwth": 28.85,
             "p_e": 14.88,
             "profit_growth": 27.78,
-            "rank": 86,
+            "rank": 84,
             "roce": 8.81,
             "roe": 4.9
         },
         {
-            "cmp_rs": 11115.0,
-            "earnings_yield": 3.88,
-            "mar_cap_rs_cr": 44647.08,
-            "name": "Apar Inds.",
-            "np_12m_rs_cr": 973.51,
-            "op_12m_rs_cr": 1819.9,
-            "opert_prft_gwth": 20.06,
-            "p_e": 45.02,
-            "profit_growth": 22.79,
+            "cmp_rs": 765.2,
+            "earnings_yield": 6.6,
+            "mar_cap_rs_cr": 63084.59,
+            "name": "Jindal Stain.",
+            "np_12m_rs_cr": 2940.32,
+            "op_12m_rs_cr": 5111.04,
+            "opert_prft_gwth": 10.51,
+            "p_e": 21.34,
+            "profit_growth": 22.34,
+            "rank": 85,
+            "roce": 18.16,
+            "roe": 16.15
+        },
+        {
+            "cmp_rs": 846.65,
+            "earnings_yield": 9.27,
+            "mar_cap_rs_cr": 22059.43,
+            "name": "PNB Housing",
+            "np_12m_rs_cr": 2246.29,
+            "op_12m_rs_cr": 7852.47,
+            "opert_prft_gwth": 15.2,
+            "p_e": 9.82,
+            "profit_growth": 23.04,
+            "rank": 86,
+            "roce": 9.46,
+            "roe": 12.27
+        },
+        {
+            "cmp_rs": 25725.0,
+            "earnings_yield": 3.83,
+            "mar_cap_rs_cr": 54665.63,
+            "name": "Abbott India",
+            "np_12m_rs_cr": 1524.13,
+            "op_12m_rs_cr": 1839.77,
+            "opert_prft_gwth": 15.3,
+            "p_e": 35.87,
+            "profit_growth": 14.21,
             "rank": 87,
-            "roce": 32.7,
-            "roe": 19.5
+            "roce": 46.25,
+            "roe": 35.68
         },
         {
             "cmp_rs": 160.83,
@@ -1247,6 +1247,20 @@
             "roe": 8.64
         },
         {
+            "cmp_rs": 11115.0,
+            "earnings_yield": 3.88,
+            "mar_cap_rs_cr": 44647.08,
+            "name": "Apar Inds.",
+            "np_12m_rs_cr": 973.51,
+            "op_12m_rs_cr": 1819.9,
+            "opert_prft_gwth": 20.06,
+            "p_e": 45.02,
+            "profit_growth": 22.79,
+            "rank": 90,
+            "roce": 32.7,
+            "roe": 19.5
+        },
+        {
             "cmp_rs": 441.55,
             "earnings_yield": 2.55,
             "mar_cap_rs_cr": 322763.28,
@@ -1256,23 +1270,9 @@
             "opert_prft_gwth": 25.04,
             "p_e": 54.12,
             "profit_growth": 19.48,
-            "rank": 90,
+            "rank": 91,
             "roce": 38.88,
             "roe": 29.22
-        },
-        {
-            "cmp_rs": 537.9,
-            "earnings_yield": 4.63,
-            "mar_cap_rs_cr": 43032.0,
-            "name": "I R C T C",
-            "np_12m_rs_cr": 1424.75,
-            "op_12m_rs_cr": 1652.19,
-            "opert_prft_gwth": 8.16,
-            "p_e": 31.12,
-            "profit_growth": 12.08,
-            "rank": 91,
-            "roce": 49.03,
-            "roe": 37.16
         },
         {
             "cmp_rs": 1757.8,
@@ -1289,18 +1289,18 @@
             "roe": 2.31
         },
         {
-            "cmp_rs": 4466.6,
-            "earnings_yield": 5.54,
-            "mar_cap_rs_cr": 132431.71,
-            "name": "LTIMindtree",
-            "np_12m_rs_cr": 4724.0,
-            "op_12m_rs_cr": 7178.4,
-            "opert_prft_gwth": 11.56,
-            "p_e": 25.57,
-            "profit_growth": 13.33,
+            "cmp_rs": 537.9,
+            "earnings_yield": 4.63,
+            "mar_cap_rs_cr": 43032.0,
+            "name": "I R C T C",
+            "np_12m_rs_cr": 1424.75,
+            "op_12m_rs_cr": 1652.19,
+            "opert_prft_gwth": 8.16,
+            "p_e": 31.12,
+            "profit_growth": 12.08,
             "rank": 93,
-            "roce": 27.63,
-            "roe": 21.53
+            "roce": 49.03,
+            "roe": 37.16
         },
         {
             "cmp_rs": 1507.2,
@@ -1317,6 +1317,20 @@
             "roe": 19.71
         },
         {
+            "cmp_rs": 4466.6,
+            "earnings_yield": 5.54,
+            "mar_cap_rs_cr": 132431.71,
+            "name": "LTIMindtree",
+            "np_12m_rs_cr": 4724.0,
+            "op_12m_rs_cr": 7178.4,
+            "opert_prft_gwth": 11.56,
+            "p_e": 25.57,
+            "profit_growth": 13.33,
+            "rank": 95,
+            "roce": 27.63,
+            "roe": 21.53
+        },
+        {
             "cmp_rs": 5452.0,
             "earnings_yield": 4.26,
             "mar_cap_rs_cr": 42126.65,
@@ -1326,7 +1340,7 @@
             "opert_prft_gwth": 34.81,
             "p_e": 40.09,
             "profit_growth": 66.36,
-            "rank": 95,
+            "rank": 96,
             "roce": 13.99,
             "roe": 13.87
         },
@@ -1340,7 +1354,7 @@
             "opert_prft_gwth": 8.24,
             "p_e": 11.52,
             "profit_growth": 17.03,
-            "rank": 96,
+            "rank": 97,
             "roce": 9.34,
             "roe": 18.22
         },
@@ -1354,7 +1368,7 @@
             "opert_prft_gwth": 33.17,
             "p_e": 13.97,
             "profit_growth": 53.75,
-            "rank": 97,
+            "rank": 98,
             "roce": 5.95,
             "roe": 11.02
         },
@@ -1368,7 +1382,7 @@
             "opert_prft_gwth": 4.59,
             "p_e": 25.54,
             "profit_growth": 6.35,
-            "rank": 98,
+            "rank": 99,
             "roce": 40.6,
             "roe": 29.34
         },
@@ -1382,7 +1396,7 @@
             "opert_prft_gwth": 4.48,
             "p_e": 23.51,
             "profit_growth": 33.85,
-            "rank": 99,
+            "rank": 100,
             "roce": 15.95,
             "roe": 19.03
         },
@@ -1396,23 +1410,9 @@
             "opert_prft_gwth": 20.9,
             "p_e": 40.48,
             "profit_growth": 8.46,
-            "rank": 100,
+            "rank": 101,
             "roce": 40.69,
             "roe": 31.39
-        },
-        {
-            "cmp_rs": 1746.2,
-            "earnings_yield": 5.69,
-            "mar_cap_rs_cr": 141885.93,
-            "name": "Hyundai Motor I",
-            "np_12m_rs_cr": 5683.48,
-            "op_12m_rs_cr": 8966.49,
-            "opert_prft_gwth": 2.67,
-            "p_e": 24.96,
-            "profit_growth": 2.24,
-            "rank": 101,
-            "roce": 54.25,
-            "roe": 42.18
         },
         {
             "cmp_rs": 1465.3,
@@ -1429,6 +1429,20 @@
             "roe": 18.76
         },
         {
+            "cmp_rs": 1746.2,
+            "earnings_yield": 5.69,
+            "mar_cap_rs_cr": 141885.93,
+            "name": "Hyundai Motor I",
+            "np_12m_rs_cr": 5683.48,
+            "op_12m_rs_cr": 8966.49,
+            "opert_prft_gwth": 2.67,
+            "p_e": 24.96,
+            "profit_growth": 2.24,
+            "rank": 103,
+            "roce": 54.25,
+            "roe": 42.18
+        },
+        {
             "cmp_rs": 1429.4,
             "earnings_yield": 6.44,
             "mar_cap_rs_cr": 387891.29,
@@ -1438,7 +1452,7 @@
             "opert_prft_gwth": 5.31,
             "p_e": 22.59,
             "profit_growth": 0.58,
-            "rank": 103,
+            "rank": 104,
             "roce": 31.61,
             "roe": 25.0
         },
@@ -1452,7 +1466,7 @@
             "opert_prft_gwth": 24.56,
             "p_e": 13.53,
             "profit_growth": 3.7,
-            "rank": 104,
+            "rank": 105,
             "roce": 9.62,
             "roe": 15.67
         },
@@ -1466,7 +1480,7 @@
             "opert_prft_gwth": 22.01,
             "p_e": 50.57,
             "profit_growth": 22.63,
-            "rank": 105,
+            "rank": 106,
             "roce": 27.9,
             "roe": 20.8
         },
@@ -1480,7 +1494,7 @@
             "opert_prft_gwth": 22.79,
             "p_e": 26.33,
             "profit_growth": 222.37,
-            "rank": 106,
+            "rank": 107,
             "roce": 8.83,
             "roe": 3.89
         },
@@ -1494,7 +1508,7 @@
             "opert_prft_gwth": 11.38,
             "p_e": 24.21,
             "profit_growth": 10.69,
-            "rank": 107,
+            "rank": 108,
             "roce": 22.71,
             "roe": 18.22
         },
@@ -1508,23 +1522,9 @@
             "opert_prft_gwth": 16.71,
             "p_e": 8.47,
             "profit_growth": 18.36,
-            "rank": 108,
+            "rank": 109,
             "roce": 7.67,
             "roe": 11.43
-        },
-        {
-            "cmp_rs": 1009.5,
-            "earnings_yield": 4.74,
-            "mar_cap_rs_cr": 40999.68,
-            "name": "360 ONE",
-            "np_12m_rs_cr": 1177.03,
-            "op_12m_rs_cr": 2449.52,
-            "opert_prft_gwth": 32.56,
-            "p_e": 34.83,
-            "profit_growth": 9.97,
-            "rank": 109,
-            "roce": 14.91,
-            "roe": 20.57
         },
         {
             "cmp_rs": 4803.5,
@@ -1541,6 +1541,20 @@
             "roe": 15.27
         },
         {
+            "cmp_rs": 1009.5,
+            "earnings_yield": 4.74,
+            "mar_cap_rs_cr": 40999.68,
+            "name": "360 ONE",
+            "np_12m_rs_cr": 1177.03,
+            "op_12m_rs_cr": 2449.52,
+            "opert_prft_gwth": 32.56,
+            "p_e": 34.83,
+            "profit_growth": 9.97,
+            "rank": 111,
+            "roce": 14.91,
+            "roe": 20.57
+        },
+        {
             "cmp_rs": 420.1,
             "earnings_yield": 8.89,
             "mar_cap_rs_cr": 12111.04,
@@ -1550,23 +1564,9 @@
             "opert_prft_gwth": 8.2,
             "p_e": 16.61,
             "profit_growth": 20.42,
-            "rank": 111,
+            "rank": 112,
             "roce": 12.78,
             "roe": 11.07
-        },
-        {
-            "cmp_rs": 134315.0,
-            "earnings_yield": 5.67,
-            "mar_cap_rs_cr": 56964.91,
-            "name": "MRF",
-            "np_12m_rs_cr": 2230.05,
-            "op_12m_rs_cr": 4675.01,
-            "opert_prft_gwth": 19.33,
-            "p_e": 24.9,
-            "profit_growth": 30.46,
-            "rank": 112,
-            "roce": 13.62,
-            "roe": 10.62
         },
         {
             "cmp_rs": 1004.1,
@@ -1583,6 +1583,20 @@
             "roe": 15.57
         },
         {
+            "cmp_rs": 134315.0,
+            "earnings_yield": 5.67,
+            "mar_cap_rs_cr": 56964.91,
+            "name": "MRF",
+            "np_12m_rs_cr": 2230.05,
+            "op_12m_rs_cr": 4675.01,
+            "opert_prft_gwth": 19.33,
+            "p_e": 24.9,
+            "profit_growth": 30.46,
+            "rank": 114,
+            "roce": 13.62,
+            "roe": 10.62
+        },
+        {
             "cmp_rs": 5364.5,
             "earnings_yield": 4.65,
             "mar_cap_rs_cr": 64140.64,
@@ -1592,23 +1606,9 @@
             "opert_prft_gwth": 14.12,
             "p_e": 26.72,
             "profit_growth": 11.0,
-            "rank": 114,
+            "rank": 115,
             "roce": 20.38,
             "roe": 19.39
-        },
-        {
-            "cmp_rs": 321.65,
-            "earnings_yield": 6.33,
-            "mar_cap_rs_cr": 136536.21,
-            "name": "Tata Capital",
-            "np_12m_rs_cr": 4424.45,
-            "op_12m_rs_cr": 22350.94,
-            "opert_prft_gwth": 42.63,
-            "p_e": 30.84,
-            "profit_growth": 16.56,
-            "rank": 115,
-            "roce": 9.58,
-            "roe": 12.92
         },
         {
             "cmp_rs": 246.25,
@@ -1625,6 +1625,20 @@
             "roe": 10.53
         },
         {
+            "cmp_rs": 321.65,
+            "earnings_yield": 6.33,
+            "mar_cap_rs_cr": 136536.21,
+            "name": "Tata Capital",
+            "np_12m_rs_cr": 4424.45,
+            "op_12m_rs_cr": 22350.94,
+            "opert_prft_gwth": 42.63,
+            "p_e": 30.84,
+            "profit_growth": 16.56,
+            "rank": 117,
+            "roce": 9.58,
+            "roe": 12.92
+        },
+        {
             "cmp_rs": 405.45,
             "earnings_yield": 7.19,
             "mar_cap_rs_cr": 7033.98,
@@ -1634,7 +1648,7 @@
             "opert_prft_gwth": 19.15,
             "p_e": 11.31,
             "profit_growth": 12.12,
-            "rank": 117,
+            "rank": 118,
             "roce": 7.11,
             "roe": 14.31
         },
@@ -1648,7 +1662,7 @@
             "opert_prft_gwth": 12.98,
             "p_e": 31.88,
             "profit_growth": 22.97,
-            "rank": 118,
+            "rank": 119,
             "roce": 14.49,
             "roe": 16.55
         },
@@ -1662,7 +1676,7 @@
             "opert_prft_gwth": 9.5,
             "p_e": 35.68,
             "profit_growth": 13.0,
-            "rank": 119,
+            "rank": 120,
             "roce": 32.37,
             "roe": 24.91
         },
@@ -1676,7 +1690,7 @@
             "opert_prft_gwth": 36.0,
             "p_e": 39.16,
             "profit_growth": 61.25,
-            "rank": 120,
+            "rank": 121,
             "roce": 12.27,
             "roe": 10.37
         },
@@ -1690,7 +1704,7 @@
             "opert_prft_gwth": 2.81,
             "p_e": 10.53,
             "profit_growth": 4.69,
-            "rank": 121,
+            "rank": 122,
             "roce": 17.44,
             "roe": 13.23
         },
@@ -1704,7 +1718,7 @@
             "opert_prft_gwth": 21.97,
             "p_e": 59.51,
             "profit_growth": 38.62,
-            "rank": 122,
+            "rank": 123,
             "roce": 16.64,
             "roe": 18.42
         },
@@ -1718,7 +1732,7 @@
             "opert_prft_gwth": 18.38,
             "p_e": 59.41,
             "profit_growth": 15.92,
-            "rank": 123,
+            "rank": 124,
             "roce": 36.32,
             "roe": 28.15
         },
@@ -1732,7 +1746,7 @@
             "opert_prft_gwth": 4.24,
             "p_e": 5.22,
             "profit_growth": 6.49,
-            "rank": 124,
+            "rank": 125,
             "roce": 8.93,
             "roe": 16.05
         },
@@ -1746,7 +1760,7 @@
             "opert_prft_gwth": 31.82,
             "p_e": 83.14,
             "profit_growth": 11.11,
-            "rank": 125,
+            "rank": 126,
             "roce": 30.71,
             "roe": 30.4
         },
@@ -1760,23 +1774,9 @@
             "opert_prft_gwth": 14.48,
             "p_e": 61.38,
             "profit_growth": 23.82,
-            "rank": 126,
+            "rank": 127,
             "roce": 27.05,
             "roe": 26.52
-        },
-        {
-            "cmp_rs": 3134.4,
-            "earnings_yield": 5.22,
-            "mar_cap_rs_cr": 35066.96,
-            "name": "Escorts Kubota",
-            "np_12m_rs_cr": 2391.95,
-            "op_12m_rs_cr": 1403.07,
-            "opert_prft_gwth": 20.71,
-            "p_e": 26.92,
-            "profit_growth": 18.87,
-            "rank": 127,
-            "roce": 13.59,
-            "roe": 12.8
         },
         {
             "cmp_rs": 1788.3,
@@ -1793,6 +1793,20 @@
             "roe": 13.39
         },
         {
+            "cmp_rs": 3134.4,
+            "earnings_yield": 5.22,
+            "mar_cap_rs_cr": 35066.96,
+            "name": "Escorts Kubota",
+            "np_12m_rs_cr": 2391.95,
+            "op_12m_rs_cr": 1403.07,
+            "opert_prft_gwth": 20.71,
+            "p_e": 26.92,
+            "profit_growth": 18.87,
+            "rank": 129,
+            "roce": 13.59,
+            "roe": 12.8
+        },
+        {
             "cmp_rs": 5589.0,
             "earnings_yield": 2.48,
             "mar_cap_rs_cr": 134621.29,
@@ -1802,7 +1816,7 @@
             "opert_prft_gwth": 10.18,
             "p_e": 55.74,
             "profit_growth": 11.02,
-            "rank": 129,
+            "rank": 130,
             "roce": 52.99,
             "roe": 52.94
         },
@@ -1816,7 +1830,7 @@
             "opert_prft_gwth": 12.54,
             "p_e": 8.29,
             "profit_growth": 9.79,
-            "rank": 130,
+            "rank": 131,
             "roce": 7.49,
             "roe": 13.97
         },
@@ -1830,23 +1844,9 @@
             "opert_prft_gwth": 2.01,
             "p_e": 8.54,
             "profit_growth": 28.89,
-            "rank": 131,
+            "rank": 132,
             "roce": 6.78,
             "roe": 13.55
-        },
-        {
-            "cmp_rs": 1451.0,
-            "earnings_yield": 4.28,
-            "mar_cap_rs_cr": 36812.48,
-            "name": "Ipca Labs.",
-            "np_12m_rs_cr": 941.08,
-            "op_12m_rs_cr": 1923.55,
-            "opert_prft_gwth": 18.8,
-            "p_e": 34.86,
-            "profit_growth": 33.27,
-            "rank": 132,
-            "roce": 14.72,
-            "roe": 12.75
         },
         {
             "cmp_rs": 966.5,
@@ -1863,6 +1863,20 @@
             "roe": 17.09
         },
         {
+            "cmp_rs": 1451.0,
+            "earnings_yield": 4.28,
+            "mar_cap_rs_cr": 36812.48,
+            "name": "Ipca Labs.",
+            "np_12m_rs_cr": 941.08,
+            "op_12m_rs_cr": 1923.55,
+            "opert_prft_gwth": 18.8,
+            "p_e": 34.86,
+            "profit_growth": 33.27,
+            "rank": 134,
+            "roce": 14.72,
+            "roe": 12.75
+        },
+        {
             "cmp_rs": 184.68,
             "earnings_yield": 6.75,
             "mar_cap_rs_cr": 140977.43,
@@ -1872,7 +1886,7 @@
             "opert_prft_gwth": 2.35,
             "p_e": 7.44,
             "profit_growth": 15.87,
-            "rank": 134,
+            "rank": 135,
             "roce": 6.72,
             "roe": 17.05
         },
@@ -1886,7 +1900,7 @@
             "opert_prft_gwth": 18.01,
             "p_e": 28.48,
             "profit_growth": 27.09,
-            "rank": 135,
+            "rank": 136,
             "roce": 9.55,
             "roe": 13.46
         },
@@ -1900,7 +1914,7 @@
             "opert_prft_gwth": 16.1,
             "p_e": 30.74,
             "profit_growth": 13.93,
-            "rank": 136,
+            "rank": 137,
             "roce": 11.35,
             "roe": 19.22
         },
@@ -1914,7 +1928,7 @@
             "opert_prft_gwth": 6.83,
             "p_e": 29.75,
             "profit_growth": 106.82,
-            "rank": 137,
+            "rank": 138,
             "roce": 7.83,
             "roe": 9.64
         },
@@ -1928,7 +1942,7 @@
             "opert_prft_gwth": 19.44,
             "p_e": 53.78,
             "profit_growth": 23.21,
-            "rank": 138,
+            "rank": 139,
             "roce": 18.83,
             "roe": 17.5
         },
@@ -1942,7 +1956,7 @@
             "opert_prft_gwth": 18.59,
             "p_e": 101.35,
             "profit_growth": 18.28,
-            "rank": 139,
+            "rank": 140,
             "roce": 37.48,
             "roe": 27.66
         },
@@ -1956,23 +1970,9 @@
             "opert_prft_gwth": 10.86,
             "p_e": 6.47,
             "profit_growth": 19.66,
-            "rank": 140,
+            "rank": 141,
             "roce": 6.17,
             "roe": 12.35
-        },
-        {
-            "cmp_rs": 546.5,
-            "earnings_yield": 2.3,
-            "mar_cap_rs_cr": 79207.5,
-            "name": "ICICI Pru Life",
-            "np_12m_rs_cr": 1369.25,
-            "op_12m_rs_cr": 1349.89,
-            "opert_prft_gwth": 326.61,
-            "p_e": 57.85,
-            "profit_growth": 40.59,
-            "rank": 141,
-            "roce": 11.94,
-            "roe": 10.43
         },
         {
             "cmp_rs": 1231.5,
@@ -2087,20 +2087,6 @@
             "roe": 12.58
         },
         {
-            "cmp_rs": 1204.2,
-            "earnings_yield": 4.76,
-            "mar_cap_rs_cr": 294481.57,
-            "name": "JSW Steel",
-            "np_12m_rs_cr": 7766.0,
-            "op_12m_rs_cr": 27017.0,
-            "opert_prft_gwth": 20.19,
-            "p_e": 37.67,
-            "profit_growth": 121.22,
-            "rank": 150,
-            "roce": 8.11,
-            "roe": 4.94
-        },
-        {
             "cmp_rs": 11502.0,
             "earnings_yield": 3.32,
             "mar_cap_rs_cr": 338939.98,
@@ -2110,9 +2096,23 @@
             "opert_prft_gwth": 32.89,
             "p_e": 43.63,
             "profit_growth": 30.81,
-            "rank": 151,
+            "rank": 150,
             "roce": 10.89,
             "roe": 9.29
+        },
+        {
+            "cmp_rs": 1204.2,
+            "earnings_yield": 4.76,
+            "mar_cap_rs_cr": 294481.57,
+            "name": "JSW Steel",
+            "np_12m_rs_cr": 7766.0,
+            "op_12m_rs_cr": 27017.0,
+            "opert_prft_gwth": 20.19,
+            "p_e": 37.67,
+            "profit_growth": 121.22,
+            "rank": 151,
+            "roce": 8.11,
+            "roe": 4.94
         },
         {
             "cmp_rs": 1087.8,
@@ -2129,20 +2129,6 @@
             "roe": 7.45
         },
         {
-            "cmp_rs": 634.95,
-            "earnings_yield": 2.98,
-            "mar_cap_rs_cr": 90380.83,
-            "name": "Indian Hotels Co",
-            "np_12m_rs_cr": 2164.48,
-            "op_12m_rs_cr": 3078.75,
-            "opert_prft_gwth": 19.69,
-            "p_e": 50.04,
-            "profit_growth": 15.63,
-            "rank": 153,
-            "roce": 17.21,
-            "roe": 16.12
-        },
-        {
             "cmp_rs": 6070.0,
             "earnings_yield": 2.14,
             "mar_cap_rs_cr": 161139.43,
@@ -2152,9 +2138,23 @@
             "opert_prft_gwth": 20.66,
             "p_e": 63.61,
             "profit_growth": 22.56,
-            "rank": 154,
+            "rank": 153,
             "roce": 20.44,
             "roe": 15.35
+        },
+        {
+            "cmp_rs": 634.95,
+            "earnings_yield": 2.98,
+            "mar_cap_rs_cr": 90380.83,
+            "name": "Indian Hotels Co",
+            "np_12m_rs_cr": 2164.48,
+            "op_12m_rs_cr": 3078.75,
+            "opert_prft_gwth": 19.69,
+            "p_e": 50.04,
+            "profit_growth": 15.63,
+            "rank": 154,
+            "roce": 17.21,
+            "roe": 16.12
         },
         {
             "cmp_rs": 753.1,
@@ -2227,20 +2227,6 @@
             "roe": 15.17
         },
         {
-            "cmp_rs": 1782.2,
-            "earnings_yield": 4.08,
-            "mar_cap_rs_cr": 88843.35,
-            "name": "ICICI Lombard",
-            "np_12m_rs_cr": 2734.97,
-            "op_12m_rs_cr": 3487.46,
-            "opert_prft_gwth": 3.71,
-            "p_e": 32.48,
-            "profit_growth": 8.61,
-            "rank": 160,
-            "roce": 24.86,
-            "roe": 18.8
-        },
-        {
             "cmp_rs": 951.7,
             "earnings_yield": 1.98,
             "mar_cap_rs_cr": 92618.73,
@@ -2250,9 +2236,23 @@
             "opert_prft_gwth": 24.99,
             "p_e": 63.48,
             "profit_growth": 37.6,
-            "rank": 161,
+            "rank": 160,
             "roce": 14.88,
             "roe": 12.72
+        },
+        {
+            "cmp_rs": 1782.2,
+            "earnings_yield": 4.08,
+            "mar_cap_rs_cr": 88843.35,
+            "name": "ICICI Lombard",
+            "np_12m_rs_cr": 2734.97,
+            "op_12m_rs_cr": 3487.46,
+            "opert_prft_gwth": 3.71,
+            "p_e": 32.48,
+            "profit_growth": 8.61,
+            "rank": 161,
+            "roce": 24.86,
+            "roe": 18.8
         },
         {
             "cmp_rs": 24.26,
@@ -2297,20 +2297,6 @@
             "roe": 7.41
         },
         {
-            "cmp_rs": 460.1,
-            "earnings_yield": 3.36,
-            "mar_cap_rs_cr": 50063.67,
-            "name": "Patanjali Foods",
-            "np_12m_rs_cr": 1649.39,
-            "op_12m_rs_cr": 1824.27,
-            "opert_prft_gwth": 0.96,
-            "p_e": 29.81,
-            "profit_growth": 46.16,
-            "rank": 165,
-            "roce": 15.55,
-            "roe": 12.06
-        },
-        {
             "cmp_rs": 830.5,
             "earnings_yield": 6.14,
             "mar_cap_rs_cr": 23181.9,
@@ -2320,23 +2306,23 @@
             "opert_prft_gwth": 18.24,
             "p_e": 23.9,
             "profit_growth": 7.07,
-            "rank": 166,
+            "rank": 165,
             "roce": 12.05,
             "roe": 8.99
         },
         {
-            "cmp_rs": 3827.1,
-            "earnings_yield": 4.23,
-            "mar_cap_rs_cr": 35714.64,
-            "name": "AIA Engineering",
-            "np_12m_rs_cr": 1160.95,
-            "op_12m_rs_cr": 1195.12,
-            "opert_prft_gwth": 4.38,
-            "p_e": 30.67,
-            "profit_growth": 12.41,
-            "rank": 167,
-            "roce": 18.92,
-            "roe": 15.42
+            "cmp_rs": 460.1,
+            "earnings_yield": 3.36,
+            "mar_cap_rs_cr": 50063.67,
+            "name": "Patanjali Foods",
+            "np_12m_rs_cr": 1649.39,
+            "op_12m_rs_cr": 1824.27,
+            "opert_prft_gwth": 0.96,
+            "p_e": 29.81,
+            "profit_growth": 46.16,
+            "rank": 166,
+            "roce": 15.55,
+            "roe": 12.06
         },
         {
             "cmp_rs": 36615.0,
@@ -2348,9 +2334,23 @@
             "opert_prft_gwth": 13.32,
             "p_e": 46.74,
             "profit_growth": 14.2,
-            "rank": 168,
+            "rank": 167,
             "roce": 21.11,
             "roe": 15.55
+        },
+        {
+            "cmp_rs": 3827.1,
+            "earnings_yield": 4.23,
+            "mar_cap_rs_cr": 35714.64,
+            "name": "AIA Engineering",
+            "np_12m_rs_cr": 1160.95,
+            "op_12m_rs_cr": 1195.12,
+            "opert_prft_gwth": 4.38,
+            "p_e": 30.67,
+            "profit_growth": 12.41,
+            "rank": 168,
+            "roce": 18.92,
+            "roe": 15.42
         },
         {
             "cmp_rs": 614.8,
@@ -2395,20 +2395,6 @@
             "roe": 13.78
         },
         {
-            "cmp_rs": 274.04,
-            "earnings_yield": 6.52,
-            "mar_cap_rs_cr": 68638.77,
-            "name": "L&T Finance Ltd",
-            "np_12m_rs_cr": 2809.55,
-            "op_12m_rs_cr": 10513.89,
-            "opert_prft_gwth": 14.04,
-            "p_e": 24.25,
-            "profit_growth": 10.51,
-            "rank": 172,
-            "roce": 8.71,
-            "roe": 10.79
-        },
-        {
             "cmp_rs": 1175.3,
             "earnings_yield": 3.68,
             "mar_cap_rs_cr": 141186.75,
@@ -2418,9 +2404,23 @@
             "opert_prft_gwth": 18.35,
             "p_e": 62.86,
             "profit_growth": 30.5,
-            "rank": 173,
+            "rank": 172,
             "roce": 10.23,
             "roe": 13.64
+        },
+        {
+            "cmp_rs": 274.04,
+            "earnings_yield": 6.52,
+            "mar_cap_rs_cr": 68638.77,
+            "name": "L&T Finance Ltd",
+            "np_12m_rs_cr": 2809.55,
+            "op_12m_rs_cr": 10513.89,
+            "opert_prft_gwth": 14.04,
+            "p_e": 24.25,
+            "profit_growth": 10.51,
+            "rank": 173,
+            "roce": 8.71,
+            "roe": 10.79
         },
         {
             "cmp_rs": 1226.1,
@@ -2465,20 +2465,6 @@
             "roe": 15.77
         },
         {
-            "cmp_rs": 1273.9,
-            "earnings_yield": 2.64,
-            "mar_cap_rs_cr": 79906.25,
-            "name": "Havells India",
-            "np_12m_rs_cr": 1482.86,
-            "op_12m_rs_cr": 2227.26,
-            "opert_prft_gwth": 10.9,
-            "p_e": 52.62,
-            "profit_growth": 8.38,
-            "rank": 177,
-            "roce": 25.32,
-            "roe": 18.81
-        },
-        {
             "cmp_rs": 1315.1,
             "earnings_yield": 6.99,
             "mar_cap_rs_cr": 1779654.99,
@@ -2488,9 +2474,23 @@
             "opert_prft_gwth": 8.84,
             "p_e": 23.19,
             "profit_growth": 10.92,
-            "rank": 178,
+            "rank": 177,
             "roce": 9.69,
             "roe": 8.4
+        },
+        {
+            "cmp_rs": 1273.9,
+            "earnings_yield": 2.64,
+            "mar_cap_rs_cr": 79906.25,
+            "name": "Havells India",
+            "np_12m_rs_cr": 1482.86,
+            "op_12m_rs_cr": 2227.26,
+            "opert_prft_gwth": 10.9,
+            "p_e": 52.62,
+            "profit_growth": 8.38,
+            "rank": 178,
+            "roce": 25.32,
+            "roe": 18.81
         },
         {
             "cmp_rs": 850.25,
@@ -2521,20 +2521,6 @@
             "roe": 1.16
         },
         {
-            "cmp_rs": 2127.2,
-            "earnings_yield": 2.88,
-            "mar_cap_rs_cr": 499805.05,
-            "name": "Hind. Unilever",
-            "np_12m_rs_cr": 14540.0,
-            "op_12m_rs_cr": 14898.0,
-            "opert_prft_gwth": 0.98,
-            "p_e": 45.79,
-            "profit_growth": 5.29,
-            "rank": 181,
-            "roce": 27.85,
-            "roe": 20.72
-        },
-        {
             "cmp_rs": 21.38,
             "earnings_yield": 6.74,
             "mar_cap_rs_cr": 25822.76,
@@ -2544,7 +2530,7 @@
             "opert_prft_gwth": 20.82,
             "p_e": 32.35,
             "profit_growth": 7.0,
-            "rank": 182,
+            "rank": 181,
             "roce": 7.82,
             "roe": 5.91
         },
@@ -2558,9 +2544,23 @@
             "opert_prft_gwth": 10.89,
             "p_e": 12.4,
             "profit_growth": 12.98,
-            "rank": 183,
+            "rank": 182,
             "roce": 5.76,
             "roe": 8.38
+        },
+        {
+            "cmp_rs": 2127.2,
+            "earnings_yield": 2.88,
+            "mar_cap_rs_cr": 499805.05,
+            "name": "Hind. Unilever",
+            "np_12m_rs_cr": 14540.0,
+            "op_12m_rs_cr": 14898.0,
+            "opert_prft_gwth": 0.98,
+            "p_e": 45.79,
+            "profit_growth": 5.29,
+            "rank": 183,
+            "roce": 27.85,
+            "roe": 20.72
         },
         {
             "cmp_rs": 158.0,
@@ -2577,20 +2577,6 @@
             "roe": 5.7
         },
         {
-            "cmp_rs": 430.6,
-            "earnings_yield": 2.82,
-            "mar_cap_rs_cr": 145632.98,
-            "name": "Varun Beverages",
-            "np_12m_rs_cr": 3062.04,
-            "op_12m_rs_cr": 5069.74,
-            "opert_prft_gwth": 5.22,
-            "p_e": 49.64,
-            "profit_growth": 10.68,
-            "rank": 185,
-            "roce": 19.71,
-            "roe": 16.21
-        },
-        {
             "cmp_rs": 1914.4,
             "earnings_yield": 1.44,
             "mar_cap_rs_cr": 192017.54,
@@ -2600,9 +2586,23 @@
             "opert_prft_gwth": 33.57,
             "p_e": 77.45,
             "profit_growth": 2.85,
-            "rank": 186,
+            "rank": 185,
             "roce": 16.88,
             "roe": 15.13
+        },
+        {
+            "cmp_rs": 430.6,
+            "earnings_yield": 2.82,
+            "mar_cap_rs_cr": 145632.98,
+            "name": "Varun Beverages",
+            "np_12m_rs_cr": 3062.04,
+            "op_12m_rs_cr": 5069.74,
+            "opert_prft_gwth": 5.22,
+            "p_e": 49.64,
+            "profit_growth": 10.68,
+            "rank": 186,
+            "roce": 19.71,
+            "roe": 16.21
         },
         {
             "cmp_rs": 24300.0,
@@ -2619,20 +2619,6 @@
             "roe": 5.29
         },
         {
-            "cmp_rs": 424.75,
-            "earnings_yield": 3.31,
-            "mar_cap_rs_cr": 75337.49,
-            "name": "Dabur India",
-            "np_12m_rs_cr": 1819.42,
-            "op_12m_rs_cr": 2416.09,
-            "opert_prft_gwth": 2.56,
-            "p_e": 40.54,
-            "profit_growth": 3.41,
-            "rank": 188,
-            "roce": 20.24,
-            "roe": 17.04
-        },
-        {
             "cmp_rs": 1304.5,
             "earnings_yield": 4.17,
             "mar_cap_rs_cr": 56188.76,
@@ -2642,9 +2628,23 @@
             "opert_prft_gwth": 12.85,
             "p_e": 57.9,
             "profit_growth": 66.59,
-            "rank": 189,
+            "rank": 188,
             "roce": 7.66,
             "roe": 3.48
+        },
+        {
+            "cmp_rs": 424.75,
+            "earnings_yield": 3.31,
+            "mar_cap_rs_cr": 75337.49,
+            "name": "Dabur India",
+            "np_12m_rs_cr": 1819.42,
+            "op_12m_rs_cr": 2416.09,
+            "opert_prft_gwth": 2.56,
+            "p_e": 40.54,
+            "profit_growth": 3.41,
+            "rank": 189,
+            "roce": 20.24,
+            "roe": 17.04
         },
         {
             "cmp_rs": 288.2,
@@ -2661,20 +2661,6 @@
             "roe": 12.86
         },
         {
-            "cmp_rs": 1059.9,
-            "earnings_yield": 2.76,
-            "mar_cap_rs_cr": 108453.69,
-            "name": "Godrej Consumer",
-            "np_12m_rs_cr": 1821.6,
-            "op_12m_rs_cr": 3067.55,
-            "opert_prft_gwth": 2.4,
-            "p_e": 55.83,
-            "profit_growth": 12.65,
-            "rank": 191,
-            "roce": 19.21,
-            "roe": 15.21
-        },
-        {
             "cmp_rs": 1085.45,
             "earnings_yield": 3.05,
             "mar_cap_rs_cr": 178792.74,
@@ -2684,9 +2670,23 @@
             "opert_prft_gwth": 23.69,
             "p_e": 108.44,
             "profit_growth": 11.88,
-            "rank": 192,
+            "rank": 191,
             "roce": 8.7,
             "roe": 14.61
+        },
+        {
+            "cmp_rs": 1059.9,
+            "earnings_yield": 2.76,
+            "mar_cap_rs_cr": 108453.69,
+            "name": "Godrej Consumer",
+            "np_12m_rs_cr": 1821.6,
+            "op_12m_rs_cr": 3067.55,
+            "opert_prft_gwth": 2.4,
+            "p_e": 55.83,
+            "profit_growth": 12.65,
+            "rank": 192,
+            "roce": 19.21,
+            "roe": 15.21
         },
         {
             "cmp_rs": 619.1,
@@ -2801,7 +2801,7 @@
             "roe": 7.01
         }
     ],
-    "date": 1776132002,
+    "date": 1776218230,
     "sold": {
         "360 ONE": 1774077842,
         "A.K.Capital Serv": 1771750425,
@@ -2840,7 +2840,6 @@
         "CIAN Agro": 1771750425,
         "CSB Bank": 1774077842,
         "Caplin Point Lab": 1772159720,
-        "Castrol India": 1776132002,
         "Cemindia Project": 1772254837,
         "Chalet Hotels": 1772159720,
         "Cigniti Tech.": 1771750425,
@@ -2916,6 +2915,7 @@
         "NTPC": 1772081725,
         "Narayana Hrudaya": 1773898878,
         "Newgen Software": 1771750425,
+        "Nippon Life Ind.": 1776218230,
         "Nirlon": 1771750425,
         "Nucleus Soft.": 1771750425,
         "Nuvoco Vistas": 1773569275,
