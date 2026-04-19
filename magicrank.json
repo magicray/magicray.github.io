@@ -211,20 +211,6 @@
             "roe": 31.45
         },
         {
-            "cmp_rs": 246.37,
-            "earnings_yield": 9.35,
-            "mar_cap_rs_cr": 12336.8,
-            "name": "Aptus Value Hou.",
-            "np_12m_rs_cr": 889.02,
-            "op_12m_rs_cr": 1755.64,
-            "opert_prft_gwth": 26.88,
-            "p_e": 13.88,
-            "profit_growth": 25.52,
-            "rank": 16,
-            "roce": 15.05,
-            "roe": 18.58
-        },
-        {
             "cmp_rs": 145.88,
             "earnings_yield": 16.06,
             "mar_cap_rs_cr": 206000.63,
@@ -234,9 +220,23 @@
             "opert_prft_gwth": 104.3,
             "p_e": 5.76,
             "profit_growth": 268.38,
-            "rank": 17,
+            "rank": 16,
             "roce": 7.36,
             "roe": 6.51
+        },
+        {
+            "cmp_rs": 246.37,
+            "earnings_yield": 9.35,
+            "mar_cap_rs_cr": 12336.8,
+            "name": "Aptus Value Hou.",
+            "np_12m_rs_cr": 889.02,
+            "op_12m_rs_cr": 1755.64,
+            "opert_prft_gwth": 26.88,
+            "p_e": 13.88,
+            "profit_growth": 25.52,
+            "rank": 17,
+            "roce": 15.05,
+            "roe": 18.58
         },
         {
             "cmp_rs": 11371.5,
@@ -253,20 +253,6 @@
             "roe": 32.85
         },
         {
-            "cmp_rs": 5230.5,
-            "earnings_yield": 7.0,
-            "mar_cap_rs_cr": 104656.96,
-            "name": "Hero Motocorp",
-            "np_12m_rs_cr": 5470.53,
-            "op_12m_rs_cr": 6371.32,
-            "opert_prft_gwth": 13.94,
-            "p_e": 18.92,
-            "profit_growth": 33.24,
-            "rank": 19,
-            "roce": 30.34,
-            "roe": 23.06
-        },
-        {
             "cmp_rs": 9.86,
             "earnings_yield": 166.36,
             "mar_cap_rs_cr": 1989.67,
@@ -276,9 +262,23 @@
             "opert_prft_gwth": 32.62,
             "p_e": 2.27,
             "profit_growth": 39.62,
-            "rank": 20,
+            "rank": 19,
             "roce": 12.32,
             "roe": 8.62
+        },
+        {
+            "cmp_rs": 5230.5,
+            "earnings_yield": 7.0,
+            "mar_cap_rs_cr": 104656.96,
+            "name": "Hero Motocorp",
+            "np_12m_rs_cr": 5470.53,
+            "op_12m_rs_cr": 6371.32,
+            "opert_prft_gwth": 13.94,
+            "p_e": 18.92,
+            "profit_growth": 33.24,
+            "rank": 20,
+            "roce": 30.34,
+            "roe": 23.06
         },
         {
             "cmp_rs": 3019.6,
@@ -295,20 +295,6 @@
             "roe": 50.47
         },
         {
-            "cmp_rs": 198.34,
-            "earnings_yield": 2.08,
-            "mar_cap_rs_cr": 124430.52,
-            "name": "Billionbrains",
-            "np_12m_rs_cr": 1824.37,
-            "op_12m_rs_cr": 2530.44,
-            "opert_prft_gwth": 240.49,
-            "p_e": 77.09,
-            "profit_growth": 137.89,
-            "rank": 22,
-            "roce": 62.57,
-            "roe": 49.92
-        },
-        {
             "cmp_rs": 22378.0,
             "earnings_yield": 4.17,
             "mar_cap_rs_cr": 29485.84,
@@ -318,9 +304,23 @@
             "opert_prft_gwth": 34.54,
             "p_e": 30.74,
             "profit_growth": 89.48,
-            "rank": 23,
+            "rank": 22,
             "roce": 29.99,
             "roe": 20.82
+        },
+        {
+            "cmp_rs": 198.34,
+            "earnings_yield": 2.08,
+            "mar_cap_rs_cr": 124430.52,
+            "name": "Billionbrains",
+            "np_12m_rs_cr": 1824.37,
+            "op_12m_rs_cr": 2530.44,
+            "opert_prft_gwth": 240.49,
+            "p_e": 77.09,
+            "profit_growth": 137.89,
+            "rank": 23,
+            "roce": 62.57,
+            "roe": 49.92
         },
         {
             "cmp_rs": 182.13,
@@ -575,20 +575,6 @@
             "roe": 23.6
         },
         {
-            "cmp_rs": 174.78,
-            "earnings_yield": 6.46,
-            "mar_cap_rs_cr": 102663.23,
-            "name": "Ashok Leyland",
-            "np_12m_rs_cr": 3585.58,
-            "op_12m_rs_cr": 10427.68,
-            "opert_prft_gwth": 18.34,
-            "p_e": 28.47,
-            "profit_growth": 29.25,
-            "rank": 42,
-            "roce": 14.26,
-            "roe": 28.82
-        },
-        {
             "cmp_rs": 8182.5,
             "earnings_yield": 3.05,
             "mar_cap_rs_cr": 123193.39,
@@ -598,9 +584,23 @@
             "opert_prft_gwth": 43.52,
             "p_e": 46.91,
             "profit_growth": 42.77,
-            "rank": 43,
+            "rank": 42,
             "roce": 29.72,
             "roe": 21.44
+        },
+        {
+            "cmp_rs": 174.78,
+            "earnings_yield": 6.46,
+            "mar_cap_rs_cr": 102663.23,
+            "name": "Ashok Leyland",
+            "np_12m_rs_cr": 3585.58,
+            "op_12m_rs_cr": 10427.68,
+            "opert_prft_gwth": 18.34,
+            "p_e": 28.47,
+            "profit_growth": 29.25,
+            "rank": 43,
+            "roce": 14.26,
+            "roe": 28.82
         },
         {
             "cmp_rs": 182.27,
@@ -617,20 +617,6 @@
             "roe": 45.86
         },
         {
-            "cmp_rs": 5446.5,
-            "earnings_yield": 2.82,
-            "mar_cap_rs_cr": 85918.54,
-            "name": "Persistent Systems",
-            "np_12m_rs_cr": 1731.62,
-            "op_12m_rs_cr": 2612.14,
-            "opert_prft_gwth": 35.47,
-            "p_e": 47.77,
-            "profit_growth": 36.28,
-            "rank": 45,
-            "roce": 30.44,
-            "roe": 24.08
-        },
-        {
             "cmp_rs": 1846.9,
             "earnings_yield": 5.06,
             "mar_cap_rs_cr": 1125338.47,
@@ -640,9 +626,23 @@
             "opert_prft_gwth": 34.7,
             "p_e": 36.73,
             "profit_growth": 53.2,
-            "rank": 46,
+            "rank": 45,
             "roce": 13.48,
             "roe": 23.18
+        },
+        {
+            "cmp_rs": 5446.5,
+            "earnings_yield": 2.82,
+            "mar_cap_rs_cr": 85918.54,
+            "name": "Persistent Systems",
+            "np_12m_rs_cr": 1731.62,
+            "op_12m_rs_cr": 2612.14,
+            "opert_prft_gwth": 35.47,
+            "p_e": 47.77,
+            "profit_growth": 36.28,
+            "rank": 46,
+            "roce": 30.44,
+            "roe": 24.08
         },
         {
             "cmp_rs": 2050.2,
@@ -729,20 +729,6 @@
             "roe": 22.77
         },
         {
-            "cmp_rs": 1641.1,
-            "earnings_yield": 10.15,
-            "mar_cap_rs_cr": 30816.16,
-            "name": "Chola Financial",
-            "np_12m_rs_cr": 5221.81,
-            "op_12m_rs_cr": 20922.4,
-            "opert_prft_gwth": 17.64,
-            "p_e": 13.02,
-            "profit_growth": 14.21,
-            "rank": 53,
-            "roce": 10.57,
-            "roe": 19.11
-        },
-        {
             "cmp_rs": 1318.7,
             "earnings_yield": 7.75,
             "mar_cap_rs_cr": 534815.06,
@@ -752,7 +738,7 @@
             "opert_prft_gwth": 7.45,
             "p_e": 18.53,
             "profit_growth": 4.37,
-            "rank": 54,
+            "rank": 53,
             "roce": 37.5,
             "roe": 28.83
         },
@@ -766,9 +752,23 @@
             "opert_prft_gwth": 22.24,
             "p_e": 24.78,
             "profit_growth": 61.83,
-            "rank": 55,
+            "rank": 54,
             "roce": 15.95,
             "roe": 9.96
+        },
+        {
+            "cmp_rs": 1641.1,
+            "earnings_yield": 10.15,
+            "mar_cap_rs_cr": 30816.16,
+            "name": "Chola Financial",
+            "np_12m_rs_cr": 5221.81,
+            "op_12m_rs_cr": 20922.4,
+            "opert_prft_gwth": 17.64,
+            "p_e": 13.02,
+            "profit_growth": 14.21,
+            "rank": 55,
+            "roce": 10.57,
+            "roe": 19.11
         },
         {
             "cmp_rs": 72.73,
@@ -799,20 +799,6 @@
             "roe": 85.8
         },
         {
-            "cmp_rs": 464.85,
-            "earnings_yield": 9.7,
-            "mar_cap_rs_cr": 153405.23,
-            "name": "Power Fin.Corpn.",
-            "np_12m_rs_cr": 33385.62,
-            "op_12m_rs_cr": 110900.96,
-            "opert_prft_gwth": 9.95,
-            "p_e": 6.08,
-            "profit_growth": 13.14,
-            "rank": 58,
-            "roce": 9.73,
-            "roe": 21.01
-        },
-        {
             "cmp_rs": 1538.2,
             "earnings_yield": 3.36,
             "mar_cap_rs_cr": 76910.0,
@@ -822,9 +808,23 @@
             "opert_prft_gwth": 22.62,
             "p_e": 43.64,
             "profit_growth": 67.76,
-            "rank": 59,
+            "rank": 58,
             "roce": 17.44,
             "roe": 25.15
+        },
+        {
+            "cmp_rs": 464.85,
+            "earnings_yield": 9.7,
+            "mar_cap_rs_cr": 153405.23,
+            "name": "Power Fin.Corpn.",
+            "np_12m_rs_cr": 33385.62,
+            "op_12m_rs_cr": 110900.96,
+            "opert_prft_gwth": 9.95,
+            "p_e": 6.08,
+            "profit_growth": 13.14,
+            "rank": 59,
+            "roce": 9.73,
+            "roe": 21.01
         },
         {
             "cmp_rs": 277.55,
@@ -869,20 +869,6 @@
             "roe": 19.93
         },
         {
-            "cmp_rs": 1039.0,
-            "earnings_yield": 9.35,
-            "mar_cap_rs_cr": 233486.84,
-            "name": "Hindalco Inds.",
-            "np_12m_rs_cr": 16078.0,
-            "op_12m_rs_cr": 33699.0,
-            "opert_prft_gwth": 13.66,
-            "p_e": 13.48,
-            "profit_growth": 19.6,
-            "rank": 63,
-            "roce": 14.8,
-            "roe": 14.02
-        },
-        {
             "cmp_rs": 426.85,
             "earnings_yield": 4.02,
             "mar_cap_rs_cr": 44082.52,
@@ -892,9 +878,23 @@
             "opert_prft_gwth": 51.54,
             "p_e": 38.11,
             "profit_growth": 73.99,
-            "rank": 64,
+            "rank": 63,
             "roce": 15.02,
             "roe": 15.95
+        },
+        {
+            "cmp_rs": 1039.0,
+            "earnings_yield": 9.35,
+            "mar_cap_rs_cr": 233486.84,
+            "name": "Hindalco Inds.",
+            "np_12m_rs_cr": 16078.0,
+            "op_12m_rs_cr": 33699.0,
+            "opert_prft_gwth": 13.66,
+            "p_e": 13.48,
+            "profit_growth": 19.6,
+            "rank": 64,
+            "roce": 14.8,
+            "roe": 14.02
         },
         {
             "cmp_rs": 872.55,
@@ -925,6 +925,20 @@
             "roe": 46.87
         },
         {
+            "cmp_rs": 1511.4,
+            "earnings_yield": 4.7,
+            "mar_cap_rs_cr": 148093.21,
+            "name": "Tech Mahindra",
+            "np_12m_rs_cr": 4591.0,
+            "op_12m_rs_cr": 8304.9,
+            "opert_prft_gwth": 33.46,
+            "p_e": 30.8,
+            "profit_growth": 28.38,
+            "rank": 67,
+            "roce": 18.56,
+            "roe": 14.62
+        },
+        {
             "cmp_rs": 471.85,
             "earnings_yield": 11.0,
             "mar_cap_rs_cr": 13927.85,
@@ -934,7 +948,7 @@
             "opert_prft_gwth": 9.87,
             "p_e": 12.56,
             "profit_growth": 7.69,
-            "rank": 67,
+            "rank": 68,
             "roce": 16.34,
             "roe": 18.65
         },
@@ -948,23 +962,9 @@
             "opert_prft_gwth": 21.3,
             "p_e": 19.85,
             "profit_growth": 22.69,
-            "rank": 68,
+            "rank": 69,
             "roce": 9.37,
             "roe": 18.05
-        },
-        {
-            "cmp_rs": 1511.4,
-            "earnings_yield": 4.7,
-            "mar_cap_rs_cr": 148093.21,
-            "name": "Tech Mahindra",
-            "np_12m_rs_cr": 4591.0,
-            "op_12m_rs_cr": 8304.9,
-            "opert_prft_gwth": 33.46,
-            "p_e": 30.8,
-            "profit_growth": 28.38,
-            "rank": 69,
-            "roce": 18.56,
-            "roe": 14.62
         },
         {
             "cmp_rs": 137.39,
@@ -1009,20 +1009,6 @@
             "roe": 21.51
         },
         {
-            "cmp_rs": 300.65,
-            "earnings_yield": 6.82,
-            "mar_cap_rs_cr": 41689.23,
-            "name": "NLC India",
-            "np_12m_rs_cr": 2756.48,
-            "op_12m_rs_cr": 4540.33,
-            "opert_prft_gwth": 31.11,
-            "p_e": 15.97,
-            "profit_growth": 15.85,
-            "rank": 73,
-            "roce": 10.51,
-            "roe": 14.47
-        },
-        {
             "cmp_rs": 664.7,
             "earnings_yield": 7.71,
             "mar_cap_rs_cr": 56094.36,
@@ -1032,9 +1018,23 @@
             "opert_prft_gwth": 50.43,
             "p_e": 29.53,
             "profit_growth": 2605.29,
-            "rank": 74,
+            "rank": 73,
             "roce": 7.66,
             "roe": 3.29
+        },
+        {
+            "cmp_rs": 300.65,
+            "earnings_yield": 6.82,
+            "mar_cap_rs_cr": 41689.23,
+            "name": "NLC India",
+            "np_12m_rs_cr": 2756.48,
+            "op_12m_rs_cr": 4540.33,
+            "opert_prft_gwth": 31.11,
+            "p_e": 15.97,
+            "profit_growth": 15.85,
+            "rank": 74,
+            "roce": 10.51,
+            "roe": 14.47
         },
         {
             "cmp_rs": 496.45,
@@ -1051,20 +1051,6 @@
             "roe": 16.86
         },
         {
-            "cmp_rs": 142.37,
-            "earnings_yield": 6.54,
-            "mar_cap_rs_cr": 129138.86,
-            "name": "Canara Bank",
-            "np_12m_rs_cr": 18414.68,
-            "op_12m_rs_cr": 83510.19,
-            "opert_prft_gwth": 17.02,
-            "p_e": 6.4,
-            "profit_growth": 22.89,
-            "rank": 76,
-            "roce": 6.79,
-            "roe": 17.75
-        },
-        {
             "cmp_rs": 3735.8,
             "earnings_yield": 3.32,
             "mar_cap_rs_cr": 177483.04,
@@ -1074,9 +1060,23 @@
             "opert_prft_gwth": 31.61,
             "p_e": 60.85,
             "profit_growth": 49.26,
-            "rank": 77,
+            "rank": 76,
             "roce": 15.35,
             "roe": 28.39
+        },
+        {
+            "cmp_rs": 142.37,
+            "earnings_yield": 6.54,
+            "mar_cap_rs_cr": 129138.86,
+            "name": "Canara Bank",
+            "np_12m_rs_cr": 18414.68,
+            "op_12m_rs_cr": 83510.19,
+            "opert_prft_gwth": 17.02,
+            "p_e": 6.4,
+            "profit_growth": 22.89,
+            "rank": 77,
+            "roce": 6.79,
+            "roe": 17.75
         },
         {
             "cmp_rs": 7189.5,
@@ -1149,6 +1149,20 @@
             "roe": 32.64
         },
         {
+            "cmp_rs": 108.5,
+            "earnings_yield": 5.66,
+            "mar_cap_rs_cr": 16383.33,
+            "name": "Vertis Infra.",
+            "np_12m_rs_cr": 602.55,
+            "op_12m_rs_cr": 2498.81,
+            "opert_prft_gwth": 68.81,
+            "p_e": 27.02,
+            "profit_growth": 71.5,
+            "rank": 83,
+            "roce": 9.51,
+            "roe": 8.64
+        },
+        {
             "cmp_rs": 473.35,
             "earnings_yield": 9.78,
             "mar_cap_rs_cr": 20131.08,
@@ -1158,7 +1172,7 @@
             "opert_prft_gwth": 28.85,
             "p_e": 15.71,
             "profit_growth": 27.78,
-            "rank": 83,
+            "rank": 84,
             "roce": 8.81,
             "roe": 4.9
         },
@@ -1172,23 +1186,9 @@
             "opert_prft_gwth": 15.2,
             "p_e": 10.71,
             "profit_growth": 23.04,
-            "rank": 84,
+            "rank": 85,
             "roce": 9.46,
             "roe": 12.27
-        },
-        {
-            "cmp_rs": 108.5,
-            "earnings_yield": 5.66,
-            "mar_cap_rs_cr": 16383.33,
-            "name": "Vertis Infra.",
-            "np_12m_rs_cr": 602.55,
-            "op_12m_rs_cr": 2498.81,
-            "opert_prft_gwth": 68.81,
-            "p_e": 27.02,
-            "profit_growth": 71.5,
-            "rank": 85,
-            "roce": 9.51,
-            "roe": 8.64
         },
         {
             "cmp_rs": 788.2,
@@ -1373,20 +1373,6 @@
             "roe": 19.03
         },
         {
-            "cmp_rs": 1015.05,
-            "earnings_yield": 2.94,
-            "mar_cap_rs_cr": 64771.96,
-            "name": "Nippon Life Ind.",
-            "np_12m_rs_cr": 1443.26,
-            "op_12m_rs_cr": 1652.96,
-            "opert_prft_gwth": 20.9,
-            "p_e": 44.88,
-            "profit_growth": 8.46,
-            "rank": 99,
-            "roce": 40.69,
-            "roe": 31.39
-        },
-        {
             "cmp_rs": 1442.3,
             "earnings_yield": 6.38,
             "mar_cap_rs_cr": 391391.92,
@@ -1396,9 +1382,23 @@
             "opert_prft_gwth": 5.31,
             "p_e": 22.8,
             "profit_growth": 0.58,
-            "rank": 100,
+            "rank": 99,
             "roce": 31.61,
             "roe": 25.0
+        },
+        {
+            "cmp_rs": 1015.05,
+            "earnings_yield": 2.94,
+            "mar_cap_rs_cr": 64771.96,
+            "name": "Nippon Life Ind.",
+            "np_12m_rs_cr": 1443.26,
+            "op_12m_rs_cr": 1652.96,
+            "opert_prft_gwth": 20.9,
+            "p_e": 44.88,
+            "profit_growth": 8.46,
+            "rank": 100,
+            "roce": 40.69,
+            "roe": 31.39
         },
         {
             "cmp_rs": 1573.4,
@@ -1443,20 +1443,6 @@
             "roe": 20.8
         },
         {
-            "cmp_rs": 189.83,
-            "earnings_yield": 7.81,
-            "mar_cap_rs_cr": 6110.66,
-            "name": "DCB Bank",
-            "np_12m_rs_cr": 702.98,
-            "op_12m_rs_cr": 4959.41,
-            "opert_prft_gwth": 16.71,
-            "p_e": 8.69,
-            "profit_growth": 18.36,
-            "rank": 104,
-            "roce": 7.67,
-            "roe": 11.43
-        },
-        {
             "cmp_rs": 212.12,
             "earnings_yield": 6.12,
             "mar_cap_rs_cr": 264800.58,
@@ -1466,23 +1452,23 @@
             "opert_prft_gwth": 22.79,
             "p_e": 27.06,
             "profit_growth": 222.37,
-            "rank": 105,
+            "rank": 104,
             "roce": 8.83,
             "roe": 3.89
         },
         {
-            "cmp_rs": 1902.8,
-            "earnings_yield": 5.2,
-            "mar_cap_rs_cr": 154610.32,
-            "name": "Hyundai Motor I",
-            "np_12m_rs_cr": 5683.48,
-            "op_12m_rs_cr": 8966.49,
-            "opert_prft_gwth": 2.67,
-            "p_e": 27.2,
-            "profit_growth": 2.24,
-            "rank": 106,
-            "roce": 54.25,
-            "roe": 42.18
+            "cmp_rs": 189.83,
+            "earnings_yield": 7.81,
+            "mar_cap_rs_cr": 6110.66,
+            "name": "DCB Bank",
+            "np_12m_rs_cr": 702.98,
+            "op_12m_rs_cr": 4959.41,
+            "opert_prft_gwth": 16.71,
+            "p_e": 8.69,
+            "profit_growth": 18.36,
+            "rank": 105,
+            "roce": 7.67,
+            "roe": 11.43
         },
         {
             "cmp_rs": 7992.5,
@@ -1494,9 +1480,23 @@
             "opert_prft_gwth": 4.59,
             "p_e": 28.49,
             "profit_growth": 6.35,
-            "rank": 107,
+            "rank": 106,
             "roce": 40.6,
             "roe": 29.34
+        },
+        {
+            "cmp_rs": 1902.8,
+            "earnings_yield": 5.2,
+            "mar_cap_rs_cr": 154610.32,
+            "name": "Hyundai Motor I",
+            "np_12m_rs_cr": 5683.48,
+            "op_12m_rs_cr": 8966.49,
+            "opert_prft_gwth": 2.67,
+            "p_e": 27.2,
+            "profit_growth": 2.24,
+            "rank": 107,
+            "roce": 54.25,
+            "roe": 42.18
         },
         {
             "cmp_rs": 5028.8,
@@ -1527,20 +1527,6 @@
             "roe": 15.57
         },
         {
-            "cmp_rs": 2462.2,
-            "earnings_yield": 5.53,
-            "mar_cap_rs_cr": 46983.42,
-            "name": "Mphasis",
-            "np_12m_rs_cr": 1799.45,
-            "op_12m_rs_cr": 2877.22,
-            "opert_prft_gwth": 11.38,
-            "p_e": 25.74,
-            "profit_growth": 10.69,
-            "rank": 110,
-            "roce": 22.71,
-            "roe": 18.22
-        },
-        {
             "cmp_rs": 428.4,
             "earnings_yield": 8.77,
             "mar_cap_rs_cr": 12350.32,
@@ -1550,9 +1536,23 @@
             "opert_prft_gwth": 8.2,
             "p_e": 16.93,
             "profit_growth": 20.42,
-            "rank": 111,
+            "rank": 110,
             "roce": 12.78,
             "roe": 11.07
+        },
+        {
+            "cmp_rs": 2462.2,
+            "earnings_yield": 5.53,
+            "mar_cap_rs_cr": 46983.42,
+            "name": "Mphasis",
+            "np_12m_rs_cr": 1799.45,
+            "op_12m_rs_cr": 2877.22,
+            "opert_prft_gwth": 11.38,
+            "p_e": 25.74,
+            "profit_growth": 10.69,
+            "rank": 111,
+            "roce": 22.71,
+            "roe": 18.22
         },
         {
             "cmp_rs": 139855.0,
@@ -1625,20 +1625,6 @@
             "roe": 20.57
         },
         {
-            "cmp_rs": 4096.1,
-            "earnings_yield": 5.4,
-            "mar_cap_rs_cr": 563472.7,
-            "name": "Larsen & Toubro",
-            "np_12m_rs_cr": 18976.65,
-            "op_12m_rs_cr": 35603.4,
-            "opert_prft_gwth": 12.98,
-            "p_e": 33.03,
-            "profit_growth": 22.97,
-            "rank": 117,
-            "roce": 14.49,
-            "roe": 16.55
-        },
-        {
             "cmp_rs": 337.85,
             "earnings_yield": 6.21,
             "mar_cap_rs_cr": 143412.9,
@@ -1648,9 +1634,23 @@
             "opert_prft_gwth": 42.63,
             "p_e": 32.39,
             "profit_growth": 16.56,
-            "rank": 118,
+            "rank": 117,
             "roce": 9.58,
             "roe": 12.92
+        },
+        {
+            "cmp_rs": 4096.1,
+            "earnings_yield": 5.4,
+            "mar_cap_rs_cr": 563472.7,
+            "name": "Larsen & Toubro",
+            "np_12m_rs_cr": 18976.65,
+            "op_12m_rs_cr": 35603.4,
+            "opert_prft_gwth": 12.98,
+            "p_e": 33.03,
+            "profit_growth": 22.97,
+            "rank": 118,
+            "roce": 14.49,
+            "roe": 16.55
         },
         {
             "cmp_rs": 2494.5,
@@ -1793,20 +1793,6 @@
             "roe": 12.8
         },
         {
-            "cmp_rs": 939.45,
-            "earnings_yield": 6.01,
-            "mar_cap_rs_cr": 126540.53,
-            "name": "Indian Bank",
-            "np_12m_rs_cr": 11515.24,
-            "op_12m_rs_cr": 45296.69,
-            "opert_prft_gwth": 12.69,
-            "p_e": 10.53,
-            "profit_growth": 13.69,
-            "rank": 129,
-            "roce": 6.38,
-            "roe": 17.09
-        },
-        {
             "cmp_rs": 75.06,
             "earnings_yield": 6.73,
             "mar_cap_rs_cr": 80707.53,
@@ -1816,7 +1802,7 @@
             "opert_prft_gwth": 2.01,
             "p_e": 8.69,
             "profit_growth": 28.89,
-            "rank": 130,
+            "rank": 129,
             "roce": 6.78,
             "roe": 13.55
         },
@@ -1830,9 +1816,23 @@
             "opert_prft_gwth": 18.8,
             "p_e": 35.27,
             "profit_growth": 33.27,
-            "rank": 131,
+            "rank": 130,
             "roce": 14.72,
             "roe": 12.75
+        },
+        {
+            "cmp_rs": 939.45,
+            "earnings_yield": 6.01,
+            "mar_cap_rs_cr": 126540.53,
+            "name": "Indian Bank",
+            "np_12m_rs_cr": 11515.24,
+            "op_12m_rs_cr": 45296.69,
+            "opert_prft_gwth": 12.69,
+            "p_e": 10.53,
+            "profit_growth": 13.69,
+            "rank": 131,
+            "roce": 6.38,
+            "roe": 17.09
         },
         {
             "cmp_rs": 908.25,
@@ -1916,7 +1916,7 @@
             "profit_growth": 23.21,
             "rank": 137,
             "roce": 18.83,
-            "roe": 17.5
+            "roe": 17.51
         },
         {
             "cmp_rs": 148.1,
@@ -1975,20 +1975,6 @@
             "roe": 14.63
         },
         {
-            "cmp_rs": 1302.9,
-            "earnings_yield": 2.6,
-            "mar_cap_rs_cr": 94766.54,
-            "name": "United Spirits",
-            "np_12m_rs_cr": 1720.0,
-            "op_12m_rs_cr": 2355.0,
-            "opert_prft_gwth": 11.56,
-            "p_e": 53.87,
-            "profit_growth": 19.86,
-            "rank": 142,
-            "roce": 26.5,
-            "roe": 19.74
-        },
-        {
             "cmp_rs": 36.06,
             "earnings_yield": 5.5,
             "mar_cap_rs_cr": 32639.35,
@@ -1998,9 +1984,23 @@
             "opert_prft_gwth": 6.82,
             "p_e": 6.76,
             "profit_growth": 32.36,
-            "rank": 143,
+            "rank": 142,
             "roce": 5.48,
             "roe": 11.43
+        },
+        {
+            "cmp_rs": 1302.9,
+            "earnings_yield": 2.6,
+            "mar_cap_rs_cr": 94766.54,
+            "name": "United Spirits",
+            "np_12m_rs_cr": 1720.0,
+            "op_12m_rs_cr": 2355.0,
+            "opert_prft_gwth": 11.56,
+            "p_e": 53.87,
+            "profit_growth": 19.86,
+            "rank": 143,
+            "roce": 26.5,
+            "roe": 19.74
         },
         {
             "cmp_rs": 1675.5,
@@ -2115,20 +2115,6 @@
             "roe": 13.1
         },
         {
-            "cmp_rs": 6229.0,
-            "earnings_yield": 2.08,
-            "mar_cap_rs_cr": 165360.38,
-            "name": "Divi's Lab.",
-            "np_12m_rs_cr": 2479.0,
-            "op_12m_rs_cr": 3393.0,
-            "opert_prft_gwth": 20.66,
-            "p_e": 65.28,
-            "profit_growth": 22.56,
-            "rank": 152,
-            "roce": 20.44,
-            "roe": 15.35
-        },
-        {
             "cmp_rs": 1240.3,
             "earnings_yield": 4.65,
             "mar_cap_rs_cr": 303309.66,
@@ -2138,9 +2124,23 @@
             "opert_prft_gwth": 20.19,
             "p_e": 38.8,
             "profit_growth": 121.22,
-            "rank": 153,
+            "rank": 152,
             "roce": 8.11,
             "roe": 4.94
+        },
+        {
+            "cmp_rs": 6229.0,
+            "earnings_yield": 2.08,
+            "mar_cap_rs_cr": 165360.38,
+            "name": "Divi's Lab.",
+            "np_12m_rs_cr": 2479.0,
+            "op_12m_rs_cr": 3393.0,
+            "opert_prft_gwth": 20.66,
+            "p_e": 65.28,
+            "profit_growth": 22.56,
+            "rank": 153,
+            "roce": 20.44,
+            "roe": 15.35
         },
         {
             "cmp_rs": 1135.75,
@@ -2185,20 +2185,6 @@
             "roe": 14.19
         },
         {
-            "cmp_rs": 757.3,
-            "earnings_yield": 2.3,
-            "mar_cap_rs_cr": 98308.82,
-            "name": "Marico",
-            "np_12m_rs_cr": 1750.0,
-            "op_12m_rs_cr": 2265.0,
-            "opert_prft_gwth": 6.69,
-            "p_e": 57.36,
-            "profit_growth": 6.86,
-            "rank": 157,
-            "roce": 45.16,
-            "roe": 41.34
-        },
-        {
             "cmp_rs": 2720.5,
             "earnings_yield": 7.38,
             "mar_cap_rs_cr": 185136.11,
@@ -2208,9 +2194,23 @@
             "opert_prft_gwth": 24.48,
             "p_e": 40.14,
             "profit_growth": 20.49,
-            "rank": 158,
+            "rank": 157,
             "roce": 7.5,
             "roe": 3.95
+        },
+        {
+            "cmp_rs": 757.3,
+            "earnings_yield": 2.3,
+            "mar_cap_rs_cr": 98308.82,
+            "name": "Marico",
+            "np_12m_rs_cr": 1750.0,
+            "op_12m_rs_cr": 2265.0,
+            "opert_prft_gwth": 6.69,
+            "p_e": 57.36,
+            "profit_growth": 6.86,
+            "rank": 158,
+            "roce": 45.16,
+            "roe": 41.34
         },
         {
             "cmp_rs": 114.48,
@@ -2255,20 +2255,6 @@
             "roe": 12.72
         },
         {
-            "cmp_rs": 799.9,
-            "earnings_yield": 6.28,
-            "mar_cap_rs_cr": 1231315.53,
-            "name": "HDFC Bank",
-            "np_12m_rs_cr": 77429.81,
-            "op_12m_rs_cr": 136700.57,
-            "opert_prft_gwth": 11.13,
-            "p_e": 16.53,
-            "profit_growth": 7.09,
-            "rank": 162,
-            "roce": 7.51,
-            "roe": 14.45
-        },
-        {
             "cmp_rs": 25.24,
             "earnings_yield": 5.87,
             "mar_cap_rs_cr": 17909.26,
@@ -2278,7 +2264,7 @@
             "opert_prft_gwth": 5.96,
             "p_e": 14.77,
             "profit_growth": 43.98,
-            "rank": 163,
+            "rank": 162,
             "roce": 5.98,
             "roe": 7.03
         },
@@ -2292,7 +2278,7 @@
             "opert_prft_gwth": 0.96,
             "p_e": 30.34,
             "profit_growth": 46.16,
-            "rank": 164,
+            "rank": 163,
             "roce": 15.55,
             "roe": 12.06
         },
@@ -2306,9 +2292,23 @@
             "opert_prft_gwth": 73.95,
             "p_e": 40.85,
             "profit_growth": 22.2,
-            "rank": 165,
+            "rank": 164,
             "roce": 6.49,
             "roe": 7.41
+        },
+        {
+            "cmp_rs": 864.2,
+            "earnings_yield": 5.91,
+            "mar_cap_rs_cr": 24122.57,
+            "name": "Shyam Metalics",
+            "np_12m_rs_cr": 968.78,
+            "op_12m_rs_cr": 2121.33,
+            "opert_prft_gwth": 18.24,
+            "p_e": 24.87,
+            "profit_growth": 7.07,
+            "rank": 165,
+            "roce": 12.05,
+            "roe": 8.99
         },
         {
             "cmp_rs": 37505.0,
@@ -2325,20 +2325,6 @@
             "roe": 15.55
         },
         {
-            "cmp_rs": 864.2,
-            "earnings_yield": 5.91,
-            "mar_cap_rs_cr": 24122.57,
-            "name": "Shyam Metalics",
-            "np_12m_rs_cr": 968.78,
-            "op_12m_rs_cr": 2121.33,
-            "opert_prft_gwth": 18.24,
-            "p_e": 24.87,
-            "profit_growth": 7.07,
-            "rank": 167,
-            "roce": 12.05,
-            "roe": 8.99
-        },
-        {
             "cmp_rs": 3961.5,
             "earnings_yield": 4.09,
             "mar_cap_rs_cr": 36968.86,
@@ -2348,7 +2334,7 @@
             "opert_prft_gwth": 4.38,
             "p_e": 31.74,
             "profit_growth": 12.41,
-            "rank": 168,
+            "rank": 167,
             "roce": 18.92,
             "roe": 15.42
         },
@@ -2362,7 +2348,7 @@
             "opert_prft_gwth": 14.37,
             "p_e": 34.27,
             "profit_growth": 22.68,
-            "rank": 169,
+            "rank": 168,
             "roce": 11.89,
             "roe": 7.81
         },
@@ -2376,7 +2362,7 @@
             "opert_prft_gwth": 0.27,
             "p_e": 7.33,
             "profit_growth": 11.34,
-            "rank": 170,
+            "rank": 169,
             "roce": 6.5,
             "roe": 13.78
         },
@@ -2390,7 +2376,7 @@
             "opert_prft_gwth": 3.98,
             "p_e": 19.36,
             "profit_growth": 8.27,
-            "rank": 171,
+            "rank": 170,
             "roce": 11.44,
             "roe": 8.61
         },
@@ -2404,9 +2390,23 @@
             "opert_prft_gwth": 14.04,
             "p_e": 25.41,
             "profit_growth": 10.51,
-            "rank": 172,
+            "rank": 171,
             "roce": 8.71,
             "roe": 10.79
+        },
+        {
+            "cmp_rs": 118.95,
+            "earnings_yield": 2.15,
+            "mar_cap_rs_cr": 55588.04,
+            "name": "Vishal Mega Mart",
+            "np_12m_rs_cr": 786.41,
+            "op_12m_rs_cr": 1815.99,
+            "opert_prft_gwth": 27.56,
+            "p_e": 70.69,
+            "profit_growth": 36.04,
+            "rank": 172,
+            "roce": 13.1,
+            "roe": 10.13
         },
         {
             "cmp_rs": 1259.8,
@@ -2423,20 +2423,6 @@
             "roe": 13.64
         },
         {
-            "cmp_rs": 118.95,
-            "earnings_yield": 2.15,
-            "mar_cap_rs_cr": 55588.04,
-            "name": "Vishal Mega Mart",
-            "np_12m_rs_cr": 786.41,
-            "op_12m_rs_cr": 1815.99,
-            "opert_prft_gwth": 27.56,
-            "p_e": 70.69,
-            "profit_growth": 36.04,
-            "rank": 174,
-            "roce": 13.1,
-            "roe": 10.13
-        },
-        {
             "cmp_rs": 131.25,
             "earnings_yield": 6.08,
             "mar_cap_rs_cr": 14453.02,
@@ -2446,9 +2432,23 @@
             "opert_prft_gwth": 4.95,
             "p_e": 6.74,
             "profit_growth": 0.45,
-            "rank": 175,
+            "rank": 174,
             "roce": 6.15,
             "roe": 15.77
+        },
+        {
+            "cmp_rs": 1306.4,
+            "earnings_yield": 2.58,
+            "mar_cap_rs_cr": 81944.83,
+            "name": "Havells India",
+            "np_12m_rs_cr": 1482.86,
+            "op_12m_rs_cr": 2227.26,
+            "opert_prft_gwth": 10.9,
+            "p_e": 53.97,
+            "profit_growth": 8.38,
+            "rank": 175,
+            "roce": 25.32,
+            "roe": 18.81
         },
         {
             "cmp_rs": 1285.6,
@@ -2465,20 +2465,6 @@
             "roe": 83.02
         },
         {
-            "cmp_rs": 1306.4,
-            "earnings_yield": 2.58,
-            "mar_cap_rs_cr": 81944.83,
-            "name": "Havells India",
-            "np_12m_rs_cr": 1482.86,
-            "op_12m_rs_cr": 2227.26,
-            "opert_prft_gwth": 10.9,
-            "p_e": 53.97,
-            "profit_growth": 8.38,
-            "rank": 177,
-            "roce": 25.32,
-            "roe": 18.81
-        },
-        {
             "cmp_rs": 1365.0,
             "earnings_yield": 6.77,
             "mar_cap_rs_cr": 1847191.03,
@@ -2488,7 +2474,7 @@
             "opert_prft_gwth": 8.84,
             "p_e": 24.07,
             "profit_growth": 10.92,
-            "rank": 178,
+            "rank": 177,
             "roce": 9.69,
             "roe": 8.4
         },
@@ -2502,7 +2488,7 @@
             "opert_prft_gwth": 29.65,
             "p_e": 66.69,
             "profit_growth": 28.19,
-            "rank": 179,
+            "rank": 178,
             "roce": 11.96,
             "roe": 10.13
         },
@@ -2516,7 +2502,7 @@
             "opert_prft_gwth": 10.89,
             "p_e": 12.82,
             "profit_growth": 12.98,
-            "rank": 180,
+            "rank": 179,
             "roce": 5.76,
             "roe": 8.38
         },
@@ -2530,7 +2516,7 @@
             "opert_prft_gwth": 27.91,
             "p_e": 50.6,
             "profit_growth": 111.19,
-            "rank": 181,
+            "rank": 180,
             "roce": 3.0,
             "roe": 1.16
         },
@@ -2544,7 +2530,7 @@
             "opert_prft_gwth": 20.82,
             "p_e": 33.68,
             "profit_growth": 7.0,
-            "rank": 182,
+            "rank": 181,
             "roce": 7.82,
             "roe": 5.91
         },
@@ -2558,7 +2544,7 @@
             "opert_prft_gwth": 0.98,
             "p_e": 48.23,
             "profit_growth": 5.29,
-            "rank": 183,
+            "rank": 182,
             "roce": 27.85,
             "roe": 20.72
         },
@@ -2572,7 +2558,7 @@
             "opert_prft_gwth": 46.45,
             "p_e": 49.77,
             "profit_growth": 6.53,
-            "rank": 184,
+            "rank": 183,
             "roce": 8.17,
             "roe": 5.7
         },
@@ -2586,7 +2572,7 @@
             "opert_prft_gwth": 33.57,
             "p_e": 79.74,
             "profit_growth": 2.85,
-            "rank": 185,
+            "rank": 184,
             "roce": 16.88,
             "roe": 15.13
         },
@@ -2600,7 +2586,7 @@
             "opert_prft_gwth": 19.23,
             "p_e": 50.91,
             "profit_growth": 46.5,
-            "rank": 186,
+            "rank": 185,
             "roce": 6.71,
             "roe": 5.29
         },
@@ -2614,7 +2600,7 @@
             "opert_prft_gwth": 5.22,
             "p_e": 54.63,
             "profit_growth": 10.68,
-            "rank": 187,
+            "rank": 186,
             "roce": 19.71,
             "roe": 16.21
         },
@@ -2628,7 +2614,7 @@
             "opert_prft_gwth": 2.56,
             "p_e": 42.27,
             "profit_growth": 3.41,
-            "rank": 188,
+            "rank": 187,
             "roce": 20.24,
             "roe": 17.04
         },
@@ -2642,7 +2628,7 @@
             "opert_prft_gwth": 12.85,
             "p_e": 60.22,
             "profit_growth": 66.59,
-            "rank": 189,
+            "rank": 188,
             "roce": 7.66,
             "roe": 3.48
         },
@@ -2656,7 +2642,7 @@
             "opert_prft_gwth": 0.4,
             "p_e": 17.68,
             "profit_growth": 1.4,
-            "rank": 190,
+            "rank": 189,
             "roce": 7.03,
             "roe": 12.86
         },
@@ -2670,7 +2656,7 @@
             "opert_prft_gwth": 23.69,
             "p_e": 112.62,
             "profit_growth": 11.88,
-            "rank": 191,
+            "rank": 190,
             "roce": 8.7,
             "roe": 14.61
         },
@@ -2684,7 +2670,7 @@
             "opert_prft_gwth": 2.4,
             "p_e": 58.43,
             "profit_growth": 12.65,
-            "rank": 192,
+            "rank": 191,
             "roce": 19.21,
             "roe": 15.21
         },
@@ -2698,7 +2684,7 @@
             "opert_prft_gwth": 4.04,
             "p_e": 23.64,
             "profit_growth": 3.65,
-            "rank": 193,
+            "rank": 192,
             "roce": 6.76,
             "roe": 4.54
         },
@@ -2712,7 +2698,7 @@
             "opert_prft_gwth": 6.22,
             "p_e": 76.18,
             "profit_growth": 18.11,
-            "rank": 194,
+            "rank": 193,
             "roce": 12.18,
             "roe": 11.58
         },
@@ -2726,7 +2712,7 @@
             "opert_prft_gwth": 6.94,
             "p_e": 34.54,
             "profit_growth": 14.85,
-            "rank": 195,
+            "rank": 194,
             "roce": 6.51,
             "roe": 11.36
         },
@@ -2740,7 +2726,7 @@
             "opert_prft_gwth": 10.17,
             "p_e": 105.36,
             "profit_growth": 5.31,
-            "rank": 196,
+            "rank": 195,
             "roce": 17.95,
             "roe": 13.44
         },
@@ -2754,7 +2740,7 @@
             "opert_prft_gwth": 10.26,
             "p_e": 69.56,
             "profit_growth": 14.92,
-            "rank": 197,
+            "rank": 196,
             "roce": 10.3,
             "roe": 11.28
         },
@@ -2768,9 +2754,23 @@
             "opert_prft_gwth": 9.82,
             "p_e": 58.0,
             "profit_growth": 7.06,
-            "rank": 198,
+            "rank": 197,
             "roce": 10.75,
             "roe": 9.36
+        },
+        {
+            "cmp_rs": 471.37,
+            "earnings_yield": 3.91,
+            "mar_cap_rs_cr": 37458.68,
+            "name": "Mindspace Busine",
+            "np_12m_rs_cr": 581.65,
+            "op_12m_rs_cr": 2235.26,
+            "opert_prft_gwth": 22.54,
+            "p_e": 66.55,
+            "profit_growth": 5.93,
+            "rank": 198,
+            "roce": 6.53,
+            "roe": 3.39
         },
         {
             "cmp_rs": 358.1,
@@ -2801,7 +2801,7 @@
             "roe": 7.01
         }
     ],
-    "date": 1776477120,
+    "date": 1776564299,
     "sold": {
         "360 ONE": 1774077842,
         "A.K.Capital Serv": 1771750425,
