@@ -295,20 +295,6 @@
             "roe": 12.61
         },
         {
-            "cmp_rs": 339.05,
-            "earnings_yield": 8.64,
-            "mar_cap_rs_cr": 15792.95,
-            "name": "S C I",
-            "np_12m_rs_cr": 1326.25,
-            "op_12m_rs_cr": 2192.64,
-            "opert_prft_gwth": 24.03,
-            "p_e": 11.91,
-            "profit_growth": 64.57,
-            "rank": 22,
-            "roce": 14.85,
-            "roe": 16.34
-        },
-        {
             "cmp_rs": 10711.5,
             "earnings_yield": 4.75,
             "mar_cap_rs_cr": 299384.11,
@@ -318,7 +304,7 @@
             "opert_prft_gwth": 36.7,
             "p_e": 27.79,
             "profit_growth": 47.5,
-            "rank": 23,
+            "rank": 22,
             "roce": 28.21,
             "roe": 29.11
         },
@@ -332,9 +318,23 @@
             "opert_prft_gwth": 146.75,
             "p_e": 59.32,
             "profit_growth": 137.77,
-            "rank": 24,
+            "rank": 23,
             "roce": 71.37,
             "roe": 56.27
+        },
+        {
+            "cmp_rs": 339.05,
+            "earnings_yield": 8.81,
+            "mar_cap_rs_cr": 15792.95,
+            "name": "S C I",
+            "np_12m_rs_cr": 1352.92,
+            "op_12m_rs_cr": 2185.47,
+            "opert_prft_gwth": 23.8,
+            "p_e": 11.67,
+            "profit_growth": 62.06,
+            "rank": 24,
+            "roce": 14.31,
+            "roe": 15.54
         },
         {
             "cmp_rs": 197.97,
@@ -1093,20 +1093,6 @@
             "roe": 16.97
         },
         {
-            "cmp_rs": 7302.5,
-            "earnings_yield": 3.47,
-            "mar_cap_rs_cr": 200317.94,
-            "name": "Eicher Motors",
-            "np_12m_rs_cr": 5357.43,
-            "op_12m_rs_cr": 5529.09,
-            "opert_prft_gwth": 20.64,
-            "p_e": 37.09,
-            "profit_growth": 21.58,
-            "rank": 79,
-            "roce": 29.81,
-            "roe": 24.1
-        },
-        {
             "cmp_rs": 501.4,
             "earnings_yield": 7.08,
             "mar_cap_rs_cr": 21846.18,
@@ -1116,9 +1102,23 @@
             "opert_prft_gwth": 18.25,
             "p_e": 19.71,
             "profit_growth": 21.52,
-            "rank": 80,
+            "rank": 79,
             "roce": 11.38,
             "roe": 15.93
+        },
+        {
+            "cmp_rs": 7302.5,
+            "earnings_yield": 3.47,
+            "mar_cap_rs_cr": 200317.94,
+            "name": "Eicher Motors",
+            "np_12m_rs_cr": 5357.43,
+            "op_12m_rs_cr": 5529.09,
+            "opert_prft_gwth": 20.64,
+            "p_e": 37.09,
+            "profit_growth": 21.58,
+            "rank": 80,
+            "roce": 29.81,
+            "roe": 24.1
         },
         {
             "cmp_rs": 26700.0,
@@ -1471,20 +1471,6 @@
             "roe": 20.8
         },
         {
-            "cmp_rs": 5520.0,
-            "earnings_yield": 2.54,
-            "mar_cap_rs_cr": 132959.3,
-            "name": "Britannia Inds.",
-            "np_12m_rs_cr": 2537.01,
-            "op_12m_rs_cr": 3514.34,
-            "opert_prft_gwth": 10.64,
-            "p_e": 52.48,
-            "profit_growth": 15.35,
-            "rank": 106,
-            "roce": 56.02,
-            "roe": 53.55
-        },
-        {
             "cmp_rs": 231.98,
             "earnings_yield": 6.93,
             "mar_cap_rs_cr": 46440.08,
@@ -1494,9 +1480,23 @@
             "opert_prft_gwth": 24.56,
             "p_e": 16.7,
             "profit_growth": 3.7,
-            "rank": 107,
+            "rank": 106,
             "roce": 9.62,
             "roe": 15.67
+        },
+        {
+            "cmp_rs": 5520.0,
+            "earnings_yield": 2.54,
+            "mar_cap_rs_cr": 132959.3,
+            "name": "Britannia Inds.",
+            "np_12m_rs_cr": 2537.01,
+            "op_12m_rs_cr": 3514.34,
+            "opert_prft_gwth": 10.64,
+            "p_e": 52.48,
+            "profit_growth": 15.35,
+            "rank": 107,
+            "roce": 56.02,
+            "roe": 53.55
         },
         {
             "cmp_rs": 4242.3,
@@ -1681,6 +1681,20 @@
             "roe": 6.56
         },
         {
+            "cmp_rs": 581.5,
+            "earnings_yield": 8.85,
+            "mar_cap_rs_cr": 31986.16,
+            "name": "LIC Housing Fin.",
+            "np_12m_rs_cr": 5485.26,
+            "op_12m_rs_cr": 26991.16,
+            "opert_prft_gwth": 4.24,
+            "p_e": 5.83,
+            "profit_growth": 6.49,
+            "rank": 121,
+            "roce": 8.93,
+            "roe": 16.05
+        },
+        {
             "cmp_rs": 4380.8,
             "earnings_yield": 2.17,
             "mar_cap_rs_cr": 148266.18,
@@ -1690,7 +1704,7 @@
             "opert_prft_gwth": 14.48,
             "p_e": 64.31,
             "profit_growth": 23.82,
-            "rank": 121,
+            "rank": 122,
             "roce": 27.05,
             "roe": 26.52
         },
@@ -1704,23 +1718,9 @@
             "opert_prft_gwth": 21.46,
             "p_e": 10.0,
             "profit_growth": 6.6,
-            "rank": 122,
+            "rank": 123,
             "roce": 7.05,
             "roe": 13.48
-        },
-        {
-            "cmp_rs": 581.5,
-            "earnings_yield": 8.85,
-            "mar_cap_rs_cr": 31986.16,
-            "name": "LIC Housing Fin.",
-            "np_12m_rs_cr": 5485.26,
-            "op_12m_rs_cr": 26991.16,
-            "opert_prft_gwth": 4.24,
-            "p_e": 5.83,
-            "profit_growth": 6.49,
-            "rank": 123,
-            "roce": 8.93,
-            "roe": 16.05
         },
         {
             "cmp_rs": 730.15,
@@ -1751,20 +1751,6 @@
             "roe": 23.89
         },
         {
-            "cmp_rs": 2657.3,
-            "earnings_yield": 3.5,
-            "mar_cap_rs_cr": 107190.17,
-            "name": "Mazagon Dock",
-            "np_12m_rs_cr": 2578.36,
-            "op_12m_rs_cr": 2265.63,
-            "opert_prft_gwth": 9.67,
-            "p_e": 41.49,
-            "profit_growth": 7.06,
-            "rank": 126,
-            "roce": 35.98,
-            "roe": 29.2
-        },
-        {
             "cmp_rs": 1552.6,
             "earnings_yield": 4.01,
             "mar_cap_rs_cr": 39390.12,
@@ -1774,9 +1760,23 @@
             "opert_prft_gwth": 18.8,
             "p_e": 37.3,
             "profit_growth": 33.27,
-            "rank": 127,
+            "rank": 126,
             "roce": 14.72,
             "roe": 12.75
+        },
+        {
+            "cmp_rs": 2657.3,
+            "earnings_yield": 3.5,
+            "mar_cap_rs_cr": 107190.17,
+            "name": "Mazagon Dock",
+            "np_12m_rs_cr": 2578.36,
+            "op_12m_rs_cr": 2265.63,
+            "opert_prft_gwth": 9.67,
+            "p_e": 41.49,
+            "profit_growth": 7.06,
+            "rank": 127,
+            "roce": 35.98,
+            "roe": 29.2
         },
         {
             "cmp_rs": 321.7,
@@ -2059,20 +2059,6 @@
             "roe": 16.86
         },
         {
-            "cmp_rs": 362.95,
-            "earnings_yield": 6.28,
-            "mar_cap_rs_cr": 95112.6,
-            "name": "Aditya Birla Cap",
-            "np_12m_rs_cr": 3863.8,
-            "op_12m_rs_cr": 16694.14,
-            "opert_prft_gwth": 16.95,
-            "p_e": 25.01,
-            "profit_growth": 15.74,
-            "rank": 148,
-            "roce": 8.72,
-            "roe": 11.74
-        },
-        {
             "cmp_rs": 865.55,
             "earnings_yield": 5.96,
             "mar_cap_rs_cr": 116586.47,
@@ -2082,9 +2068,23 @@
             "opert_prft_gwth": 9.45,
             "p_e": 9.51,
             "profit_growth": 8.91,
-            "rank": 149,
+            "rank": 148,
             "roce": 6.32,
             "roe": 16.18
+        },
+        {
+            "cmp_rs": 362.95,
+            "earnings_yield": 6.28,
+            "mar_cap_rs_cr": 95112.6,
+            "name": "Aditya Birla Cap",
+            "np_12m_rs_cr": 3863.8,
+            "op_12m_rs_cr": 16694.14,
+            "opert_prft_gwth": 16.95,
+            "p_e": 25.01,
+            "profit_growth": 15.74,
+            "rank": 149,
+            "roce": 8.72,
+            "roe": 11.74
         },
         {
             "cmp_rs": 141.76,
@@ -2801,7 +2801,7 @@
             "roe": 3.84
         }
     ],
-    "date": 1778293457,
+    "date": 1778380021,
     "sold": {
         "360 ONE": 1774077842,
         "A.K.Capital Serv": 1771750425,
