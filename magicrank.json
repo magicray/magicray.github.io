@@ -645,20 +645,6 @@
             "roe": 10.99
         },
         {
-            "cmp_rs": 1522.8,
-            "earnings_yield": 29.85,
-            "mar_cap_rs_cr": 10624.86,
-            "name": "The Bombay Burmah",
-            "np_12m_rs_cr": 2499.25,
-            "op_12m_rs_cr": 3431.64,
-            "opert_prft_gwth": 9.43,
-            "p_e": 8.8,
-            "profit_growth": 7.31,
-            "rank": 47,
-            "roce": 33.0,
-            "roe": 19.06
-        },
-        {
             "cmp_rs": 216.84,
             "earnings_yield": 6.85,
             "mar_cap_rs_cr": 270692.8,
@@ -668,9 +654,23 @@
             "opert_prft_gwth": 35.79,
             "p_e": 23.58,
             "profit_growth": 221.96,
-            "rank": 48,
+            "rank": 47,
             "roce": 12.64,
             "roe": 11.88
+        },
+        {
+            "cmp_rs": 1522.8,
+            "earnings_yield": 29.85,
+            "mar_cap_rs_cr": 10624.86,
+            "name": "The Bombay Burmah",
+            "np_12m_rs_cr": 2499.25,
+            "op_12m_rs_cr": 3431.64,
+            "opert_prft_gwth": 9.43,
+            "p_e": 8.8,
+            "profit_growth": 7.31,
+            "rank": 48,
+            "roce": 33.0,
+            "roe": 19.06
         },
         {
             "cmp_rs": 153.13,
@@ -715,20 +715,6 @@
             "roe": 16.89
         },
         {
-            "cmp_rs": 10308.0,
-            "earnings_yield": 7.44,
-            "mar_cap_rs_cr": 114717.73,
-            "name": "Bajaj Holdings",
-            "np_12m_rs_cr": 9788.92,
-            "op_12m_rs_cr": 907.33,
-            "opert_prft_gwth": 62.21,
-            "p_e": 14.02,
-            "profit_growth": 27.02,
-            "rank": 52,
-            "roce": 11.0,
-            "roe": 12.04
-        },
-        {
             "cmp_rs": 3968.4,
             "earnings_yield": 6.48,
             "mar_cap_rs_cr": 117711.2,
@@ -738,7 +724,7 @@
             "opert_prft_gwth": 16.33,
             "p_e": 21.78,
             "profit_growth": 17.52,
-            "rank": 53,
+            "rank": 52,
             "roce": 29.6,
             "roe": 23.13
         },
@@ -752,9 +738,23 @@
             "opert_prft_gwth": 34.68,
             "p_e": 20.73,
             "profit_growth": 73.99,
-            "rank": 54,
+            "rank": 53,
             "roce": 13.37,
             "roe": 10.54
+        },
+        {
+            "cmp_rs": 10308.0,
+            "earnings_yield": 7.44,
+            "mar_cap_rs_cr": 114717.73,
+            "name": "Bajaj Holdings",
+            "np_12m_rs_cr": 9788.92,
+            "op_12m_rs_cr": 907.33,
+            "opert_prft_gwth": 62.21,
+            "p_e": 14.02,
+            "profit_growth": 27.02,
+            "rank": 54,
+            "roce": 11.0,
+            "roe": 12.04
         },
         {
             "cmp_rs": 206.53,
@@ -981,20 +981,6 @@
             "roe": 19.28
         },
         {
-            "cmp_rs": 849.55,
-            "earnings_yield": 7.85,
-            "mar_cap_rs_cr": 11312.11,
-            "name": "Can Fin Homes",
-            "np_12m_rs_cr": 1085.75,
-            "op_12m_rs_cr": 3881.5,
-            "opert_prft_gwth": 8.49,
-            "p_e": 10.42,
-            "profit_growth": 26.66,
-            "rank": 71,
-            "roce": 9.17,
-            "roe": 19.66
-        },
-        {
             "cmp_rs": 133.81,
             "earnings_yield": 14.38,
             "mar_cap_rs_cr": 12798.47,
@@ -1004,9 +990,23 @@
             "opert_prft_gwth": 8.5,
             "p_e": 10.14,
             "profit_growth": 98.59,
-            "rank": 72,
+            "rank": 71,
             "roce": 9.39,
             "roe": 9.01
+        },
+        {
+            "cmp_rs": 849.55,
+            "earnings_yield": 7.85,
+            "mar_cap_rs_cr": 11312.11,
+            "name": "Can Fin Homes",
+            "np_12m_rs_cr": 1085.75,
+            "op_12m_rs_cr": 3881.5,
+            "opert_prft_gwth": 8.49,
+            "p_e": 10.42,
+            "profit_growth": 26.66,
+            "rank": 72,
+            "roce": 9.17,
+            "roe": 19.66
         },
         {
             "cmp_rs": 632.25,
@@ -1079,20 +1079,6 @@
             "roe": 14.02
         },
         {
-            "cmp_rs": 127.1,
-            "earnings_yield": 6.8,
-            "mar_cap_rs_cr": 35705.33,
-            "name": "Indian Renewable",
-            "np_12m_rs_cr": 1882.38,
-            "op_12m_rs_cr": 7124.06,
-            "opert_prft_gwth": 21.3,
-            "p_e": 18.97,
-            "profit_growth": 22.69,
-            "rank": 78,
-            "roce": 9.37,
-            "roe": 18.05
-        },
-        {
             "cmp_rs": 464.15,
             "earnings_yield": 7.38,
             "mar_cap_rs_cr": 20223.19,
@@ -1102,9 +1088,23 @@
             "opert_prft_gwth": 18.25,
             "p_e": 18.25,
             "profit_growth": 21.52,
-            "rank": 79,
+            "rank": 78,
             "roce": 11.38,
             "roe": 15.93
+        },
+        {
+            "cmp_rs": 127.1,
+            "earnings_yield": 6.8,
+            "mar_cap_rs_cr": 35705.33,
+            "name": "Indian Renewable",
+            "np_12m_rs_cr": 1882.38,
+            "op_12m_rs_cr": 7124.06,
+            "opert_prft_gwth": 21.3,
+            "p_e": 18.97,
+            "profit_growth": 22.69,
+            "rank": 79,
+            "roce": 9.37,
+            "roe": 18.05
         },
         {
             "cmp_rs": 17314.0,
@@ -1121,20 +1121,6 @@
             "roe": 31.46
         },
         {
-            "cmp_rs": 128640.0,
-            "earnings_yield": 6.57,
-            "mar_cap_rs_cr": 54558.06,
-            "name": "MRF",
-            "np_12m_rs_cr": 2426.1,
-            "op_12m_rs_cr": 4900.58,
-            "opert_prft_gwth": 19.68,
-            "p_e": 22.06,
-            "profit_growth": 32.39,
-            "rank": 81,
-            "roce": 15.73,
-            "roe": 12.54
-        },
-        {
             "cmp_rs": 9015.0,
             "earnings_yield": 5.04,
             "mar_cap_rs_cr": 78486.8,
@@ -1144,9 +1130,23 @@
             "opert_prft_gwth": 13.04,
             "p_e": 29.74,
             "profit_growth": 10.93,
-            "rank": 82,
+            "rank": 81,
             "roce": 45.28,
             "roe": 32.61
+        },
+        {
+            "cmp_rs": 128640.0,
+            "earnings_yield": 6.57,
+            "mar_cap_rs_cr": 54558.06,
+            "name": "MRF",
+            "np_12m_rs_cr": 2426.1,
+            "op_12m_rs_cr": 4900.58,
+            "opert_prft_gwth": 19.68,
+            "p_e": 22.06,
+            "profit_growth": 32.39,
+            "rank": 82,
+            "roce": 15.73,
+            "roe": 12.54
         },
         {
             "cmp_rs": 1132.6,
@@ -1219,20 +1219,6 @@
             "roe": 29.22
         },
         {
-            "cmp_rs": 1323.6,
-            "earnings_yield": 1.83,
-            "mar_cap_rs_cr": 71455.42,
-            "name": "Laurus Labs",
-            "np_12m_rs_cr": 890.14,
-            "op_12m_rs_cr": 1777.71,
-            "opert_prft_gwth": 68.46,
-            "p_e": 80.4,
-            "profit_growth": 177.96,
-            "rank": 88,
-            "roce": 17.66,
-            "roe": 18.19
-        },
-        {
             "cmp_rs": 1865.8,
             "earnings_yield": 5.41,
             "mar_cap_rs_cr": 55043.83,
@@ -1242,9 +1228,23 @@
             "opert_prft_gwth": 24.8,
             "p_e": 27.43,
             "profit_growth": 15.88,
-            "rank": 89,
+            "rank": 88,
             "roce": 22.75,
             "roe": 16.97
+        },
+        {
+            "cmp_rs": 1323.6,
+            "earnings_yield": 1.83,
+            "mar_cap_rs_cr": 71455.42,
+            "name": "Laurus Labs",
+            "np_12m_rs_cr": 890.14,
+            "op_12m_rs_cr": 1777.71,
+            "opert_prft_gwth": 68.46,
+            "p_e": 80.4,
+            "profit_growth": 177.96,
+            "rank": 89,
+            "roce": 17.66,
+            "roe": 18.19
         },
         {
             "cmp_rs": 180.09,
@@ -1471,20 +1471,6 @@
             "roe": 20.8
         },
         {
-            "cmp_rs": 2548.5,
-            "earnings_yield": 3.73,
-            "mar_cap_rs_cr": 35847.93,
-            "name": "Endurance Tech.",
-            "np_12m_rs_cr": 951.71,
-            "op_12m_rs_cr": 1965.64,
-            "opert_prft_gwth": 26.73,
-            "p_e": 37.06,
-            "profit_growth": 23.64,
-            "rank": 106,
-            "roce": 18.28,
-            "roe": 15.41
-        },
-        {
             "cmp_rs": 5406.0,
             "earnings_yield": 2.59,
             "mar_cap_rs_cr": 130213.4,
@@ -1494,9 +1480,23 @@
             "opert_prft_gwth": 10.64,
             "p_e": 51.4,
             "profit_growth": 15.35,
-            "rank": 107,
+            "rank": 106,
             "roce": 56.02,
             "roe": 53.55
+        },
+        {
+            "cmp_rs": 2548.5,
+            "earnings_yield": 3.73,
+            "mar_cap_rs_cr": 35847.93,
+            "name": "Endurance Tech.",
+            "np_12m_rs_cr": 951.71,
+            "op_12m_rs_cr": 1965.64,
+            "opert_prft_gwth": 26.73,
+            "p_e": 37.06,
+            "profit_growth": 23.64,
+            "rank": 107,
+            "roce": 18.28,
+            "roe": 15.41
         },
         {
             "cmp_rs": 4608.1,
@@ -1611,6 +1611,20 @@
             "roe": 34.48
         },
         {
+            "cmp_rs": 1121.8,
+            "earnings_yield": 2.73,
+            "mar_cap_rs_cr": 64775.18,
+            "name": "Uno Minda",
+            "np_12m_rs_cr": 1284.06,
+            "op_12m_rs_cr": 2251.23,
+            "opert_prft_gwth": 20.14,
+            "p_e": 53.22,
+            "profit_growth": 30.25,
+            "rank": 116,
+            "roce": 19.7,
+            "roe": 19.38
+        },
+        {
             "cmp_rs": 5392.0,
             "earnings_yield": 2.07,
             "mar_cap_rs_cr": 149466.24,
@@ -1620,7 +1634,7 @@
             "opert_prft_gwth": 18.38,
             "p_e": 64.17,
             "profit_growth": 15.92,
-            "rank": 116,
+            "rank": 117,
             "roce": 36.32,
             "roe": 28.15
         },
@@ -1634,7 +1648,7 @@
             "opert_prft_gwth": 14.12,
             "p_e": 27.33,
             "profit_growth": 11.0,
-            "rank": 117,
+            "rank": 118,
             "roce": 20.38,
             "roe": 19.39
         },
@@ -1648,7 +1662,7 @@
             "opert_prft_gwth": 11.58,
             "p_e": 8.08,
             "profit_growth": 18.92,
-            "rank": 118,
+            "rank": 119,
             "roce": 7.4,
             "roe": 11.97
         },
@@ -1662,7 +1676,7 @@
             "opert_prft_gwth": 28.08,
             "p_e": 27.94,
             "profit_growth": 65.35,
-            "rank": 119,
+            "rank": 120,
             "roce": 8.03,
             "roe": 6.56
         },
@@ -1676,7 +1690,7 @@
             "opert_prft_gwth": 8.22,
             "p_e": 23.29,
             "profit_growth": 16.51,
-            "rank": 120,
+            "rank": 121,
             "roce": 17.81,
             "roe": 15.02
         },
@@ -1690,23 +1704,9 @@
             "opert_prft_gwth": 23.2,
             "p_e": 107.36,
             "profit_growth": 29.58,
-            "rank": 121,
+            "rank": 122,
             "roce": 27.01,
             "roe": 20.82
-        },
-        {
-            "cmp_rs": 8082.5,
-            "earnings_yield": 2.37,
-            "mar_cap_rs_cr": 116213.95,
-            "name": "Apollo Hospitals",
-            "np_12m_rs_cr": 1865.8,
-            "op_12m_rs_cr": 3528.0,
-            "opert_prft_gwth": 21.97,
-            "p_e": 63.99,
-            "profit_growth": 38.62,
-            "rank": 122,
-            "roce": 16.64,
-            "roe": 18.42
         },
         {
             "cmp_rs": 2481.8,
@@ -1737,18 +1737,18 @@
             "roe": 13.99
         },
         {
-            "cmp_rs": 4405.7,
-            "earnings_yield": 2.16,
-            "mar_cap_rs_cr": 149108.91,
-            "name": "Torrent Pharma.",
-            "np_12m_rs_cr": 2272.0,
-            "op_12m_rs_cr": 4167.0,
-            "opert_prft_gwth": 14.48,
-            "p_e": 64.67,
-            "profit_growth": 23.82,
+            "cmp_rs": 8082.5,
+            "earnings_yield": 2.37,
+            "mar_cap_rs_cr": 116213.95,
+            "name": "Apollo Hospitals",
+            "np_12m_rs_cr": 1865.8,
+            "op_12m_rs_cr": 3528.0,
+            "opert_prft_gwth": 21.97,
+            "p_e": 63.99,
+            "profit_growth": 38.62,
             "rank": 125,
-            "roce": 27.05,
-            "roe": 26.52
+            "roce": 16.64,
+            "roe": 18.42
         },
         {
             "cmp_rs": 3495.1,
@@ -1765,6 +1765,20 @@
             "roe": 21.53
         },
         {
+            "cmp_rs": 4405.7,
+            "earnings_yield": 2.16,
+            "mar_cap_rs_cr": 149108.91,
+            "name": "Torrent Pharma.",
+            "np_12m_rs_cr": 2272.0,
+            "op_12m_rs_cr": 4167.0,
+            "opert_prft_gwth": 14.48,
+            "p_e": 64.67,
+            "profit_growth": 23.82,
+            "rank": 127,
+            "roce": 27.05,
+            "roe": 26.52
+        },
+        {
             "cmp_rs": 1315.2,
             "earnings_yield": 6.76,
             "mar_cap_rs_cr": 21072.5,
@@ -1774,7 +1788,7 @@
             "opert_prft_gwth": 9.9,
             "p_e": 27.1,
             "profit_growth": 46.34,
-            "rank": 127,
+            "rank": 128,
             "roce": 9.96,
             "roe": 10.51
         },
@@ -1788,7 +1802,7 @@
             "opert_prft_gwth": 16.22,
             "p_e": 29.51,
             "profit_growth": 15.27,
-            "rank": 128,
+            "rank": 129,
             "roce": 10.82,
             "roe": 18.23
         },
@@ -1802,7 +1816,7 @@
             "opert_prft_gwth": 16.81,
             "p_e": 60.75,
             "profit_growth": 17.47,
-            "rank": 129,
+            "rank": 130,
             "roce": 30.97,
             "roe": 23.89
         },
@@ -1816,7 +1830,7 @@
             "opert_prft_gwth": 28.53,
             "p_e": 24.89,
             "profit_growth": 6.64,
-            "rank": 130,
+            "rank": 131,
             "roce": 15.72,
             "roe": 11.86
         },
@@ -1830,7 +1844,7 @@
             "opert_prft_gwth": 32.88,
             "p_e": 40.93,
             "profit_growth": 35.9,
-            "rank": 131,
+            "rank": 132,
             "roce": 12.78,
             "roe": 11.23
         },
@@ -1844,7 +1858,7 @@
             "opert_prft_gwth": 12.26,
             "p_e": 20.73,
             "profit_growth": 45.66,
-            "rank": 132,
+            "rank": 133,
             "roce": 7.79,
             "roe": 6.43
         },
@@ -1858,7 +1872,7 @@
             "opert_prft_gwth": 153.52,
             "p_e": 67.16,
             "profit_growth": 618.38,
-            "rank": 133,
+            "rank": 134,
             "roce": 7.5,
             "roe": 5.85
         },
@@ -1872,7 +1886,7 @@
             "opert_prft_gwth": 18.8,
             "p_e": 38.56,
             "profit_growth": 33.27,
-            "rank": 134,
+            "rank": 135,
             "roce": 14.72,
             "roe": 12.75
         },
@@ -1886,7 +1900,7 @@
             "opert_prft_gwth": 13.75,
             "p_e": 26.79,
             "profit_growth": 33.36,
-            "rank": 135,
+            "rank": 136,
             "roce": 8.58,
             "roe": 12.34
         },
@@ -1900,7 +1914,7 @@
             "opert_prft_gwth": 11.21,
             "p_e": 79.92,
             "profit_growth": 11.49,
-            "rank": 136,
+            "rank": 137,
             "roce": 84.21,
             "roe": 73.24
         },
@@ -1914,7 +1928,7 @@
             "opert_prft_gwth": 1.55,
             "p_e": 32.18,
             "profit_growth": 9.06,
-            "rank": 137,
+            "rank": 138,
             "roce": 31.96,
             "roe": 23.98
         },
@@ -1928,7 +1942,7 @@
             "opert_prft_gwth": 14.58,
             "p_e": 27.84,
             "profit_growth": 11.82,
-            "rank": 138,
+            "rank": 139,
             "roce": 10.52,
             "roe": 13.22
         },
@@ -1942,7 +1956,7 @@
             "opert_prft_gwth": 16.88,
             "p_e": 28.07,
             "profit_growth": 25.26,
-            "rank": 139,
+            "rank": 140,
             "roce": 7.66,
             "roe": 14.32
         },
@@ -1956,7 +1970,7 @@
             "opert_prft_gwth": 1.83,
             "p_e": 5.37,
             "profit_growth": 2.97,
-            "rank": 140,
+            "rank": 141,
             "roce": 8.59,
             "roe": 14.41
         },
@@ -1970,7 +1984,7 @@
             "opert_prft_gwth": 8.44,
             "p_e": 56.52,
             "profit_growth": 14.18,
-            "rank": 141,
+            "rank": 142,
             "roce": 37.32,
             "roe": 28.81
         },
@@ -1984,7 +1998,7 @@
             "opert_prft_gwth": 13.45,
             "p_e": 14.04,
             "profit_growth": 18.04,
-            "rank": 142,
+            "rank": 143,
             "roce": 6.74,
             "roe": 13.24
         },
@@ -1998,7 +2012,7 @@
             "opert_prft_gwth": 92.75,
             "p_e": 39.64,
             "profit_growth": 27.91,
-            "rank": 143,
+            "rank": 144,
             "roce": 8.29,
             "roe": 7.86
         },
@@ -2012,23 +2026,9 @@
             "opert_prft_gwth": 8.84,
             "p_e": 61.97,
             "profit_growth": 9.18,
-            "rank": 144,
+            "rank": 145,
             "roce": 47.21,
             "roe": 43.05
-        },
-        {
-            "cmp_rs": 1121.8,
-            "earnings_yield": 2.64,
-            "mar_cap_rs_cr": 64775.18,
-            "name": "Uno Minda",
-            "np_12m_rs_cr": 1221.54,
-            "op_12m_rs_cr": 2175.11,
-            "opert_prft_gwth": 19.44,
-            "p_e": 55.96,
-            "profit_growth": 23.21,
-            "rank": 145,
-            "roce": 18.83,
-            "roe": 17.51
         },
         {
             "cmp_rs": 1135.05,
@@ -2801,7 +2801,7 @@
             "roe": 3.84
         }
     ],
-    "date": 1778898417,
+    "date": 1778985253,
     "sold": {
         "360 ONE": 1774077842,
         "A.K.Capital Serv": 1771750425,
@@ -2886,7 +2886,6 @@
         "Indegene": 1772081725,
         "India Glycols": 1771916391,
         "Indian Bank": 1771922223,
-        "Indian Energy Ex": 1771138229,
         "Indrapr.Medical": 1771750425,
         "Insecticid.India": 1771750425,
         "Inventurus Knowl": 1772159720,
@@ -2895,7 +2894,6 @@
         "JK Tyre & Indust": 1772165916,
         "JSW Energy": 1773569275,
         "JSW Infrast": 1773569275,
-        "Jamna Auto Inds.": 1771157843,
         "Jay Bharat Maru.": 1771750425,
         "Jindal Drilling": 1771750425,
         "Jubilant Pharmo": 1772165916,
