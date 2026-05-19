@@ -28,8 +28,8 @@
                 <th colspan=2>Group</th>
                 <th colspan=2>Quality</th>
                 <th colspan=2>Growth</th>
-                <th colspan=2>Valuation</th>
-                <th colspan=3>Stability</th>
+                <th colspan=3>Valuation</th>
+                <th colspan=4>Stability</th>
                 </tr>
                 <tr>
                 <th colspan=2 id="group_buy">Buy</th>
@@ -39,8 +39,10 @@
                 <th id="oprofit_growth_green"></th>
                 <th id="pe_green"></th>
                 <th id="earnings_yield_green"></th>
+                <th id="pb_green"></th>
                 <th id="profit_green"></th>
                 <th id="oprofit_green"></th>
+                <th id="nw_green"></th>
                 <th id="mcap_green"></th>
                 </tr><tr>
                 <th colspan=2 id="group_all">All</th>
@@ -50,8 +52,10 @@
                 <th id="oprofit_growth_black"></th>
                 <th id="pe_black"></th>
                 <th id="earnings_yield_black"></th>
+                <th id="pb_black"></th>
                 <th id="profit_black"></th>
                 <th id="oprofit_black"></th>
+                <th id="nw_black"></th>
                 <th id="mcap_black"></th>
                 </tr><tr>
                 <th colspan=2 id="group_sell">Sell</th>
@@ -61,8 +65,10 @@
                 <th id="oprofit_growth_red"></th>
                 <th id="pe_red"></th>
                 <th id="earnings_yield_red"></th>
+                <th id="pb_red"></th>
                 <th id="profit_red"></th>
                 <th id="oprofit_red"></th>
+                <th id="nw_red"></th>
                 <th id="mcap_red"></th>
                 <tr>
                 <th>Rank</th>
@@ -73,8 +79,10 @@
                 <th>OProfit</th>
                 <th>PE</th>
                 <th>EYield</th>
+                <th>PB</th>
                 <th>Profit</th>
                 <th>OProfit</th>
+                <th>Networth</th>
                 <th>MCap</th>
                 </tr>
             </thead>
@@ -160,9 +168,11 @@ function format_data(data, amount) {
 
             d['p_e'],
             d['earnings_yield'],
+            d['cmp_bv'],
 
             d['np_12m_rs_cr'],
             d['op_12m_rs_cr'],
+            d['net_worth_rs_cr'],
             d['mar_cap_rs_cr']])
     }
 
@@ -220,8 +230,8 @@ function renderTable(tableId, data) {
 
     const col = ['roce', 'roe',
 	         'profit_growth', 'oprofit_growth',
-	         'pe', 'earnings_yield',
-	         'profit', 'oprofit', 'mcap']
+	         'pe', 'earnings_yield', 'pb',
+	         'profit', 'oprofit', 'nw', 'mcap']
 
     col.map((name, index) => {
 	let arr = data_green.map(d => d[index+2]).sort(function(a, b){ return a - b})
@@ -251,7 +261,7 @@ function renderTable(tableId, data) {
 
     let tmp = [...data]
     tmp.map((row, index) => {
-        for(let i=2; i<11; i++)
+        for(let i=2; i<13; i++)
             row[i] = Math.round(row[i])
     })
 

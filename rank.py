@@ -129,7 +129,8 @@ def main():
     # Rank on Size - More is better
     np = rank('np_12m_rs_cr', data)           # More net profit is better
     op = rank('op_12m_rs_cr', data)           # More operting profit is better
-    size_rank = [(np[name] + op[name], name) for name in np]
+    nw = rank('net_worth_rs_cr', data)        # Higher networth is more stability
+    size_rank = [(np[name] + op[name] + nw[name], name) for name in np]
 
     # Divide into two halvs based upon the above factors to discard the tiny companies.
     # We will take only the upper half ranked by profit and sales
@@ -149,6 +150,7 @@ def main():
 
     # Rank on Valuation
     pe = rank('p_e', data, False)
+    pb = rank('cmp_bv', data, False)
     earnings_yield = rank('earnings_yield', data)
 
     # Ranking weightage - 33% Quality - 33% Growth - 33% Valuation
@@ -160,7 +162,7 @@ def main():
         (profit_growth[name] + op_profit_growth[name]) / 2 +
 
         # Value
-        (pe[name] + earnings_yield[name]) / 2,
+        (pe[name] + pb[name] + earnings_yield[name]) / 3,
 
         name) for name in roe]
 
