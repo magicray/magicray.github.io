@@ -19,7 +19,7 @@ Price to Earning  > 0 AND
 Net profit > 0 AND
 Operating profit > 0 AND
 
-Last result date > 202508
+Last result date > 202511
 """
 
 
