@@ -110,6 +110,10 @@ def main():
                 else:
                     data[key] = value
 
+                x = data[key]['roe'] + data[key]['roce']
+                y = data[key]['profit_growth'] + data[key]['opert_prft_gwth']
+                data[key]['sustainability'] = x / y
+
         data = dict(timestamp=int(time.time()), data=data)
         with open(filename, 'w') as fd:
             json.dump(data, fd)
@@ -153,7 +157,9 @@ def main():
     pb = rank('cmp_bv', data, False)
     earnings_yield = rank('earnings_yield', data)
 
-    # Ranking weightage - 33% Quality - 33% Growth - 33% Valuation
+    sustainability = rank('sustainability', data) # Profitability > Growth is more sustainable
+
+    # Ranking weightage - 25% Quality - 25% Growth - 25% Valuation - 25% Sustainability
     final_rank = [(
         # Quality
         (roe[name] + roce[name]) / 2 +
@@ -162,7 +168,10 @@ def main():
         (profit_growth[name] + op_profit_growth[name]) / 2 +
 
         # Value
-        (pe[name] + pb[name] + earnings_yield[name]) / 3,
+        (pe[name] + pb[name] + earnings_yield[name]) / 3 +
+
+        # Sustainablity
+        sustainability[name],
 
         name) for name in roe]
 
