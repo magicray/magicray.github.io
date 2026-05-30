@@ -26,8 +26,8 @@
             <thead>
                 <tr>
                 <th colspan=2>Group</th>
-                <th colspan=2>Quality</th>
-                <th colspan=2>Growth</th>
+                <th colspan=3>Quality</th>
+                <th colspan=3>Growth</th>
                 <th colspan=3>Valuation</th>
                 <th colspan=4>Stability</th>
                 </tr>
@@ -35,8 +35,10 @@
                 <th colspan=2 id="group_buy">Buy</th>
                 <th id="roce_green"></th>
                 <th id="roe_green"></th>
+                <th id="roa_green"></th>
                 <th id="profit_growth_green"></th>
                 <th id="oprofit_growth_green"></th>
+                <th id="sales_growth_green"></th>
                 <th id="pe_green"></th>
                 <th id="earnings_yield_green"></th>
                 <th id="pb_green"></th>
@@ -48,8 +50,10 @@
                 <th colspan=2 id="group_all">All</th>
                 <th id="roce_black"></th>
                 <th id="roe_black"></th>
+                <th id="roa_black"></th>
                 <th id="profit_growth_black"></th>
                 <th id="oprofit_growth_black"></th>
+                <th id="sales_growth_black"></th>
                 <th id="pe_black"></th>
                 <th id="earnings_yield_black"></th>
                 <th id="pb_black"></th>
@@ -61,8 +65,10 @@
                 <th colspan=2 id="group_sell">Sell</th>
                 <th id="roce_red"></th>
                 <th id="roe_red"></th>
+                <th id="roa_red"></th>
                 <th id="profit_growth_red"></th>
                 <th id="oprofit_growth_red"></th>
+                <th id="sales_growth_red"></th>
                 <th id="pe_red"></th>
                 <th id="earnings_yield_red"></th>
                 <th id="pb_red"></th>
@@ -75,8 +81,10 @@
                 <th>Stock</th>
                 <th>ROCE</th>
                 <th>ROE</th>
+                <th>ROA</th>
                 <th>Profit</th>
                 <th>OProfit</th>
+                <th>Sales</th>
                 <th>PE</th>
                 <th>EYield</th>
                 <th>PB</th>
@@ -162,9 +170,11 @@ function format_data(data, amount) {
 
             d['roce'],
             d['roe'],
+            d['roa_12m'],
 
             d['profit_growth'],
             d['opert_prft_gwth'],
+            d['sales_growth'],
 
             d['p_e'],
             d['earnings_yield'],
@@ -228,8 +238,8 @@ function renderTable(tableId, data) {
     $("#group_sell").css("color", "red");
     $("#group_sell").css("font-weight", "normal");
 
-    const col = ['roce', 'roe',
-	         'profit_growth', 'oprofit_growth',
+    const col = ['roce', 'roe', 'roa',
+	         'profit_growth', 'oprofit_growth', 'sales_growth',
 	         'pe', 'earnings_yield', 'pb',
 	         'profit', 'oprofit', 'nw', 'mcap']
 
@@ -261,7 +271,7 @@ function renderTable(tableId, data) {
 
     let tmp = [...data]
     tmp.map((row, index) => {
-        for(let i=2; i<13; i++)
+        for(let i=2; i<15; i++)
             row[i] = Math.round(row[i])
     })
 
