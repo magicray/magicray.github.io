@@ -7,15 +7,19 @@ from logging import critical as log
 
 
 SCREENER = """
+Return on assets > 0 AND
 Return on equity > 0 AND
 Return on capital employed > 0 AND
 
+Sales growth > 0 AND
 Profit growth > 0 AND
 Operating profit growth > 0 AND
 
 Earnings yield > 0 AND
 Price to Earning  > 0 AND
+Price to book value > 0 AND
 
+Net worth > 0 AND
 Net profit > 0 AND
 Operating profit > 0 AND
 
