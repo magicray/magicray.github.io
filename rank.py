@@ -134,8 +134,8 @@ def main():
     np = rank('np_12m_rs_cr', data)           # More net profit is better
     op = rank('op_12m_rs_cr', data)           # More operting profit is better
     nw = rank('net_worth_rs_cr', data)        # Higher networth is more stability
-    sales = rank('sales_rs_cr', data)         # Higher sales is more stability
-    size_rank = [(np[name] + op[name] + nw[name] + sales[name], name) for name in np]
+    #sales = rank('sales_rs_cr', data)         # Higher sales is more stability
+    size_rank = [(np[name] + op[name] + nw[name], name) for name in np]
 
     # Divide into two halvs based upon the above factors to discard the tiny companies.
     # We will take only the upper half ranked by profit and sales
