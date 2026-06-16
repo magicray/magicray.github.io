@@ -229,7 +229,8 @@ function renderTable(tableId, data) {
         }
     }
 
-    let top_half = Math.floor(data.length/2);
+    let top_half = 100; //Math.floor(data.length/2);
+
     let data_green = data.slice(0, top_half);
     let data_red = data.slice(top_half, data.length);
 

@@ -31,7 +31,8 @@ Last result date > 202511
 
 #growth_screen = ('879125/growth', 'chrdjfpkcw07dhqo4nwfh0yd7g191lxl')
 #quality_screen = ('878969/quality', '7ntrq89s65vvh06jwgewobakgkgr4gvz')
-universe_screen = ('290555/universe', 'zr3qiwjy69cxj82wwf8pyq4zo0kc599b')
+#universe_screen = ('290555/universe', 'zr3qiwjy69cxj82wwf8pyq4zo0kc599b')
+universe_screen = ('3728407/biggest', 'zr3qiwjy69cxj82wwf8pyq4zo0kc599b')
 
 
 def download(screen, sessionid):
@@ -133,19 +134,21 @@ def main():
     data = tmp
 
     # Rank on Size - More is better
-    np = rank('np_12m_rs_cr', data)           # More net profit is better
-    op = rank('op_12m_rs_cr', data)           # More operting profit is better
+    #np = rank('np_12m_rs_cr', data)           # More net profit is better
+    #op = rank('op_12m_rs_cr', data)           # More operting profit is better
     #nw = rank('net_worth_rs_cr', data)        # Higher networth is more stability
     #sales = rank('sales_rs_cr', data)         # Higher sales is more stability
-    size_rank = [(np[name] + op[name], name) for name in np]
+    #size_rank = [(np[name] + op[name], name) for name in np]
+    mcap = rank('mar_cap_rs_cr', data)         # Filter out only top 500
+    size_rank = [(mcap[name], name) for name in mcap]
 
     # Divide into two halvs based upon the above factors to discard the tiny companies.
     # We will take only the upper half ranked by profit and sales
-    count = min(200, int(len(size_rank)/2))
+    count = 500 #min(500, int(len(size_rank)/2))
     biggest_stocks = set([name for _, name in sorted(size_rank)[:count]])
     data = {k: v for k, v in data.items() if k in biggest_stocks}
 
-    assert(len(data) == 200)
+    assert(len(data) == 500)
 
     # Rank on Quality - More is better unless specified
     roe = rank('roe', data)
@@ -187,8 +190,11 @@ def main():
     with open('magicrank.json') as fd:
         prev = json.load(fd)
 
-    prev_names = set([s['name'] for s in prev['data'] if s['rank'] <= len(prev['data'])//2])
-    stock_names = set([s['name'] for s in stock_list if s['rank'] <= len(stock_list)//2])
+    #prev_names = set([s['name'] for s in prev['data'] if s['rank'] <= len(prev['data'])//2])
+    #stock_names = set([s['name'] for s in stock_list if s['rank'] <= len(stock_list)//2])
+    prev_names = set([s['name'] for s in prev['data'] if s['rank'] <= 100])
+    stock_names = set([s['name'] for s in stock_list if s['rank'] <= 100])
+
     with open('magicrank.json', 'w') as fd:
         ts = int(time.time())
         sold = prev.get('sold', {})
