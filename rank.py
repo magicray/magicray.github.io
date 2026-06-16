@@ -20,8 +20,10 @@ Price to Earning  > 0 AND
 Price to book value > 0 AND
 
 Net worth > 0 AND
+
 Net profit > 0 AND
-Operating profit > 0 AND
+Sales > Operating profit AND
+Operating profit > Net profit AND
 
 Last result date > 202511
 """
