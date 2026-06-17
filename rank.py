@@ -208,7 +208,7 @@ def main():
                 data=stock_list,
                 date=int(time.time()),
                 sold={k: v for k, v in sold.items() if v+86400*90 > ts},
-                url='https://www.screener.in/screens/290555/universe/'),
+                url='https://www.screener.in/screens/3728407/biggest/'),
             fd, sort_keys=True, indent=4)
 
 

@@ -112,7 +112,7 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
         const total = G.data['data'].length
 	const sell_date = new Date(Math.max(...Object.values(data['sold']))*1000).toJSON()
          $('#timestamp').html(
-            '<a href="' + data['url'] + '" target="_blank">Quality-Growth-Value-Stability</a> - ' +
+            '<a href="' + data['url'] + '" target="_blank">Nifty 500</a> - ' +
             'Refreshed <a href="">' + age + ' hours</a> ago - ' +
             '<a href="#sold">Recently Sold</a>')
 
@@ -155,7 +155,7 @@ function format_data(data, amount) {
 
     count = data.length
     buy_end_index = Math.floor(data.length/2)
-    stock_count = Math.floor(data.length/2)
+    stock_count = 100; //Math.floor(data.length/2)
 
     for(let i=0; i<count; i++) {
         const d = data[i]
