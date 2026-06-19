@@ -32,7 +32,7 @@ Last result date > 202511
 #growth_screen = ('879125/growth', 'chrdjfpkcw07dhqo4nwfh0yd7g191lxl')
 #quality_screen = ('878969/quality', '7ntrq89s65vvh06jwgewobakgkgr4gvz')
 #universe_screen = ('290555/universe', 'zr3qiwjy69cxj82wwf8pyq4zo0kc599b')
-universe_screen = ('3728407/biggest', 'zr3qiwjy69cxj82wwf8pyq4zo0kc599b')
+universe_screen = ('3728407/biggest', 'mcak5aaeyz4ovi7yavenlnvr1jg6wjfv')
 
 
 def download(screen, sessionid):
