@@ -192,8 +192,8 @@ def main():
 
     #prev_names = set([s['name'] for s in prev['data'] if s['rank'] <= len(prev['data'])//2])
     #stock_names = set([s['name'] for s in stock_list if s['rank'] <= len(stock_list)//2])
-    prev_names = set([s['name'] for s in prev['data'] if s['rank'] <= 100])
-    stock_names = set([s['name'] for s in stock_list if s['rank'] <= 100])
+    prev_names = set([s['name'] for s in prev['data'] if s['rank'] <= 125])
+    stock_names = set([s['name'] for s in stock_list if s['rank'] <= 125])
 
     with open('magicrank.json', 'w') as fd:
         ts = int(time.time())
