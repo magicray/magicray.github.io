@@ -153,11 +153,9 @@ fetch('https://magicray.github.io/magicrank.json').then(function(response) {
 function format_data(data, amount) {
     const result = []
 
-    count = data.length
-    buy_end_index = Math.floor(data.length/2)
-    stock_count = 100; //Math.floor(data.length/2)
+    stock_count = Math.floor(data.length/5)     // Top 20%
 
-    for(let i=0; i<count; i++) {
+    for(let i=0; i<data.length; i++) {
         const d = data[i]
         const cmp = d['cmp_rs']
         const qty = amount? Math.ceil(amount/(stock_count*cmp)): ''
@@ -229,7 +227,7 @@ function renderTable(tableId, data) {
         }
     }
 
-    let top_half = 125; //Math.floor(data.length/2);
+    let top_half = Math.floor(data.length/4);    // Top 25%
 
     let data_green = data.slice(0, top_half);
     let data_red = data.slice(top_half, data.length);
