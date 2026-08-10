@@ -19,20 +19,13 @@ Earnings yield > 0 AND
 Price to Earning  > 0 AND
 Price to book value > 0 AND
 
-Net worth > 0 AND
-
-Net profit > 0 AND
-Sales > Operating profit AND
-Operating profit > Net profit AND
-
-Last result date > 202511
+Market Capitalization > 5000
 """
 
 
 #growth_screen = ('879125/growth', 'chrdjfpkcw07dhqo4nwfh0yd7g191lxl')
 #quality_screen = ('878969/quality', '7ntrq89s65vvh06jwgewobakgkgr4gvz')
-#universe_screen = ('290555/universe', 'zr3qiwjy69cxj82wwf8pyq4zo0kc599b')
-universe_screen = ('3728407/biggest', 'ide332s5m9w38ywm4le5d90vwa5j404n')
+universe_screen = ('290555/universe', 'ide332s5m9w38ywm4le5d90vwa5j404n')
 
 
 def download(screen, sessionid):
