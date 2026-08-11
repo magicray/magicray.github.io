@@ -19,6 +19,10 @@ Earnings yield > 0 AND
 Price to Earning  > 0 AND
 Price to book value > 0 AND
 
+Net worth > 0 AND
+Sales > Operating profit AND
+Operating profit > Net profit AND
+
 Market Capitalization > 5000
 """
 
@@ -199,7 +203,7 @@ def main():
                 data=stock_list,
                 date=int(time.time()),
                 sold={k: v for k, v in sold.items() if v+86400*90 > ts},
-                url='https://www.screener.in/screens/3728407/biggest/'),
+                url='https://www.screener.in/screens/290555/universe/'),
             fd, sort_keys=True, indent=4)
 
 
