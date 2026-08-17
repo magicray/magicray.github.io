@@ -29,7 +29,7 @@ Market Capitalization > 5000
 
 #growth_screen = ('879125/growth', 'chrdjfpkcw07dhqo4nwfh0yd7g191lxl')
 #quality_screen = ('878969/quality', '7ntrq89s65vvh06jwgewobakgkgr4gvz')
-universe_screen = ('290555/universe', 'ide332s5m9w38ywm4le5d90vwa5j404n')
+universe_screen = ('290555/universe', 'vt4qh2zvcwmapep86igzwwthnnefyglf')
 
 
 def download(screen, sessionid):
