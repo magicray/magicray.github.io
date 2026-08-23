@@ -2871,7 +2871,7 @@
         },
         {
             "cmp_bv": 22.37,
-            "cmp_rs": 1534.8,
+            "cmp_rs": 767.4,
             "earnings_yield": 1.59,
             "mar_cap_rs_cr": 23977.94,
             "name": "TD Power Systems",
@@ -9501,7 +9501,7 @@
             "sales_rs_cr": 13559.0
         }
     ],
-    "date": 1787440911,
+    "date": 1787527326,
     "sold": {
         "APL Apollo Tubes": 1786404996,
         "ASK Automotive": 1786404996,
