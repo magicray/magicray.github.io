@@ -20,6 +20,7 @@ Price to Earning  > 0 AND
 Price to book value > 0 AND
 
 Net worth > 0 AND
+Net profit > 0 AND
 Sales > Operating profit AND
 Operating profit > Net profit AND
 
@@ -130,12 +131,7 @@ def main():
 
     data = tmp
 
-    # Rank on Size - More is better
-    #np = rank('np_12m_rs_cr', data)           # More net profit is better
-    #op = rank('op_12m_rs_cr', data)           # More operting profit is better
-    #nw = rank('net_worth_rs_cr', data)        # Higher networth is more stability
-    #sales = rank('sales_rs_cr', data)         # Higher sales is more stability
-    #size_rank = [(np[name] + op[name], name) for name in np]
+    # Rank on Market Cap - More is better
     mcap = rank('mar_cap_rs_cr', data)         # Filter out only top 500
     size_rank = [(mcap[name], name) for name in mcap]
 
@@ -161,6 +157,9 @@ def main():
     pe = rank('p_e', data, False)
     pb = rank('cmp_bv', data, False)
     earnings_yield = rank('earnings_yield', data)
+
+    # Rank on Momentum
+    momentum = rank('1yr_return', data)
 
     # Ranking weightage - 25% Quality - 25% Growth - 25% Valuation - 25% Sustainability
     final_rank = [(
