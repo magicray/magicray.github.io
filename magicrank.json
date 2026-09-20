@@ -4361,6 +4361,26 @@
             "sales_rs_cr": 49997.06
         },
         {
+            "1yr_return": -28.94,
+            "cmp_bv": 2.33,
+            "cmp_rs": 114.32,
+            "earnings_yield": 6.84,
+            "mar_cap_rs_cr": 32115.13,
+            "name": "Indian Renewable",
+            "net_worth_rs_cr": 13781.35,
+            "np_12m_rs_cr": 1964.16,
+            "op_12m_rs_cr": 7498.83,
+            "opert_prft_gwth": 18.41,
+            "p_e": 16.35,
+            "profit_growth": 25.78,
+            "rank": 219,
+            "roa_12m": 2.2,
+            "roce": 8.69,
+            "roe": 15.59,
+            "sales_growth": 19.93,
+            "sales_rs_cr": 8610.09
+        },
+        {
             "1yr_return": 169.52,
             "cmp_bv": 5.1,
             "cmp_rs": 2175.7,
@@ -4373,7 +4393,7 @@
             "opert_prft_gwth": 17.91,
             "p_e": 32.52,
             "profit_growth": 39.52,
-            "rank": 219,
+            "rank": 220,
             "roa_12m": 4.71,
             "roce": 18.83,
             "roe": 15.79,
@@ -4393,32 +4413,12 @@
             "opert_prft_gwth": 16.12,
             "p_e": 8.74,
             "profit_growth": 7.86,
-            "rank": 220,
+            "rank": 221,
             "roa_12m": 4.68,
             "roce": 7.16,
             "roe": 5.51,
             "sales_growth": 29.18,
             "sales_rs_cr": 12344.24
-        },
-        {
-            "1yr_return": -28.94,
-            "cmp_bv": 2.33,
-            "cmp_rs": 114.32,
-            "earnings_yield": 6.84,
-            "mar_cap_rs_cr": 32115.13,
-            "name": "Indian Renewable",
-            "net_worth_rs_cr": 13781.35,
-            "np_12m_rs_cr": 1964.16,
-            "op_12m_rs_cr": 7498.83,
-            "opert_prft_gwth": 18.41,
-            "p_e": 16.35,
-            "profit_growth": 25.78,
-            "rank": 221,
-            "roa_12m": 2.16,
-            "roce": 8.69,
-            "roe": 15.58,
-            "sales_growth": 19.93,
-            "sales_rs_cr": 8610.09
         },
         {
             "1yr_return": 65.74,
@@ -10001,7 +10001,7 @@
             "sales_rs_cr": 13559.0
         }
     ],
-    "date": 1789779642,
+    "date": 1789865163,
     "sold": {
         "ACUTAAS": 1788915909,
         "AEGISLOG": 1788915909,
