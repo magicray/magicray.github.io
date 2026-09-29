@@ -147,6 +147,7 @@ def main():
     roe = rank('roe', data)
     roa = rank('roa_12m', data)
     roce = rank('roce', data)
+    roic = rank('roic', data)
 
     # Rank on Growth - More is better
     sales_growth = rank('sales_growth', data)
@@ -161,7 +162,7 @@ def main():
     # Ranking weightage - 25% Quality - 25% Growth - 25% Valuation - 25% Sustainability
     final_rank = [(
         # Quality
-        (roe[name] + roce[name] + roa[name]) / 3 +
+        (roe[name] + roce[name] + roic[name] + roa[name]) / 4 +
 
         # Growth
         (profit_growth[name] + op_profit_growth[name] + sales_growth[name]) / 3 +
