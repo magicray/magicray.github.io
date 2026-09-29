@@ -158,9 +158,6 @@ def main():
     pb = rank('cmp_bv', data, False)
     earnings_yield = rank('earnings_yield', data)
 
-    # Rank on Momentum
-    momentum = rank('1yr_return', data)
-
     # Ranking weightage - 25% Quality - 25% Growth - 25% Valuation - 25% Sustainability
     final_rank = [(
         # Quality
