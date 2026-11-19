@@ -9,6 +9,7 @@ from logging import critical as log
 SCREENER = """
 Return on assets > 0 AND
 Return on equity > 0 AND
+Return on invested capital > 0 AND
 Return on capital employed > 0 AND
 
 Sales growth > 0 AND
@@ -157,6 +158,7 @@ def main():
     # Rank on Valuation
     pe = rank('p_e', data, False)
     pb = rank('cmp_bv', data, False)
+    ev_ebitda= rank('ev_ebitda', data, False)
     earnings_yield = rank('earnings_yield', data)
 
     # Ranking weightage - 25% Quality - 25% Growth - 25% Valuation - 25% Sustainability
@@ -168,7 +170,7 @@ def main():
         (profit_growth[name] + op_profit_growth[name] + sales_growth[name]) / 3 +
 
         # Value
-        (pe[name] + pb[name] + earnings_yield[name]) / 3,
+        (pe[name] + pb[name] + ev_ebitda[name] + earnings_yield[name]) / 4,
 
         name) for name in roe]
 
